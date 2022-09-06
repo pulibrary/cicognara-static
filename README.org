@@ -1,4 +1,4 @@
-#+title: A Static-Site Generator for the Cicognara Site
+#+title: DCL 2.0
 
 * Background
 Since 2015 or so, the Princeton University Library has collaborated with a consortium of libraries and research institutions, with funding from the Kress Foundation, on a project called the [[https://cicognara.org/][Digital Cicognara Library]].  Labeled "an open-acess collection of the early literature of the arts," this project combines two distinct efforts: (1) to create a union catalog of copies and similiar editions of some 5,000 imprints collected by Count Leopoldo Cicognara (1767–1834) and itemized in his /Catalogo ragionato dei libri d’arte e d’antichità/; (2) to build a web resource that enables users to read and compare digital facsimiles of these titles.  Cicognara's original library now resides in the Vatican; in the 1980s, the Kress Foundation sponsored a project to create a microfiche edition of the entire library (more than one million pages).
@@ -43,3 +43,23 @@ Of these three projects, only the first one directly concerns PUL:
 The other two projects are aspects of a single project: to disseminate high-resolution color editions of substitutes for Cicognara's volumes (because those original volumes cannot be digitized).  There are several things to note about this project.  First, its motive is largely aesthetic; some of the partners find the microfiche unsightly and want to provide a "better reading experience" for users.  But the partners fail to distinguish among the very different types of users: those who want to look at pretty books, and those who want to study them.  Curators are proud of their collections and want their books to be used (in part to justify the enormous cost of acquiring them); antiquarians take delight in examining fine specimens of early modern printing.  Scholars are less interested in the artifacts and more interested in the text they bear: they are readers, not viewers. (And clearly the distinctions among these user types are not clear-cut.)  For both user groups, depending on the circumstances, looking at or reading a substitute edition may be sufficient (or even preferable; the microfiche truly is ugly to look at); but in other circumstances only the original will do.  This is particularly true of some sorts of scholarship, for which textual variation is crucial.  For those sorts of users -- those sorts of readers -- only the microfiche, unsightly as it is (or a trip to the Vatican) will do.
 
 This document is not meant to stir the rivalry between scholars and antiquarians, but to establish that there are two very different sorts of use to which a digitized Cicognara Library might be put, and that this distinction provides PUL with an opportunity to achieve its primary goal: sunsetting the cicognara-rails app.
+
+* Proposal
+It is entirely reasonable, and entirely feasible, to split the Digital Cicoganara Library project into three distinct pieces:
+
+1. A web resource that presents Cicognara's library as an historical artifact on its own, via Cicognara's own /Catalogo/ and digital images of his original volumes (albeit secondary images of earlier microfiche capture);
+2. A bibliographic project to create a union catalog of editions that correspond with Cicognara's collection;
+3. A web resource that exposes that union catalog, along with high-resolution digital editions whenever possible.
+
+PUL has been little involved in creating the union catalog; that project belongs to the other partner institutions, who are well able to create and maintain a shared bibliographic database to support their work.  Likewise, the partner institutions are already responsible for digitizing their holdings and serving the digital objects via the IIIF protocols; a web resource that makes the union catalog searchable and browsable, with links to the digital objects when possible, can be built, served, and maintained entirely separately.
+
+PUL can concentrate on the first piece: creating a web resource for the /Catalogo/ and the digitized microfiche.  In doing so, it accomplishes several goals:
+
+1. It reduces its obligation;
+2. It simplifies support (no more moving targets);
+3. It satisfies Kress's primary goal of exposing the digitized version of the microfiche (which constitutes a significant investment twice over: once for the microfiche and then again for the digitization).
+
+** Architecture: a Static Site
+The TEI-encoded edition of Cicognara's /Catalogo/ is an under-appreciated resource.  Like other deep encodings of primary-source materials, it is both a document and a database.  PUL itself has no interest in providing tools for exploiting encoded texts, but simply making it available as an XML file for others to use in research would be entirely in keeping with the Library's mission.
+
+Apart from its inherent utility, however, the TEI-encoded edition can also be used to generate an interface to Cicognara's library.  Indeed, it already does: the https://cicognara.org/catalogo endpoint in the cicognara-rails app is served from precompiled HTML "partials" generated from the TEI file with less than 300 lines of code.
