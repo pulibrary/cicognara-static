@@ -63,17 +63,19 @@ PUL can concentrate on the first piece: creating a web resource for the /Catalog
 The TEI-encoded edition of Cicognara's /Catalogo/ is an under-appreciated resource.  Like other deep encodings of primary-source materials, it is both a document and a database.  PUL itself has no interest in providing tools for exploiting encoded texts, but simply making it available as an XML file for others to use in research would be entirely in keeping with the Library's mission. (See, e.g., https://github.com/eeditiones).
 
 Apart from its inherent utility, however, the TEI-encoded edition can also be used to generate an interface to Cicognara's library.  Indeed, it already does: the https://cicognara.org/catalogo endpoint in the cicognara-rails app is served from precompiled HTML "partials" generated from the TEI file with less than 300 lines of code.  Those "partials" are indexed and stored in cicognara-rails' SOLR instance, but with little modification they could be saved as stand-alone HTML files.  The links in those HTML pages can easily be modified to point to the microfiche objects in Figgy.
-
-This is the essence of this proposal: to modify the partial-generating XSLT to create static HTML pages for the /Catalogo/ and its entries.  The site would comprise a series of pages containing sections of the /Catalogo/ (like the current site), plus single pages for each entry, each page containing calculated facets and code to run a IIIF viewer.  Some search capacity might be provided through [[https://lunrjs.com/][Lunr]], a Javascript library commonly used to build and search indexes of static sites.  To make the site even more robust and future-proof, the site-building software would pre-build the indexes used by Lunr.
-
-*** Static Pages
-- /Catalogo/ The /Catalogo/, like many early-modern books, is elaborately partitioned into sections and subsections. It comprises two printed volumes approximately 4,800 distinct items in 45 sections.
   
-  - Section pages :: the current UI presents a linked table of contents pointing to discrete HTML renditions of each section (each section has its own restful URI). Each of these could be a stand-alone HTML document.
+- Section pages :: the current UI presents a linked table of contents pointing to discrete HTML renditions of each section. Each of these could be a stand-alone HTML document.
     
-  - Index pages :: The /Catalogo/ (and its TEI transcription) contains back matter that does not appear in the current UI, including an alphabetical index by author.  A static site should certainly feature one or more HTML documents representing this index.
+- Index pages :: The /Catalogo/ (and its TEI transcription) contains back matter that does not appear in the current UI, including an alphabetical index by author.  A static site should certainly feature one or more HTML documents representing this index.
 
-  - Links to catalog items :: in the current UI, selecting an entry from the /Catalogo/ presents a page containing a bibliographic entry for the item, its surrogates, and an iframe linked to https://figgy.princeton.edu/viewer.  This is by far the most fragile part of the proposed site: it depends on external data (MARC records, IIIF manifests) and external services (https://figgy.princeton.edu/viewer).  It also depends on Javascript and the deprecated iframe element.
+- Item pages :: in the current UI, selecting an entry from the /Catalogo/ presents a page containing a bibliographic entry for the item, its surrogates, and an iframe linked to https://figgy.princeton.edu/viewer.  This is by far the most fragile part of the proposed site: it depends on external data (MARC records, IIIF manifests) and external services (https://figgy.princeton.edu/viewer).  It also depends on Javascript and the deprecated iframe element.
+
+  In fact, the DCL research team has performed a great deal of scholarly work, which is nowhere reflected in the current site.  The Item pages will contain that data, as well as links to viewers.  An automatic process can harvest the MARC records for each item in the microfiche collection and convert them into structured TEI documents that contain bibliographic data, notes, and links to digital editions (the microfiche).  Making Cicognara's entries first-class items resolves many of the bibliographic puzzles and tangles that have plagued the project until now.
+
+
+
+
+  - Links to catalog items :: 
 
     This proposal is radical: it advocates replacing item pages with simple HTML links to the cataloged microfiche objects.  The /Catalogo/ reverts to its original function: a catalog of Cicognara's library, as it has been captured in microfiche.
 
