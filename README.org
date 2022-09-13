@@ -72,12 +72,6 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
 
   In fact, the DCL research team has performed a great deal of scholarly work, which is nowhere reflected in the current site.  The Item pages will contain that data, as well as links to viewers.  An automatic process can harvest the MARC records for each item in the microfiche collection and convert them into structured TEI documents that contain bibliographic data, notes, and links to digital editions (the microfiche).  Making Cicognara's entries first-class items resolves many of the bibliographic puzzles and tangles that have plagued the project until now.
 
-
-
-
-  - Links to catalog items :: 
-
-    This proposal is radical: it advocates replacing item pages with simple HTML links to the cataloged microfiche objects.  The /Catalogo/ reverts to its original function: a catalog of Cicognara's library, as it has been captured in microfiche.
-
+  
     
 
