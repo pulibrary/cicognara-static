@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<section class="research">
-
 <h1>Research</h1>
 
 <p>With the goal of providing broad exposure of scholarship supporting the Cicognara Library and to
@@ -178,5 +176,3 @@ Venice:Tip.</p>
 <p>Cicognara, Leopoldo, Johann Joachim Winckelmann, and J. B. L. G. Seroux d&#39;Agincourt. 1813.
 <i>Storia della scultura dal suo risorgimento in Italia sino al secolo di Napoleone</i>. Venezia:
 Picotti.</p>
-
-</section>

@@ -1,85 +1,81 @@
 ---
 layout: default
 ---
-<section>
-  <h1>About</h1>
-  <h2>Introducing the Digital Cicognara Library</h2>
-  <figure class="right">
-    <img src="/assets/images/cicognara-portrait.jpg" alt="Portrait of Cicognara"/>
-    <figcaption>Lodovico Lipparini, <em>Portrait of Cicognara</em>, 1825 (Galleria d'art
-      contemporanea, Venice). Courtesy akg-images</figcaption>
-  </figure>
-  <p>The Digital Cicognara Library is an international initiative to recreate in digital form the
-    remarkable private book collection of Count Leopoldo Cicognara (1767–1834). Though assembled in
-    the Romantic era, Cicognara’s collection of some five thousand early imprints stands as an
-    important scholarly resource for the literature of art and archaeology. Cicognara’s famous,
-    two-volume inventory of his library, the <em>Catalogo ragionato dei libri d’arte e
-    d’antichità</em>, published in 1821 and often reprinted, remains an essential tool for scholars
-    and bibliophiles.</p>
-  <p>The full Digital Cicognara Library is being built by contributing partners. The site presents
-    the full text of the <em>Catalogo</em> integrated with digital images and full text of every
-    title in the corpus, including black-and-white facsimiles of the original volumes in the
-    Vatican, one or more high-resolution, color facsimiles of unique copies from partner libraries,
-    and thorough bibliographic information. Thanks to generous support from the Samuel H. Kress
-    Foundation and partner institutions, the Digital Cicognara Library will be an open-access
-    resource.</p>
-</section>
-<section>
-  <h2>About the Cicognara Library</h2>
-  <figure class="left">
-    <img src="/assets/images/catalogo-spine.jpg" alt="Picture of a book spine"/>
-    <figcaption>Courtesy Heidelberg University Library</figcaption>
-  </figure>
-  <p>The Cicognara bibliographical corpus virtually defines the early literature of art. The
-    collection includes treatises on art and architecture; artist and architect biographies;
-    technical handbooks, manuals, and dictionaries of art, architecture, drawing, painting and
-    sculpture; texts on the decorative arts; emblem books and iconographic handbooks; studies on
-    costume, theatre and public spectacles; numismatic literature; works on aesthetics and the
-    history and philosophy of art; topographical guides to collections and cultural sites; and early
-    texts on the archaeology and antiquities of Greece and Rome. The texts are primarily in Italian,
-    French, English, German, and Latin, and date from the fifteenth through the early nineteenth
-    centuries.</p>
-  <p>In 1824, Cicognara sold his book collection to the Vatican Library where today it constitutes
-    the Fondo Cicognara. For nearly two centuries, it has profoundly informed the work of art and
-    architectural historians; scholars of ancient, Renaissance, and early modern history; students
-    of the history of collecting, and the survival of antiquity; as well as bibliophiles and the
-    rare book trade.</p>
-  <p>We know of no modern library that replicates the Fondo Cicognara in its entirety. In order to
-    expand access to the early literature of art, the Samuel H. Kress Foundation sponsored a project
-    in the 1980s to disseminate the full text of the Cicognara Library in microfiche. Led by art
-    historian Philipp Fehl (1920–2000), with his wife Raina Fehl, the Leopoldo Cicognara Program at
-    the University of Illinois at Urbana-Champaign (UIUC) worked in close partnership with the
-    Vatican Library and the firm of Chadwyck-Healey to produce a microfiche edition of every title
-    in the <em>Catalogo</em> totaling more than one million page images. The microfiche set has been
-    sold or donated to dozens of libraries worldwide during the last thirty years, and metadata for
-    each title is available in OCLC’s WorldCat.</p>
-</section>
-<section>
-  <h2>Why Create a Digital Cicognara Library?</h2>
-  <p>Today, digital technologies have become the preferred mode for preserving and accessing early
-    printed works. In 2014, with encouragement from the Kress Foundation, an international group of
-    libraries began to explore ways of making the entire corpus of the Fondo Cicognara freely
-    available online. The result is the Digital Cicognara Library, a multi-year initiative launched
-    in 2015.</p>
-  <figure class="right">
-    <img src="/assets/images/gabinetto.jpg" alt="Photo of the Vatican Library Prints Cabinet"/>
-    <figcaption>Biblioteca Apostolica Vaticana, Gabinetto della Grafica<br>©2017 Biblioteca
-      Apostolica Vaticana</figcaption>
-  </figure>
-  <p>In addition to reproducing from the microform masters Cicognara’s own books in the Vatican,
-    the Digital Cicognara Library will include a collection of variant copies of these early
-    imprints—variants owned and digitized by partner libraries that correspond to the editions
-    listed in the <em>Catalogo</em>. The copy-specific characteristics of the newly digitized
-    volumes will provide new information about the early modern literature of art and its
-    readership, Cicognara’s own reception and his wide-ranging impact on historical scholarship,
-    and the development of research libraries.</p>
-  <p>The high-resolution scans created and hosted by holding institutions are available for viewing
-    through a distributed network of image servers using the <a href="http://iiif.io/">IIIF:
-    International Image Interoperability Framework</a>. The bibliographic descriptions and the
-    full-text transcriptions will be fully searchable from a centralized database as well as via
-    relevant subject research portals, including and especially the
-    <a href="http://portal.getty.edu/">Getty Research Portal</a>. Together, the aggregated images
-    and text offer a potentially transformative opportunity for the discipline of art history. By
-    using new technology to make these key historical volumes more widely accessible, the Digital
-    Cicognara Library will allow scholars to ask and answer new questions.</p>
-</section>
+<h1>About</h1>
+<h2>Introducing the Digital Cicognara Library</h2>
+<figure class="right">
+  <img src="/assets/images/cicognara-portrait.jpg" alt="Portrait of Cicognara"/>
+  <figcaption>Lodovico Lipparini, <em>Portrait of Cicognara</em>, 1825 (Galleria d'art
+    contemporanea, Venice). Courtesy akg-images</figcaption>
+</figure>
+<p>The Digital Cicognara Library is an international initiative to recreate in digital form the
+  remarkable private book collection of Count Leopoldo Cicognara (1767–1834). Though assembled in
+  the Romantic era, Cicognara’s collection of some five thousand early imprints stands as an
+  important scholarly resource for the literature of art and archaeology. Cicognara’s famous,
+  two-volume inventory of his library, the <em>Catalogo ragionato dei libri d’arte e
+  d’antichità</em>, published in 1821 and often reprinted, remains an essential tool for scholars
+  and bibliophiles.</p>
+<p>The full Digital Cicognara Library is being built by contributing partners. The site presents
+  the full text of the <em>Catalogo</em> integrated with digital images and full text of every
+  title in the corpus, including black-and-white facsimiles of the original volumes in the
+  Vatican, one or more high-resolution, color facsimiles of unique copies from partner libraries,
+  and thorough bibliographic information. Thanks to generous support from the Samuel H. Kress
+  Foundation and partner institutions, the Digital Cicognara Library will be an open-access
+  resource.</p>
+
+<h2>About the Cicognara Library</h2>
+<figure class="left">
+  <img src="/assets/images/catalogo-spine.jpg" alt="Picture of a book spine"/>
+  <figcaption>Courtesy Heidelberg University Library</figcaption>
+</figure>
+<p>The Cicognara bibliographical corpus virtually defines the early literature of art. The
+  collection includes treatises on art and architecture; artist and architect biographies;
+  technical handbooks, manuals, and dictionaries of art, architecture, drawing, painting and
+  sculpture; texts on the decorative arts; emblem books and iconographic handbooks; studies on
+  costume, theatre and public spectacles; numismatic literature; works on aesthetics and the
+  history and philosophy of art; topographical guides to collections and cultural sites; and early
+  texts on the archaeology and antiquities of Greece and Rome. The texts are primarily in Italian,
+  French, English, German, and Latin, and date from the fifteenth through the early nineteenth
+  centuries.</p>
+<p>In 1824, Cicognara sold his book collection to the Vatican Library where today it constitutes
+  the Fondo Cicognara. For nearly two centuries, it has profoundly informed the work of art and
+  architectural historians; scholars of ancient, Renaissance, and early modern history; students
+  of the history of collecting, and the survival of antiquity; as well as bibliophiles and the
+  rare book trade.</p>
+<p>We know of no modern library that replicates the Fondo Cicognara in its entirety. In order to
+  expand access to the early literature of art, the Samuel H. Kress Foundation sponsored a project
+  in the 1980s to disseminate the full text of the Cicognara Library in microfiche. Led by art
+  historian Philipp Fehl (1920–2000), with his wife Raina Fehl, the Leopoldo Cicognara Program at
+  the University of Illinois at Urbana-Champaign (UIUC) worked in close partnership with the
+  Vatican Library and the firm of Chadwyck-Healey to produce a microfiche edition of every title
+  in the <em>Catalogo</em> totaling more than one million page images. The microfiche set has been
+  sold or donated to dozens of libraries worldwide during the last thirty years, and metadata for
+  each title is available in OCLC’s WorldCat.</p>
+
+<h2>Why Create a Digital Cicognara Library?</h2>
+<p>Today, digital technologies have become the preferred mode for preserving and accessing early
+  printed works. In 2014, with encouragement from the Kress Foundation, an international group of
+  libraries began to explore ways of making the entire corpus of the Fondo Cicognara freely
+  available online. The result is the Digital Cicognara Library, a multi-year initiative launched
+  in 2015.</p>
+<figure class="right">
+  <img src="/assets/images/gabinetto.jpg" alt="Photo of the Vatican Library Prints Cabinet"/>
+  <figcaption>Biblioteca Apostolica Vaticana, Gabinetto della Grafica<br>©2017 Biblioteca
+    Apostolica Vaticana</figcaption>
+</figure>
+<p>In addition to reproducing from the microform masters Cicognara’s own books in the Vatican,
+  the Digital Cicognara Library will include a collection of variant copies of these early
+  imprints—variants owned and digitized by partner libraries that correspond to the editions
+  listed in the <em>Catalogo</em>. The copy-specific characteristics of the newly digitized
+  volumes will provide new information about the early modern literature of art and its
+  readership, Cicognara’s own reception and his wide-ranging impact on historical scholarship,
+  and the development of research libraries.</p>
+<p>The high-resolution scans created and hosted by holding institutions are available for viewing
+  through a distributed network of image servers using the <a href="http://iiif.io/">IIIF:
+  International Image Interoperability Framework</a>. The bibliographic descriptions and the
+  full-text transcriptions will be fully searchable from a centralized database as well as via
+  relevant subject research portals, including and especially the
+  <a href="http://portal.getty.edu/">Getty Research Portal</a>. Together, the aggregated images
+  and text offer a potentially transformative opportunity for the discipline of art history. By
+  using new technology to make these key historical volumes more widely accessible, the Digital
+  Cicognara Library will allow scholars to ask and answer new questions.</p>
