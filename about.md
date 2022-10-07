@@ -1,10 +1,11 @@
-<html>
-<body>
-<section class="what" id="about">
+---
+layout: default
+---
+<section>
   <h1>About</h1>
   <h2>Introducing the Digital Cicognara Library</h2>
   <figure class="right">
-    <img src="cicognara-portrait.jpg" />
+    <img src="/assets/images/cicognara-portrait.jpg" alt="Portrait of Cicognara"/>
     <figcaption>Lodovico Lipparini, <em>Portrait of Cicognara</em>, 1825 (Galleria d'art
       contemporanea, Venice). Courtesy akg-images</figcaption>
   </figure>
@@ -23,10 +24,10 @@
     Foundation and partner institutions, the Digital Cicognara Library will be an open-access
     resource.</p>
 </section>
-<section class="about">
+<section>
   <h2>About the Cicognara Library</h2>
   <figure class="left">
-    <img src="catalogo-spine.jpg" />
+    <img src="/assets/images/catalogo-spine.jpg" alt="Picture of a book spine"/>
     <figcaption>Courtesy Heidelberg University Library</figcaption>
   </figure>
   <p>The Cicognara bibliographical corpus virtually defines the early literature of art. The
@@ -53,7 +54,7 @@
     sold or donated to dozens of libraries worldwide during the last thirty years, and metadata for
     each title is available in OCLC’s WorldCat.</p>
 </section>
-<section">
+<section>
   <h2>Why Create a Digital Cicognara Library?</h2>
   <p>Today, digital technologies have become the preferred mode for preserving and accessing early
     printed works. In 2014, with encouragement from the Kress Foundation, an international group of
@@ -61,7 +62,7 @@
     available online. The result is the Digital Cicognara Library, a multi-year initiative launched
     in 2015.</p>
   <figure class="right">
-    <img src="gabinetto.jpg" />
+    <img src="/assets/images/gabinetto.jpg" alt="Photo of the Vatican Library Prints Cabinet"/>
     <figcaption>Biblioteca Apostolica Vaticana, Gabinetto della Grafica<br>©2017 Biblioteca
       Apostolica Vaticana</figcaption>
   </figure>
@@ -82,5 +83,3 @@
     using new technology to make these key historical volumes more widely accessible, the Digital
     Cicognara Library will allow scholars to ask and answer new questions.</p>
 </section>
-</body>
-</html>
