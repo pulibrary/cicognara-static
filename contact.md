@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Contact
 ---
 <h1>Contact Us</h1>
 <p>For further information or queries, please contact us through this form.</p>

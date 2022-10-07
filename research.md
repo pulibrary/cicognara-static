@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Research
 ---
 <h1>Research</h1>
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: FAQ
 ---
 <h1>Contributor FAQs</h1>
 <p>Please find FAQs below regarding the contribution guidelines to the Digital Cicognara Library

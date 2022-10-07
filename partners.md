@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Partners
 ---
 <section>
   <h1>Founding Partners</h1>

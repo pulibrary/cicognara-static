@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Contribute
 ---
 
 <h1>Become a Contributing Partner</h1>

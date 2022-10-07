@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Metadata
 ---
 <h1>Metadata Checklist for Contributing to the Digital Cicognara Library</h1>
 <p>If you cannot fulfill all the requirements listed below, please email

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About
 ---
 <h1>About</h1>
 <h2>Introducing the Digital Cicognara Library</h2>
