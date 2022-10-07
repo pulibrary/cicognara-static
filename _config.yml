@@ -1,0 +1,36 @@
+title: Digital Cicognara Library
+email: cicognara@googlegroups.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The Digital Cicognara Library is an international initiative to recreate in digital form the
+  remarkable private book collection of Count Leopoldo Cicognara (1767–1834). Though assembled
+  in the Romantic era, Cicognara’s collection of some five thousand early imprints stands as an
+  important scholarly resource for the literature of art and archaeology.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: DigiCicognara
+github_username:  pulibrary/cicognara-static
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
