@@ -3,7 +3,6 @@ require "fileutils"
 require "json"
 require "pry"
 
-FileUtils.mkdir_p "./item_pages"
 
 template = %(
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,10 +79,12 @@ Dir["resources/*.json"].each do |file|
   end
 end
 
+FileUtils.mkdir_p "../catalogo/dcl"
+
 catalogs.keys.each do |dclnum|
   catalog = catalogs[dclnum].to_json
   windows = fiche[dclnum].to_json
 
   html = ERB.new(template).result(binding)
-  File.open("../dcl/#{dclnum}.html", "w") { |f| f.write(html) }
+  File.open("../catalogo/dcl/#{dclnum}.html", "w") { |f| f.write(html) }
 end

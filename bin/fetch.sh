@@ -4,7 +4,7 @@
 # requires wget and xq (on macos: `brew install wget python-yq`)
 
 # download index
-RS_INDEX="https://portal.getty.edu/resources/xml_data/resourcedump.xml"
+RS_INDEX="https://portal.getty.edu/resources/json_data/resourcedump.xml"
 wget -N $RS_INDEX
 
 LATEST=`xq -r .urlset.url[].loc resourcedump.xml | sed -e's/-part.\.zip//'| sort | uniq | grep -v "\d\d\d\d\d\d\d" | tail -1`
