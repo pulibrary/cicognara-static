@@ -75,7 +75,7 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
 #+begin_src shell
   cd bin
   bash fetch.sh
-  bash item_pages.sh
+  ruby item_pages.rb
   wget https://github.com/pulibrary/cicognara-catalogo/blob/861fe95255e8ffa14c874848e5078ffcd099b317/catalogo.tei.xml
   java -cp saxon-he-10.5.jar net.sf.saxon.Transform -s:catalogo.tei.xml -xsl:catalogo_html.xsl
 #+end_src
