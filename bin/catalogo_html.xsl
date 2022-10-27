@@ -18,21 +18,38 @@
     <xsl:output method="html" indent="yes"></xsl:output>
     <xsl:param name="root_directory">../catalogo</xsl:param>
 
-    <xsl:template name="createMastHead">
+    <xsl:template name="createHead">
+        <head>
+            <title>Catalogo Cicognara</title>
+            <link rel="stylesheet" href="../assets/catalogo.css"></link>
+        </head>
+    </xsl:template>
+
+    <xsl:template name="createSiteMastHead">
+        <header class="masthead">
+            <p>The Cicognara Digital Library</p>
+            <nav>
+                <ol>
+                    <li><a href="/">Home</a></li>
+                </ol>
+            </nav>
+        </header>
+    </xsl:template>
+    
+    
+    <xsl:template name="createSiteFooter">
+    <footer>
+        <span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span>
+    </footer>
     </xsl:template>
     
     <xsl:template match="tei:teiCorpus">
         <xsl:result-document indent="yes" method="html"
             href="{$root_directory}/index.html">
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
-                <head>
-                    <title>Catalogo Cicognara</title>
-                    <link rel="stylesheet" href="../assets/catalogo.css"></link>
-                </head>
+                <xsl:call-template name="createHead"/>
                 <body>
-                    <header>
-                        <p>Header Things</p>
-                    </header>
+                    <xsl:call-template name="createSiteMastHead"/>
                     <main>
                         <h1>Catalogo Cicognara</h1>
                         
@@ -41,9 +58,7 @@
                             <li><a href="{$root_directory}/tomo_secondo.html">Tomo Secondo</a></li>
                         </ol>
                     </main>
-                    <footer>
-                        <p>Footer Things</p>
-                    </footer>
+                    <xsl:call-template name="createSiteFooter" />
                 </body>
             </html>
         </xsl:result-document>
