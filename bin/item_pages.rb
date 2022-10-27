@@ -42,11 +42,13 @@ template = %(
 </html>
 )
 
+basedir = "#{File.dirname(__FILE__)}/.."
+
 catalogs = {}
 fiche = {}
-puts "processing resources/*.json"
+puts "processing #{basedir}/tmp/resources/*.json"
 processed = 0
-Dir["resources/*.json"].each do |file|
+Dir["#{basedir}/tmp/resources/*.json"].each do |file|
   print "."  if (processed += 1) % 5000 == 0
   json = JSON.parse(File.open(file).read)
   dclnum = json["identifier"].select { |id| id["@type"] == "dclNumber" }.map { |id| id["value"] }
@@ -79,12 +81,12 @@ Dir["resources/*.json"].each do |file|
   end
 end
 
-FileUtils.mkdir_p "../catalogo/dcl"
+FileUtils.mkdir_p "#{basedir}/catalogo/dcl"
 
 catalogs.keys.each do |dclnum|
   catalog = catalogs[dclnum].to_json
   windows = fiche[dclnum].to_json
 
   html = ERB.new(template).result(binding)
-  File.open("../catalogo/dcl/#{dclnum}.html", "w") { |f| f.write(html) }
+  File.open("#{basedir}/catalogo/dcl/#{dclnum}.html", "w") { |f| f.write(html) }
 end
