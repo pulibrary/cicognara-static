@@ -71,7 +71,11 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
 - Item pages :: in the current UI, selecting an entry from the /Catalogo/ presents a page containing a bibliographic entry for the item, its surrogates, and an iframe linked to https://figgy.princeton.edu/viewer.  This is by far the most fragile part of the proposed site: it depends on external data (MARC records, IIIF manifests) and external services (https://figgy.princeton.edu/viewer).  It also depends on Javascript and the deprecated iframe element.
 
   In fact, the DCL research team has performed a great deal of scholarly work, which is nowhere reflected in the current site.  The Item pages will contain that data, as well as links to viewers.  An automatic process can harvest the MARC records for each item in the microfiche collection and convert them into structured TEI documents that contain bibliographic data, notes, and links to digital editions (the microfiche).  Making Cicognara's entries first-class items resolves many of the bibliographic puzzles and tangles that have plagued the project until now.
-
-  
-    
-
+* How to Build
+#+begin_src shell
+  cd bin
+  bash fetch.sh
+  ruby item_pages.rb
+  wget https://github.com/pulibrary/cicognara-catalogo/blob/861fe95255e8ffa14c874848e5078ffcd099b317/catalogo.tei.xml
+  java -cp saxon-he-10.5.jar net.sf.saxon.Transform -s:catalogo.tei.xml -xsl:catalogo_html.xsl
+#+end_src
