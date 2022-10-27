@@ -16,7 +16,7 @@
     </xd:doc>
     
     <xsl:output method="html" indent="yes"></xsl:output>
-    <xsl:param name="root_directory">../catalogo</xsl:param>
+    <xsl:param name="root_directory">catalogo</xsl:param>
     
     
     <xsl:template match="tei:teiCorpus">
@@ -35,8 +35,8 @@
                         <h1>Catalogo Cicognara</h1>
                         
                         <ol>
-                            <li><a href="{$root_directory}/tomo_primo.html">Tomo Primo</a></li>
-                            <li><a href="{$root_directory}/tomo_secondo.html">Tomo Secondo</a></li>
+                            <li><a href="/{$root_directory}/tomo_primo.html">Tomo Primo</a></li>
+                            <li><a href="/{$root_directory}/tomo_secondo.html">Tomo Secondo</a></li>
                         </ol>
                     </main>
                     <footer>
@@ -103,7 +103,7 @@
     
     <xsl:template match="tei:div[@type = 'section']" mode="toc-1">
         <li>
-            <a href="{$root_directory}/sections/{@n}.html">
+            <a href="/{$root_directory}/sections/{@n}.html">
                 <xsl:apply-templates select="tei:head" mode="listitem"/>
             </a>
         </li>
@@ -137,7 +137,7 @@
                     
                         <nav>
                             <ul class="breadcrumb">
-                                <li><a href="../catalogo.html">Catalogo</a></li>
+                                <li><a href="../index.html">Catalogo</a></li>
                                 <li>
                                     <a href="../{ancestor::tei:TEI/@xml:id}.html">
                                         <xsl:apply-templates select="ancestor::tei:TEI/tei:text/tei:front/tei:titlePage/tei:titlePart[@type='book']"></xsl:apply-templates>
@@ -276,7 +276,7 @@
                     </header>
                     <nav>
                         <ul class="breadcrumb">
-                            <li><a href="../catalogo.html">Catalogo</a></li>
+                            <li><a href="../index.html">Catalogo</a></li>
                             <li>
                                 <a href="../{ancestor::tei:TEI/@xml:id}.html">
                                     <xsl:apply-templates select="ancestor::tei:TEI/tei:text/tei:front/tei:titlePage/tei:titlePart[@type='book']"></xsl:apply-templates>
