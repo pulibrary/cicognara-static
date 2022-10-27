@@ -1,8 +1,8 @@
+#!/usr/bin/env ruby
+
 require "erb"
 require "fileutils"
 require "json"
-require "pry"
-
 
 template = %(
 <?xml version="1.0" encoding="UTF-8"?>
