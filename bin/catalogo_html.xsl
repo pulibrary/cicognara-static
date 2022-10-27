@@ -17,7 +17,9 @@
     
     <xsl:output method="html" indent="yes"></xsl:output>
     <xsl:param name="root_directory">../catalogo</xsl:param>
-    
+
+    <xsl:template name="createMastHead">
+    </xsl:template>
     
     <xsl:template match="tei:teiCorpus">
         <xsl:result-document indent="yes" method="html"
