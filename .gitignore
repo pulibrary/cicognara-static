@@ -6,4 +6,4 @@ vendor
 .DS_Store
 *.*~
 catalogo
-/tmp/*
+.tmp/*
