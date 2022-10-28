@@ -55,6 +55,8 @@
             <span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span>
         </footer>
     </xsl:template>
+    
+
 
     <xsl:template match="tei:teiCorpus">
         <xsl:result-document indent="yes" method="html" href="{$root_directory}/index.html">
@@ -246,6 +248,7 @@
     <!-- Item templates -->
     <xsl:template match="tei:item" mode="standalone">
         <xsl:variable name="dclnums" select="tokenize(@corresp)"/>
+        <xsl:variable name="biblStructs" select="id('gettyBibls')/tei:biblStruct"/>
         <xsl:result-document indent="yes" method="html" href="{$root_directory}/items/{@n}.html">
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
                 <xsl:call-template name="createHead">
@@ -277,8 +280,6 @@
                         </ul>
                     </nav>
                     <section class="catalogo-item" id="{@xml:id}">
-
-
                         <header>
                             <div class="bibl">
                                 <xsl:apply-templates select="tei:bibl"/>
@@ -290,21 +291,39 @@
                             -->
                         </header>
                     </section>
-                    <aside>
+                    <section>
                         <header>
                             <h2>Digitized Editions</h2>
                         </header>
-                        <ul>
-                            <xsl:for-each select="$dclnums">
-                                <li>
-                                    <a href="../dcl/{substring-after(current(), 'dcl:')}.html">
-                                        <xsl:value-of select="substring-after(current(), 'dcl:')"/>
-                                    </a>
-                                </li>
-                            </xsl:for-each>
-                        </ul>
+                        <dl>
 
-                    </aside>
+                            <xsl:for-each select="$dclnums">
+                                <xsl:variable name="dcl" select="substring-after(current(), 'dcl:')"/>
+                                <xsl:variable name="distributors" select="$biblStructs[.//tei:idno=$dcl]/tei:monogr/tei:imprint/tei:distributor"/>
+                                
+                                <dt>
+                                    <a href="../dcl/{$dcl}.html">
+                                        <xsl:value-of select="$dcl"/>
+                                    </a>
+                                </dt>
+                                <dd>
+                                    <xsl:choose>
+                                        <xsl:when test="count($distributors) > 1">
+                                            <ul>
+                                                <xsl:for-each select="$distributors">
+                                                    <li><xsl:apply-templates /></li>
+                                                </xsl:for-each>
+                                            </ul>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:apply-templates select="$distributors" />
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                    
+                                </dd>
+                            </xsl:for-each>
+                        </dl>
+                    </section>
                 </body>
                 <xsl:call-template name="createSiteFooter" />
             </html>
