@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/0be41504-9937-4d0c-8b9b-0eabc1f99f61/manifest"}],
+  "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/boissard1597bd2/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/boissard1600bd5/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/boissard1597bd3/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/boissard1597bd1/manifest.json"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/0be41504-9937-4d0c-8b9b-0eabc1f99f61/manifest"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/boissard1602bd6/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/boissard1598bd4/manifest.json"}]
+
+});
+</script>
+    </body>
+</html>

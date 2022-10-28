@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/2b3ffa7e-25ae-45da-bd5a-520f410d43cc/manifest"}],
+  "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/2b3ffa7e-25ae-45da-bd5a-520f410d43cc/manifest"},{"manifestId":"https://media.getty.edu/iiif/manifest/9e9917b1-1f11-49e0-8ed3-8a48426f8a3a"}]
+
+});
+</script>
+    </body>
+</html>

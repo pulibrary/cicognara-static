@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/976e1176-54ad-4214-97b2-6850ed650c53/manifest"}],
+  "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/cicognara1818/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/cicognara1813/manifest.json"},{"manifestId":"https://media.getty.edu/iiif/manifest/cb65cac4-3040-45c0-b807-346f0cd7a2ee"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/cicognara1816/manifest.json"},{"manifestId":"https://media.getty.edu/iiif/manifest/dfb797eb-5cd6-4eac-9998-87d734fabb61"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/976e1176-54ad-4214-97b2-6850ed650c53/manifest"}]
+
+});
+</script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4dc23931-75cd-4c0b-870f-28d7e08e2a66/manifest"}],
+  "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1802a/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1805a/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1803a/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1803/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1805/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1809/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1804/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1803b/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1808/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1806a/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1807/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1802/manifest.json"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4dc23931-75cd-4c0b-870f-28d7e08e2a66/manifest"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1806/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1807a/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/amemba1801/manifest.json"}]
+
+});
+</script>
+    </body>
+</html>

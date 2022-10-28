@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/308c383c-e939-4e32-84ba-b67f907e41f2/manifest"}],
+  "catalog": [{"manifestId":"https://media.getty.edu/iiif/manifest/72d2a5e4-6ebc-4dd2-aacc-560a5f48ca13"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/roland_virloys1771bd3/manifest.json"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/308c383c-e939-4e32-84ba-b67f907e41f2/manifest"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/roland_virloys1770bd2/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/roland_virloys1770bd1/manifest.json"}]
+
+});
+</script>
+    </body>
+</html>

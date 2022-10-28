@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/6acf36c3-ea41-41ea-89b8-823be3d38289/manifest"}],
+  "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1826bd6/manifest.json"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/6acf36c3-ea41-41ea-89b8-823be3d38289/manifest"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1825bd2_2/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1825bd3/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1826index/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1821bd1_1/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1824bd5_2/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1824bd5_1/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1823bd1_2/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1824bd2_1/manifest.json"},{"manifestId":"https://media.getty.edu/iiif/manifest/cea3ca06-6ac0-4917-95c4-e1ff04608904"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/inghirami1825bd4/manifest.json"}]
+
+});
+</script>
+    </body>
+</html>

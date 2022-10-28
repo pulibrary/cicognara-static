@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/2c44dc20-d714-4f15-af13-f380ed64767f/manifest"}],
+  "catalog": [{"manifestId":"https://media.getty.edu/iiif/manifest/b5a51166-ecb0-4e2b-9c3b-04f367659e8e"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/2c44dc20-d714-4f15-af13-f380ed64767f/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ee8c91bf-3ed6-4619-b21c-ddea4f1b4b06/manifest"}]
+
+});
+</script>
+    </body>
+</html>

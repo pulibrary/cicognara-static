@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+            <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+                  <header>
+                        <p>Header Things</p>
+                    </header>
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li><a href="../catalogo.html">Catalogo</a></li>
+                        </ul>
+                    </nav>
+
+        <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+        <div id="my-mirador"/>
+
+        <script type="text/javascript">
+        const mirador = Mirador.viewer({
+  "id": "my-mirador",
+
+  "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/a5aff0e8-76a7-4279-b45d-cca662e70352/manifest"}],
+  "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1791bd5/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd13/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd12/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1792bd7/manifest.json"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/a5aff0e8-76a7-4279-b45d-cca662e70352/manifest"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd17/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd16/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1791bd3/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1791bd4/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1792bd8/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1791bd1/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1792bd6/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1791bd2/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd11/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1792bd9/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd14/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd10/manifest.json"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/algarotti1794bd15/manifest.json"}]
+
+});
+</script>
+    </body>
+</html>
