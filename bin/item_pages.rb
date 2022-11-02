@@ -17,9 +17,9 @@ template = %(
          <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
     </head>
     <body>
-                  <header>
-                        <p>Header Things</p>
-                    </header>
+        <header class="masthead">
+            <p><a href="/">The Cicognara Digital Library</a></p>
+        </header>
                     <nav>
                         <ul class="breadcrumb">
                             <li><a href="../catalogo.html">Catalogo</a></li>
@@ -38,6 +38,9 @@ template = %(
 
 });
 </script>
+        <footer>
+            <span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span>
+        </footer>
     </body>
 </html>
 )
