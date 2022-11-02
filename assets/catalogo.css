@@ -41,16 +41,6 @@ dd {
 }
 
 
-/* For debugging and proofing*/
-span.bibl {
-    border: 1px dotted gray;
-}
-span.title {
-    background: rgb(255,255,235);
-}
-span.author {
-    background: rgb(235,255,255);
-}
 body {
     font-family: 'Gentium Basic', serif;
 }
