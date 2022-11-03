@@ -78,8 +78,8 @@
                             <a href="/">The Cicognara Digital Library</a>
                         </p>
                     </header>
-                    <nav id="toc">
-                        <ol>
+                    <nav id="side">
+                        <ol id="toc">
                             <li>
                                 <a href="{$root_directory}/tomo_primo.html">Tomo Primo</a>
                             </li>
@@ -106,15 +106,20 @@
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
                 <xsl:call-template name="createHead"/>
                 <body class="container">
-                    <xsl:call-template name="createSiteMastHead"/>
-                    <nav class="breadcrumb">
-                        <ul class="breadcrumb">
-                            <li>
-                                <a href="index.html">Catalogo</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav id="toc">
+                    <header ide="pageHeader" class="masthead">
+                        <p>
+                            <a href="/">The Cicognara Digital Library</a>
+                        </p>
+                        <nav class="breadcrumb">
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="index.html">Catalogo</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    
+                    <nav id="side">
                         <xsl:apply-templates select="tei:text/tei:body" mode="toc"/>
                     </nav>
                     <main id="main">
@@ -130,7 +135,7 @@
 
 
     <xsl:template match="tei:body" mode="toc">
-        <ol>
+        <ol id="toc">
             <xsl:apply-templates select="tei:div[@type = 'section']" mode="toc"/>
         </ol>
     </xsl:template>
@@ -142,9 +147,6 @@
             </a>
         </li>
     </xsl:template>
-
-
-
 
     <!-- stand-alone sections -->
 
@@ -323,29 +325,69 @@
                         <p>
                             <a href="/">The Cicognara Digital Library</a>
                         </p>
+                        <nav>
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="../catalogo.html">Catalogo</a>
+                                </li>
+                                <li>
+                                    <a href="../{ancestor::tei:TEI/@xml:id}.html">
+                                        <xsl:apply-templates
+                                            select="ancestor::tei:TEI/tei:text/tei:front/tei:titlePage/tei:titlePart[@type = 'book']"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="../{ancestor::tei:TEI/@xml:id}.html#{ancestor::tei:div[@type='section']/@n}">
+                                        <xsl:value-of
+                                            select="concat('section ', ancestor::tei:div[@type = 'section']/@n)"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </header>
-                    <nav>
-                        <ul class="breadcrumb">
-                            <li>
-                                <a href="../catalogo.html">Catalogo</a>
-                            </li>
-                            <li>
-                                <a href="../{ancestor::tei:TEI/@xml:id}.html">
-                                    <xsl:apply-templates
-                                        select="ancestor::tei:TEI/tei:text/tei:front/tei:titlePage/tei:titlePart[@type = 'book']"
-                                    />
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="../{ancestor::tei:TEI/@xml:id}.html#{ancestor::tei:div[@type='section']/@n}">
-                                    <xsl:value-of
-                                        select="concat('section ', ancestor::tei:div[@type = 'section']/@n)"
-                                    />
-                                </a>
-                            </li>
-                        </ul>
+                    <nav id="side">
+                            <header>
+                                <h2>Digitized Editions</h2>
+                            </header>
+                            
+                            <dl>
+                                
+                                <xsl:for-each select="$dclnums">
+                                    <xsl:variable name="dcl"
+                                        select="substring-after(current(), 'dcl:')"/>
+                                    <xsl:variable name="distributors"
+                                        select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
+                                    
+                                    <dt>
+                                        <a href="../dcl/{$dcl}.html">
+                                            <xsl:value-of select="$dcl"/>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <xsl:choose>
+                                            <xsl:when test="count($distributors) > 1">
+                                                <ul>
+                                                    <xsl:for-each select="$distributors">
+                                                        <li>
+                                                            <xsl:apply-templates/>
+                                                        </li>
+                                                    </xsl:for-each>
+                                                </ul>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:apply-templates select="$distributors"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        
+                                    </dd>
+                                </xsl:for-each>
+                            </dl>
+                       
                     </nav>
+                    
                     <main id="main">
                         <section class="catalogo-item" id="{@xml:id}">
                             <header>
@@ -359,44 +401,7 @@
                             
                             </header>
                         </section>
-                        <section>
-                            <header>
-                                <h2>Digitized Editions</h2>
-                            </header>
-
-                            <dl>
-
-                                <xsl:for-each select="$dclnums">
-                                    <xsl:variable name="dcl"
-                                        select="substring-after(current(), 'dcl:')"/>
-                                    <xsl:variable name="distributors"
-                                        select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
-
-                                    <dt>
-                                        <a href="../dcl/{$dcl}.html">
-                                            <xsl:value-of select="$dcl"/>
-                                        </a>
-                                    </dt>
-                                    <dd>
-                                        <xsl:choose>
-                                            <xsl:when test="count($distributors) > 1">
-                                                <ul>
-                                                  <xsl:for-each select="$distributors">
-                                                  <li>
-                                                  <xsl:apply-templates/>
-                                                  </li>
-                                                  </xsl:for-each>
-                                                </ul>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:apply-templates select="$distributors"/>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-
-                                    </dd>
-                                </xsl:for-each>
-                            </dl>
-                        </section>
+                        
                     </main>
                 </body>
                 <xsl:call-template name="createSiteFooter"/>
