@@ -19,7 +19,7 @@
             <xd:p>A named template to generate the HTML head element.</xd:p>
             <xd:p>Creates a uniform head element fo all the HTML pages. The <xd:i>level</xd:i>
                 parameter is used to specify the depth of the generated HTML document in the
-                application tree, so that relative paths to assets can be established.</xd:p>          
+                application tree, so that relative paths to assets can be established.</xd:p>
         </xd:desc>
         <xd:param name="level">
             <xd:p>An xs:integer specifying the level in the catalogo tree.</xd:p>
@@ -52,14 +52,16 @@
         </xd:desc>
     </xd:doc>
     <xsl:template name="createSiteMastHead">
-        <header class="masthead">
-            <p><a href="/">The Cicognara Digital Library</a></p>
+        <header ide="pageHeader" class="masthead">
+            <p>
+                <a href="/">The Cicognara Digital Library</a>
+            </p>
         </header>
     </xsl:template>
 
 
     <xsl:template name="createSiteFooter">
-        <footer>
+        <footer id="pageFooter">
             <span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span>
         </footer>
     </xsl:template>
@@ -70,12 +72,13 @@
         <xsl:result-document indent="yes" method="html" href="{$root_directory}/index.html">
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
                 <xsl:call-template name="createHead"/>
-                <body>
-                    <xsl:call-template name="createSiteMastHead"/>
-                    <header>
-                        <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt" />
+                <body class="container">
+                    <header ide="pageHeader" class="masthead">
+                        <p>
+                            <a href="/">The Cicognara Digital Library</a>
+                        </p>
                     </header>
-                    <nav>                  
+                    <nav id="toc">
                         <ol>
                             <li>
                                 <a href="{$root_directory}/tomo_primo.html">Tomo Primo</a>
@@ -85,9 +88,8 @@
                             </li>
                         </ol>
                     </nav>
-                    <main>
-                        
-
+                    <main id="main">
+                        <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt"/>
                     </main>
                     <xsl:call-template name="createSiteFooter"/>
                 </body>
@@ -103,7 +105,7 @@
         <xsl:result-document indent="yes" method="html" href="{$root_directory}/{@xml:id}.html">
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
                 <xsl:call-template name="createHead"/>
-                <body>
+                <body class="container">
                     <xsl:call-template name="createSiteMastHead"/>
                     <nav class="breadcrumb">
                         <ul class="breadcrumb">
@@ -115,7 +117,7 @@
                     <nav id="toc">
                         <xsl:apply-templates select="tei:text/tei:body" mode="toc"/>
                     </nav>
-                    <main>
+                    <main id="main">
                         <xsl:apply-templates select="tei:text/tei:body//tei:div[@type = 'section']"
                             mode="section"/>
                     </main>
@@ -217,7 +219,7 @@
     <xsl:template match="tei:author">
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
-           <xsl:text> </xsl:text>
+            <xsl:text> </xsl:text>
         </xsl:if>
         <span class="author">
             <xsl:apply-templates/>
@@ -249,7 +251,7 @@
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
-        </xsl:if>        
+        </xsl:if>
         <span class="pubPlace">
             <xsl:apply-templates/>
         </span>
@@ -258,12 +260,12 @@
             <xsl:text> </xsl:text>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="tei:publisher">
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
-        </xsl:if>        
+        </xsl:if>
         <span class="publisher">
             <xsl:apply-templates/>
         </span>
@@ -277,7 +279,7 @@
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
-        </xsl:if>        
+        </xsl:if>
         <span class="date">
             <xsl:apply-templates/>
         </span>
@@ -317,8 +319,11 @@
                     <xsl:with-param name="level" select="2" as="xs:integer"/>
                 </xsl:call-template>
                 <body>
-                    <xsl:call-template name="createSiteMastHead"/>
-
+                    <header ide="pageHeader" class="masthead">
+                        <p>
+                            <a href="/">The Cicognara Digital Library</a>
+                        </p>
+                    </header>
                     <nav>
                         <ul class="breadcrumb">
                             <li>
@@ -341,55 +346,58 @@
                             </li>
                         </ul>
                     </nav>
-                    <section class="catalogo-item" id="{@xml:id}">
-                        <header>
-                            <div class="bibl">
-                                <xsl:apply-templates select="tei:bibl"/>
-                            </div>
-                            <!--
+                    <main id="main">
+                        <section class="catalogo-item" id="{@xml:id}">
+                            <header>
+                                <div class="bibl">
+                                    <xsl:apply-templates select="tei:bibl"/>
+                                </div>
+                                
                             <div class="notes">
                                 <xsl:apply-templates select="tei:note"/>
                             </div>
-                            -->
-                        </header>
-                    </section>
-                    <section>
-                        <hgroup>
-                            <h2>Digitized Editions</h2>
-                        </hgroup>
+                            
+                            </header>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Digitized Editions</h2>
+                            </header>
 
-                        <dl>
+                            <dl>
 
-                            <xsl:for-each select="$dclnums">
-                                <xsl:variable name="dcl" select="substring-after(current(), 'dcl:')"/>
-                                <xsl:variable name="distributors"
-                                    select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
+                                <xsl:for-each select="$dclnums">
+                                    <xsl:variable name="dcl"
+                                        select="substring-after(current(), 'dcl:')"/>
+                                    <xsl:variable name="distributors"
+                                        select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
 
-                                <dt>
-                                    <a href="../dcl/{$dcl}.html">
-                                        <xsl:value-of select="$dcl"/>
-                                    </a>
-                                </dt>
-                                <dd>
-                                    <xsl:choose>
-                                        <xsl:when test="count($distributors) > 1">
-                                            <ul>
-                                                <xsl:for-each select="$distributors">
+                                    <dt>
+                                        <a href="../dcl/{$dcl}.html">
+                                            <xsl:value-of select="$dcl"/>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <xsl:choose>
+                                            <xsl:when test="count($distributors) > 1">
+                                                <ul>
+                                                  <xsl:for-each select="$distributors">
                                                   <li>
                                                   <xsl:apply-templates/>
                                                   </li>
-                                                </xsl:for-each>
-                                            </ul>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:apply-templates select="$distributors"/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
+                                                  </xsl:for-each>
+                                                </ul>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:apply-templates select="$distributors"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
 
-                                </dd>
-                            </xsl:for-each>
-                        </dl>
-                    </section>
+                                    </dd>
+                                </xsl:for-each>
+                            </dl>
+                        </section>
+                    </main>
                 </body>
                 <xsl:call-template name="createSiteFooter"/>
             </html>
