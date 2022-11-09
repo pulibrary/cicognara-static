@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29606">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">LOTTINI Fra Giovanni Angelo</span>,<span class="title">Scelta d’alcuni miracoli della SS. Nunziata di Firenze</span>, descritti ed incisi, tratti da’ disegni de’ principali artisti di quell’età,<span class="pubPlace">Firenze</span><span class="date">1610</span>, in 4, pic. fig. Bellissime prove.
-                  <div class="note">Le 41 tavole, compreso il titolo, sono di Giovanni Callot e rarissime a trovarsi di
-                     sì bella conservazione. Il pregio che ha quest’edizione, che è la prima, distinguevi
-                     dal non esservi il nome dell’incisore. La maggior parte sono intagliate sui disegni
-                     di Matteo Rossetti, Angelo Lottini fu scultore e scolaro del Montarseli: sull’esemplare
-                     che Mariette possedeva di quest’opera era scritto: Les planches qui entrent dans ce
-                     livre sont des prémieres ouvrages de gravure de Jacques Callot et qui ne se rencontrent
-                     pas aisément. Nel 1636 ne fu fatta una seconda edizione.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29606">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">LOTTINI Fra Giovanni Angelo</span>, <span class="title">Scelta d’alcuni miracoli della SS. Nunziata di Firenze</span> , descritti ed incisi, tratti da’ disegni de’ principali artisti di quell’età, <span class="pubPlace">Firenze</span>  <span class="date">1610</span> , in 4, pic. fig. Bellissime prove.
+                     <div class="note">Le 41 tavole, compreso il titolo, sono di Giovanni Callot e rarissime a trovarsi di
+                        sì bella conservazione. Il pregio che ha quest’edizione, che è la prima, distinguevi
+                        dal non esservi il nome dell’incisore. La maggior parte sono intagliate sui disegni
+                        di Matteo Rossetti, Angelo Lottini fu scultore e scolaro del Montarseli: sull’esemplare
+                        che Mariette possedeva di quest’opera era scritto: Les planches qui entrent dans ce
+                        livre sont des prémieres ouvrages de gravure de Jacques Callot et qui ne se rencontrent
+                        pas aisément. Nel 1636 ne fu fatta una seconda edizione.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

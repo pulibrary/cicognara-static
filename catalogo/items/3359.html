@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e6813">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VITALE Pier Antonio</span>,<span class="title">Riflessioni sulle nuove scoverte di Lodovico Antonio Muratori per gli annali di Italia</span>,<span class="pubPlace">Napoli</span><span class="date">1746</span>, in 4, fig., M. 2.
-                  <div class="note">Questo letterato era uno dei più rigidi censori delle opere degli uomini più grandi
-                     e li attaccava con un veleno crudele. In questo volume di 252 p. ch’egli chiama operetta,
-                     ove sono anche molte tavole stampate fra il testo, attacca il Muratori (non sempre
-                     senza ragione) intorno 10 punti storici, con altrettante dissertazioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +23,19 @@
             <dt><a href="../dcl/q58.html">q58</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e6813">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VITALE Pier Antonio</span>, <span class="title">Riflessioni sulle nuove scoverte di Lodovico Antonio Muratori per gli annali di Italia</span> , <span class="pubPlace">Napoli</span>  <span class="date">1746</span> , in 4, fig., M. 2.
+                     <div class="note">Questo letterato era uno dei più rigidi censori delle opere degli uomini più grandi
+                        e li attaccava con un veleno crudele. In questo volume di 252 p. ch’egli chiama operetta,
+                        ove sono anche molte tavole stampate fra il testo, attacca il Muratori (non sempre
+                        senza ragione) intorno 10 punti storici, con altrettante dissertazioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

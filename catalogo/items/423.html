@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e12294">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BASSI Martino</span>,<span class="title">Dispareri in materia d’architettura e prospettiva con pareri di eccellenti e famosi
-                     architetti, che li risolvono,</span><span class="pubPlace">Brescia</span><span class="date">1572,</span><span class="extent">in 4 pic. fig.</span><div class="note">Prima edizione con 12 tavole intagliate in rame.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,17 @@
             <dt><a href="../dcl/vv7.html">vv7</a></dt>
             <dd>Getty Research Institute</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e12294">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BASSI Martino</span>, <span class="title">Dispareri in materia d’architettura e prospettiva con pareri di eccellenti e famosi
+                        architetti, che li risolvono,</span>  <span class="pubPlace">Brescia</span>  <span class="date">1572,</span>  <span class="extent">in 4 pic. fig.</span> 
+                     <div class="note">Prima edizione con 12 tavole intagliate in rame.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

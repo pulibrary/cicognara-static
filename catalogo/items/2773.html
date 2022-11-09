@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2734">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">De BIE</span>,<span class="title">Numismata aurea imperatorum romanorum a Julio Cesare ad Heraclium usque.</span>— Accedit:<span class="title">Ludolphi Smids Romanorum Imperatorum Pinacotheca</span>,<span class="pubPlace">Amstelodami</span><span class="date">1738</span>, in 4, fig.
-                  <div class="note">Quest’edizione è preferita alle più antiche per l’aumento delle illustrazioni e delle
-                     tavole. Contiensi in questa tutto ciò che abbiamo indicato all’articolo Smids con
-                     64 tavole di più, oltre le 24 dei Cesari Equestri coi loro medaglioni disegnati da
-                     Gio. Stradano e intagliati da Crispino del Passo. Il frontespizio è figurato e sonovi
-                     186 pagine di testo</div>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2734">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">De BIE</span>, <span class="title">Numismata aurea imperatorum romanorum a Julio Cesare ad Heraclium usque.</span> — Accedit: <span class="title">Ludolphi Smids Romanorum Imperatorum Pinacotheca</span> , <span class="pubPlace">Amstelodami</span>  <span class="date">1738</span> , in 4, fig.
+                     <div class="note">Quest’edizione è preferita alle più antiche per l’aumento delle illustrazioni e delle
+                        tavole. Contiensi in questa tutto ciò che abbiamo indicato all’articolo Smids con
+                        64 tavole di più, oltre le 24 dei Cesari Equestri coi loro medaglioni disegnati da
+                        Gio. Stradano e intagliati da Crispino del Passo. Il frontespizio è figurato e sonovi
+                        186 pagine di testo</div>.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

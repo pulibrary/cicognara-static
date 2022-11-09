@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.10">section 1.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.10">section 1.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e21131">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BERGIER Nicolas</span>,<span class="title">Histoire des grands chemins de l’Empire Romain</span>: 2 vol.,<span class="pubPlace">Bruxelles</span><span class="date">1736</span>, en 4, fig.
-                  <div class="note">Quest’opera è la più dotta che noi conosciamo in questa materia e meritevole d’esser
-                     tenuta in gran pregio: sonovi alcune tavole collocate ai luoghi voluti dal testo,
-                     ma osservisi bene che mai non mancasse al fine la magnifica e immensa tavola cosi
-                     intitolata Tabula itineraria ex illustri Pentingerorum Bibliotheca, quae Aug. Vind.
-                     beneficio Marci Velseri septemviri Angustani in lucem edita.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -44,7 +29,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e21131">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BERGIER Nicolas</span>, <span class="title">Histoire des grands chemins de l’Empire Romain</span> : 2 vol., <span class="pubPlace">Bruxelles</span>  <span class="date">1736</span> , en 4, fig.
+                     <div class="note">Quest’opera è la più dotta che noi conosciamo in questa materia e meritevole d’esser
+                        tenuta in gran pregio: sonovi alcune tavole collocate ai luoghi voluti dal testo,
+                        ma osservisi bene che mai non mancasse al fine la magnifica e immensa tavola cosi
+                        intitolata Tabula itineraria ex illustri Pentingerorum Bibliotheca, quae Aug. Vind.
+                        beneficio Marci Velseri septemviri Angustani in lucem edita.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

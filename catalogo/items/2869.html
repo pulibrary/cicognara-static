@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e3398">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GORI Anton Francesco</span>,<span class="title">Thesaurus gemmarum antiquarum astriferarum interprete Jo. Bap. Passerio, cura et studio
-                     Ant. Fr. Gori</span>,<span class="pubPlace">Florentiae</span><span class="date">1750</span>, vol. 3, in fol., fig.
-                  <div class="note">Sono dugento tavole di gemme scelte dalle più insigni biblioteche incise in rame,
-                     oltre 60 vignette in cui sono intagliate altrettante gemme e le sei tavole dell’Atlante
-                     Farnesiano con molti prolegomeni e discussioni e 15 dissertazioni del Passeri nel
-                     terzo volume con molti indici</div>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/3sg.html">3sg</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e3398">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GORI Anton Francesco</span>, <span class="title">Thesaurus gemmarum antiquarum astriferarum interprete Jo. Bap. Passerio, cura et studio
+                        Ant. Fr. Gori</span> , <span class="pubPlace">Florentiae</span><span class="date">1750</span> , vol. 3, in fol., fig.
+                     <div class="note">Sono dugento tavole di gemme scelte dalle più insigni biblioteche incise in rame,
+                        oltre 60 vignette in cui sono intagliate altrettante gemme e le sei tavole dell’Atlante
+                        Farnesiano con molti prolegomeni e discussioni e 15 dissertazioni del Passeri nel
+                        terzo volume con molti indici</div>.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

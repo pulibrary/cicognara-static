@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e6550">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">REISCH Gregor</span>,<span class="title">Margarita filosofica nella quale si trattano tutte le dottrine comprese nella ciclopedia
-                     accresciuta di molte belle dottrine da Orazio Fines, di nuovo tradotta in italiano
-                     da Paolo Gallucci Salodiano</span>,<span class="pubPlace">Venezia</span>,<span class="date">1599</span>, fig., in 4, pressoBarezzo Barezzi.
-                  <div class="note">Le figure in quest’edizione sono d’un cattivo intaglio in legno. Vedi Margarita.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/gzt.html">gzt</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e6550">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">REISCH Gregor</span>, <span class="title">Margarita filosofica nella quale si trattano tutte le dottrine comprese nella ciclopedia
+                        accresciuta di molte belle dottrine da Orazio Fines, di nuovo tradotta in italiano
+                        da Paolo Gallucci Salodiano</span> , <span class="pubPlace">Venezia</span> , <span class="date">1599</span> , fig., in 4, presso <span class="publisher">Barezzo Barezzi</span> .
+                     <div class="note">Le figure in quest’edizione sono d’un cattivo intaglio in legno. Vedi Margarita.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

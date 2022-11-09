@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e8642">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BELLORI</span>,<span class="title">Le antiche lucerne sepolcrali figurate, raccolte dalle cave sotterranee, e dalle grotte
-                     di Roma. Parti tre in un volume. Disegnate, intagliate nelle loro forme da Pietro
-                     Santi Bartoli con osser
-                     <div class="pageBreak"><span>174</span></div>vazioni del Bellori</span>,<span class="pubPlace">Roma</span><span class="date">1691</span>, prima edizione di mirabile freschezza e conservazione.
-                  <div class="note">Quest’opera è divisa in tre parti. La prima contiene 37 tavole, la seconda 46, la
-                     terza 33, e in fine vi sono altre sei tavole addizionali non numerate le quali trovansi
-                     in pochi esemplari di questa prima, e in nessuno delle susseguenti edizioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +29,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e8642">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BELLORI</span>, <span class="title">Le antiche lucerne sepolcrali figurate, raccolte dalle cave sotterranee, e dalle grotte
+                        di Roma. Parti tre in un volume. Disegnate, intagliate nelle loro forme da Pietro
+                        Santi Bartoli con osser
+                        <div class="pageBreak"><span>174</span></div>vazioni del Bellori</span> , <span class="pubPlace">Roma</span>  <span class="date">1691</span> , prima edizione di mirabile freschezza e conservazione.
+                     <div class="note">Quest’opera è divisa in tre parti. La prima contiene 37 tavole, la seconda 46, la
+                        terza 33, e in fine vi sono altre sei tavole addizionali non numerate le quali trovansi
+                        in pochi esemplari di questa prima, e in nessuno delle susseguenti edizioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

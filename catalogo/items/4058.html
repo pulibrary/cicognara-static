@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e11813">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PANCIROLI Guidi</span>,<span class="title">(Sebbene annunciato col frontespizio seguente), Notizia utraque tum Orientis tum Occidentis
-                     ultra Arcadii, Honoriique Caesarum tempora, illustre vetustatis monumentum, imo thesaurus
-                     prorsum imcomparabilis. Praecedit D. Andreae Alciati libellus: De magistratibus, civilibusque
-                     ac militaribus officiis. Succedit descriptio urbis Romae, et altera urbis Constantinopolitanae
-                     incerto auctore. Subjungitur vetustus liber de rebus bellicis ad Theodosium Aug. et
-                     filios ejus Arcadium, atque Honorium incerto auctore</span>,<span class="pubPlace">Basileae</span><span class="date">1552</span>, in fol., fig.
-                  <div class="note">Con numerose tavole in legno distribuite fra il testo.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -65,7 +49,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e11813">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PANCIROLI Guidi</span>, <span class="title">(Sebbene annunciato col frontespizio seguente), Notizia utraque tum Orientis tum Occidentis
+                        ultra Arcadii, Honoriique Caesarum tempora, illustre vetustatis monumentum, imo thesaurus
+                        prorsum imcomparabilis. Praecedit D. Andreae Alciati libellus: De magistratibus, civilibusque
+                        ac militaribus officiis. Succedit descriptio urbis Romae, et altera urbis Constantinopolitanae
+                        incerto auctore. Subjungitur vetustus liber de rebus bellicis ad Theodosium Aug. et
+                        filios ejus Arcadium, atque Honorium incerto auctore</span> , <span class="pubPlace">Basileae</span>  <span class="date">1552</span> , in fol., fig.
+                     <div class="note">Con numerose tavole in legno distribuite fra il testo.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

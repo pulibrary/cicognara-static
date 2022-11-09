@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e17296">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PALLADIO</span>,<span class="title">Les bâtimens et les desseins recuellis et illustrés par Octave Bertotti Scamozzi.
-                     Ouvrage divisée en 4 volumes avec des planches etc. etc.,</span><span class="pubPlace">à Vicence</span><span class="date">1776-83,</span><span class="extent">in fol. fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,28 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e17296">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PALLADIO</span>, <span class="title">Les bâtimens et les desseins recuellis et illustrés par Octave Bertotti Scamozzi.
+                        Ouvrage divisée en 4 volumes avec des planches etc. etc.,</span>  <span class="pubPlace">à Vicence</span>  <span class="date">1776-83,</span>  <span class="extent">in fol. fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Quantunque un italiano abbia imaginato di far comperare agli stranieri l’opera ma
+                     più facilmente, stampandola in francese, il che a noi sembra basso pensiere; nondimeno
+                     Ottavio Bertotti Scamozzi fece cosa nobile e grandiosa nel produrre queste grandi
+                     opere palladiane e nell’illustrarle. Poteva esservi un po’ più di gusto, a dir vero,
+                     per parte dei disegnatori, che pesanti riescono gli ornamenti e non tanto gentili
+                     le modanature, quanto si veggono nelle opere originali; ma l’insieme di queste dimensioni
+                     in gran foglio ombreggiate produce un buon effetto, e l’opera avvi luogo sempre tra
+                     le più classiche: 72 tavole contiene il primo volume, in cui si illustrano 17 edifici;
+                     51 ne contiene il secondo, ove si tratta di altrettante fabbriche; 52 ne stanno nel
+                     terzo per illustrare un simil numero di edifici; e 72 nel quarto, relative a 22 opere
+                     palladiane.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

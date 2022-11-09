@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e11166">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BRITTONS John F.S.A.</span>,<span class="title">The architectural antiquities of Great Britain represented and illustrated in a series
-                     of views, elevations, plans, sections, and details, of various ancient English edifices:
-                     <div class="pageBreak"><span>233</span></div>with historical and descriptive accounts of each</span>. By John Britton,<span class="pubPlace">London</span><span class="date">1807</span>, in 4, fig., vol. VI.
-                  <div class="note">Opera ricca, magnifica, elegantemente eseguita per la bellezza dei tipi, della carta,
-                     e delle tavole, che la rendono veramente preziosa, essendo benissimo disegnate ed
-                     incise, oltre ad esser numerosissime, giungendo fino a 280.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e11166">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BRITTONS John F.S.A.</span>, <span class="title">The architectural antiquities of Great Britain represented and illustrated in a series
+                        of views, elevations, plans, sections, and details, of various ancient English edifices:
+                        <div class="pageBreak"><span>233</span></div>with historical and descriptive accounts of each</span> . By John Britton, <span class="pubPlace">London</span>  <span class="date">1807</span> , in 4, fig., vol. VI.
+                     <div class="note">Opera ricca, magnifica, elegantemente eseguita per la bellezza dei tipi, della carta,
+                        e delle tavole, che la rendono veramente preziosa, essendo benissimo disegnate ed
+                        incise, oltre ad esser numerosissime, giungendo fino a 280.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

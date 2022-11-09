@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.6">section 2.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.6">section 2.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e5379">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VERMIGLIOLI Giovan Battista</span>,<span class="title">Le antiche iscrizioni perugine raccolte e illustrate</span>,<span class="pubPlace">Perugia</span>, vol. 2,<span class="date">1804</span>, in 4, figurato.
-                  <div class="note">Contiene il primo volume le iscrizioni etrusche, il secondo le greche e le romane:
-                     con alcune tavole a’ luoghi voluti del testo. Opera dottissima e laboriosissima.</div>
-                  <div class="pageBreak"><span>105</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/gk6.html">gk6</a></dt>
             <dd>Getty Research Institute</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e5379">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VERMIGLIOLI Giovan Battista</span>, <span class="title">Le antiche iscrizioni perugine raccolte e illustrate</span> , <span class="pubPlace">Perugia</span> , vol. 2, <span class="date">1804</span> , in 4, figurato.
+                     <div class="note">Contiene il primo volume le iscrizioni etrusche, il secondo le greche e le romane:
+                        con alcune tavole a’ luoghi voluti del testo. Opera dottissima e laboriosissima.</div>
+                     <div class="pageBreak"><span>105</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20904">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PÉTITOT</span>,<span class="title">Ragionamento sopra la prospettiva, per agevolarne l’uso ai professori dedicato ai
-                     medesimi</span>,<span class="pubPlace">Parma</span><span class="date">1768</span>, in fol. fig. Italiano e francese.
-                  <div class="note">Pietro Iacopo Gaultier intagliatore con grande apparato diede al pubblico quest’opera
-                     di poche pagine con 9 tavole in rame, nelle quali sono trattati alcuni punti che riguardano
-                     la pratica del basso rilievo.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20904">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PÉTITOT</span>, <span class="title">Ragionamento sopra la prospettiva, per agevolarne l’uso ai professori dedicato ai
+                        medesimi</span> , <span class="pubPlace">Parma</span>  <span class="date">1768</span> , in fol. fig. Italiano e francese.
+                     <div class="note">Pietro Iacopo Gaultier intagliatore con grande apparato diede al pubblico quest’opera
+                        di poche pagine con 9 tavole in rame, nelle quali sono trattati alcuni punti che riguardano
+                        la pratica del basso rilievo.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,35 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e4539">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VAILLANT Joannis Foj</span>,<span class="title">Numismata imperatorum romanorum praestan
-                     <div class="pageBreak"><span>89</span></div>iora a Julio Cesare ad postumum</span>usque. Editio prima romana plurimis nummis aucta, cui accessit appendix a postumo
-                  ad Costantinum magnum, Romae 1743, in 4, fig., vol. 3. Giovan Francesco Baldini imprese
-                  di aumentare, correggere, ampliare quest’opera e la riprodusse in maniera da riescire
-                  utilissima e stabilire meglio d’ogni altra edizione precedente la fama al suo autore.
-                  Le tavole sono tutte inserte fra il testo, ma è da biasimarsi la sordidezza degli
-                  editori, che si servirono in parte delle antiche tavole, le quali sebbene logorate
-                  e ritoccate, sono meno cattive pertanto delle nuove che vi furono aggiunte. L’opera
-                  è copiosissima.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +23,23 @@
             <dt><a href="../dcl/jkf.html">jkf</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e4539">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VAILLANT Joannis Foj</span>, <span class="title">Numismata imperatorum romanorum praestan
+                        <div class="pageBreak"><span>89</span></div>iora a Julio Cesare ad postumum</span> usque. Editio prima romana plurimis nummis aucta, cui accessit appendix a postumo
+                     ad Costantinum magnum, Romae 1743, in 4, fig., vol. 3. Giovan Francesco Baldini imprese
+                     di aumentare, correggere, ampliare quest’opera e la riprodusse in maniera da riescire
+                     utilissima e stabilire meglio d’ogni altra edizione precedente la fama al suo autore.
+                     Le tavole sono tutte inserte fra il testo, ma è da biasimarsi la sordidezza degli
+                     editori, che si servirono in parte delle antiche tavole, le quali sebbene logorate
+                     e ritoccate, sono meno cattive pertanto delle nuove che vi furono aggiunte. L’opera
+                     è copiosissima.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

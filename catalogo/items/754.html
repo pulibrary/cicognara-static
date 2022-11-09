@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.7">section 1.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.7">section 1.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20194">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">CAMILLO Giulio Delminio</span>,<span class="title">Tutte le opere, nelle quali è compresa anche la sovraddetta del teatro</span>, volumi due stampati, il primo nel<span class="date">1563</span>il secondo<span class="date">1565</span>in<span class="pubPlace">Vinegia</span>peril Giolitoin 12 legati in un solo volume.Aggiuntovi: in fine<span class="author">Leon B. Alberti</span>,<span class="title">Concetti amorosi</span>, ne’ quali sotto il nome di Hecatonfila si insegna la bella e ingegnosa arte d’amore
-                  con un dialogo intitolato Deifira, che ne mostra come si debbe fuggire il mal cominciato
-                  amore.<span class="pubPlace">Genova</span>pressoAnt. Bellone<span class="date">1672</span>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +25,17 @@
             <dt><a href="../dcl/3wd.html">3wd</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20194">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">CAMILLO Giulio Delminio</span>, <span class="title">Tutte le opere, nelle quali è compresa anche la sovraddetta del teatro</span> , volumi due stampati, il primo nel <span class="date">1563</span> il secondo <span class="date">1565</span> in <span class="pubPlace">Vinegia</span> per <span class="publisher">il Giolito</span> in 12 legati in un solo volume.Aggiuntovi: in fine <span class="author">Leon B. Alberti</span>, <span class="title">Concetti amorosi</span> , ne’ quali sotto il nome di Hecatonfila si insegna la bella e ingegnosa arte d’amore
+                     con un dialogo intitolato Deifira, che ne mostra come si debbe fuggire il mal cominciato
+                     amore. <span class="pubPlace">Genova</span> presso <span class="publisher">Ant. Bellone</span>  <span class="date">1672</span> .</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

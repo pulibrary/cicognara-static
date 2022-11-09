@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e4707">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VICO</span>,<span class="title">Le imagini con tutti i riversi trovati e le vite degl’imperatori tratte dalle medaglie
-                     e dalle historie degli antichi</span>lib. primo,Enea Vico Par.f., l’anno<span class="date">1548</span>, in 4, fig.
-                  <div class="note">Dopo il frontespizio figurato vengono le indicazioni dei privilegi, due avvisi ai
-                     lettori di Antonio Zantani, (nei quali Enea Vico non è mai nominato) un prodromo alla
-                     vita di Cesare, indi le effigie di ciascuno dei 12 primi imperatori con contorni figurati
-                     e le loro medaglie rispettive, espresse nel rovescio soltanto, con brevi illustrazioni
-                     intorno le vite unicamente: opera nitidissima e accuratissima per i tipi e per le
-                     tavole. Questovolumetto è composto di sessanta carte.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +23,22 @@
             <dt><a href="../dcl/hgb.html">hgb</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e4707">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VICO</span>, <span class="title">Le imagini con tutti i riversi trovati e le vite degl’imperatori tratte dalle medaglie
+                        e dalle historie degli antichi</span> lib. primo, <span class="publisher">Enea Vico Par.</span> f., l’anno <span class="date">1548</span> , in 4, fig.
+                     <div class="note">Dopo il frontespizio figurato vengono le indicazioni dei privilegi, due avvisi ai
+                        lettori di Antonio Zantani, (nei quali Enea Vico non è mai nominato) un prodromo alla
+                        vita di Cesare, indi le effigie di ciascuno dei 12 primi imperatori con contorni figurati
+                        e le loro medaglie rispettive, espresse nel rovescio soltanto, con brevi illustrazioni
+                        intorno le vite unicamente: opera nitidissima e accuratissima per i tipi e per le
+                        tavole. Questovolumetto è composto di sessanta carte.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

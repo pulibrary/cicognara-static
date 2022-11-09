@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e10845">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ZUZZERI Giovan Luca</span>,<span class="title">D’un’antica villa scoperta sul dosso del Tiscolo, e d’un antico orologio a sole tra
-                     le rovine della medesima ritrovato</span>, dissertazioni due,<span class="pubPlace">Venezia</span><span class="date">1746</span>, in 4.
-                  <div class="note">Con una sola tavola in fine.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e10845">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ZUZZERI Giovan Luca</span>, <span class="title">D’un’antica villa scoperta sul dosso del Tiscolo, e d’un antico orologio a sole tra
+                        le rovine della medesima ritrovato</span> , dissertazioni due, <span class="pubPlace">Venezia</span>  <span class="date">1746</span> , in 4.
+                     <div class="note">Con una sola tavola in fine.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

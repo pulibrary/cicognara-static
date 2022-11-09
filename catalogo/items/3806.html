@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e10028">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">OVERBEKE Bonaventura</span>,<span class="title">Degli avanzi dell’antica Roma. Opera postuma tradotta, ed accresciuta da Paolo Rolli</span>,<span class="pubPlace">Londra</span><span class="date">1739</span>, in 8.
-                  <div class="note">Questa è quella parte di testo, che doveva accompagnar le figure, la quale comparve
-                     alla luce avanti che Michele d’Overbeke pubblicasse il tutto nei tre grandi volumi
-                     in foglio l’anno 1763. Col ritratto dell’autore in fronte.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e10028">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">OVERBEKE Bonaventura</span>, <span class="title">Degli avanzi dell’antica Roma. Opera postuma tradotta, ed accresciuta da Paolo Rolli</span> , <span class="pubPlace">Londra</span>  <span class="date">1739</span> , in 8.
+                     <div class="note">Questa è quella parte di testo, che doveva accompagnar le figure, la quale comparve
+                        alla luce avanti che Michele d’Overbeke pubblicasse il tutto nei tre grandi volumi
+                        in foglio l’anno 1763. Col ritratto dell’autore in fronte.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,35 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2476">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">AUGUSTINI Leonardi senensis</span>,<span class="title">Gemmae et sculpturae antiquae depictae, addita earum enarratione in latinum versa
-                     a Jacobo Gronovio</span>, cujus accedit praefatio, Franequerae ap. Leon. Strik,<span class="date">1694</span>, in 4, fig., vol. 2.
-                  <div class="note">Sono i due volumi legati in un solo. Avvi un frontespizio figurato, un ritratto dell’autore,
-                     tre tavole figurate di Mitras, 214 tavole della prima parte e 5l della seconda. Questa
-                     ristampa, in cui i discorsi sono un’esatta versione dell’italia
-                     <div class="pageBreak"><span>41</span></div>no ha di più una Prefazione critica in cui il Gronovio previene il Bellori nel rilevare
-                     ed emendare diversi errori trascorsi nelle precedenti edizioni. L’incisore delle stampe
-                     Abr. Blooteling per quanta cura abbia messo nell’eseguirle, è ben lunge dal merito
-                     di Gallestruzzi, che intagliò le tavole nella edizione prima originale.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -47,7 +29,23 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2476">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">AUGUSTINI Leonardi senensis</span>, <span class="title">Gemmae et sculpturae antiquae depictae, addita earum enarratione in latinum versa
+                        a Jacobo Gronovio</span> , cujus accedit praefatio, Franequerae ap. Leon. Strik, <span class="date">1694</span> , in 4, fig., vol. 2.
+                     <div class="note">Sono i due volumi legati in un solo. Avvi un frontespizio figurato, un ritratto dell’autore,
+                        tre tavole figurate di Mitras, 214 tavole della prima parte e 5l della seconda. Questa
+                        ristampa, in cui i discorsi sono un’esatta versione dell’italia
+                        <div class="pageBreak"><span>41</span></div>no ha di più una Prefazione critica in cui il Gronovio previene il Bellori nel rilevare
+                        ed emendare diversi errori trascorsi nelle precedenti edizioni. L’incisore delle stampe
+                        Abr. Blooteling per quanta cura abbia messo nell’eseguirle, è ben lunge dal merito
+                        di Gallestruzzi, che intagliò le tavole nella edizione prima originale.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9056">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">Du CHOUL Guglielmo</span>,<span class="title">Discorso sopra la castramentazione, e bagni antichi dei greci, e dei romani colla
-                     figura del campo romano, e una informazione della milizia turchesca di M. Francesco
-                     Sansovino</span>,<span class="pubPlace">Vinegia</span><span class="date">1582</span>, pressoAltobello Salicato, in 8, fig.
-                  <div class="note">Libretto ripieno di figure in legno, ma di un merito inferiore a quelle delle edizioni
-                     in foglio. Le tavole però della milizia turchesca sono molto migliori, e fatte d’altra
-                     mano.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9056">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">Du CHOUL Guglielmo</span>, <span class="title">Discorso sopra la castramentazione, e bagni antichi dei greci, e dei romani colla
+                        figura del campo romano, e una informazione della milizia turchesca di M. Francesco
+                        Sansovino</span> , <span class="pubPlace">Vinegia</span>  <span class="date">1582</span> , presso <span class="publisher">Altobello Salicato</span> , in 8, fig.
+                     <div class="note">Libretto ripieno di figure in legno, ma di un merito inferiore a quelle delle edizioni
+                        in foglio. Le tavole però della milizia turchesca sono molto migliori, e fatte d’altra
+                        mano.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

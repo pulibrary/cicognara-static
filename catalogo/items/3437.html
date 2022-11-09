@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7411">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PIROLI Tommaso</span>,<span class="title">Les monumens antiques du Musée Napoleon dessinés et gravés par Piroli avec une explication
-                     par I. G. Schweighaeuser</span>, publiés parPiranesi Freres, a<span class="pubPlace">Paris</span>,<span class="date">1804 a 1806</span>, in 4, vol. 4.
-                  <div class="note">Questa è la più pregiata opera in contorni che noi conosciamo per la castigatezza
-                     del disegno e la minor crudezza che vi si ritrova a preferenza della più parte di
-                     simili opere. Il lusso tipografico la fregia egualmente per la bontà dei caratteri;
-                     e le tavole illustrate sono 318, poiché il quarto volume in luogo d’avere 80 come
-                     gli altri non ne ha che 78; legata in vitello dorato.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -47,7 +31,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7411">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PIROLI Tommaso</span>, <span class="title">Les monumens antiques du Musée Napoleon dessinés et gravés par Piroli avec une explication
+                        par I. G. Schweighaeuser</span> , publiés par <span class="publisher">Piranesi Freres</span> , a <span class="pubPlace">Paris</span> , <span class="date">1804 a 1806</span> , in 4, vol. 4.
+                     <div class="note">Questa è la più pregiata opera in contorni che noi conosciamo per la castigatezza
+                        del disegno e la minor crudezza che vi si ritrova a preferenza della più parte di
+                        simili opere. Il lusso tipografico la fregia egualmente per la bontà dei caratteri;
+                        e le tavole illustrate sono 318, poiché il quarto volume in luogo d’avere 80 come
+                        gli altri non ne ha che 78; legata in vitello dorato.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

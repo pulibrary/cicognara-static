@@ -5,40 +5,38 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29755">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PERRIERS Bonaventurae</span>,<span class="title">Cymbalum mundi ou dialogues satiriques sur differents suject par Bon. Perriers valet
-                     de Chambre de Marguerite de Valois, avec une lettere critique par Prosper Marchand
-                     libraire</span>,<span class="pubPlace">Amst.</span><span class="date">1711</span>, petit en 12, fig.
-                  <div class="note">La prima edizione del 1537 di questo libercolo si è resa introvabile e forse non se
-                     ne conoscono dai bibliografi due esemplari. L’edizione da noi posseduta rende un’idea
-                     dell’opera e del motivo della soppressione dei primi esemplari, che probabilmente
-                     avvenne soltanto per alcune allusioni a personaggi alti e potenti. Le cinque bellissime
-                     stampe di B. Pickard danno anche a quest’edizione un qualche pregio.</div>
-                  <div class="pageBreak"><span>359</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29755">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PERRIERS Bonaventurae</span>, <span class="title">Cymbalum mundi ou dialogues satiriques sur differents suject par Bon. Perriers valet
+                        de Chambre de Marguerite de Valois, avec une lettere critique par Prosper Marchand
+                        libraire</span> , <span class="pubPlace">Amst.</span>  <span class="date">1711</span> , petit en 12, fig.
+                     <div class="note">La prima edizione del 1537 di questo libercolo si è resa introvabile e forse non se
+                        ne conoscono dai bibliografi due esemplari. L’edizione da noi posseduta rende un’idea
+                        dell’opera e del motivo della soppressione dei primi esemplari, che probabilmente
+                        avvenne soltanto per alcune allusioni a personaggi alti e potenti. Le cinque bellissime
+                        stampe di B. Pickard danno anche a quest’edizione un qualche pregio.</div>
+                     <div class="pageBreak"><span>359</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

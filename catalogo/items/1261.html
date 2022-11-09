@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.16">section 1.16</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.16">section 1.16</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e23821">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">EXPLICATION des peintures sculp. et grav. de MSS. de l’Academie Royale dan le Salon
-                     du Louvre</span>, l’an.<span class="date">1739</span>,<span class="pubPlace">Paris</span>in 12. — Aggiuntovi:<span class="title">Lettre critique à un ami sur les ouvrages de MSS. de l’Academie exposées au Salon
-                     du Louvre</span>, l’an<span class="date">1759</span>.— La même, l’an<span class="date">1763</span>. — La même, l’an<span class="date">1767</span>. —<span class="title">Lettre d’un particulier à un de ses parents peintre en province sur le Salon du<span class="date">1755</span></span>. —<span class="title">Seconde lettre à un partisan du bon goût sur la même exposition</span>. —<span class="title">Reponse alla lettre precedente: nella quale il grido degli artisti feriti dalla critica,
-                     forse giusta e imparziale, si fa sentire altamente</span>.
-                  <div class="note">Tutto legato in un sol volume. Vedasi Art, Observations.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +27,19 @@
             <dt><a href="../dcl/vfp.html">vfp</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e23821">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">EXPLICATION des peintures sculp. et grav. de MSS. de l’Academie Royale dan le Salon
+                        du Louvre</span> , l’an. <span class="date">1739</span> , <span class="pubPlace">Paris</span> in 12. — Aggiuntovi: <span class="title">Lettre critique à un ami sur les ouvrages de MSS. de l’Academie exposées au Salon
+                        du Louvre</span> , l’an <span class="date">1759</span> .— La même, l’an <span class="date">1763</span> . — La même, l’an <span class="date">1767</span> . — <span class="title">Lettre d’un particulier à un de ses parents peintre en province sur le Salon du<span class="date">1755</span></span> . — <span class="title">Seconde lettre à un partisan du bon goût sur la même exposition</span> . — <span class="title">Reponse alla lettre precedente: nella quale il grido degli artisti feriti dalla critica,
+                        forse giusta e imparziale, si fa sentire altamente</span> .
+                     <div class="note">Tutto legato in un sol volume. Vedasi Art, Observations.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e3441">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DIDEROT</span>,<span class="title">Essais sur la peinture,</span><span class="pubPlace">à Paris,</span>chez Fr. Buisson,<span class="date">l’an IV de la Republique</span><span class="extent">in 8.</span>Oltre a questa prima Opera di 110 pagine, contiene il volume anche: Observations sur
-                  le Salon de peinture de 1765 par le meme Auteur.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e3441">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DIDEROT</span>, <span class="title">Essais sur la peinture,</span>  <span class="pubPlace">à Paris,</span>  <span class="publisher">chez Fr. Buisson,</span>  <span class="date">l’an IV de la Republique</span>  <span class="extent">in 8.</span> Oltre a questa prima Opera di 110 pagine, contiene il volume anche: Observations sur
+                     le Salon de peinture de 1765 par le meme Auteur.</span></div>
+               <div class="notes">
+                  <div class="note">La filosofia, lo spirito e l’ingegno dell’autore risaltano ad ogni linea della prima
+                     e della seconda opera estese per 300 pagine e quantunque l’artista non v’incontri
+                     il linguaggio il più tecnico, ritrova un largo compenso pel pascolo che le idee dell’autore,
+                     colla magia dello stile, danno sempre all’immaginazione di chi legge.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

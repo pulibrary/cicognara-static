@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2752">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BOECE Anselme de Boot</span>,<span class="title">Le parfait Joaillier, ou histoire des pierreries, de nouveau enrichi de belles annotations,
-                     indices et figures par André Toll</span>,<span class="pubPlace">Lion</span><span class="date">1644</span>, in 8, fig. Traduzione dal latino.
-                  <div class="note">Opera curiosa e ricercata per le molte notizie che contiene: i bibliografi francesi
-                     l’apprezzano più della latina, forse perché la versione nella lingua nativa per l’uso
-                     che ne hanno fatto facilmente gli artisti, ha diminuito il numero degli esemplari.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2752">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BOECE Anselme de Boot</span>, <span class="title">Le parfait Joaillier, ou histoire des pierreries, de nouveau enrichi de belles annotations,
+                        indices et figures par André Toll</span> , <span class="pubPlace">Lion</span>  <span class="date">1644</span> , in 8, fig. Traduzione dal latino.
+                     <div class="note">Opera curiosa e ricercata per le molte notizie che contiene: i bibliografi francesi
+                        l’apprezzano più della latina, forse perché la versione nella lingua nativa per l’uso
+                        che ne hanno fatto facilmente gli artisti, ha diminuito il numero degli esemplari.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

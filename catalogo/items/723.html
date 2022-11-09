@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e19964">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">M. VITRUVIO</span>,<span class="title">I dieci libri dell’architettura tradotti in tedesco dal Rivio</span>,<span class="pubPlace">Basilea</span><span class="date">1614</span>, in foglio figurato.
-                  <div class="note">Questo medico studiosissimo d’ogni modo di belle cognizioni, sebbene non profondissimo,
-                     fu il primo a tradurre Vitruvio in tedesco. La prima edizione la pubblicò a Norimberga
-                     nel 1548, e poscia nel 1755 a Basilea. Quest’ultima edizione dicesi ricorretta ed
-                     ampliata, ma con pochissime variazioni dalle precedenti. Le tavole in legno numerosissime
-                     e singolari, di che è fornita quest’edizione, sono le stesse delle altre edizioni
-                     ec. Molte di queste aveva prima prodotte nel 1547 nella sua opera di architettura
-                     e prospettiva. Vedi Rivio.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +23,22 @@
             <dt><a href="../dcl/790.html">790</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e19964">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">M. VITRUVIO</span>, <span class="title">I dieci libri dell’architettura tradotti in tedesco dal Rivio</span> , <span class="pubPlace">Basilea</span>  <span class="date">1614</span> , in foglio figurato.
+                     <div class="note">Questo medico studiosissimo d’ogni modo di belle cognizioni, sebbene non profondissimo,
+                        fu il primo a tradurre Vitruvio in tedesco. La prima edizione la pubblicò a Norimberga
+                        nel 1548, e poscia nel 1755 a Basilea. Quest’ultima edizione dicesi ricorretta ed
+                        ampliata, ma con pochissime variazioni dalle precedenti. Le tavole in legno numerosissime
+                        e singolari, di che è fornita quest’edizione, sono le stesse delle altre edizioni
+                        ec. Molte di queste aveva prima prodotte nel 1547 nella sua opera di architettura
+                        e prospettiva. Vedi Rivio.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

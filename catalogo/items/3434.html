@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7384">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">PINACOTECA del Palazzo Reale delle Scienze e delle Arti di Milano</span>. Pubblicata daMichele Bisiincisore col testo di Robustiano Gironi,<span class="pubPlace">Milano</span><span class="date">1812</span>, in fol. p., fig.
-                  <div class="note">Qui, sono soltanto 16 quaderni, che devono essere continuati.</div>
-                  <div class="pageBreak"><span>144</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7384">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">PINACOTECA del Palazzo Reale delle Scienze e delle Arti di Milano</span> . Pubblicata da <span class="publisher">Michele Bisi</span> incisore col testo di Robustiano Gironi, <span class="pubPlace">Milano</span>  <span class="date">1812</span> , in fol. p., fig.
+                     <div class="note">Qui, sono soltanto 16 quaderni, che devono essere continuati.</div>
+                     <div class="pageBreak"><span>144</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

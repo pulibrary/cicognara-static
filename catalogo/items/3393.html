@@ -5,36 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7064">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">GALERIE de Florence et du Palais Pitti. Tableaux
-                     <div class="pageBreak"><span>136</span></div>statues, bas-reliefs, et camées dessinés par M. Wicar peintre etc., vol. 4</span>, in fol. rel., en 2,<span class="pubPlace">Paris</span><span class="date">1789 a 1807</span>.
-                  <div class="note">Quest’opera è la più ricca e la più bella che si conosca in questa materia non tanto
-                     per la correzione dei disegni quanto per l’accuratezza dell’intaglio e pei tipi che
-                     sono splendidissimi. Le quattro prime carte contengono il frontespizio cogli stemmi,
-                     la dedica, un succinto ragguaglio storico della galleria e il frontespizio allegorico
-                     intagliato. Le tavole dei soggetti principali sono 192 con altrettanti fogli d’illustrazione.
-                     Ad ogni tavola di queste va aggiunto sullo stesso foglio un secondo intaglio ove in
-                     grande sono rappresentate le principali gemme della galleria. L’opera del Museo Napoleone
-                     di Robillard e Perronville è più ricca, ma questa è più squisita per la sua esecuzione.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +23,24 @@
             <dt><a href="../dcl/n5f.html">n5f</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7064">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">GALERIE de Florence et du Palais Pitti. Tableaux
+                        <div class="pageBreak"><span>136</span></div>statues, bas-reliefs, et camées dessinés par M. Wicar peintre etc., vol. 4</span> , in fol. rel., en 2, <span class="pubPlace">Paris</span>  <span class="date">1789 a 1807</span> .
+                     <div class="note">Quest’opera è la più ricca e la più bella che si conosca in questa materia non tanto
+                        per la correzione dei disegni quanto per l’accuratezza dell’intaglio e pei tipi che
+                        sono splendidissimi. Le quattro prime carte contengono il frontespizio cogli stemmi,
+                        la dedica, un succinto ragguaglio storico della galleria e il frontespizio allegorico
+                        intagliato. Le tavole dei soggetti principali sono 192 con altrettanti fogli d’illustrazione.
+                        Ad ogni tavola di queste va aggiunto sullo stesso foglio un secondo intaglio ove in
+                        grande sono rappresentate le principali gemme della galleria. L’opera del Museo Napoleone
+                        di Robillard e Perronville è più ricca, ma questa è più squisita per la sua esecuzione.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,37 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e12436">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BERTANO Giovan Batista</span>,<span class="title">Gli oscuri e difficili passi dell’opera di Vitruvio,</span><span class="pubPlace">Mantova,</span>per Venturino Rufinello,<span class="date">1558,</span>colla figura dell’Ercole in principio del volume,<span class="extent">in fol. fig.</span><div class="note">Esemplare di singolar rarità. Nondimeno ci conviene osservare che questa figura non
-                     ha che fare né col volume, né col numero delle carte, essendo solamente intagliata
-                     da Giorgio Mantovano sul disegno di Giovan Battista Bertano. In fatti il registro
-                     delle carte indica che il primo foglio A è foglio solo, che gli altri sono duerni,
-                     e l’E è terzo. Il nostro esemplare è nuovo e slegato, e si verifica come l’altra parte
-                     del primo foglio è bianca: oltre di che avendo fatte verificazioni su di altri esemplari
-                     ben conservati, quella prima carta è sempre bianca, e quand’anche siavi per vaghezza
-                     aggiunta la stampa dell’Ercole, questa è sempre tirata in altra qualità di carte ed
-                     eccede dal numero indicato nel registro. Le tavole sono intagliate in legno e collocate
-                     fra il testo. L’esemplare debb’essere di 28 carte compresa la prima bianca e l’Ercole
-                     è un di più.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -48,7 +28,26 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e12436">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BERTANO Giovan Batista</span>, <span class="title">Gli oscuri e difficili passi dell’opera di Vitruvio,</span>  <span class="pubPlace">Mantova,</span>  <span class="publisher">per Venturino Rufinello,</span>  <span class="date">1558,</span> colla figura dell’Ercole in principio del volume, <span class="extent">in fol. fig.</span> 
+                     <div class="note">Esemplare di singolar rarità. Nondimeno ci conviene osservare che questa figura non
+                        ha che fare né col volume, né col numero delle carte, essendo solamente intagliata
+                        da Giorgio Mantovano sul disegno di Giovan Battista Bertano. In fatti il registro
+                        delle carte indica che il primo foglio A è foglio solo, che gli altri sono duerni,
+                        e l’E è terzo. Il nostro esemplare è nuovo e slegato, e si verifica come l’altra parte
+                        del primo foglio è bianca: oltre di che avendo fatte verificazioni su di altri esemplari
+                        ben conservati, quella prima carta è sempre bianca, e quand’anche siavi per vaghezza
+                        aggiunta la stampa dell’Ercole, questa è sempre tirata in altra qualità di carte ed
+                        eccede dal numero indicato nel registro. Le tavole sono intagliate in legno e collocate
+                        fra il testo. L’esemplare debb’essere di 28 carte compresa la prima bianca e l’Ercole
+                        è un di più.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

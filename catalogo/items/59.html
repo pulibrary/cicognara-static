@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e2047">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">WINCKELMANN Giovanni</span>,<span class="title">Storia delle arti del disegno presso gli antichi tradotta dal tedesco, edizione aumentata
-                     dall’Ab. Carlo Fea,</span><span class="pubPlace">Roma</span><span class="date">1783,</span><span class="extent">vol. 3, in 4 fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e2047">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">WINCKELMANN Giovanni</span>, <span class="title">Storia delle arti del disegno presso gli antichi tradotta dal tedesco, edizione aumentata
+                        dall’Ab. Carlo Fea,</span>  <span class="pubPlace">Roma</span>  <span class="date">1783,</span>  <span class="extent">vol. 3, in 4 fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Queste note illustrarono molto la storia delle Arti, e resero preziosa l’edizione
+                     di Roma. Il ritratto dell’autore trovasi nel terzo tomo, quello del cavalier d’Azara
+                     nel secondo, nel primo è un frontespizio figurato, e il ritratto egualmente sulla
+                     pagina ove incomincia l’elogio dell’autore scritto da Heyner: edizione ricca di molte
+                     medaglie, monumenti, e vignette oltre le 48 tavole in rame in fine de’ volumi.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.8">section 1.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.8">section 1.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20521">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">STRATICO Simone</span>,<span class="title">Dell’antico teatro di Padova</span>,<span class="pubPlace">Padova</span><span class="date">1795</span>, in 4, fig.
-                  <div class="note">Con sei gran tavole intagliate in rame. Questo dottissimo professore dell’Università
-                     di Padova e uno dei luminari dell’instituto italiano, ha raccolte e non pubblicate
-                     molte memorie e commenti inediti intorno le opere di Leon B. Alberti e di Vitruvio,
-                     che sarebbe voto comune dei dotti di veder pubblicate.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +29,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20521">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">STRATICO Simone</span>, <span class="title">Dell’antico teatro di Padova</span> , <span class="pubPlace">Padova</span>  <span class="date">1795</span> , in 4, fig.
+                     <div class="note">Con sei gran tavole intagliate in rame. Questo dottissimo professore dell’Università
+                        di Padova e uno dei luminari dell’instituto italiano, ha raccolte e non pubblicate
+                        molte memorie e commenti inediti intorno le opere di Leon B. Alberti e di Vitruvio,
+                        che sarebbe voto comune dei dotti di veder pubblicate.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

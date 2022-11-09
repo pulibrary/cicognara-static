@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.1">section 2.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.1">section 2.1</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e673">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MONTFAUCON (de) D. Bernard</span>,<span class="title">L’antiquité (en françois, et en latin), et représentée en figures.</span><span class="pubPlace">Paris</span><span class="date">1719</span>, 5 tom. en 10 vol., in fol., avec le supplément, Paris 1724, 5 vol., in fol., fig.
-                  <div class="note">In questa grand’opera trovasi riunita e riprodotta una Biblioteca d’autori d’antichità,
-                     ma in alcuni rami è prolissa con inutilità e troppo di sovente espone l’oggetto puramente
-                     descrivendolo e non interpretandolo con accorgimento e con critica, senza portar luce
-                     nella oscurità e spianare gli ostacoli e le difficoltà. Opera eseguita con troppa
-                     fretta e che abbisognava di una scelta di dotti collaboratori, volendo abbracciare
-                     una sì vasta estensione. Manca intieramente di gusto anche nelle tavole spesso infedeli.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -65,7 +49,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e673">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MONTFAUCON (de) D. Bernard</span>, <span class="title">L’antiquité (en françois, et en latin), et représentée en figures.</span>  <span class="pubPlace">Paris</span>  <span class="date">1719</span> , 5 tom. en 10 vol., in fol., avec le supplément, Paris 1724, 5 vol., in fol., fig.
+                     <div class="note">In questa grand’opera trovasi riunita e riprodotta una Biblioteca d’autori d’antichità,
+                        ma in alcuni rami è prolissa con inutilità e troppo di sovente espone l’oggetto puramente
+                        descrivendolo e non interpretandolo con accorgimento e con critica, senza portar luce
+                        nella oscurità e spianare gli ostacoli e le difficoltà. Opera eseguita con troppa
+                        fretta e che abbisognava di una scelta di dotti collaboratori, volendo abbracciare
+                        una sì vasta estensione. Manca intieramente di gusto anche nelle tavole spesso infedeli.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

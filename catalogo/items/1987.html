@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29075">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BAUR Jo. Wilhelmi</span>,<span class="title">Pub. Ovidii Nasonis Metamorphoseon</span>,<span class="pubPlace">Augspurg</span><span class="date">1709</span>, in fol. obl.
-                  <div class="note">Queste sono le medesime 150 tavole da questo valentissimo intagliatore prodotte nella
-                     p. edizione e in questa ristampate e non riconoscibili per essere assai logore; a
-                     fronte di ciascuna sta il testo in lingua tedesca.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29075">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BAUR Jo. Wilhelmi</span>, <span class="title">Pub. Ovidii Nasonis Metamorphoseon</span> , <span class="pubPlace">Augspurg</span>  <span class="date">1709</span> , in fol. obl.
+                     <div class="note">Queste sono le medesime 150 tavole da questo valentissimo intagliatore prodotte nella
+                        p. edizione e in questa ristampate e non riconoscibili per essere assai logore; a
+                        fronte di ciascuna sta il testo in lingua tedesca.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e17382">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GRIPPIS(de) Fortunatus mediolanensis</span>,<span class="title">De superstitione et vinculis daemonum secundum aegyptiorum et chaldeorum dogmata juxta
-                     etiam Tychonis Calendarium accurate emendatum</span>,<span class="pubPlace">Mediolani</span><span class="date">1803</span>, sumptibus auctoris typis datum, in fol., fig., senza nome di stampatore.
-                  <div class="note">Opera dedicata all’Imperatore di Russia con frontespizio figurato, e il ritratto dell’autore.
-                     Le varie tavole sono sparse fra il testo: e trovansi in fine le quattro grandi tavole
-                     del Calendario Naturale. Opera stranissima, e poco nota ai bibliografi, tirata in
-                     scarso numero d’esemplari, e non ammessa in commercio.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/q2k.html">q2k</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e17382">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GRIPPIS(de) Fortunatus mediolanensis</span>, <span class="title">De superstitione et vinculis daemonum secundum aegyptiorum et chaldeorum dogmata juxta
+                        etiam Tychonis Calendarium accurate emendatum</span> , <span class="pubPlace">Mediolani</span>  <span class="date">1803</span> , sumptibus auctoris typis datum, in fol., fig., senza nome di stampatore.
+                     <div class="note">Opera dedicata all’Imperatore di Russia con frontespizio figurato, e il ritratto dell’autore.
+                        Le varie tavole sono sparse fra il testo: e trovansi in fine le quattro grandi tavole
+                        del Calendario Naturale. Opera stranissima, e poco nota ai bibliografi, tirata in
+                        scarso numero d’esemplari, e non ammessa in commercio.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

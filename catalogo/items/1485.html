@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e25392">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">BREVE descrizione e disegni delle carrozze dell’Eccellentissimo Signor Antonio Floriano
-                     del S. R. I. Principe di Liechtenstein ambasciatore alla Sede Apostolica dedicata
-                     al Card. di Goes</span>,<span class="pubPlace">Roma</span>, perGiacomo Komarck,<span class="date">1694</span>, in fol.
-                  <div class="note">Sonovi dodici curiose e interessantissime tavole che rappresentano le carrozze di
-                     gala di quei tempi disegnate da Antonio Cresolini e incise accuratamente da Huberto
-                     Vincenti.</div>MDCCII</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/v28.html">v28</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e25392">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">BREVE descrizione e disegni delle carrozze dell’Eccellentissimo Signor Antonio Floriano
+                        del S. R. I. Principe di Liechtenstein ambasciatore alla Sede Apostolica dedicata
+                        al Card. di Goes</span> , <span class="pubPlace">Roma</span> , per <span class="publisher">Giacomo Komarck</span> , <span class="date">1694</span> , in fol.
+                     <div class="note">Sonovi dodici curiose e interessantissime tavole che rappresentano le carrozze di
+                        gala di quei tempi disegnate da Antonio Cresolini e incise accuratamente da Huberto
+                        Vincenti.</div>MDCCII</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

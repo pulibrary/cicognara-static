@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e11303">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">CIAMPI Sebastiano</span>,<span class="title">Notizie inedite della sagrestia pistojese de’ belli arredi, del Campo Santo pisano;
-                     e di altre opere di disegno dal secolo XII al XV raccolte ed illustrate</span>,<span class="pubPlace">Firenze</span>,<span class="date">1810</span>, perMolini e Landi, in 4, fig.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,20 @@
             <dt><a href="../dcl/2gk.html">2gk</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e11303">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">CIAMPI Sebastiano</span>, <span class="title">Notizie inedite della sagrestia pistojese de’ belli arredi, del Campo Santo pisano;
+                        e di altre opere di disegno dal secolo XII al XV raccolte ed illustrate</span> , <span class="pubPlace">Firenze</span> , <span class="date">1810</span> , per <span class="publisher">Molini e Landi</span> , in 4, fig.</span></div>
+               <div class="notes">
+                  <div class="note">Edizione magnifica con quattro tavole incise maestrevolmente, un’appendice di 40 pagine,
+                     e in fine alcune aggiunte, e correzioni dell’autore in un foglietto staccato, stampato
+                     posteriormente.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

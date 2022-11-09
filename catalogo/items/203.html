@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e6186">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">SANDRART Joachimi etc.</span>,<span class="title">Academia nobilissimae artis pictoriae,</span><span class="pubPlace">Norimbergae</span><span class="date">1683,</span><span class="extent">in fogl. fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e6186">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">SANDRART Joachimi etc.</span>, <span class="title">Academia nobilissimae artis pictoriae,</span>  <span class="pubPlace">Norimbergae</span>  <span class="date">1683,</span>  <span class="extent">in fogl. fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Questa è una versione latina dell’opera originale tedesca che in due volumi comparve
+                     nel 1675-79, abbracciando altresì l’architettura e la scultura. È maggiormente utile
+                     per le arti che si coltivarono fuori d’Italia ed è seguita con gran lusso di tavole
+                     e di ritratti intagliati in rame. La vita e le memorie intorno all’autore sono in
+                     un’aggiunta di 16 pagine dopo gli indici in fine al volume. Compreso il ritratto,
+                     il frontispizio e le piccole e grandi tavole, sono queste 64.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

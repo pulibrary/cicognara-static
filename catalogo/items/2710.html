@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2281">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">SECONDO Giuseppe Maria</span>,<span class="title">Relazione storica dell’antichità, rovine e residui di Capri umiliata al Re</span>. Con tutti gli altri opuscoli d’antiquaria inserti nel terzo volume della Deca Romana
-                  delle Simbole Letterarie pubblicate dal propostoAnt. Fran. Gori,<span class="pubPlace">Roma</span><span class="date">1752</span>, in 8, M. 95.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -47,7 +36,16 @@
             <dt><a href="../dcl/f5q.html">f5q</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2281">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">SECONDO Giuseppe Maria</span>, <span class="title">Relazione storica dell’antichità, rovine e residui di Capri umiliata al Re</span> . Con tutti gli altri opuscoli d’antiquaria inserti nel terzo volume della Deca Romana
+                     delle Simbole Letterarie pubblicate dal proposto <span class="publisher">Ant. Fran. Gori</span> , <span class="pubPlace">Roma</span>  <span class="date">1752</span> , in 8, M. 95.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

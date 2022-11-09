@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e10034">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">D’OVERBEKE</span>,<span class="title">Les restes de Rome ancienne, recherchée, misurée, dessinée, et gravée; imprimée aux
-                     depenses de Michel d’Overbeke</span>, a la<span class="pubPlace">Haye</span><span class="date">1763</span>, vol. 3, in fol., fig.
-                  <div class="note">Opera che si presenta con molto lusso apparente. Sta una tavola allegorica avanti
-                     il frontespizio. Poi segue in un gran quadro allegorico egualmente il ritratto della
-                     regina d’Inghilterra, cui l’opera è intitolata, intagliato da M. Pool. Vengono le
-                     spiegazioni delle allegorie, la prefazione, e il ritratto dell’autore; nel primo volume
-                     contengonsi tavole in tutto 50, altrettante nel secondo, e similmente nel terzo, con
-                     un corredo di medaglie in testa alle illustrazioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -46,7 +29,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e10034">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">D’OVERBEKE</span>, <span class="title">Les restes de Rome ancienne, recherchée, misurée, dessinée, et gravée; imprimée aux
+                        depenses de Michel d’Overbeke</span> , a la <span class="pubPlace">Haye</span>  <span class="date">1763</span> , vol. 3, in fol., fig.
+                     <div class="note">Opera che si presenta con molto lusso apparente. Sta una tavola allegorica avanti
+                        il frontespizio. Poi segue in un gran quadro allegorico egualmente il ritratto della
+                        regina d’Inghilterra, cui l’opera è intitolata, intagliato da M. Pool. Vengono le
+                        spiegazioni delle allegorie, la prefazione, e il ritratto dell’autore; nel primo volume
+                        contengonsi tavole in tutto 50, altrettante nel secondo, e similmente nel terzo, con
+                        un corredo di medaglie in testa alle illustrazioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

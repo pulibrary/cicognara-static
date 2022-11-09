@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7437">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">PITTURE del Salone Imperiale del palazzo di Firenze. Si aggiungono le pitture del
-                     Salone e Cortile delle Imperiali Ville della Petraja e del Poggio a Cajano, opere
-                     di varj celebri pittori fiorentini</span>, in tav. 26,<span class="pubPlace">Firenze</span><span class="date">1766</span>, in fol. atl.
-                  <div class="note">L’immensa grandezza delle tavole tolse la possibilità di una preziosa esecuzione,
-                     che avrebbe costato somme immense. Gli incisori che lavorarono a grandi e voluminose
-                     opere in Firenze, in Roma, in Venezia dovettero conformare i modi di stile al tempo,
-                     al luogo, alle circostanze e alla borsa degli imprenditori non ricchi e che trovarono
-                     migliore speculazione nei modi facili e nei prezzi minori.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +23,22 @@
             <dt><a href="../dcl/ds8.html">ds8</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7437">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">PITTURE del Salone Imperiale del palazzo di Firenze. Si aggiungono le pitture del
+                        Salone e Cortile delle Imperiali Ville della Petraja e del Poggio a Cajano, opere
+                        di varj celebri pittori fiorentini</span> , in tav. 26, <span class="pubPlace">Firenze</span>  <span class="date">1766</span> , in fol. atl.
+                     <div class="note">L’immensa grandezza delle tavole tolse la possibilità di una preziosa esecuzione,
+                        che avrebbe costato somme immense. Gli incisori che lavorarono a grandi e voluminose
+                        opere in Firenze, in Roma, in Venezia dovettero conformare i modi di stile al tempo,
+                        al luogo, alle circostanze e alla borsa degli imprenditori non ricchi e che trovarono
+                        migliore speculazione nei modi facili e nei prezzi minori.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

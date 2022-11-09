@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e26399">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BRAUNI Johan Palatini</span>,<span class="title">Vestitus Sacerdotum Hesbraeorum sive commentarius amplissimus in plurim. loc. S. Scripturae</span>, libri duo, cum indicibus locupletissimis et tabulis aeneis elegantissimis, Liber
-                  primus,<span class="pubPlace">Amstelodami</span>, apudSomeren<span class="date">1698</span>, liber sectmdus, idem<span class="date">1697</span>.
-                  <div class="note">Le tavole sono intagliate con precisione, senza preziosità e l’opera prolissa e voluminosa
-                     è ripiena di un tesoro di erudizioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +29,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e26399">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BRAUNI Johan Palatini</span>, <span class="title">Vestitus Sacerdotum Hesbraeorum sive commentarius amplissimus in plurim. loc. S. Scripturae</span> , libri duo, cum indicibus locupletissimis et tabulis aeneis elegantissimis, Liber
+                     primus, <span class="pubPlace">Amstelodami</span> , apud <span class="publisher">Someren</span>  <span class="date">1698</span> , liber sectmdus, idem <span class="date">1697</span> .
+                     <div class="note">Le tavole sono intagliate con precisione, senza preziosità e l’opera prolissa e voluminosa
+                        è ripiena di un tesoro di erudizioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

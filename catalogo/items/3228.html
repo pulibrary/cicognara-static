@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e5919">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GEORGII Dominici</span>,<span class="title">Interpretatio veteris monumenti in agro Lanuvino detecti et in aedes Capitolinas nuper
-                     inlati in qua effigies Archigalli Autistitis magnae Deum Matris exprimitur</span>,<span class="pubPlace">Romae</span><span class="date">1737</span>, in 4, fig., M. 19 e 71.
-                  <div class="note">Con la tavola del monumento.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +25,17 @@
             <dt><a href="../dcl/10g.html">10g</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e5919">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GEORGII Dominici</span>, <span class="title">Interpretatio veteris monumenti in agro Lanuvino detecti et in aedes Capitolinas nuper
+                        inlati in qua effigies Archigalli Autistitis magnae Deum Matris exprimitur</span> , <span class="pubPlace">Romae</span>  <span class="date">1737</span> , in 4, fig., M. 19 e 71.
+                     <div class="note">Con la tavola del monumento.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

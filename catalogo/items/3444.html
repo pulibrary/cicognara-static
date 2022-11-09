@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7464">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PRESTEL Théophile peintre</span>,<span class="title">Dessins des mellieurs peintres d’ltalie, d’Allemagne et des Pays Bas du Cabinet de
-                     M. Paul de Praun à Nuremberg gravés d’après les originaux de la même grandeur</span>,<span class="pubPlace">Nuremberg</span><span class="date">1776</span>, in fol. atlant.
-                  <div class="note">Sono 48 tavole di bellissima e accurata esecuzione, che rendono perfettamente il carattere
-                     degli originali.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/j5n.html">j5n</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7464">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PRESTEL Théophile peintre</span>, <span class="title">Dessins des mellieurs peintres d’ltalie, d’Allemagne et des Pays Bas du Cabinet de
+                        M. Paul de Praun à Nuremberg gravés d’après les originaux de la même grandeur</span> , <span class="pubPlace">Nuremberg</span>  <span class="date">1776</span> , in fol. atlant.
+                     <div class="note">Sono 48 tavole di bellissima e accurata esecuzione, che rendono perfettamente il carattere
+                        degli originali.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

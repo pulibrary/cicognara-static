@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e17107">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ANSALDI P. C.</span>,<span class="title">De diis multarum gentium Romam evocatis, liber singularis</span>,<span class="pubPlace">Brixiae</span><span class="date">1743</span>, in 8.<span class="bibl"><span class="author">ANSALDI Casti Innocentis</span>,<span class="title">De sacro, et publico apud ethnicos pietarum tabularum cultu</span>,Augustae Taurinorum<span class="date">1768</span>, in 4 pic.</span><div class="note">L’opera è divisa in 15 capitoli, e trattata con profonda erudizione.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +32,15 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e17107">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ANSALDI P. C.</span>, <span class="title">De diis multarum gentium Romam evocatis, liber singularis</span> , <span class="pubPlace">Brixiae</span>  <span class="date">1743</span> , in 8.<span class="bibl"><span class="author">ANSALDI Casti Innocentis</span>, <span class="title">De sacro, et publico apud ethnicos pietarum tabularum cultu</span> , <span class="publisher">Augustae Taurinorum</span>  <span class="date">1768</span> , in 4 pic.</span><div class="note">L’opera è divisa in 15 capitoli, e trattata con profonda erudizione.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

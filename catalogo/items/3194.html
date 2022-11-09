@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e5681">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">De la CHAU</span>,<span class="title">Dissértation sur les attributs de Vénus</span>,<span class="pubPlace">Paris</span><span class="date">1676</span>, in 4, fig.
-                  <div class="note">È d’uopo aver cura che l’esemplare di quest’opera non sia privo della stampa di Venere
-                     Anadiomene intagliata da Saint Aubin. In questo esemplare non solo è la stampa, ma
-                     <div class="pageBreak"><span>110</span></div>questa è senza il contorno e priva della conchiglia, aggiuntavi posteriormente, le
-                     quali cose ne costituiscono un maggior pregio presso gli amatori: anche alcune medaglie,
-                     che trovansi intagliate in varj luoghi fra il testo e le sei Veneri che stanno nel
-                     frontespizio, alla testa della prefazione e alle p. 47, 71, 88 e 91, sono di fina
-                     e graziosa esecuzione.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e5681">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">De la CHAU</span>, <span class="title">Dissértation sur les attributs de Vénus</span> , <span class="pubPlace">Paris</span>  <span class="date">1676</span> , in 4, fig.
+                     <div class="note">È d’uopo aver cura che l’esemplare di quest’opera non sia privo della stampa di Venere
+                        Anadiomene intagliata da Saint Aubin. In questo esemplare non solo è la stampa, ma
+                        <div class="pageBreak"><span>110</span></div>questa è senza il contorno e priva della conchiglia, aggiuntavi posteriormente, le
+                        quali cose ne costituiscono un maggior pregio presso gli amatori: anche alcune medaglie,
+                        che trovansi intagliate in varj luoghi fra il testo e le sei Veneri che stanno nel
+                        frontespizio, alla testa della prefazione e alle p. 47, 71, 88 e 91, sono di fina
+                        e graziosa esecuzione.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

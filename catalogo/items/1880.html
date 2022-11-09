@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e28321">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DAVID Johan.</span><span class="title">Duodecim specula Deum aliquando videre desideranti concinnata</span>,<span class="pubPlace">Antuerpiae</span><span class="date">1610</span>, in 4, fig., excudebat Thodorus Galleus.
-                  <div class="note">Tavole 13 compreso il frontespizio.</div>—<span class="bibl"><span class="title">Typus occasionis in quo receptae commoda, neglectae vero incomoda personato schemate
-                        proponuntur,</span><span class="pubPlace">Antuerpiae</span>, delineabat et incidebat Theodorus Galleus,<span class="date">1603</span>, tab. 12 e una dedica alla studiosa gioventù.</span>—<span class="bibl"><span class="title">Sei Miracoli del S. Rosario.</span></span>—<span class="bibl">Aggiuntivi:<span class="title">li 7 doni dello Spirito Santo.</span></span>—<span class="bibl">In fine:<span class="title">Vita SantiNorberti concinnata a Jo
-                        <div class="pageBreak"><span>321</span></div>hen. Bhritost. Vander Sterre</span>,<span class="pubPlace">Antuerpiae</span><span class="date">1622</span>, con 15 tavole e con un frontispizio fig.</span><div class="note">Tutte queste operette sono intagliate da Teodoro Galle: con una squisitezza singolare.
-                     In tutto sono tavole 54.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +27,19 @@
             <dt><a href="../dcl/tfx.html">tfx</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e28321">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DAVID Johan.</span> <span class="title">Duodecim specula Deum aliquando videre desideranti concinnata</span> , <span class="pubPlace">Antuerpiae</span>  <span class="date">1610</span> , in 4, fig., excudebat Thodorus Galleus.
+                     <div class="note">Tavole 13 compreso il frontespizio.</div>—<span class="bibl"><span class="title">Typus occasionis in quo receptae commoda, neglectae vero incomoda personato schemate
+                           proponuntur,</span>  <span class="pubPlace">Antuerpiae</span> , delineabat et incidebat Theodorus Galleus, <span class="date">1603</span> , tab. 12 e una dedica alla studiosa gioventù.</span>—<span class="bibl"><span class="title">Sei Miracoli del S. Rosario.</span></span>—<span class="bibl">Aggiuntivi:<span class="title">li 7 doni dello Spirito Santo.</span></span>—<span class="bibl">In fine:<span class="title">Vita SantiNorberti concinnata a Jo
+                           <div class="pageBreak"><span>321</span></div>hen. Bhritost. Vander Sterre</span> , <span class="pubPlace">Antuerpiae</span>  <span class="date">1622</span> , con 15 tavole e con un frontispizio fig.</span><div class="note">Tutte queste operette sono intagliate da Teodoro Galle: con una squisitezza singolare.
+                        In tutto sono tavole 54.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

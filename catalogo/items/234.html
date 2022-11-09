@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e7076">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">Da VINCI Lionardo</span>,<span class="title">Trattato della pittura ridotto alla sua vera lezione sopra una sua copia a penna di
-                     mano di Stefanino della Bella con le figure disegnate dal medesimo,</span><span class="pubPlace">Firenze</span><span class="date">1792</span>,<span class="extent">in 4.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,29 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e7076">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">Da VINCI Lionardo</span>, <span class="title">Trattato della pittura ridotto alla sua vera lezione sopra una sua copia a penna di
+                        mano di Stefanino della Bella con le figure disegnate dal medesimo,</span>  <span class="pubPlace">Firenze</span>  <span class="date">1792</span> , <span class="extent">in 4.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Il chiaro sig. ab. Francesco Fontani trovò nella Riccardiana il manoscritto di Leonardo
+                     e lo credette di mano di Stefano della Bella con figure marginali illustrate e segnate
+                     da questo valente intagliatore e conoscendo che l’edizione italiana di Parigi era
+                     tradotta da un manoscritto scorretto, e le figure erano alterate per voler ombreggiarle,
+                     verificando che Freart portò troppe alterazioni al trattato nella sua versione francese,
+                     senza be intendere in tutti i luoghi del testo di
+                     <div class="pageBreak"><span>39</span></div>Leonardo; verificando che l’edizione italiana di Napoli del 1733 e l’altra di Bologna
+                     del 1786 non erano che materiali ristampe di quella di Parigi, diverse soltanto nell’infelicità
+                     delle tavole, senza correggere alcuno degli errori nell’antica trascorsi, pubblicò
+                     il codice di Stefano della Bella. A questo aggiunse le memorie intorno a Leonardo
+                     e intorno lo stesso Stefano coi rispettivi ritratti e molte note e una bella lezione
+                     accademica del Lami intorno agli artisti che fiorirono dal 1000 al 1300.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

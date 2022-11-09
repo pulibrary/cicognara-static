@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.6">section 2.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.6">section 2.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e5412">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ZABARELLA Jacopo</span>,<span class="title">Gli Arronzii, ovvero de’ marmi antichi, dove si dà notizia della vita di Arronzio
-                     Stella e Marco Aronzio Aquila padovani ed altre antichità</span>,<span class="pubPlace">Padova</span><span class="date">1656</span>, in 4, fig.
-                  <div class="note">Il frontespizio istoriato è inciso in rame da Gir. David. Dopo alcuni prolegomeni
-                     trovasi il ritratto dell’autore; e le medaglie e altri monumenti sono in legno stampati
-                     fra il testo. Quest’opera gode dell’opinione favorevole degli eruditi.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e5412">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ZABARELLA Jacopo</span>, <span class="title">Gli Arronzii, ovvero de’ marmi antichi, dove si dà notizia della vita di Arronzio
+                        Stella e Marco Aronzio Aquila padovani ed altre antichità</span> , <span class="pubPlace">Padova</span>  <span class="date">1656</span> , in 4, fig.
+                     <div class="note">Il frontespizio istoriato è inciso in rame da Gir. David. Dopo alcuni prolegomeni
+                        trovasi il ritratto dell’autore; e le medaglie e altri monumenti sono in legno stampati
+                        fra il testo. Quest’opera gode dell’opinione favorevole degli eruditi.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

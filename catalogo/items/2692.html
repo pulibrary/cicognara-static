@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2152">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PAOLI</span>,<span class="title">Avanzi delle antichità esistenti a Pozzuoli, Cuma e Baja</span>,<span class="pubPlace">Napoli</span><span class="date">1778</span>, in fol., fig.
-                  <div class="note">Quest’opera è distintamente disegnata ed incisa in cento e sette tavole delle quali
-                     68 sono le figure e vedute e 39 contengono il testo italiano e latino. Le prime di
-                     queste tavole e molte altre nel corpo dell’opera sono intagliate da Giovanni Volpato
-                     e vi lavorarono molti altri incisori di grido, cosicché può ritenersi come un eccellente
-                     libro non tanto per le illustrazioni del dotto antiquario, quanto per la parte calcografica.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2152">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PAOLI</span>, <span class="title">Avanzi delle antichità esistenti a Pozzuoli, Cuma e Baja</span> , <span class="pubPlace">Napoli</span>  <span class="date">1778</span> , in fol., fig.
+                     <div class="note">Quest’opera è distintamente disegnata ed incisa in cento e sette tavole delle quali
+                        68 sono le figure e vedute e 39 contengono il testo italiano e latino. Le prime di
+                        queste tavole e molte altre nel corpo dell’opera sono intagliate da Giovanni Volpato
+                        e vi lavorarono molti altri incisori di grido, cosicché può ritenersi come un eccellente
+                        libro non tanto per le illustrazioni del dotto antiquario, quanto per la parte calcografica.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

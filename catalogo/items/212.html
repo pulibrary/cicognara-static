@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e6459">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">SORTE M. Cristoforo</span>,<span class="title">Osservazioni nella pittura al mag. et eccel. Dottore e cavaliere il sig. Bartolomeo
-                     Vitali,</span><span class="pubPlace">in Venezia,</span>appresso Girolamo Zenaro,<span class="date">1580,</span><span class="extent">in 4.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,25 @@
             <dt><a href="../dcl/g5m.html">g5m</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e6459">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">SORTE M. Cristoforo</span>, <span class="title">Osservazioni nella pittura al mag. et eccel. Dottore e cavaliere il sig. Bartolomeo
+                        Vitali,</span>  <span class="pubPlace">in Venezia,</span> appresso Girolamo Zenaro, <span class="date">1580,</span>  <span class="extent">in 4.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Rarissimo opuscoletto che non si direbbe completo in questa prima edizione, poiché
+                     dalla lettera del Vitali a Cristoforo Sorte, che leggesi dopo l’avviso ai lettori,
+                     pare che dovesse andarvi annessa una memoria sulle antichità di Verona, la quale però
+                     non fu pubblicata in questa edizione. L’opuscolo non eccede le 18 carte; ed a retro
+                     delle pagine segnate 15 e 16 dovevano essere stampate due figure esplicative del testo,
+                     che non vi sono benché sia lasciato in bianco lo spazio. Questo Cristoforo Sorte veronese
+                     fu molto consultato dalla signoria di Venezia per le sue estese cognizioni in materia
+                     d’arti e della statica degli edifizi e sopra tutto delle cose idrauliche.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

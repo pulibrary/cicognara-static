@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e10324">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">RAFAELLE DE SANCTIS</span>urbinate,<span class="title">Prima elementa picturae, idest moud facilis delineandi omnes humani corporis partes
-                     ex tipographio remondiniano veneto, tav. 25, in 8 obl.,</span><span class="date">1747.</span></span><span class="bibl"><span class="title">Il vero modo ed ordine di disegnare tutte le parti del corpo umano, di Odoardo Fialetti
-                     pittore,</span><span class="pubPlace">Venezia</span><span class="date">1608,</span>presso I. Sadeler,<span class="extent">tav. 42.</span>In fine: Principes de dessein par Sebastien le Clerc chévalier romain, tav. 25.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -50,7 +38,23 @@
             <dt><a href="../dcl/12x.html">12x</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e10324">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">RAFAELLE DE SANCTIS</span>urbinate, <span class="title">Prima elementa picturae, idest moud facilis delineandi omnes humani corporis partes
+                        ex tipographio remondiniano veneto, tav. 25, in 8 obl.,</span>  <span class="date">1747.</span> </span><span class="bibl"><span class="title">Il vero modo ed ordine di disegnare tutte le parti del corpo umano, di Odoardo Fialetti
+                        pittore,</span>  <span class="pubPlace">Venezia</span>  <span class="date">1608,</span>  <span class="publisher">presso I. Sadeler,</span>  <span class="extent">tav. 42.</span> In fine: Principes de dessein par Sebastien le Clerc chévalier romain, tav. 25.</span></div>
+               <div class="notes">
+                  <div class="note">Tutti elementi ai quali sarebbe improvido l’affidare la gioventù, poiché il primo
+                     non è che una mal eseguita riunione di fragmenti tolti da diverse parti, con un nome
+                     illustre dato al pubblico. Il secondo è eseguito d’una maniera inesatta e troppo incerta
+                     per la gioventù. L’ultimo è piccolo e manierato da non potersi presentare nelle scuole
+                     elementari.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

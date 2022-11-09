@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.14">section 1.14</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.14">section 1.14</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e22883">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">De la FONTAINE</span>,<span class="title">Fables choisies en vers par de la Fontaine</span>, 4 vol. in fol. fig.,<span class="pubPlace">Paris</span><span class="date">1755 al 1759</span>.
-                  <div class="note">Le tavole sono disegnate da Oudry e incise da parecchi de’ migliori incisori di quel
-                     tempo col ritratto di Oudry in principio.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +29,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e22883">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">De la FONTAINE</span>, <span class="title">Fables choisies en vers par de la Fontaine</span> , 4 vol. in fol. fig., <span class="pubPlace">Paris</span>  <span class="date">1755 al 1759</span> .
+                     <div class="note">Le tavole sono disegnate da Oudry e incise da parecchi de’ migliori incisori di quel
+                        tempo col ritratto di Oudry in principio.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e8427">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">De ANGELIS Pauli</span>,<span class="title">Basilicae Sanctae Mariae Majoris descriptio, et delineatio, libri XII</span>,<span class="pubPlace">Romae</span>, ex tipographiaBartholomaei Zanetti,<span class="date">1621</span>, in fol., fig.
-                  <div class="note">Il frontespizio è figurato, e 39 tavole grandi servono ad il
-                     <div class="pageBreak"><span>168</span></div>lustrazioni della basilica accompagnate da interpretazioni, iscrizioni, osservazioni
-                     storiche, e critiche. Opera di pregio. Edizione diligentemente, e nobilmente eseguita.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +29,18 @@
             <dt><a href="../dcl/894.html">894</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e8427">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">De ANGELIS Pauli</span>, <span class="title">Basilicae Sanctae Mariae Majoris descriptio, et delineatio, libri XII</span> , <span class="pubPlace">Romae</span> , ex tipographia <span class="publisher">Bartholomaei Zanetti</span> , <span class="date">1621</span> , in fol., fig.
+                     <div class="note">Il frontespizio è figurato, e 39 tavole grandi servono ad il
+                        <div class="pageBreak"><span>168</span></div>lustrazioni della basilica accompagnate da interpretazioni, iscrizioni, osservazioni
+                        storiche, e critiche. Opera di pregio. Edizione diligentemente, e nobilmente eseguita.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

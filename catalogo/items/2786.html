@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2824">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BRENNERI Eliae</span>,<span class="title">Thesaurus nummorum Sveco-Gothicorum studio indefesso L annorum spatio collectus etc.</span>,<span class="pubPlace">Holmiae</span><span class="date">1731</span>, in 4, fig. —<span class="title">Accessit ejusdem auctoris Libellus de Nummophylaciis Sveciae.</span><div class="note">Quest’opera non comune specialmente in Italia è eseguita con un estremo lusso di esecuzione
-                     meccanica, specialmente per la massima finezza, anzi troppa dell’intaglio in rame
-                     nelle tavole che sono in fine riunite e dovrebbero essere collocate fra il testo:
-                     trovasi però grandissimo numero anche di medaglie intagliate in legno, ma sono fra
-                     i caratteri, mentre quelle intagliate a bulino sono 62, non compreso il ritratto dell’autore.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2824">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BRENNERI Eliae</span>, <span class="title">Thesaurus nummorum Sveco-Gothicorum studio indefesso L annorum spatio collectus etc.</span> , <span class="pubPlace">Holmiae</span>  <span class="date">1731</span> , in 4, fig. — <span class="title">Accessit ejusdem auctoris Libellus de Nummophylaciis Sveciae.</span> 
+                     <div class="note">Quest’opera non comune specialmente in Italia è eseguita con un estremo lusso di esecuzione
+                        meccanica, specialmente per la massima finezza, anzi troppa dell’intaglio in rame
+                        nelle tavole che sono in fine riunite e dovrebbero essere collocate fra il testo:
+                        trovasi però grandissimo numero anche di medaglie intagliate in legno, ma sono fra
+                        i caratteri, mentre quelle intagliate a bulino sono 62, non compreso il ritratto dell’autore.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

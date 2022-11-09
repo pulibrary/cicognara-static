@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.13">section 2.13</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.13">section 2.13</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e14409">
-         <header>
-            <div class="bibl"><span class="bibl">DELLE cose notabili della città di Venezia, libri due,<span class="pubPlace">Venezia</span><span class="date">1583</span>, in 8. — Aggiuntovi:<span class="title">Discorso del magnifico S. Ugoni bresciano dell’eccellenza, e dignità di Venezia</span>,<span class="date">1562</span>. — L’avvocato:<span class="title">dialogo nel quale si discorre tutta l’autorità dei Magistrati di Venezia colla pratica
-                     delle cose giudiziali del Palazzo</span>,<span class="pubPlace">Venezia</span><span class="date">1576</span>. — In fine il<span class="title">sommario di tutte le leggi in materia delli beni inculti</span>: per Grifio,<span class="date">1559</span>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +29,16 @@
             <dt><a href="../dcl/6cv.html">6cv</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e14409">
+            <header>
+               <div class="bibl"><span class="bibl">DELLE cose notabili della città di Venezia, libri due, <span class="pubPlace">Venezia</span>  <span class="date">1583</span> , in 8. — Aggiuntovi: <span class="title">Discorso del magnifico S. Ugoni bresciano dell’eccellenza, e dignità di Venezia</span> , <span class="date">1562</span> . — L’avvocato: <span class="title">dialogo nel quale si discorre tutta l’autorità dei Magistrati di Venezia colla pratica
+                        delle cose giudiziali del Palazzo</span> , <span class="pubPlace">Venezia</span>  <span class="date">1576</span> . — In fine il <span class="title">sommario di tutte le leggi in materia delli beni inculti</span> : per Grifio, <span class="date">1559</span> .</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

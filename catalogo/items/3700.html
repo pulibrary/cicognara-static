@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9269">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DESGODETZ Antoine</span>architecte,<span class="title">Les edifices antiques de Rome, dessinés et mesurés trés exactement</span>,<span class="pubPlace">Paris</span>, chezCoignard,<span class="date">1682</span>, in fol., fig.
-                  <div class="note">Questa è la prima grand’opera eseguita con accuratezza, e con magnificenza di tavole
-                     veramente distinta, la quale ha preceduto tutte le altre di simil genere dando l’esempio
-                     al ben fare: nondimeno scrupoleggiando, come oggi sul fare la critica, vi si sono
-                     notate non poche inesattezze notate da più moderni archeologi, e architetti. Le tavole
-                     di questa grand’opera sono 137 senza il frontespizio, e non furono vinte in merito
-                     una magnifica ristampa fattane in Inghilterra, e da una seconda edizione in Francia.
-                     Esempl. in mar. dor.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -54,7 +37,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9269">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DESGODETZ Antoine</span>architecte, <span class="title">Les edifices antiques de Rome, dessinés et mesurés trés exactement</span> , <span class="pubPlace">Paris</span> , chez <span class="publisher">Coignard</span> , <span class="date">1682</span> , in fol., fig.
+                     <div class="note">Questa è la prima grand’opera eseguita con accuratezza, e con magnificenza di tavole
+                        veramente distinta, la quale ha preceduto tutte le altre di simil genere dando l’esempio
+                        al ben fare: nondimeno scrupoleggiando, come oggi sul fare la critica, vi si sono
+                        notate non poche inesattezze notate da più moderni archeologi, e architetti. Le tavole
+                        di questa grand’opera sono 137 senza il frontespizio, e non furono vinte in merito
+                        una magnifica ristampa fattane in Inghilterra, e da una seconda edizione in Francia.
+                        Esempl. in mar. dor.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

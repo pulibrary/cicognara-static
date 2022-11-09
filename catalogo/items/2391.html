@@ -5,37 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e31892">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VASARI Giorgio pittore ed architetto aretino</span>,<span class="title">Le vite dei più eccellenti pittori, scultori ed architettori di nuovo dal medesimo
-                     riviste ed ampliate con i ritratti loro et con l’aggiunte delle vite de’ vivi et de’
-                     morti dall’anno 1550 sino al 1567</span>. Prima e seconda parte ec.,<span class="pubPlace">Firenze</span>, presso iGiunti,<span class="date">1568</span>, in 4, fig., 2 vol. legati in tre. Edizione prima completa.
-                  <div class="note">Pochi e rarissimi esemplari di questa edizione hanno qualche varietà nella distribuzione
-                     delle parole del frontespizio, cosa di lievissima importanza, atta soltanto a far
-                     conoscere esser quelle le prime copie stampate di questa edizione. La varietà del
-                     frontespizio singolarmente si conosce dall’essere sul riguadro della pagina stampato
-                     il legno del Giudizio finale che vedesi a retro del frontespizio nel nostro esemplare
-                     in luogo delle parole sovra espresse, le quali sono diversa
-                     <div class="pageBreak"><span>403</span></div>mente ripartite al di sopra dello stemma mediceo e al basso della pagina invece della
-                     piccola vedutina della città di Firenze.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -48,7 +28,25 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e31892">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VASARI Giorgio pittore ed architetto aretino</span>, <span class="title">Le vite dei più eccellenti pittori, scultori ed architettori di nuovo dal medesimo
+                        riviste ed ampliate con i ritratti loro et con l’aggiunte delle vite de’ vivi et de’
+                        morti dall’anno 1550 sino al 1567</span> . Prima e seconda parte ec., <span class="pubPlace">Firenze</span> , presso i <span class="publisher">Giunti</span> , <span class="date">1568</span> , in 4, fig., 2 vol. legati in tre. Edizione prima completa.
+                     <div class="note">Pochi e rarissimi esemplari di questa edizione hanno qualche varietà nella distribuzione
+                        delle parole del frontespizio, cosa di lievissima importanza, atta soltanto a far
+                        conoscere esser quelle le prime copie stampate di questa edizione. La varietà del
+                        frontespizio singolarmente si conosce dall’essere sul riguadro della pagina stampato
+                        il legno del Giudizio finale che vedesi a retro del frontespizio nel nostro esemplare
+                        in luogo delle parole sovra espresse, le quali sono diversa
+                        <div class="pageBreak"><span>403</span></div>mente ripartite al di sopra dello stemma mediceo e al basso della pagina invece della
+                        piccola vedutina della città di Firenze.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

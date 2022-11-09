@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e4740">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VICO</span>,<span class="title">Ex lib. XXIII commentariolum in vetera Imperatorum Romanorum numismata lib. primus</span>,<span class="pubPlace">Venetiis</span><span class="date">1562</span>, cum privilegio: al fine a tergo dell’errata Aldus.
-                  <div class="note">Bellissimo è l’intaglio del frontespizio figurato, dietro il quale è riportata l’impresa
-                     di Enea Vico collo struzzo dai piedi di capra ed il motto tentanda via est: seguono
-                     due foglietti colla dedica a Pio IV indi il ritratto di Giul. Ces. dittatore perpetuo
-                     in medaglione sostenuto da Venere e Marte e quattro foglietti con 8 tavole di medaglie
-                     di G. Ces. Tutto il restante del volume sino alla p. 130 contiene i commentarj della
-                     sua vita e in fine sono sei foglietti coll’indice delle materie. Edizione rara e preziosa.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +23,21 @@
             <dt><a href="../dcl/m2k.html">m2k</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e4740">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VICO</span>, <span class="title">Ex lib. XXIII commentariolum in vetera Imperatorum Romanorum numismata lib. primus</span> , <span class="pubPlace">Venetiis</span>  <span class="date">1562</span> , cum privilegio: al fine a tergo dell’errata Aldus.
+                     <div class="note">Bellissimo è l’intaglio del frontespizio figurato, dietro il quale è riportata l’impresa
+                        di Enea Vico collo struzzo dai piedi di capra ed il motto tentanda via est: seguono
+                        due foglietti colla dedica a Pio IV indi il ritratto di Giul. Ces. dittatore perpetuo
+                        in medaglione sostenuto da Venere e Marte e quattro foglietti con 8 tavole di medaglie
+                        di G. Ces. Tutto il restante del volume sino alla p. 130 contiene i commentarj della
+                        sua vita e in fine sono sei foglietti coll’indice delle materie. Edizione rara e preziosa.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

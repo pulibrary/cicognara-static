@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e17126">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BALTHUS le P.</span>,<span class="title">Suite de la reponse à l’histoire des oracles, dans la quelle on refute les objections
-                     inserées dans le XIII tome de la Bibliotheque Choisie, et dans l’article II de la
-                     République des let
-                     <div class="pageBreak"><span>319</span></div>tres du mois de Juin 1707 etc.</span>, a<span class="pubPlace">Strasbourg</span><span class="date">1708</span>, in 8.
-                  <div class="note">Quest’opera assai dotta, e ben ordinata, che sparge gran luce su molti misteri dell’antichità,
-                     è annunciata nel frontespizio come anonima, e ne abbiamo indicato l’autore per la
-                     nota appostavi da M. Villoison cui questo esemplare appartenne.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -51,7 +35,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e17126">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BALTHUS le P.</span>, <span class="title">Suite de la reponse à l’histoire des oracles, dans la quelle on refute les objections
+                        inserées dans le XIII tome de la Bibliotheque Choisie, et dans l’article II de la
+                        République des let
+                        <div class="pageBreak"><span>319</span></div>tres du mois de Juin 1707 etc.</span> , a <span class="pubPlace">Strasbourg</span>  <span class="date">1708</span> , in 8.
+                     <div class="note">Quest’opera assai dotta, e ben ordinata, che sparge gran luce su molti misteri dell’antichità,
+                        è annunciata nel frontespizio come anonima, e ne abbiamo indicato l’autore per la
+                        nota appostavi da M. Villoison cui questo esemplare appartenne.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

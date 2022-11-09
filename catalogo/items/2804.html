@@ -5,36 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2953">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">De la CHAUSSE Michaelis Angeli Causei</span>,<span class="title">Romanum Museum, sive thesaurus eruditae antiquitatis</span>. Editio tertia romana, cum additamentis, et figuris,<span class="pubPlace">Romae</span><span class="date">1746</span>, in fol., fig.
-                  <div class="note">Questa è la terza ed ultima edizione di quest’opera, che comparve a Roma nel 1690
-                     e nel 1706 fu tradotta in francese ad Amsterdam, la quale tutta intera fu poi ristampata
-                     nel Tesoro del Grevio. La pomposa maniera, con cui venne annunciata in quest’ultima
-                     edizione da noi posseduta, serve a mostrare l’impostura de’ librai, che ne fecero
-                     due volumi ingrossando la carta e aggiungendo poche cose di lieve merito, come un
-                     capitolo descrittivo di alcuni istrumenti musicali e la spiegazione in ristretto d’una
-                     ventina di tavole vecchie riprodotte altra volta nel libro intitolato Aedes Barberinae.
-                     Contro le quali imposture e speculazioni vedasi il trattato di Mariette delle pietre
-                     incise a p. 281.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -61,7 +42,24 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2953">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">De la CHAUSSE Michaelis Angeli Causei</span>, <span class="title">Romanum Museum, sive thesaurus eruditae antiquitatis</span> . Editio tertia romana, cum additamentis, et figuris, <span class="pubPlace">Romae</span>  <span class="date">1746</span> , in fol., fig.
+                     <div class="note">Questa è la terza ed ultima edizione di quest’opera, che comparve a Roma nel 1690
+                        e nel 1706 fu tradotta in francese ad Amsterdam, la quale tutta intera fu poi ristampata
+                        nel Tesoro del Grevio. La pomposa maniera, con cui venne annunciata in quest’ultima
+                        edizione da noi posseduta, serve a mostrare l’impostura de’ librai, che ne fecero
+                        due volumi ingrossando la carta e aggiungendo poche cose di lieve merito, come un
+                        capitolo descrittivo di alcuni istrumenti musicali e la spiegazione in ristretto d’una
+                        ventina di tavole vecchie riprodotte altra volta nel libro intitolato Aedes Barberinae.
+                        Contro le quali imposture e speculazioni vedasi il trattato di Mariette delle pietre
+                        incise a p. 281.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

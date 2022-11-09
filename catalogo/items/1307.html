@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.17">section 1.17</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.17">section 1.17</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e24145">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">COLLEZIONE non interrotta e completa delle accademie tenutesi in Campidoglio per le
-                     Belle Arti</span>, cominciando dal 1690 in poi: rilegata in 6 volumi,<span class="pubPlace">Roma</span>, in 4.
-                  <div class="note">L’ultima orazione di questa raccolta nostra è del 1801. Deve però notarsi che non
-                     si faceva, in ogni anno lasolenne distribuzione dei premi, non essendo queste in maggior numero di 36. Nella
-                     più parte degli esemplari di questa Rac
-                     <div class="pageBreak"><span>226</span></div>colta trovasi mancare l’orazione del 1713, che non manca nel nostro esemplare.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -185,7 +170,20 @@
             <dt><a href="../dcl/tjm.html">tjm</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e24145">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">COLLEZIONE non interrotta e completa delle accademie tenutesi in Campidoglio per le
+                        Belle Arti</span> , cominciando dal 1690 in poi: rilegata in 6 volumi, <span class="pubPlace">Roma</span> , in 4.
+                     <div class="note">L’ultima orazione di questa raccolta nostra è del 1801. Deve però notarsi che non
+                        si faceva, in ogni anno lasolenne distribuzione dei premi, non essendo queste in maggior numero di 36. Nella
+                        più parte degli esemplari di questa Rac
+                        <div class="pageBreak"><span>226</span></div>colta trovasi mancare l’orazione del 1713, che non manca nel nostro esemplare.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

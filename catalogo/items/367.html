@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e10745">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VESALII Brucellensis</span>,<span class="title">De humani corporis fabrica, libri VII,</span><span class="pubPlace">Venetiis,</span>ap. Fr. Senensem,<span class="date">1568,</span><span class="extent">in f. fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e10745">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VESALII Brucellensis</span>, <span class="title">De humani corporis fabrica, libri VII,</span>  <span class="pubPlace">Venetiis,</span>  <span class="publisher">ap. Fr. Senensem,</span>  <span class="date">1568,</span>  <span class="extent">in f. fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Per quanto esser possa mediocre il pregio di questa edizione, elegantissima però pei
+                     tipi, avrà sempre il pregio delle tavole in legno intagliate da Giovanni Criegher
+                     Pomerano sui preziosi disegni di cui si è parlato nella 1 edizione.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

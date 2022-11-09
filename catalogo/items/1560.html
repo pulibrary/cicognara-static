@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e26092">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ANTONINO Filippo</span>,<span class="title">Introduzione a’ discorsi dell’antichità di Sarsina</span>,<span class="date">1606</span>, in 4. Queste sono 20 pagine precedute dall’indicato frontispizio e sono seguite
-                  dall’altro:<span class="bibl"><span class="title">Delle antichità di Sarsina et
-                        <div class="pageBreak"><span>270</span></div>de’ costumi di Romani nel trionfo e nel Trichlinio antico,</span><span class="pubPlace">Sarsina</span><span class="date">1607</span>, in 4, p. M. 56.</span><div class="note">Segue la dedica al Cav. Aldobrandino e 18 foglietti di tavole delle materie. Indi
-                     si incomincia la numerazione del testo fino alla pagina 256. Ordinariamente questo
-                     libro si trova imperfetto a cagione della duplicità dei frontespizi: sono fra il testo
-                     molte lapidi e iscrizioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -47,7 +32,20 @@
             <dt><a href="../dcl/tvf.html">tvf</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e26092">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ANTONINO Filippo</span>, <span class="title">Introduzione a’ discorsi dell’antichità di Sarsina</span> , <span class="date">1606</span> , in 4. Queste sono 20 pagine precedute dall’indicato frontispizio e sono seguite
+                     dall’altro:<span class="bibl"><span class="title">Delle antichità di Sarsina et
+                           <div class="pageBreak"><span>270</span></div>de’ costumi di Romani nel trionfo e nel Trichlinio antico,</span>  <span class="pubPlace">Sarsina</span>  <span class="date">1607</span> , in 4, p. M. 56.</span><div class="note">Segue la dedica al Cav. Aldobrandino e 18 foglietti di tavole delle materie. Indi
+                        si incomincia la numerazione del testo fino alla pagina 256. Ordinariamente questo
+                        libro si trova imperfetto a cagione della duplicità dei frontespizi: sono fra il testo
+                        molte lapidi e iscrizioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

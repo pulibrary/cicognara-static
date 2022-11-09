@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20609">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BAROZZI Jacomo da Vignola</span>,<span class="title">Le due regole della prospettiva pratica coi commentari del P. Danti</span>,<span class="pubPlace">Roma</span><span class="date">1583</span>, in fol. fig.
-                  <div class="note">Prima edizione</div>. — La stessa in<span class="pubPlace">Roma</span><span class="date">1611</span>in fol. fig. Esemplare in mar. dor.
-                  <div class="note">Bella ristampa colle medesime tavole.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -50,7 +38,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20609">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BAROZZI Jacomo da Vignola</span>, <span class="title">Le due regole della prospettiva pratica coi commentari del P. Danti</span> , <span class="pubPlace">Roma</span>  <span class="date">1583</span> , in fol. fig.
+                     <div class="note">Prima edizione</div>. — La stessa in <span class="pubPlace">Roma</span>  <span class="date">1611</span> in fol. fig. Esemplare in mar. dor.
+                     <div class="note">Bella ristampa colle medesime tavole.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

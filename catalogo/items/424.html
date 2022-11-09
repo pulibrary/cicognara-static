@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e12322">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BARTOLI Cosimo</span>,<span class="title">Lo stesso coll’aggiunta degli scritti del medesimo intorno al tempio di S. Lorenzo
-                     maggiore in Milano e colle annotazioni di Francesco Bernardino Ferrari. Seconda edizione
-                     con 13 tav.,</span><span class="pubPlace">Milano</span><span class="date">1771,</span><span class="extent">in 4, fig.</span><div class="note">La prima edizione di questo libretto lia in fronte, e al fine l’insegna di Aldo, sebbene
-                     gli stampatori siano i fratelli Marchetti di Brescia. L’opera è interessantissima
-                     per le discus
-                     <div class="pageBreak"><span>76</span></div>sioni fra’ primi artisti del secolo che sono riportate. Ritiensi fra i libri rari
-                     dell’arte.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +29,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e12322">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BARTOLI Cosimo</span>, <span class="title">Lo stesso coll’aggiunta degli scritti del medesimo intorno al tempio di S. Lorenzo
+                        maggiore in Milano e colle annotazioni di Francesco Bernardino Ferrari. Seconda edizione
+                        con 13 tav.,</span>  <span class="pubPlace">Milano</span>  <span class="date">1771,</span>  <span class="extent">in 4, fig.</span> 
+                     <div class="note">La prima edizione di questo libretto lia in fronte, e al fine l’insegna di Aldo, sebbene
+                        gli stampatori siano i fratelli Marchetti di Brescia. L’opera è interessantissima
+                        per le discus
+                        <div class="pageBreak"><span>76</span></div>sioni fra’ primi artisti del secolo che sono riportate. Ritiensi fra i libri rari
+                        dell’arte.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

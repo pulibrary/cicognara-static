@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7417">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">PITTURE di Antonio Allegri detto il Correggio esistenti in Parma nel Monistero di
-                     S. Paolo</span>,<span class="pubPlace">Parma</span>nel Regal Palazzo,<span class="date">1800</span>, coi tipi Bodoniani, in fol., fig.
-                  <div class="note">Edizione splendidissima col testo in spagnuolo, in francese, in italiano. Le 35 tav.
-                     capricciosamente intagliate, a maniera di disegni in matita rossa, sono del Rosaspina
-                     di Bologna, eccellente in questo genere di lavori. Esemplare magnifico in vitello
-                     dor. Sembra che ora per opera di artefici più accurati saranno prodotti questi lavori
-                     in miglior forma.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +23,21 @@
             <dt><a href="../dcl/264.html">264</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7417">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">PITTURE di Antonio Allegri detto il Correggio esistenti in Parma nel Monistero di
+                        S. Paolo</span> , <span class="pubPlace">Parma</span> nel Regal Palazzo, <span class="date">1800</span> , coi tipi Bodoniani, in fol., fig.
+                     <div class="note">Edizione splendidissima col testo in spagnuolo, in francese, in italiano. Le 35 tav.
+                        capricciosamente intagliate, a maniera di disegni in matita rossa, sono del Rosaspina
+                        di Bologna, eccellente in questo genere di lavori. Esemplare magnifico in vitello
+                        dor. Sembra che ora per opera di artefici più accurati saranno prodotti questi lavori
+                        in miglior forma.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

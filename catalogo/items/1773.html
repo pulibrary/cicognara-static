@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e27567">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">RABASCO Ottaviano</span>,<span class="title">Il Convito, ovvero discorsi di quelle materie, che al Convito si appartengono</span>,<span class="pubPlace">Firenze</span><span class="date">1615</span>, pressoi Giunti, in 4.
-                  <div class="note">Dedicato a D. Carlo Medici. La materia viene esurita e trattata in questo libro con
-                     molta erudizione. L’autore avea composti anche 50 discorsi conviviali che forse non
-                     videro la luce.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e27567">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">RABASCO Ottaviano</span>, <span class="title">Il Convito, ovvero discorsi di quelle materie, che al Convito si appartengono</span> , <span class="pubPlace">Firenze</span>  <span class="date">1615</span> , presso <span class="publisher">i Giunti</span> , in 4.
+                     <div class="note">Dedicato a D. Carlo Medici. La materia viene esurita e trattata in questo libro con
+                        molta erudizione. L’autore avea composti anche 50 discorsi conviviali che forse non
+                        videro la luce.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

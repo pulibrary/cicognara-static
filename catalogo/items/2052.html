@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29554">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">INSIGNIUM aliquot virorum icones</span>,<span class="pubPlace">Lugduni</span>, apudTornesium,<span class="date">1559</span>, in 12, fig.
-                  <div class="note">Questa è una collezione di ritratti incisi in legno a guisa di medaglioni a capriccio,
-                     ma con molto spirito. Vi sono aggiunti brevi cenni storici relativi a ciascheduno.
-                     Il libretto elegante è intitolato a G. Tuffano dallo stesso Giovanni Tornesio e gli
-                     uomini illustri di cui si parla e si presentano le medaglie, sono 145.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29554">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">INSIGNIUM aliquot virorum icones</span> , <span class="pubPlace">Lugduni</span> , apud <span class="publisher">Tornesium</span> , <span class="date">1559</span> , in 12, fig.
+                     <div class="note">Questa è una collezione di ritratti incisi in legno a guisa di medaglioni a capriccio,
+                        ma con molto spirito. Vi sono aggiunti brevi cenni storici relativi a ciascheduno.
+                        Il libretto elegante è intitolato a G. Tuffano dallo stesso Giovanni Tornesio e gli
+                        uomini illustri di cui si parla e si presentano le medaglie, sono 145.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

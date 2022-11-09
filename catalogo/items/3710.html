@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9341">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">FABRETTI Raphaelis</span>,<span class="author">Gasparis F.</span>,<span class="title">De columna trajana sintagma</span>,<span class="pubPlace">Romae</span><span class="date">1690</span>, in f. p., fig. Con alcune tavole in legno inserite fra il testo. — Aggiuntavi:<span class="title">La spiegazione dell’Iliade di Omero dedotta dall’antico basso rilievo prodotto in
-                     una tavola, e la descrizione dell’emissario del lago Fucino ec. opere dottamente esposte
-                     da un dottissimo archeologo.</span><div class="note">In quest’opera si fa l’apologia della storia espressa nella colonna tal come la scrisse
-                     il Ciacconio, avendo egli sostenuto che l’anima di Trajano fu liberata dall’inferno
-                     per le preghiere di S. Gregorio Papa.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +23,20 @@
             <dt><a href="../dcl/800.html">800</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9341">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">FABRETTI Raphaelis</span>, <span class="author">Gasparis F.</span>, <span class="title">De columna trajana sintagma</span> , <span class="pubPlace">Romae</span>  <span class="date">1690</span> , in f. p., fig. Con alcune tavole in legno inserite fra il testo. — Aggiuntavi: <span class="title">La spiegazione dell’Iliade di Omero dedotta dall’antico basso rilievo prodotto in
+                        una tavola, e la descrizione dell’emissario del lago Fucino ec. opere dottamente esposte
+                        da un dottissimo archeologo.</span> 
+                     <div class="note">In quest’opera si fa l’apologia della storia espressa nella colonna tal come la scrisse
+                        il Ciacconio, avendo egli sostenuto che l’anima di Trajano fu liberata dall’inferno
+                        per le preghiere di S. Gregorio Papa.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

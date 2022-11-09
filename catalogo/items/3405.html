@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7150">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MALVASÌA Carlo Cesare</span>,<span class="title">Il claustro di S. Michele in Bosco di Bologna dipinto dal famoso Lodovico Caracci
-                     e daaltri eccellenti maestri della sua scuola, descritto e ravvivato col disegno e l’intaglio
-                     del sig. Giacopo Giovannini</span>,<span class="pubPlace">Bologna</span><span class="date">1694</span>, in fol.
-                  <div class="note">Le tavole illustrate in quest’opera sono 19, oltre un frontespizio intagliato e istoriato
-                     d’invenzione dell’incisore. Vennero posteriormente queste pitture illustrate nel 1776
-                     anche da Giovan Pietro Zanotti. (Vedi).</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7150">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MALVASÌA Carlo Cesare</span>, <span class="title">Il claustro di S. Michele in Bosco di Bologna dipinto dal famoso Lodovico Caracci
+                        e daaltri eccellenti maestri della sua scuola, descritto e ravvivato col disegno e l’intaglio
+                        del sig. Giacopo Giovannini</span> , <span class="pubPlace">Bologna</span>  <span class="date">1694</span> , in fol.
+                     <div class="note">Le tavole illustrate in quest’opera sono 19, oltre un frontespizio intagliato e istoriato
+                        d’invenzione dell’incisore. Vennero posteriormente queste pitture illustrate nel 1776
+                        anche da Giovan Pietro Zanotti. (Vedi).</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

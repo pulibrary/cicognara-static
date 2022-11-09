@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.13">section 1.13</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.13">section 1.13</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e22631">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GESSNER Salomon</span>,<span class="title">Contes moraux, et nouvelles Idylles</span>, à<span class="pubPlace">Zurig</span>, chezl’auteur,<span class="date">1773</span>, in 4, fig. 2 vol.
-                  <div class="note">Le stampe di questa preziosa edizione di prima freschezza sono intagliate dall’autore
-                     e sono in numero di 52 fra soggetti grandi e vignette.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e22631">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GESSNER Salomon</span>, <span class="title">Contes moraux, et nouvelles Idylles</span> , à <span class="pubPlace">Zurig</span> , chez <span class="publisher">l’auteur</span> , <span class="date">1773</span> , in 4, fig. 2 vol.
+                     <div class="note">Le stampe di questa preziosa edizione di prima freschezza sono intagliate dall’autore
+                        e sono in numero di 52 fra soggetti grandi e vignette.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

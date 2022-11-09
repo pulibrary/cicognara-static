@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e27616">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">I RITI Nuziali degli antichi Romani per le nozze di sua Eccellenza D. Giovanni Lambertini
-                     colla Sig. D. Lucrezia Savorgnan</span>,<span class="pubPlace">Bologna</span><span class="date">1762</span>, in fol., fig. esemplare di dedica.
-                  <div class="note">Una lettera eruditissima precede i componimenti fatti da i primi letterati e il tutto
-                     è ornato di eleganti emblemi e figure a piede o a capo di pagina. Sono 21 tavole oltre
-                     i ritrat
-                     <div class="pageBreak"><span>306</span></div>ti in principio, le quali sono interpretate. L’autore della dissertazione in forma
-                     di lettera s’intitola col nome arcadico Diomede Egeriaco, cio è Monsig. Floriano Malvezzi
-                     bolognese.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e27616">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">I RITI Nuziali degli antichi Romani per le nozze di sua Eccellenza D. Giovanni Lambertini
+                        colla Sig. D. Lucrezia Savorgnan</span> , <span class="pubPlace">Bologna</span>  <span class="date">1762</span> , in fol., fig. esemplare di dedica.
+                     <div class="note">Una lettera eruditissima precede i componimenti fatti da i primi letterati e il tutto
+                        è ornato di eleganti emblemi e figure a piede o a capo di pagina. Sono 21 tavole oltre
+                        i ritrat
+                        <div class="pageBreak"><span>306</span></div>ti in principio, le quali sono interpretate. L’autore della dissertazione in forma
+                        di lettera s’intitola col nome arcadico Diomede Egeriaco, cio è Monsig. Floriano Malvezzi
+                        bolognese.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29294">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">COMITUM Gloriae centum qua sanguine</span>, qua virtute illustrium heroum iconibus instructum et D. Jo. Christoph. Com. a Puchaim
-                  dicatum ab Elia Wiedeman,<span class="pubPlace">Aug.</span>,Possoni,<span class="date">1646</span>, in f. p.
-                  <div class="note">Sono 100 cattivi ritratti intagliati da questo autore.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -35,7 +23,17 @@
             <dt><a href="../dcl/9gd.html">9gd</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29294">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">COMITUM Gloriae centum qua sanguine</span> , qua virtute illustrium heroum iconibus instructum et D. Jo. Christoph. Com. a Puchaim
+                     dicatum ab Elia Wiedeman, <span class="pubPlace">Aug.</span> , <span class="publisher">Possoni</span> , <span class="date">1646</span> , in f. p.
+                     <div class="note">Sono 100 cattivi ritratti intagliati da questo autore.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

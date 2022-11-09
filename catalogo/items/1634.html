@@ -5,37 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e26604">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">DIVERSARUM gentium armatura equestris ubi fere Europae, Asiae, atque Africae equitandi
-                     ratio propria espressa est., Amstelodami,</span>impressae in aedibusNic. Jo. Visscheri,<span class="date">1617</span>, in 4.
-                  <div class="note">Opera di bella maniera d’intaglio composta da un frontespizio figurato; poi segue
-                     un Nettuno, e una Pale con due cavalli marini. La terza carta presenta le armi di
-                     varie corti di Fiandra e d’Olanda; seguono settantasette stampe di cavalli montati
-                     da Cavalieri d’ogni Nazione, l’ultima però è un elefante. È da notarsi che 56 sono
-                     d’una grandezza uniforme e le residue estendo più piccole hanno un contorno e sembrano
-                     d’altra mano, quantunque della medesima scuola. Cosicché questo volume sembra composto
-                     da due opere diverse. Abramo Bruyn pubblicò in Colonia l’anno 1577 la prima edizione
-                     di questo libro, intitolata, come sopra e queste tavole sono tutte incise nella sua
-                     maniera.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +23,25 @@
             <dt><a href="../dcl/48m.html">48m</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e26604">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">DIVERSARUM gentium armatura equestris ubi fere Europae, Asiae, atque Africae equitandi
+                        ratio propria espressa est., Amstelodami,</span> impressae in aedibus <span class="publisher">Nic. Jo. Visscheri</span> , <span class="date">1617</span> , in 4.
+                     <div class="note">Opera di bella maniera d’intaglio composta da un frontespizio figurato; poi segue
+                        un Nettuno, e una Pale con due cavalli marini. La terza carta presenta le armi di
+                        varie corti di Fiandra e d’Olanda; seguono settantasette stampe di cavalli montati
+                        da Cavalieri d’ogni Nazione, l’ultima però è un elefante. È da notarsi che 56 sono
+                        d’una grandezza uniforme e le residue estendo più piccole hanno un contorno e sembrano
+                        d’altra mano, quantunque della medesima scuola. Cosicché questo volume sembra composto
+                        da due opere diverse. Abramo Bruyn pubblicò in Colonia l’anno 1577 la prima edizione
+                        di questo libro, intitolata, come sopra e queste tavole sono tutte incise nella sua
+                        maniera.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

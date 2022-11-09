@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e13590">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">CATANEO Pietro</span>,<span class="title">L’architettura, alla quale oltre all’esser stati dallo stesso autore rivisti, ordinati,
-                     e arricchiti i primi quattro libri per l’addietro stampati, sonosi aggiunti di più
-                     il 5, 6, 7 ed 8 libro,</span><span class="pubPlace">Venezia,</span>Aldo,<span class="date">1567,</span><span class="extent">in fol. fig.</span><div class="note">Opera bene concepita e di bella esecuzione colle tavole di purgato disegno, intagliate
-                     in legno e inserite fra il testo. La prima edizione fu intitolata ad Enea Piccolomini,
-                     la seconda a Francesco dei Medici.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -44,7 +30,20 @@
             <dt><a href="../dcl/4zz.html">4zz</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e13590">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">CATANEO Pietro</span>, <span class="title">L’architettura, alla quale oltre all’esser stati dallo stesso autore rivisti, ordinati,
+                        e arricchiti i primi quattro libri per l’addietro stampati, sonosi aggiunti di più
+                        il 5, 6, 7 ed 8 libro,</span>  <span class="pubPlace">Venezia,</span>  <span class="publisher">Aldo,</span>  <span class="date">1567,</span>  <span class="extent">in fol. fig.</span> 
+                     <div class="note">Opera bene concepita e di bella esecuzione colle tavole di purgato disegno, intagliate
+                        in legno e inserite fra il testo. La prima edizione fu intitolata ad Enea Piccolomini,
+                        la seconda a Francesco dei Medici.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,35 +5,33 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29657">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">MONTE (Libro del) di Dio e del Monte delle Orazioni et Scala del Paradiso devotissimo
-                     et Spirituale</span>. Composto dal divoto et docto Servo di Gesù Cristo Frate Antonio da Siena poveroGesuato Vescovo di Fuligno. Impresso nell’inclita Cipta di<span class="pubPlace">Firenze</span>perSer Lorenzo de’ Morgiani et Gio. Thodesco de Maganzaa 20 di Marzo<span class="date">1491</span>.
-                  <div class="note">Le tre tavole che qui si veggono intagliate in legno sono imitazioni delle tre in
-                     rame, che stanno nella molto più rara e pregiata edizione del 1477.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29657">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">MONTE (Libro del) di Dio e del Monte delle Orazioni et Scala del Paradiso devotissimo
+                        et Spirituale</span> . Composto dal divoto et docto Servo di Gesù Cristo Frate Antonio da Siena poveroGesuato Vescovo di Fuligno. Impresso nell’inclita Cipta di <span class="pubPlace">Firenze</span> per <span class="publisher">Ser Lorenzo de’ Morgiani et Gio. Thodesco de Maganza</span> a 20 di Marzo <span class="date">1491</span> .
+                     <div class="note">Le tre tavole che qui si veggono intagliate in legno sono imitazioni delle tre in
+                        rame, che stanno nella molto più rara e pregiata edizione del 1477.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

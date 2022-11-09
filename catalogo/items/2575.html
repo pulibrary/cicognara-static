@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.3">section 2.3</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.3">section 2.3</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e1270">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">FINI ab. Giuseppe</span>,<span class="title">Antiche memorie appartenenti alla città di Cora, ricavate e tradotte dall’opera del
-                     Volpi</span>,<span class="pubPlace">Roma</span><span class="date">1731</span>, in 8, M. 58.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,16 @@
             <dt><a href="../dcl/9gf.html">9gf</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e1270">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">FINI ab. Giuseppe</span>, <span class="title">Antiche memorie appartenenti alla città di Cora, ricavate e tradotte dall’opera del
+                        Volpi</span> , <span class="pubPlace">Roma</span>  <span class="date">1731</span> , in 8, M. 58.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

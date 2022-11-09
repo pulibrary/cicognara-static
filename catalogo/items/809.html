@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20597">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BARBARO Daniele patriarca d’Aquileia</span>,<span class="title">La pratica della prospettiva</span>. Opera molto profittevole a’ pittori, scultori e architetti,<span class="pubPlace">Venezia</span><span class="date">1569</span>, pressoCarmmilo e Rutilio Borgominieri, in fol. fig.
-                  <div class="note">Trovasi questo libro, quantunque impresso nello stesso anno, con due diversi frontespizi,
-                     l’uno de’ quali è inciso in legno, l’altro in caratteri. Ma è sempre la stessa edizione,
-                     siccome abbiamo verificato per essere amendue in questa nostra raccolta.Opera dottissima e diligentissima divisa in 9 parti, nell’ottava delle quali si tratta
-                     delle proporzioni del corpo umano. Le tavole copiosissime sono tutte frapposte al
-                     testo. L’autore meno curando gli altri che l’avevano preceduto, che i contemporanei,
-                     si professa obbligato a un certo Giovan Zamberto Veneziano pratico prospettico da
-                     cui disse aver imparato, ma che molto gli costò a ridurre a facile comunicazione gl’insegnamenti.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +25,22 @@
             <dt><a href="../dcl/tgc.html">tgc</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20597">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BARBARO Daniele patriarca d’Aquileia</span>, <span class="title">La pratica della prospettiva</span> . Opera molto profittevole a’ pittori, scultori e architetti, <span class="pubPlace">Venezia</span>  <span class="date">1569</span> , presso <span class="publisher">Carmmilo e Rutilio Borgominieri</span> , in fol. fig.
+                     <div class="note">Trovasi questo libro, quantunque impresso nello stesso anno, con due diversi frontespizi,
+                        l’uno de’ quali è inciso in legno, l’altro in caratteri. Ma è sempre la stessa edizione,
+                        siccome abbiamo verificato per essere amendue in questa nostra raccolta.Opera dottissima e diligentissima divisa in 9 parti, nell’ottava delle quali si tratta
+                        delle proporzioni del corpo umano. Le tavole copiosissime sono tutte frapposte al
+                        testo. L’autore meno curando gli altri che l’avevano preceduto, che i contemporanei,
+                        si professa obbligato a un certo Giovan Zamberto Veneziano pratico prospettico da
+                        cui disse aver imparato, ma che molto gli costò a ridurre a facile comunicazione gl’insegnamenti.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

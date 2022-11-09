@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.12">section 2.12</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.12">section 2.12</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e12326">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ALBERTI Leandro bolognese</span>,<span class="title">Descrizione di tutta Italia, nella quale si contiene il sito di essa, l’origine, le
-                     Signorie delle città, e delle castella, coi nomi antichi e moderni, i costumi de’
-                     popoli, le condizioni de’ paesi ec. ec.</span>, in<span class="pubPlace">Bologna</span>, perAnselmo Giaccarelli,<span class="date">1550</span>, in 4 gr.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,23 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e12326">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ALBERTI Leandro bolognese</span>, <span class="title">Descrizione di tutta Italia, nella quale si contiene il sito di essa, l’origine, le
+                        Signorie delle città, e delle castella, coi nomi antichi e moderni, i costumi de’
+                        popoli, le condizioni de’ paesi ec. ec.</span> , in <span class="pubPlace">Bologna</span> , per <span class="publisher">Anselmo Giaccarelli</span> , <span class="date">1550</span> , in 4 gr.</span></div>
+               <div class="notes">
+                  <div class="note">Questo grosso volume di oltre mille pagine è stampato assai bene in questa prima edizione,
+                     dedicata al re e alla regina di Francia, e vi si legge una lettera di Anton Flamminio
+                     che per isbaglio di stampa porta la data del 1537 mentre nel 36 era anche sepolto,
+                     come vedesi nel suo monumento. Avvi anche il ritratto dell’autore, cui sopra sta un
+                     distico di Sebastiano Corrado al lettore. Opera laboriosa, e non ispregievole.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

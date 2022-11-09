@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e12227">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">VUES, plans etc. du château de Versailles, avec les statues, thermes et vases, 78
-                     pieces</span>, gr. fol.,<span class="pubPlace">Paris</span><span class="date">1672 à 84</span>avec la description de la grotte de Versailles 1679, gr. fol., 20 pl.
-                  <div class="note">Questi due volumi fanno parte dell’opera detta Cabinets du Roy composta di molti volumi
-                     da noi non posseduti in intero, della quale de Bure, e Brunet danno ragione. Le stampe
-                     di queste due opere da noi qui citate e legate in un solo volume sono di prima freschezza,
-                     e di mano di eccellenti intagliatori, massimamente quelle che presentano le sculture
-                     della grotta che sono di Giovanni Edelink e di Stefano Pickart.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +25,21 @@
             <dt><a href="../dcl/gvw.html">gvw</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e12227">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">VUES, plans etc. du château de Versailles, avec les statues, thermes et vases, 78
+                        pieces</span> , gr. fol., <span class="pubPlace">Paris</span>  <span class="date">1672 à 84</span> avec la description de la grotte de Versailles 1679, gr. fol., 20 pl.
+                     <div class="note">Questi due volumi fanno parte dell’opera detta Cabinets du Roy composta di molti volumi
+                        da noi non posseduti in intero, della quale de Bure, e Brunet danno ragione. Le stampe
+                        di queste due opere da noi qui citate e legate in un solo volume sono di prima freschezza,
+                        e di mano di eccellenti intagliatori, massimamente quelle che presentano le sculture
+                        della grotta che sono di Giovanni Edelink e di Stefano Pickart.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.9">section 2.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.9">section 2.9</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7836">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">COCKERELL Charles Robert architetto inglese</span>,<span class="title">Progetto di collocazione delle statue della famiglia di Niobe sopra il frontone d’un
-                     edificio</span>, in fol. max.,<span class="date">1816</span>, M. 85.
-                  <div class="note">Questo unico foglio dall’autore inciso contiene intagliata in caratteri corsivi l’interpretazione
-                     da lui molto ragionevolmente imaginata.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/nnt.html">nnt</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7836">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">COCKERELL Charles Robert architetto inglese</span>, <span class="title">Progetto di collocazione delle statue della famiglia di Niobe sopra il frontone d’un
+                        edificio</span> , in fol. max., <span class="date">1816</span> , M. 85.
+                     <div class="note">Questo unico foglio dall’autore inciso contiene intagliata in caratteri corsivi l’interpretazione
+                        da lui molto ragionevolmente imaginata.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2759">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BOETIUS Anselmus De Boot</span>,<span class="title">Gemmarum, et lapidum historia cum commentariis Adriani Tollii, cui accedunt, Joan.
-                     de Laet de gemmis, et lapidibus libri duo, et Teophrasti liber de lapidibus, graec.
-                     et lat. cum brevibus notis</span>,<span class="pubPlace">Lugduni Batavorum</span><span class="date">1647</span>, in 8, fig.
-                  <div class="note">Edizione latina la più completa di quest’opera. Le tavole in legno sparse fra il testo
-                     dell’opera presentano le pietre di varia fatta nello stato loro naturale.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +23,19 @@
             <dt><a href="../dcl/snm.html">snm</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2759">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BOETIUS Anselmus De Boot</span>, <span class="title">Gemmarum, et lapidum historia cum commentariis Adriani Tollii, cui accedunt, Joan.
+                        de Laet de gemmis, et lapidibus libri duo, et Teophrasti liber de lapidibus, graec.
+                        et lat. cum brevibus notis</span> , <span class="pubPlace">Lugduni Batavorum</span>  <span class="date">1647</span> , in 8, fig.
+                     <div class="note">Edizione latina la più completa di quest’opera. Le tavole in legno sparse fra il testo
+                        dell’opera presentano le pietre di varia fatta nello stato loro naturale.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

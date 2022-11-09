@@ -5,36 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e25155">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VALDOR Jean</span>,<span class="title">Les triomphe de Louis le Juste XIII du nom roi de France et de Navarre avec les portraits
-                     du roi, princes etc. etc. et leurs devises en forme d’eloge par Henry Êtienne</span>,traduit en latin par le P. Nicolai,<span class="pubPlace">Paris</span><span class="date">1649</span>, in fol. fig. francese e latino. Ouvrage entrepris et fini par Jean Valdor calcographe
-                  du roi.
-                  <div class="note">Opera copiosissima di bellissimi ritratti imprese ed altre stampe allegoriche frapposte
-                     al testo; il quale parimente è eseguito con molto splendore di tipi.</div>MDCLI</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e25155">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VALDOR Jean</span>, <span class="title">Les triomphe de Louis le Juste XIII du nom roi de France et de Navarre avec les portraits
+                        du roi, princes etc. etc. et leurs devises en forme d’eloge par Henry Êtienne</span> ,traduit en latin par le P. Nicolai, <span class="pubPlace">Paris</span>  <span class="date">1649</span> , in fol. fig. francese e latino. Ouvrage entrepris et fini par Jean Valdor calcographe
+                     du roi.
+                     <div class="note">Opera copiosissima di bellissimi ritratti imprese ed altre stampe allegoriche frapposte
+                        al testo; il quale parimente è eseguito con molto splendore di tipi.</div>MDCLI</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

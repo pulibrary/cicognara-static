@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e11724">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ANTONINI Carlo</span>,<span class="title">Manuale di vari ornamenti tratti dalle fabbriche e frammenti antichi, ad uso e comodo
-                     di pittori, architetti ec., vol. 4,</span><span class="pubPlace">Roma</span><span class="date">1771,</span><span class="date">1790,</span><span class="extent">in f. fig.</span><div class="note">Il primo volume contiene la serie dei rosoni antichi in Roma; il secondo la serie
-                     dei medesimi fuori di Roma; il terzo la serie dei candelabri antichi: il quarto la
-                     serie degli orologi solari e dei candelabri antichi. Sono duecento tavole in rame
-                     di bel disegno e buona esecuzione.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -49,7 +35,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e11724">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ANTONINI Carlo</span>, <span class="title">Manuale di vari ornamenti tratti dalle fabbriche e frammenti antichi, ad uso e comodo
+                        di pittori, architetti ec., vol. 4,</span>  <span class="pubPlace">Roma</span>  <span class="date">1771,</span>  <span class="date">1790,</span>  <span class="extent">in f. fig.</span> 
+                     <div class="note">Il primo volume contiene la serie dei rosoni antichi in Roma; il secondo la serie
+                        dei medesimi fuori di Roma; il terzo la serie dei candelabri antichi: il quarto la
+                        serie degli orologi solari e dei candelabri antichi. Sono duecento tavole in rame
+                        di bel disegno e buona esecuzione.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

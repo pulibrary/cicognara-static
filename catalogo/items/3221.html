@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e5868">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">FICINO Marsilio</span>,<span class="title">Commento sopra il Convito di Platone</span>,<span class="pubPlace">Firenze</span>,<span class="date">1544</span>, per Neri Dortellata, in 8, pr. edizione.
-                  <div class="note">Questo libretto è citato fra i rari dall’Argelati, da Claudio Tolomei, dal Fontanini,
-                     dal Zeno e da altri e in ispecie dal Mazzucchelli poiché in questa prima edizione
-                     vi è un discorso dello stampatore che vuolsi esteso da Cosimo Bartoli e un’ortografia
-                     in tutta l’opera diversa dalle altre edizioni: mostrasi in quello la pronuncia fiorentina
-                     col mezzo degli accenti e dalla prefazione dello stesso Marsilio a Bernardo del Nero
-                     ed Antonio Manetti si ricava che non solo egli fece la versione in latino e il comento,
-                     ma ne fu anche il traduttore in lingua italiana. Vedasi anche Giambullari.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e5868">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">FICINO Marsilio</span>, <span class="title">Commento sopra il Convito di Platone</span> , <span class="pubPlace">Firenze</span> , <span class="date">1544</span> , per Neri Dortellata, in 8, pr. edizione.
+                     <div class="note">Questo libretto è citato fra i rari dall’Argelati, da Claudio Tolomei, dal Fontanini,
+                        dal Zeno e da altri e in ispecie dal Mazzucchelli poiché in questa prima edizione
+                        vi è un discorso dello stampatore che vuolsi esteso da Cosimo Bartoli e un’ortografia
+                        in tutta l’opera diversa dalle altre edizioni: mostrasi in quello la pronuncia fiorentina
+                        col mezzo degli accenti e dalla prefazione dello stesso Marsilio a Bernardo del Nero
+                        ed Antonio Manetti si ricava che non solo egli fece la versione in latino e il comento,
+                        ma ne fu anche il traduttore in lingua italiana. Vedasi anche Giambullari.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -2,7 +2,10 @@
 layout: home
 ---
 <h1>THE DIGITAL CICOGNARA LIBRARY</h1>
-<h2><em>An</em> OPEN-ACCESS COLLECTION <em>of the</em> EARLY LITERATURE OF THE ARTS</h2>
+<h2><em>An</em><br/>
+OPEN-ACCESS COLLECTION<br/>
+<em>of the</em><br/>
+EARLY LITERATURE OF THE ARTS</h2>
 
 <p><a href="/catalogo">Browse full Catalogo</a></p>
 <p>Vatican Annotated Catalogo:

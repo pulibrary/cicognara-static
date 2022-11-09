@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.16">section 1.16</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.16">section 1.16</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e23934">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PINO Domenico</span>.<span class="title">Storia genuina del Cenacolo insigne dipinto da Leonardo da Vinci nel refettorio di
-                     S. Maria delle grazie di Milano</span>,<span class="pubPlace">Milano</span><span class="date">1796</span>, in 8.
-                  <div class="note">L’autore era frate domenicano e priore del convento e pose ogni cura nel suo libretto
-                     per confutare l’opinione, o la tradizione che Leonardo ritraesse nel Giuda il priore
-                     del convento d’allora che gli era riuscito importuno: forse il P. Pino scrisse il
-                     suo libro per questo.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/55x.html">55x</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e23934">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PINO Domenico</span>. <span class="title">Storia genuina del Cenacolo insigne dipinto da Leonardo da Vinci nel refettorio di
+                        S. Maria delle grazie di Milano</span> , <span class="pubPlace">Milano</span>  <span class="date">1796</span> , in 8.
+                     <div class="note">L’autore era frate domenicano e priore del convento e pose ogni cura nel suo libretto
+                        per confutare l’opinione, o la tradizione che Leonardo ritraesse nel Giuda il priore
+                        del convento d’allora che gli era riuscito importuno: forse il P. Pino scrisse il
+                        suo libro per questo.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e19796">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VITRUVII</span>,<span class="title">De architectura libri decemi</span>,<span class="pubPlace">Florentiae</span>, per heredes Philippi Iuntae,<span class="date">1522</span>, in 12, fig.
-                  <div class="note">Questa edizione non è dissimile da quella del 1513 dello stesso Giunta, se non in
-                     quanto che gli errori nella prima descritti nell’indice, sono in questa corretti.
-                     Le figure sono esattamente le stesse.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e19796">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VITRUVII</span>, <span class="title">De architectura libri decemi</span> , <span class="pubPlace">Florentiae</span> , per heredes Philippi Iuntae, <span class="date">1522</span> , in 12, fig.
+                     <div class="note">Questa edizione non è dissimile da quella del 1513 dello stesso Giunta, se non in
+                        quanto che gli errori nella prima descritti nell’indice, sono in questa corretti.
+                        Le figure sono esattamente le stesse.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

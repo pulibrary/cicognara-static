@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.2">section 2.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.2">section 2.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e933">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>,<span class="title">China monumentis sacris et profanis, nec non naturae et artis spectaculis illustrata</span>, Ant.<span class="date">1667</span>, in fol., fig. Col ritratto dell’autore in fronte.
-                  <div class="note">Le molte tavole, che sono sparse nelle opere di questo autore, i viaggi, gli studi,
-                     le nozioni di questo dottissimo frate infaticabile, rendono le sue opere pregevoli,
-                     quand’anche manchino spesso di critica; e quantunque la filosofia fosse lontana dagli
-                     immensi progressi che ha fatto in seguito, la posterità deve essergli riconoscente.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -44,7 +30,19 @@
             <dt><a href="../dcl/zjk.html">zjk</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e933">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">China monumentis sacris et profanis, nec non naturae et artis spectaculis illustrata</span> , Ant. <span class="date">1667</span> , in fol., fig. Col ritratto dell’autore in fronte.
+                     <div class="note">Le molte tavole, che sono sparse nelle opere di questo autore, i viaggi, gli studi,
+                        le nozioni di questo dottissimo frate infaticabile, rendono le sue opere pregevoli,
+                        quand’anche manchino spesso di critica; e quantunque la filosofia fosse lontana dagli
+                        immensi progressi che ha fatto in seguito, la posterità deve essergli riconoscente.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

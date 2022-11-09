@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.26">section 1.26</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.26">section 1.26</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e32357">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PORTAE J. Bapt. Neapolitani</span>,<span class="title">Della fisonomia dell’uomo</span>, libri sei, tradotta dal latino in volgare e accresciuta di figure,<span class="pubPlace">Napoli</span><span class="date">1610</span>, in fol.
-                  <div class="note">Molte figure d’uomini, d’animali e anche d’antichi monumenti veggonsi in questa ristampa,
-                     a cui servirono però logori rami della edizione prima.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e32357">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PORTAE J. Bapt. Neapolitani</span>, <span class="title">Della fisonomia dell’uomo</span> , libri sei, tradotta dal latino in volgare e accresciuta di figure, <span class="pubPlace">Napoli</span>  <span class="date">1610</span> , in fol.
+                     <div class="note">Molte figure d’uomini, d’animali e anche d’antichi monumenti veggonsi in questa ristampa,
+                        a cui servirono però logori rami della edizione prima.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

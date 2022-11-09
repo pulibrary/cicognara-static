@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.13">section 2.13</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.13">section 2.13</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e12719">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MALVASIA Carlo Cesare</span>,<span class="title">Pitture, sculture, e architetture delle chiese, luoghi pubblici, palazzi, e case della
-                     città diBologna</span>,<span class="pubPlace">Bologna</span><span class="date">1782</span>, in 8.
-                  <div class="note">In questo esemplare sono molte aggiunte manoscritte in
-                     <div class="pageBreak"><span>267</span></div>fine. Non è d’uopo ripetere come tutto ciò che porta il nome del Malvasia faccia testo
-                     d’arte in fatto delle cose bolognesi</div>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +23,19 @@
             <dt><a href="../dcl/6sh.html">6sh</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e12719">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MALVASIA Carlo Cesare</span>, <span class="title">Pitture, sculture, e architetture delle chiese, luoghi pubblici, palazzi, e case della
+                        città diBologna</span> , <span class="pubPlace">Bologna</span>  <span class="date">1782</span> , in 8.
+                     <div class="note">In questo esemplare sono molte aggiunte manoscritte in
+                        <div class="pageBreak"><span>267</span></div>fine. Non è d’uopo ripetere come tutto ciò che porta il nome del Malvasia faccia testo
+                        d’arte in fatto delle cose bolognesi</div>.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

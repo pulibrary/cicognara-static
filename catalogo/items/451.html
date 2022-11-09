@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e13087">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BAISEUX</span>,<span class="title">Traité du Beau essentiel dans les arts: applié particulierement à l’architecture,</span><span class="pubPlace">Paris</span><span class="date">1690,</span><span class="extent">in 2 vol. leg. in uno.</span><div class="note">In fronte al primo è il ritratto dell’autore fatto da Wille e tutta l’opera compresovi
-                     il testo è intagliata in rame. Le tavole dell’opera sono 98, ma nulla corrisponde
-                     al lusso enorme e al dispendio di sì fatta edizione poiché il bello, che prendesi
-                     per iscopo, si perde nei barbarismi d’un gusto falso, e nemico della semplicità, che
-                     doveva principalmente costituirlo.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -44,7 +30,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e13087">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BAISEUX</span>, <span class="title">Traité du Beau essentiel dans les arts: applié particulierement à l’architecture,</span>  <span class="pubPlace">Paris</span>  <span class="date">1690,</span>  <span class="extent">in 2 vol. leg. in uno.</span> 
+                     <div class="note">In fronte al primo è il ritratto dell’autore fatto da Wille e tutta l’opera compresovi
+                        il testo è intagliata in rame. Le tavole dell’opera sono 98, ma nulla corrisponde
+                        al lusso enorme e al dispendio di sì fatta edizione poiché il bello, che prendesi
+                        per iscopo, si perde nei barbarismi d’un gusto falso, e nemico della semplicità, che
+                        doveva principalmente costituirlo.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

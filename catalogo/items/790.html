@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.8">section 1.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.8">section 1.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20454">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">FEA Carlo</span>,<span class="title">Osservazioni sull’arena e sul podio dell’anfiteatro Flavio, discusse contro quelle
-                     del Sig. Pietro Bianchi e del Sig. Lorenzo de Romano</span>,<span class="pubPlace">Roma</span><span class="date">1713</span>, parti due. — Aggiuntevi:<span class="title">Le iscrizioni di monumenti pubblici trovate nelle attuali escavazioni dei medesimi</span>, stesso anno. —<span class="title">Le notizie degli scavi nell’anfiteatro Flavio e nel Foro Traiano</span>: Le ammonizioni criticoantiquarie a vari scrittori del giorno,<span class="date">1813</span>. — Infine:<span class="title">Nuove osservazioni intorno l’arena nell’anfiteatro Flavio</span>,<span class="pubPlace">Roma</span><span class="date">1814</span>, in 8.
-                  <div class="note">Alla testa di questi opuscoli trovasi il ritratto dell’autore disegnato da Wicar,
-                     intagliato da Fontana e molto somigliante.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -65,7 +52,18 @@
             <dt><a href="../dcl/093.html">093</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20454">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">FEA Carlo</span>, <span class="title">Osservazioni sull’arena e sul podio dell’anfiteatro Flavio, discusse contro quelle
+                        del Sig. Pietro Bianchi e del Sig. Lorenzo de Romano</span> , <span class="pubPlace">Roma</span>  <span class="date">1713</span> , parti due. — Aggiuntevi: <span class="title">Le iscrizioni di monumenti pubblici trovate nelle attuali escavazioni dei medesimi</span> , stesso anno. — <span class="title">Le notizie degli scavi nell’anfiteatro Flavio e nel Foro Traiano</span> : Le ammonizioni criticoantiquarie a vari scrittori del giorno, <span class="date">1813</span> . — Infine: <span class="title">Nuove osservazioni intorno l’arena nell’anfiteatro Flavio</span> , <span class="pubPlace">Roma</span>  <span class="date">1814</span> , in 8.
+                     <div class="note">Alla testa di questi opuscoli trovasi il ritratto dell’autore disegnato da Wicar,
+                        intagliato da Fontana e molto somigliante.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

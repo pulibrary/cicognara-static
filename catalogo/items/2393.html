@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e31910">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VASARI Giorgio</span>,<span class="title">Vite de’ più eccellenti pittori, scultori, architetti, pubblicate per opera del P.
-                     Guglielmo della Valle, Siena dal 1791 al 1794, tomi XI</span>, in 8, fig.
-                  <div class="note">Opera resa più voluminosa da questo autore, senza aggiugnervi altra varietà rilevante,
-                     che un incomodo maggiore e un pregio minore.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/rvk.html">rvk</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e31910">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VASARI Giorgio</span>, <span class="title">Vite de’ più eccellenti pittori, scultori, architetti, pubblicate per opera del P.
+                        Guglielmo della Valle, Siena dal 1791 al 1794, tomi XI</span> , in 8, fig.
+                     <div class="note">Opera resa più voluminosa da questo autore, senza aggiugnervi altra varietà rilevante,
+                        che un incomodo maggiore e un pregio minore.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

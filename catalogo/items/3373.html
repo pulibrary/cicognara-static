@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e6923">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BOSSI Giuseppe</span>,<span class="title">Del Cenacolo di Leonardo da Vinci</span>, libri quattro,<span class="pubPlace">Milano</span><span class="date">1810</span>, in fol., fig. —<span class="title">Aggiuntovi delle opinioni di Leonardo da Vinci intorno la simetria de’ corpi umani,
-                     discorso dello stesso, dedicato al celebre scultore Antonio Canova. Questo discorso
-                     è tratto dall’opera del Cenacolo colle medesime tavole</span>,<span class="pubPlace">Milano</span><span class="date">1811</span>.
-                  <div class="note">L’opera del Cenacolo è il libro meglio scritto che da noi si conosca in fatto di critica,
-                     il quale abbia per iscopo d’illustrare una grand’opera dell’arte. L’edizione splendidissima
-                     è ornata d’un bellissimo ritratto di Leonardo e di varie tavole tratte da disegni
-                     originali del Vinci con una fedeltà e un gusto insuperabile. Esemplare in carta velina.
-                     Vedi Verri.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -46,7 +29,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e6923">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BOSSI Giuseppe</span>, <span class="title">Del Cenacolo di Leonardo da Vinci</span> , libri quattro, <span class="pubPlace">Milano</span>  <span class="date">1810</span> , in fol., fig. — <span class="title">Aggiuntovi delle opinioni di Leonardo da Vinci intorno la simetria de’ corpi umani,
+                        discorso dello stesso, dedicato al celebre scultore Antonio Canova. Questo discorso
+                        è tratto dall’opera del Cenacolo colle medesime tavole</span> , <span class="pubPlace">Milano</span>  <span class="date">1811</span> .
+                     <div class="note">L’opera del Cenacolo è il libro meglio scritto che da noi si conosca in fatto di critica,
+                        il quale abbia per iscopo d’illustrare una grand’opera dell’arte. L’edizione splendidissima
+                        è ornata d’un bellissimo ritratto di Leonardo e di varie tavole tratte da disegni
+                        originali del Vinci con una fedeltà e un gusto insuperabile. Esemplare in carta velina.
+                        Vedi Verri.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

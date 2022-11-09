@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e4559">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VAILLANT Joannis Foj</span>,<span class="title">Numismata imperatorum Augustarum et Caesarum a populis romanae ditionis graece loquentibus</span>,<span class="pubPlace">Amst.</span><span class="date">1700</span>, in 4, fig.
-                  <div class="note">Oltre le figure intagliate e stampate fra il testo, avvi al fine un’appendice di 11
-                     fogli di tavole addizionali.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e4559">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VAILLANT Joannis Foj</span>, <span class="title">Numismata imperatorum Augustarum et Caesarum a populis romanae ditionis graece loquentibus</span> , <span class="pubPlace">Amst.</span>  <span class="date">1700</span> , in 4, fig.
+                     <div class="note">Oltre le figure intagliate e stampate fra il testo, avvi al fine un’appendice di 11
+                        fogli di tavole addizionali.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

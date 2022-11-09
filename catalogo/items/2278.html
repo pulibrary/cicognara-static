@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e31127">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GIOVIO Giovan Battista</span>,<span class="title">Elogii di Palladio, del Conte Algarotti, di Benedetto e di Paolo Giovio</span>,<span class="pubPlace">Venezia</span><span class="date">1782</span>, in 8.
-                  <div class="note">Scrisse il Bianconi su questo esemplare, che gli appartenne :fate (diceva uno) che
-                     il sig. Cav. Giovan Battista Giovio abbia più profondità di sapere e minor desiderio
-                     di comparire e di far spiccare i suoi maggiori e lorenderete scrittore insigne, che componendo meno, interesserà maggiormente.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +29,18 @@
             <dt><a href="../dcl/62r.html">62r</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e31127">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GIOVIO Giovan Battista</span>, <span class="title">Elogii di Palladio, del Conte Algarotti, di Benedetto e di Paolo Giovio</span> , <span class="pubPlace">Venezia</span>  <span class="date">1782</span> , in 8.
+                     <div class="note">Scrisse il Bianconi su questo esemplare, che gli appartenne :fate (diceva uno) che
+                        il sig. Cav. Giovan Battista Giovio abbia più profondità di sapere e minor desiderio
+                        di comparire e di far spiccare i suoi maggiori e lorenderete scrittore insigne, che componendo meno, interesserà maggiormente.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

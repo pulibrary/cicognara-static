@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e4037">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PARUTAE Philippi</span>, et<span class="author">Augustini Leonardi</span>,<span class="title">Sicilia numismatica</span>,<span class="pubPlace">Lugduni Batavorum</span><span class="date">1723</span>, in fol., fig., vol. 3.
-                  <div class="note">Questa è l’opera più copiosa di numismatica per la Sicilia e si trovano non solo le
-                     medaglie, ma ancora le gemme intagliate che hanno relazione con questa. Le descrizioni
-                     e i lavori d’Huberto Golzio, dell’Havercampo e del Gualterio la rendono utile e preziosa.
-                     Le tavole sono 233, delle quali 33 nel secondo volume e 200 nel terzo. Bello e distinto
-                     esemplare.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +30,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e4037">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PARUTAE Philippi</span>, et <span class="author">Augustini Leonardi</span>, <span class="title">Sicilia numismatica</span> , <span class="pubPlace">Lugduni Batavorum</span>  <span class="date">1723</span> , in fol., fig., vol. 3.
+                     <div class="note">Questa è l’opera più copiosa di numismatica per la Sicilia e si trovano non solo le
+                        medaglie, ma ancora le gemme intagliate che hanno relazione con questa. Le descrizioni
+                        e i lavori d’Huberto Golzio, dell’Havercampo e del Gualterio la rendono utile e preziosa.
+                        Le tavole sono 233, delle quali 33 nel secondo volume e 200 nel terzo. Bello e distinto
+                        esemplare.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

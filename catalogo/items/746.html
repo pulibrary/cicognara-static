@@ -5,38 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20128">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VEDREMAN Joannes</span>,<span class="title">Architecture traduite du bas allemand en français par Kemp</span>,<span class="pubPlace">Anversae</span><span class="date">1677</span>.
-                  <div class="note">Questo esemplare apparteneva all’architetto Scamozzi ed è composto come segue: il
-                     frontespizio è figurato e porta nel centro un cartello applicato, ove in barbara ortografia
-                     è espressa la dichiarazione dell’opera. Segue la dedica del traduttore e subito nello
-                     stesso foglietto il testo del trattato in colonne stampato a caratteri corsivi, che
-                     continua fino al sesto foglietto inclusive. Questa prima porte è accompagnata da 23
-                     tavole: segue un’altra parte col primo foglietto in basso alemanno e la data d’Anversa
-                     del 1578 intorno l’ordine toscano con 12 tavole. Un altro libretto colla stessa data
-                     e nella stessa lingua riguarda il corintio, io
-                     <div class="pageBreak"><span>140</span></div>nico e il composito con 18 tavole. L’ultima parte relativa al corintio e al composito
-                     con le trabeazioni porta la data del 1565 che è la data dell’edizione originale delle
-                     opere di Vredeman intagliate da Girolamo Ceck: e contiene 22 tavole.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -55,7 +34,26 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20128">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VEDREMAN Joannes</span>, <span class="title">Architecture traduite du bas allemand en français par Kemp</span> , <span class="pubPlace">Anversae</span>  <span class="date">1677</span> .
+                     <div class="note">Questo esemplare apparteneva all’architetto Scamozzi ed è composto come segue: il
+                        frontespizio è figurato e porta nel centro un cartello applicato, ove in barbara ortografia
+                        è espressa la dichiarazione dell’opera. Segue la dedica del traduttore e subito nello
+                        stesso foglietto il testo del trattato in colonne stampato a caratteri corsivi, che
+                        continua fino al sesto foglietto inclusive. Questa prima porte è accompagnata da 23
+                        tavole: segue un’altra parte col primo foglietto in basso alemanno e la data d’Anversa
+                        del 1578 intorno l’ordine toscano con 12 tavole. Un altro libretto colla stessa data
+                        e nella stessa lingua riguarda il corintio, io
+                        <div class="pageBreak"><span>140</span></div>nico e il composito con 18 tavole. L’ultima parte relativa al corintio e al composito
+                        con le trabeazioni porta la data del 1565 che è la data dell’edizione originale delle
+                        opere di Vredeman intagliate da Girolamo Ceck: e contiene 22 tavole.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

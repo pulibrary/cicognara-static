@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e8609">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BELLORI Jo. Petri</span>,<span class="title">Columna Choclis M. Aurelio Antonino Augusto dicata brevibus notis illustrata et a
-                     Petro Sancte Bartolo aere incisa; iterum in lucem prodit,
-                     <div class="pageBreak"><span>173</span></div>sub faustissimi auspiciis Clementis XI</span>,<span class="pubPlace">Romae</span>, ex calcographiaDom. de Rubeis, an.<span class="date">1704</span>, in fol.
-                  <div class="note">In questa seconda edizione sono aggiunti in molte tavole dei secondi tagli, e in altre
-                     fu rientrato il taglio, di modo che l’occhio intelligente non vi trova la prima originalità
-                     e freschezza: vi sono alcune iscrizioni di più, e tre tavole in fine che mancano alla
-                     prima edizione, oltre il numero delle 77 coll’iscrizione, l’apoteosi, e la pompa funebre.
-                     Vedi per la colonna teodosiana Menetrei Claudii.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -47,7 +30,22 @@
             <dt><a href="../dcl/dcr.html">dcr</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e8609">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BELLORI Jo. Petri</span>, <span class="title">Columna Choclis M. Aurelio Antonino Augusto dicata brevibus notis illustrata et a
+                        Petro Sancte Bartolo aere incisa; iterum in lucem prodit,
+                        <div class="pageBreak"><span>173</span></div>sub faustissimi auspiciis Clementis XI</span> , <span class="pubPlace">Romae</span> , ex calcographia <span class="publisher">Dom. de Rubeis</span> , an. <span class="date">1704</span> , in fol.
+                     <div class="note">In questa seconda edizione sono aggiunti in molte tavole dei secondi tagli, e in altre
+                        fu rientrato il taglio, di modo che l’occhio intelligente non vi trova la prima originalità
+                        e freschezza: vi sono alcune iscrizioni di più, e tre tavole in fine che mancano alla
+                        prima edizione, oltre il numero delle 77 coll’iscrizione, l’apoteosi, e la pompa funebre.
+                        Vedi per la colonna teodosiana Menetrei Claudii.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

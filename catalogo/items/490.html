@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e14244">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DERAND Francois</span>,<span class="title">L’architecture des voutes, ou l’art des traits et coupé des voutes,</span><span class="pubPlace">Paris,</span>chez Sebastien Cramoisy,<span class="date">1643,</span><span class="extent">in fol. fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e14244">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DERAND Francois</span>, <span class="title">L’architecture des voutes, ou l’art des traits et coupé des voutes,</span>  <span class="pubPlace">Paris,</span>  <span class="publisher">chez Sebastien Cramoisy,</span>  <span class="date">1643,</span>  <span class="extent">in fol. fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Opera estesa con molta prolissità e complicazione e con infinito numero di dimostrazioni
+                     e figure in tavole 121, alla quale bisogna accordate un merito distinto per le grandi
+                     cognizioni pratiche e matematiche in essa raccolte.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e2715">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BIONDO Michelangelo</span>,<span class="title">Lo stesso, esemplare in carta turchina.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +28,23 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e2715">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BIONDO Michelangelo</span>, <span class="title">Lo stesso, esemplare in carta turchina.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Questo autore dedicò l’opera sia a tutti i pittori dell’Europa. Se la stravaganza
+                     di qualche opinione può costituire il merito di un trattato, può questo concorrere
+                     fra quelli che aspirano ad un primato; finisce col datare la sua opera.</div>
+                  <div class="note">Dalla casuppola del Biondo nel tempo della rinovazione dei suoi martiri. Il Biondo
+                     quantunque nato 22 anni prima che morisse Leonardo, attribuisce al Mantegna il Cenacolo
+                     di Milano e tutta l’opera è piena di simili inesattezze e falsità. Questo è uno dei
+                     casi in cui è utile che i più rari libri siano appunto i più cattivi.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

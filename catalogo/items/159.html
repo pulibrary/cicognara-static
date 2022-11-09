@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e4858">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">LOMAZZO Giovanni Paolo</span>milanese pittore,<span class="title">Trattato dell’arte della pittura diviso in 7 libri, nei quali si contiene tutta la
-                     teorica e la pratica di essa pittura,</span><span class="pubPlace">Milano</span><span class="date">1584,</span>presso Gottardo Ponzio,<span class="extent">in 4.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +25,19 @@
             <dt><a href="../dcl/fvs.html">fvs</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e4858">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">LOMAZZO Giovanni Paolo</span>milanese pittore, <span class="title">Trattato dell’arte della pittura diviso in 7 libri, nei quali si contiene tutta la
+                        teorica e la pratica di essa pittura,</span>  <span class="pubPlace">Milano</span>  <span class="date">1584,</span>  <span class="publisher">presso Gottardo Ponzio,</span>  <span class="extent">in 4.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Questo frontespizio fu cangiato nel corso della stessa edizione e trovasi in pochi
+                     esemplari.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

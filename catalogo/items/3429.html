@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7353">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">PARADIGMATA graphices variorum artificum per Jo. Episcopium ex formis Nicolai Visscher
-                     cum privilegio ordinum Hollandiae et West-Frisiae</span>, in fol. p.
-                  <div class="note">Il frontespizio istoriato è una bella acqua forte di Leonard Gaultier: comincia il
-                     volume con 57 tavole tolte da marmi e da pitture le più insigni antiche e moderne;
-                     segue una bella scelta di 100 statue antiche. Il tutto intagliato da Giovanni Episcopio
-                     con moltissimo gusto all’acqua forte: termina il volume con un’aggiunta di varie celebri
-                     pitture di buoni autori intagliate da Robillard in 13 tav. In tutto il volume contiene
-                     170 tavole di prima freschezza.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -46,7 +29,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7353">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">PARADIGMATA graphices variorum artificum per Jo. Episcopium ex formis Nicolai Visscher
+                        cum privilegio ordinum Hollandiae et West-Frisiae</span> , in fol. p.
+                     <div class="note">Il frontespizio istoriato è una bella acqua forte di Leonard Gaultier: comincia il
+                        volume con 57 tavole tolte da marmi e da pitture le più insigni antiche e moderne;
+                        segue una bella scelta di 100 statue antiche. Il tutto intagliato da Giovanni Episcopio
+                        con moltissimo gusto all’acqua forte: termina il volume con un’aggiunta di varie celebri
+                        pitture di buoni autori intagliate da Robillard in 13 tav. In tutto il volume contiene
+                        170 tavole di prima freschezza.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

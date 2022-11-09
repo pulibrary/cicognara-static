@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.4">section 1.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.4">section 1.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e8458">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">NATTER Laurent</span>,<span class="title">Traité de la méthode antique de graver en pierres fines comparée avec la méthode moderne
-                     et expliquée en diverses palches,</span><span class="pubPlace">Londres</span><span class="date">1754</span>. Magnifico esemplare in vit. dor.
-                  <div class="note">Uno de’ migliori e più esatti libri in questo genere, ove sono 37 tav. in rame oltre
-                     il frontespizio inciso da Hemmerich. L’autore era egli stesso intagliatore di pietre
-                     dure assai distinto; le stampe sono eccellenti ed oltre al disegno in faccia è marcato
-                     in alcune anche il profilo a maniera di spaccato longitudinale che indica la profondità
-                     dell’incavo. Tutte le pietre incise, che trovansi in questo volume, sono tolte dai
-                     gabinetti d’Inghilterra.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e8458">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">NATTER Laurent</span>, <span class="title">Traité de la méthode antique de graver en pierres fines comparée avec la méthode moderne
+                        et expliquée en diverses palches,</span>  <span class="pubPlace">Londres</span>  <span class="date">1754</span> . Magnifico esemplare in vit. dor.
+                     <div class="note">Uno de’ migliori e più esatti libri in questo genere, ove sono 37 tav. in rame oltre
+                        il frontespizio inciso da Hemmerich. L’autore era egli stesso intagliatore di pietre
+                        dure assai distinto; le stampe sono eccellenti ed oltre al disegno in faccia è marcato
+                        in alcune anche il profilo a maniera di spaccato longitudinale che indica la profondità
+                        dell’incavo. Tutte le pietre incise, che trovansi in questo volume, sono tolte dai
+                        gabinetti d’Inghilterra.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,37 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e27440">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PAETI Lucae</span>,<span class="title">De mensuris et ponderibus romanis et graecis</span>. Libri quinque,<span class="pubPlace">Venetiis</span><span class="date">1573</span>, in 4, Aldo.
-                  <div class="note">Da pochi si conosce questa edizione in quarto forse più rara di quella in foglio piccolo:
-                     si osservi se alla pagina88 vi sia la bellissima carta in foglio grande tutta coperta di monumenti e figure
-                     intagliate in legno da ambo i lati. Troviamo però nella Pinelliana citata questa nostra
-                     edizione.</div>
-                  <div class="pageBreak"><span>302</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e27440">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PAETI Lucae</span>, <span class="title">De mensuris et ponderibus romanis et graecis</span> . Libri quinque, <span class="pubPlace">Venetiis</span>  <span class="date">1573</span> , in 4, Aldo.
+                     <div class="note">Da pochi si conosce questa edizione in quarto forse più rara di quella in foglio piccolo:
+                        si osservi se alla pagina88 vi sia la bellissima carta in foglio grande tutta coperta di monumenti e figure
+                        intagliate in legno da ambo i lati. Troviamo però nella Pinelliana citata questa nostra
+                        edizione.</div>
+                     <div class="pageBreak"><span>302</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

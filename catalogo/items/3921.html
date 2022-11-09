@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e10833">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ZOEGA Giorgio</span>,<span class="title">I bassi rilievi antichi di Roma incisi da Tommaso Piroli</span>,<span class="pubPlace">Roma</span><span class="date">1708</span>, in 4 grande.
-                  <div class="note">Questi due volumi contengono i bassi rilievi della Villa Albani pubblicati nello stabilimento
-                     calcografico di Pietro Piranesi. Sono 115 tavole che presentano altrettanti monumenti
-                     con profonda dottrina illustrati, opera di già divenuta rara a trovarsi.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -43,7 +30,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e10833">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ZOEGA Giorgio</span>, <span class="title">I bassi rilievi antichi di Roma incisi da Tommaso Piroli</span> , <span class="pubPlace">Roma</span>  <span class="date">1708</span> , in 4 grande.
+                     <div class="note">Questi due volumi contengono i bassi rilievi della Villa Albani pubblicati nello stabilimento
+                        calcografico di Pietro Piranesi. Sono 115 tavole che presentano altrettanti monumenti
+                        con profonda dottrina illustrati, opera di già divenuta rara a trovarsi.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

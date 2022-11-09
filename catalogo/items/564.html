@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e16311">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">MÉMOIRES critiques d’architecture contenantes l’idée de la vraye et de la fausse architecture;
-                     une instruction sur les trompéries des ouvriers, une dissertatition sur la formation
-                     des mineraux et leur emploi, sur la qualità de la fumée et de la manière d’y remédier
-                     et sur d’autres matières non encore éclaircies,</span><span class="pubPlace">Paris</span><span class="date">1702,</span><span class="extent">en 12.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,20 @@
             <dt><a href="../dcl/dcb.html">dcb</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e16311">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">MÉMOIRES critiques d’architecture contenantes l’idée de la vraye et de la fausse architecture;
+                        une instruction sur les trompéries des ouvriers, une dissertatition sur la formation
+                        des mineraux et leur emploi, sur la qualità de la fumée et de la manière d’y remédier
+                        et sur d’autres matières non encore éclaircies,</span>  <span class="pubPlace">Paris</span>  <span class="date">1702,</span>  <span class="extent">en 12.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Libretto piccantissimo e pieno di sali e di critica singolare.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

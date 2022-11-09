@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.13">section 1.13</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.13">section 1.13</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e22498">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ANGUILLARA Giovanni Andrea</span>,<span class="title">Le Metamorfosi d’Ovidio ridotte in ottava rima</span>,<span class="pubPlace">Venezia</span>,pressoBernardo Giunti,<span class="date">1592</span>, in 4, fig. con belle tavole in legno.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +28,15 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e22498">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ANGUILLARA Giovanni Andrea</span>, <span class="title">Le Metamorfosi d’Ovidio ridotte in ottava rima</span> , <span class="pubPlace">Venezia</span> ,presso <span class="publisher">Bernardo Giunti</span> , <span class="date">1592</span> , in 4, fig. con belle tavole in legno.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

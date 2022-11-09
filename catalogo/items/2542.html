@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.2">section 2.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.2">section 2.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e1036">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">OBELISCI Vaticani Opuscula. Sive Gallesini Petri, obeliscus vaticanus, pietate invictissimae
-                     crucis sacerd. ad perpetuitatem praeclaris litteris laudatus</span>,<span class="pubPlace">Romae</span><span class="date">1587</span>. —<span class="bibl"><span class="title">Ordo dedicationis obelisci</span>,<span class="pubPlace">Romae</span><span class="date">1586</span></span>. —<span class="bibl"><span class="title">Familiaris epistola e Roma in Hispaniam missa in qua explicatur translatio obelisci</span>,<span class="pubPlace">Romae</span><span class="date">1586</span>.</span>—<span class="bibl"><span class="author">Bargaei Petri Angeli</span>,<span class="title">Commentarius de obelisco</span>,<span class="pubPlace">Romae</span><span class="date">1586</span>.</span>—<span class="bibl"><span class="author">De Aguilar Jo.</span><span class="title">Baptista in dedicatione obelisci epigrammata collecta</span>,<span class="pubPlace">Romae</span><span class="date">1587</span>.</span>—<span class="bibl"><span class="author">Blanci Guglielmi</span>,<span class="title">Epigrammata in obeliscum</span>,<span class="pubPlace">Romae</span><span class="date">1586</span>.</span>—<span class="bibl"><span class="author">Gaci Cosimo</span>,<span class="title">Dialogo in cui si parla delle operazioni di Sisto V e in particolare del trasporto
-                        dell’obelisco vaticano</span>,<span class="pubPlace">Roma</span><span class="date">1586</span>.</span>—<span class="bibl"><span class="author">Pigafetta Filippo</span>,<span class="title">Discorso intorno la storia della guglia e della ragione del muoverla</span>,<span class="pubPlace">Roma</span><span class="date">1586</span>, in 4.
-                     <div class="note">Collezione difficile a riunirsi. Col ritratto di Sisto V in principio.</div></span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -79,7 +66,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e1036">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">OBELISCI Vaticani Opuscula. Sive Gallesini Petri, obeliscus vaticanus, pietate invictissimae
+                        crucis sacerd. ad perpetuitatem praeclaris litteris laudatus</span> , <span class="pubPlace">Romae</span>  <span class="date">1587</span> . —<span class="bibl"><span class="title">Ordo dedicationis obelisci</span> , <span class="pubPlace">Romae</span>  <span class="date">1586</span></span>. —<span class="bibl"><span class="title">Familiaris epistola e Roma in Hispaniam missa in qua explicatur translatio obelisci</span> , <span class="pubPlace">Romae</span>  <span class="date">1586</span> .</span>—<span class="bibl"><span class="author">Bargaei Petri Angeli</span>, <span class="title">Commentarius de obelisco</span> , <span class="pubPlace">Romae</span>  <span class="date">1586</span> .</span>—<span class="bibl"><span class="author">De Aguilar Jo.</span> <span class="title">Baptista in dedicatione obelisci epigrammata collecta</span> , <span class="pubPlace">Romae</span>  <span class="date">1587</span> .</span>—<span class="bibl"><span class="author">Blanci Guglielmi</span>, <span class="title">Epigrammata in obeliscum</span> , <span class="pubPlace">Romae</span>  <span class="date">1586</span> .</span>—<span class="bibl"><span class="author">Gaci Cosimo</span>, <span class="title">Dialogo in cui si parla delle operazioni di Sisto V e in particolare del trasporto
+                           dell’obelisco vaticano</span> , <span class="pubPlace">Roma</span>  <span class="date">1586</span> .</span>—<span class="bibl"><span class="author">Pigafetta Filippo</span>, <span class="title">Discorso intorno la storia della guglia e della ragione del muoverla</span> , <span class="pubPlace">Roma</span>  <span class="date">1586</span> , in 4.
+                        <div class="note">Collezione difficile a riunirsi. Col ritratto di Sisto V in principio.</div></span></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

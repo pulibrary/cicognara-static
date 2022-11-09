@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.16">section 2.16</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.16">section 2.16</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e16652">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GARSSAULT (de) F. A.</span>,<span class="title">Le nouveau parfait maréchal ou la connoisance générale, et universelle du cheval:
-                     divisé en 7 traités, avec un dictionnaire des termes de cavalérie</span>,<span class="pubPlace">Paris</span><span class="date">1797</span>, in 4, figur.
-                  <div class="note">Opera pregievole, di cui si fecero molte edizioni sempre ricorrette ed aumentate,
-                     delle quali questa è la quinta con 29 tavole relative al cavallo, e 20 ai semplici
-                     impiegati nella medicatura. Vedi Traité des voitures.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +23,19 @@
             <dt><a href="../dcl/10c.html">10c</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e16652">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GARSSAULT (de) F. A.</span>, <span class="title">Le nouveau parfait maréchal ou la connoisance générale, et universelle du cheval:
+                        divisé en 7 traités, avec un dictionnaire des termes de cavalérie</span> , <span class="pubPlace">Paris</span><span class="date">1797</span> , in 4, figur.
+                     <div class="note">Opera pregievole, di cui si fecero molte edizioni sempre ricorrette ed aumentate,
+                        delle quali questa è la quinta con 29 tavole relative al cavallo, e 20 ai semplici
+                        impiegati nella medicatura. Vedi Traité des voitures.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

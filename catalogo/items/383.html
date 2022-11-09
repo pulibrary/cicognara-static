@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e11195">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ALBERTI Leonis Baptistae</span>florentini,<span class="title">Momus,</span><span class="pubPlace">Romae,</span>ex aedibus Jacobi Mazocchii,<span class="date">1520,</span><span class="extent">editio princeps, in 4 parv.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -33,7 +23,23 @@
             <dt><a href="../dcl/15r.html">15r</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e11195">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ALBERTI Leonis Baptistae</span>florentini, <span class="title">Momus,</span>  <span class="pubPlace">Romae,</span>  <span class="publisher">ex aedibus Jacobi Mazocchii,</span>  <span class="date">1520,</span>  <span class="extent">editio princeps, in 4 parv.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Sul frontispizio è l’arme del Cardinale Pietro Accolti anconetano, cui il Mazocchi
+                     dedica l’edizione. A tergo del frontespizio è il motu proprio di Leone X. Il secondo
+                     foglietto contiene la dedicatoria in bellissimi caratteri rotondi più piccoli di quelli
+                     del testo. Immediatamente segue il testo, diviso in quattro libri e compreso in 96
+                     foglietti di stampa, sull’ultimo de’ quali è la data. Altri due foglietti seguono;
+                     dei quali uno contiene l’errata e l’altro è bianco: sono quindi in tutto 100 foglietti.
+                     Esemplare bellis. in mar. dor.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

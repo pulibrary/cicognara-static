@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9816">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MARLIANI B.</span>,<span class="title">Topographia urbis Romae ad Franciscum Regem Gallorum, ejusdem urbis liberatorem invictum</span>,<span class="pubPlace">Romae</span>, in aedibus Valerii Dorici et Aloysii fratris,Academiae Romanaeimpressorum mense Decembris<span class="date">1544</span>, in fol., fig.
-                  <div class="note">Questa è la principale edizione di questo autore ornata di belle tavole in legno distribuite
-                     fra il testo, e ritiensi in pregio per aver servito a molte opere posteriori, e si
-                     trovano pochi esemplari di bella conservazione.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9816">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MARLIANI B.</span>, <span class="title">Topographia urbis Romae ad Franciscum Regem Gallorum, ejusdem urbis liberatorem invictum</span> , <span class="pubPlace">Romae</span> , in aedibus Valerii Dorici et Aloysii fratris, <span class="publisher">Academiae Romanae</span> impressorum mense Decembris <span class="date">1544</span> , in fol., fig.
+                     <div class="note">Questa è la principale edizione di questo autore ornata di belle tavole in legno distribuite
+                        fra il testo, e ritiensi in pregio per aver servito a molte opere posteriori, e si
+                        trovano pochi esemplari di bella conservazione.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

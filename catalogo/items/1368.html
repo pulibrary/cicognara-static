@@ -5,38 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e24567">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ROSMINI Carlo</span>,<span class="title">Quattro opuscoli inediti del secolo XVI pubblicati in occasione degli Eccelsi Sponsali
-                     Trivulzio in Archinti</span>,<span class="pubPlace">Milano</span><span class="date">1819</span>, in 8.
-                  <div class="note">Questi sono l’entrata solenne in Parigi di Maria sorella del re d’Inghilterra quale
-                     sposa di Luigi XII incoronata al 4 Novembre 1514. Il Funerale di Luigi XII nel 1 Gen.
-                     1515. L’entrata in Parigi di Francesco I a 15 Febbraro 1515. Una lettera scritta dal
-                     segretario dei quattro oratori della R Veneziana spediti a Milano per onorare in quell’anno
-                     il re di Francia.</div>MDXXXV</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e24567">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ROSMINI Carlo</span>, <span class="title">Quattro opuscoli inediti del secolo XVI pubblicati in occasione degli Eccelsi Sponsali
+                        Trivulzio in Archinti</span> , <span class="pubPlace">Milano</span>  <span class="date">1819</span> , in 8.
+                     <div class="note">Questi sono l’entrata solenne in Parigi di Maria sorella del re d’Inghilterra quale
+                        sposa di Luigi XII incoronata al 4 Novembre 1514. Il Funerale di Luigi XII nel 1 Gen.
+                        1515. L’entrata in Parigi di Francesco I a 15 Febbraro 1515. Una lettera scritta dal
+                        segretario dei quattro oratori della R Veneziana spediti a Milano per onorare in quell’anno
+                        il re di Francia.</div>MDXXXV</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

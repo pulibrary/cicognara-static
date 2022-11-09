@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7189">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MECHEL Chrétien</span>,<span class="title">Catalogue des tableaux de la Galérie Impériale et Royale de Vienne</span>, à<span class="pubPlace">Basle</span>, chez l’auteur,<span class="date">1784</span>, in 8.
-                  <div class="note">Sonovi in fine le piante e i prospetti dell’edificio. Il catalogo è fatto da un uomo
-                     che aveva gusto, ma ha voluto arricchirlo di troppe superfluità, tutto lodando, quasi
-                     che il numero fosse un pregio da preferirsi alla scelta. MITELLI Giuseppe Maria. Vedi
-                     Caracci nelle Collezioni figurate. MOLINARI Stefano. Vedi Scola italicae picturae
-                     cui va unito.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/2kp.html">2kp</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7189">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MECHEL Chrétien</span>, <span class="title">Catalogue des tableaux de la Galérie Impériale et Royale de Vienne</span> , à <span class="pubPlace">Basle</span> , chez l’auteur, <span class="date">1784</span> , in 8.
+                     <div class="note">Sonovi in fine le piante e i prospetti dell’edificio. Il catalogo è fatto da un uomo
+                        che aveva gusto, ma ha voluto arricchirlo di troppe superfluità, tutto lodando, quasi
+                        che il numero fosse un pregio da preferirsi alla scelta. MITELLI Giuseppe Maria. Vedi
+                        Caracci nelle Collezioni figurate. MOLINARI Stefano. Vedi Scola italicae picturae
+                        cui va unito.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9294">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">DISCORSO sopra il nuovo ornato della guglia di S. Pietro</span>,<span class="pubPlace">Roma</span><span class="date">1723</span>, in fol., fig., con tre grandi tavole. — Aggiuntavi:<span class="title">La relazione della statua equestre
-                     <div class="pageBreak"><span>188</span></div>di Carlo Magno nel portico Vaticano scolpita da Agostino Cornacchi</span>,<span class="pubPlace">Siena</span><span class="date">1735</span>. — Aggiuntavi:<span class="title">L’istoria della città di Chiusi in Toscana dal 1436 al 1595 di messer Jacopo Gori
-                     da Senalonga</span>, in fol.,<span class="pubPlace">Firenze</span><span class="date">1747</span>. — In fine Corsini Eduardi Herculis quies et expiatio in eximio Farnesiano marmore
-                  expressae. Colla tavola in fine.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -52,7 +39,18 @@
             <dt><a href="../dcl/zg0.html">zg0</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9294">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">DISCORSO sopra il nuovo ornato della guglia di S. Pietro</span> , <span class="pubPlace">Roma</span>  <span class="date">1723</span> , in fol., fig., con tre grandi tavole. — Aggiuntavi: <span class="title">La relazione della statua equestre
+                        <div class="pageBreak"><span>188</span></div>di Carlo Magno nel portico Vaticano scolpita da Agostino Cornacchi</span> , <span class="pubPlace">Siena</span>  <span class="date">1735</span> . — Aggiuntavi: <span class="title">L’istoria della città di Chiusi in Toscana dal 1436 al 1595 di messer Jacopo Gori
+                        da Senalonga</span> , in fol., <span class="pubPlace">Firenze</span>  <span class="date">1747</span> . — In fine Corsini Eduardi Herculis quies et expiatio in eximio Farnesiano marmore
+                     expressae. Colla tavola in fine.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

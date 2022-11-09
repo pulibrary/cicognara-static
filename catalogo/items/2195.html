@@ -5,39 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e30561">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BALDINDCCI Filippo</span>,<span class="title">Notizie dei professori del disegno da Cimabue in qua, distinte in secoli e decennali</span>,<span class="pubPlace">Firenze</span>dal<span class="date">1681 al 1728</span>, in 4, legata in 3 volumi.
-                  <div class="note">Prima e pregiatissima edizione delle memorie dell’arte che
-                     <div class="pageBreak"><span>378</span></div>dopo il Vasari meritavano di ottenere il pieno volo della posterità. La prima parte
-                     dell’opera si pubblicò nel 1681 per Santi Franchi e in principio avanti le approvazioni
-                     per la stampa osservasi il rarissimo privilegio di Carlo il Re di Spagna colle armi,
-                     che manca in moltissimi esemplari: e questa parte forma il secolo I. Il secondo dal
-                     1300 al 1400 fu stampato da Pietro Marini nel 1686. Il secolo terzo e quarto dal 1400
-                     al 1550 distinto sempre in decennali, è opera postuma stampata per Tarlini e Franchi
-                     nel 1728 col ritratto del Baldinucci intagliato da Pietro Rotari veronese. La seconda
-                     parte del secolo 4 contiene tre decennali dal 1550 al 1580 nella sudetta stamperia
-                     di Pietro Marini 1688; e altri tre decennali dal 1580 al 1610 li stampò Giuseppe Manni
-                     nel 1702; il secolo quinto finalmente dal 1610 al 1670 stampato pei Tartini e Franchi
-                     comparve nel 1728.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -50,7 +28,27 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e30561">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BALDINDCCI Filippo</span>, <span class="title">Notizie dei professori del disegno da Cimabue in qua, distinte in secoli e decennali</span> , <span class="pubPlace">Firenze</span> dal <span class="date">1681 al 1728</span> , in 4, legata in 3 volumi.
+                     <div class="note">Prima e pregiatissima edizione delle memorie dell’arte che
+                        <div class="pageBreak"><span>378</span></div>dopo il Vasari meritavano di ottenere il pieno volo della posterità. La prima parte
+                        dell’opera si pubblicò nel 1681 per Santi Franchi e in principio avanti le approvazioni
+                        per la stampa osservasi il rarissimo privilegio di Carlo il Re di Spagna colle armi,
+                        che manca in moltissimi esemplari: e questa parte forma il secolo I. Il secondo dal
+                        1300 al 1400 fu stampato da Pietro Marini nel 1686. Il secolo terzo e quarto dal 1400
+                        al 1550 distinto sempre in decennali, è opera postuma stampata per Tarlini e Franchi
+                        nel 1728 col ritratto del Baldinucci intagliato da Pietro Rotari veronese. La seconda
+                        parte del secolo 4 contiene tre decennali dal 1550 al 1580 nella sudetta stamperia
+                        di Pietro Marini 1688; e altri tre decennali dal 1580 al 1610 li stampò Giuseppe Manni
+                        nel 1702; il secolo quinto finalmente dal 1610 al 1670 stampato pei Tartini e Franchi
+                        comparve nel 1728.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

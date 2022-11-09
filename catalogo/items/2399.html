@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e31947">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VEDRIANI Lodovico</span>,<span class="title">Raccolta de’ pittori, scultori, architetti modenesi più celebri</span>,<span class="pubPlace">Modena</span><span class="date">1622</span>, in ottavo.<span class="bibl">— Aggiuntivi:<span class="title">I Dottori Modanesi dello stesso</span>,<span class="date">1665</span>, figurato.
-                     <div class="note">Trovasi nel nostro esemplare il prospetto laterale e la facciata della chiesa Cattedrale
-                        e una terza tavola colla elevazione della torre, che mancano sovente agli esemplari.</div></span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -37,7 +25,17 @@
             <dt><a href="../dcl/8kb.html">8kb</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e31947">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VEDRIANI Lodovico</span>, <span class="title">Raccolta de’ pittori, scultori, architetti modenesi più celebri</span> , <span class="pubPlace">Modena</span>  <span class="date">1622</span> , in ottavo.<span class="bibl">— Aggiuntivi:<span class="title">I Dottori Modanesi dello stesso</span> , <span class="date">1665</span> , figurato.
+                        <div class="note">Trovasi nel nostro esemplare il prospetto laterale e la facciata della chiesa Cattedrale
+                           e una terza tavola colla elevazione della torre, che mancano sovente agli esemplari.</div></span></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

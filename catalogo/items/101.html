@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e3208">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">CAYLUS M. le Comte</span>, et<span class="author">M. Majault</span>,<span class="title">Memoires sur le peinture à l’encaustique et sur la peinture à la cire,</span><span class="pubPlace">Geneve</span><span class="date">1780,</span><span class="extent">in 8 fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -33,7 +23,23 @@
             <dt><a href="../dcl/gc3.html">gc3</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e3208">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">CAYLUS M. le Comte</span>, et <span class="author">M. Majault</span>, <span class="title">Memoires sur le peinture à l’encaustique et sur la peinture à la cire,</span>  <span class="pubPlace">Geneve</span>  <span class="date">1780,</span>  <span class="extent">in 8 fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Con frontispizio figurato allusivo all’argomento e due tavole in fine degli utensili
+                     necessari a questo genere di pittura.</div>
+                  <div class="note">Il giorno 12 Novembre 1754 in una pubblica assemblea l’autore espose il metodo della
+                     pittura all’encausto all’accademia delle iscrizioni e belle lettere per la prima volta,
+                     producendo una testa di Minerva da lui dipinta: infatti la prima edizione di quest’opera
+                     fu nel 1755 stampata a Ginevra, di cui questa è una ristampa.</div>
+                  <div class="note">Vedi la Peinture Poeme.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

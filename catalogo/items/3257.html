@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e6116">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">LYDII Jacobi</span>,<span class="title">Sintagma sacrum de re militari nec non de jure jurando dissertatio philologica. Opus
-                     postumum cum fig. aeneis elegantissime incisis illustratum a Salomone Van Til</span>.<span class="pubPlace">Dordraci</span>,<span class="date">1698</span>, in 4, fig.
-                  <div class="note">Le tavole sparse nel testo dell’opera sono di passabile intaglio, utili per le armature
-                     e altri oggetti militari</div>.
-                  <div class="pageBreak"><span>118</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e6116">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">LYDII Jacobi</span>, <span class="title">Sintagma sacrum de re militari nec non de jure jurando dissertatio philologica. Opus
+                        postumum cum fig. aeneis elegantissime incisis illustratum a Salomone Van Til</span> . <span class="pubPlace">Dordraci</span> , <span class="date">1698</span> , in 4, fig.
+                     <div class="note">Le tavole sparse nel testo dell’opera sono di passabile intaglio, utili per le armature
+                        e altri oggetti militari</div>.
+                     <div class="pageBreak"><span>118</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

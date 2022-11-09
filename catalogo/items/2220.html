@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e30735">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BULLARD Isaac</span>,<span class="title">Académie des sciences et des arts contenant les vies et les éloges historiques des
-                     hommes illustres qui ont excellé en cette profession depuis environ 4 siecles parmi
-                     diverses nations de l’Europe avec leurs portraits</span>,<span class="pubPlace">Bruxelles</span><span class="date">1695</span>, in fol., vol. 2, fig.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e30735">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BULLARD Isaac</span>, <span class="title">Académie des sciences et des arts contenant les vies et les éloges historiques des
+                        hommes illustres qui ont excellé en cette profession depuis environ 4 siecles parmi
+                        diverses nations de l’Europe avec leurs portraits</span> , <span class="pubPlace">Bruxelles</span>  <span class="date">1695</span> , in fol., vol. 2, fig.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

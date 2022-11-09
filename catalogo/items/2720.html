@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2351">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">WINCKELMANN</span>,<span class="title">Lettre a M. le comte de Brül sur les dëcouvertes d’Herculanum</span>, a<span class="pubPlace">Dresde</span><span class="date">1764</span>, in 4, M. 93.
-                  <div class="note">Con una tavola al principio ed un’altra alla p. 92. Questa lettera incontrò grandi
-                     e forti opposizioni</div>.
-                  <div class="pageBreak"><span>38</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/bs5.html">bs5</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2351">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">WINCKELMANN</span>, <span class="title">Lettre a M. le comte de Brül sur les dëcouvertes d’Herculanum</span> , a <span class="pubPlace">Dresde</span>  <span class="date">1764</span> , in 4, M. 93.
+                     <div class="note">Con una tavola al principio ed un’altra alla p. 92. Questa lettera incontrò grandi
+                        e forti opposizioni</div>.
+                     <div class="pageBreak"><span>38</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

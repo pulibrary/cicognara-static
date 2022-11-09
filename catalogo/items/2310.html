@@ -5,52 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e31342">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MALVASIA Conte Carlo Cesare</span>,<span class="title">La Felsina pittrice, Vite de’ pittori bolognesi divise in due tomi, con indici in
-                     fine copiosissimi</span>,<span class="pubPlace">Bologna</span><span class="date">1678</span>, in 4 vol. 2. Per l’erede di Domenico Barbieri.
-                  <div class="note">Con molti ritratti intagliati in legno. Opera che sarebbe stat anche più preziosa
-                     che non è di fatto, se l’autore si fosse potuto astenere da certe prevenzioni che
-                     ove sono troppo favorevoli, ove troppo contrarie il fanno propendere o mancare circa
-                     il merito di molti artisti e le loro opere. Non conosciamo che una sola edizione di
-                     questo libro, ma mentre andavasi divulgando furono in questa operate parecchie modificazioni,
-                     delle quali alcune indicheremo per conoscere in questa maniera gli esemplari di più
-                     antica impressione. Due esemplari noi ne abbiamo, amendue rari e singolari, ma riputiamo
-                     per altro fra’ più antichi quello ove nel frontespizio del secondo volume, dedicato
-                     (come il primo) al re di Francia Luigi XIIII rimase in bianco il nome del re e non
-                     trovansi le parole sempre vittorioso e in fondo alla pagina dopo la data e il nome
-                     dello stampatore, non leggesi alcuna altra parola, mentre negli esemplari più comuni,
-                     vi si legge inoltre ad istanza di Francesco da Vico detto il Turrino. Alla pagina
-                     poi 59 ove parla della bellezza di Guido Reni giovine, dopo avere in principio della
-                     vita prodotto il suo ritratto da uomo adulto, vi si trova uno spazio ed un elegante
-                     testa che sembra più di donna, che d’uomo, che dice egli d’aver fatta disegnare dieci
-                     volte e intagliar tre; e non essergli riescita a suo modo: neglialtri esemplari posteriormente pubblicati non si trova il ritratto, omesso dopo essersi
-                     fatto da valenti maestri disegnare ben diciotto volte e tre intagliare dal bravo Cassioni.
-                     Il vacuo che rimase per l’omissione del ritratto è riempito da pochi paragrafi e da
-                     una lettera del re di Polonia, per
-                     <div class="pageBreak"><span>393</span></div>non scomporre e ristampare tutte le pagine del volume, essendosi non ostante dovuto
-                     ricomporre, come può vedersi, quattro pagine. Altra variazione più conosciuta e meno
-                     difficile a trovarsi, in posteriori esemplari ma però esistente in amendue i nostri
-                     citati, incontrasi nel primo tomo a pag. 471 ove l’autore riconobbe di dover sopprimere
-                     uno squarcio ingiurioso, in cui denomina Rafaello un boccalaio urbinate.<span class="bibl">Vedi<span class="author">Crespi</span>,<span class="author">Bianconi</span>,<span class="author">Vittoria</span>,<span class="author">Dialoghi</span>.</span></div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -63,7 +28,40 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e31342">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MALVASIA Conte Carlo Cesare</span>, <span class="title">La Felsina pittrice, Vite de’ pittori bolognesi divise in due tomi, con indici in
+                        fine copiosissimi</span> , <span class="pubPlace">Bologna</span>  <span class="date">1678</span> , in 4 vol. 2. Per l’erede di Domenico Barbieri.
+                     <div class="note">Con molti ritratti intagliati in legno. Opera che sarebbe stat anche più preziosa
+                        che non è di fatto, se l’autore si fosse potuto astenere da certe prevenzioni che
+                        ove sono troppo favorevoli, ove troppo contrarie il fanno propendere o mancare circa
+                        il merito di molti artisti e le loro opere. Non conosciamo che una sola edizione di
+                        questo libro, ma mentre andavasi divulgando furono in questa operate parecchie modificazioni,
+                        delle quali alcune indicheremo per conoscere in questa maniera gli esemplari di più
+                        antica impressione. Due esemplari noi ne abbiamo, amendue rari e singolari, ma riputiamo
+                        per altro fra’ più antichi quello ove nel frontespizio del secondo volume, dedicato
+                        (come il primo) al re di Francia Luigi XIIII rimase in bianco il nome del re e non
+                        trovansi le parole sempre vittorioso e in fondo alla pagina dopo la data e il nome
+                        dello stampatore, non leggesi alcuna altra parola, mentre negli esemplari più comuni,
+                        vi si legge inoltre ad istanza di Francesco da Vico detto il Turrino. Alla pagina
+                        poi 59 ove parla della bellezza di Guido Reni giovine, dopo avere in principio della
+                        vita prodotto il suo ritratto da uomo adulto, vi si trova uno spazio ed un elegante
+                        testa che sembra più di donna, che d’uomo, che dice egli d’aver fatta disegnare dieci
+                        volte e intagliar tre; e non essergli riescita a suo modo: neglialtri esemplari posteriormente pubblicati non si trova il ritratto, omesso dopo essersi
+                        fatto da valenti maestri disegnare ben diciotto volte e tre intagliare dal bravo Cassioni.
+                        Il vacuo che rimase per l’omissione del ritratto è riempito da pochi paragrafi e da
+                        una lettera del re di Polonia, per
+                        <div class="pageBreak"><span>393</span></div>non scomporre e ristampare tutte le pagine del volume, essendosi non ostante dovuto
+                        ricomporre, come può vedersi, quattro pagine. Altra variazione più conosciuta e meno
+                        difficile a trovarsi, in posteriori esemplari ma però esistente in amendue i nostri
+                        citati, incontrasi nel primo tomo a pag. 471 ove l’autore riconobbe di dover sopprimere
+                        uno squarcio ingiurioso, in cui denomina Rafaello un boccalaio urbinate.<span class="bibl">Vedi<span class="author">Crespi</span>, <span class="author">Bianconi</span>, <span class="author">Vittoria</span>, <span class="author">Dialoghi</span>.</span></div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

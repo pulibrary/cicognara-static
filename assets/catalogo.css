@@ -1,11 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 
+body {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "head head head"
+        "side main main"
+        "footer footer footer";
+}
+
+#pageheader {
+    grid-area: head;
+}
+
+#side {
+    grid-area: side;
+    height: 100vh;
+}
+
+#main {
+    grid-area: main;
+    overflow: auto;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
 
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: #eee;
 }
 
 /* Display list items side by side */
@@ -41,16 +68,6 @@ dd {
 }
 
 
-/* For debugging and proofing*/
-span.bibl {
-    border: 1px dotted gray;
-}
-span.title {
-    background: rgb(255,255,235);
-}
-span.author {
-    background: rgb(235,255,255);
-}
 body {
     font-family: 'Gentium Basic', serif;
 }

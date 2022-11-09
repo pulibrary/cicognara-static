@@ -5,36 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e27711">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">SCHULZE Enrico</span>,<span class="title">Observationes ad rem athleticam pertinentes, Halae Magdeb. 1737, in 4, parv.</span>— Accedit de Spheristerio ex Hygiene, Dissertatio,<span class="pubPlace">Lypsiae</span><span class="date">1740</span>.
-                  <div class="note">— Et disputatio de ludis saecularibus veterum Romanorum Andreae Nagelii, Altorfii
-                     1743.
-                     <div class="pageBreak"><span>308</span></div>— Et Commentatio de opinatis saecularium ludorum notis in nummis romanorum gentium,
-                     Gottinga 1746, in 4</div>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e27711">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">SCHULZE Enrico</span>, <span class="title">Observationes ad rem athleticam pertinentes, Halae Magdeb. 1737, in 4, parv.</span> — Accedit de Spheristerio ex Hygiene, Dissertatio, <span class="pubPlace">Lypsiae</span><span class="date">1740</span> .
+                     <div class="note">— Et disputatio de ludis saecularibus veterum Romanorum Andreae Nagelii, Altorfii
+                        1743.
+                        <div class="pageBreak"><span>308</span></div>— Et Commentatio de opinatis saecularium ludorum notis in nummis romanorum gentium,
+                        Gottinga 1746, in 4</div>.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

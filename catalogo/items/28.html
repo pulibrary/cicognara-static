@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e1160">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">DIALOGUES sur les arts entre un artiste americain et un amateur français,</span><span class="pubPlace">Amsterdam</span><span class="date">1756.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -33,7 +23,23 @@
             <dt><a href="../dcl/wzd.html">wzd</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e1160">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">DIALOGUES sur les arts entre un artiste americain et un amateur français,</span>  <span class="pubPlace">Amsterdam</span>  <span class="date">1756.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Opuscolo singolare, che apparve nell’anno precedente a cui in forza particolarmente
+                     di un foglietto di supplica; diretto ai lettori in fine, fu mutata la data del luogo
+                     e dell’anno. La prima edizione comparve chez Duchesne 1755 ed il foglietto inserto
+                     alla fine del volume è una satira scritta da
+                     <div class="pageBreak"><span>5</span></div>qualcuno ferito dagli scritti dell’autore pieni di critica sanissima. In fronte all’esemplare
+                     sono alcune note di M. Villoison dalle quali si conosce come l’autore, quantunque
+                     anonimo, è lo stesso M. Estéve di Montpellier.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

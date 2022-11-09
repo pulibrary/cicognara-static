@@ -5,35 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2728">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">De BIE Jacques</span>,<span class="title">La France métallique, contenant les actions célebres des Rois, et des Reines, jusqu’à
-                     Lovis XIII</span>, 2 vol. leg. in uno,<span class="pubPlace">Paris</span><span class="date">1636</span>, avec un troisieme volume. Les familles de la France illustrées, Paris 1636, in fol.,
-                  fig.
-                  <div class="note">Può questo libro piuttosto ritenersi fra gli emblemi, che fra le opere di numismatica.
-                     In quell’epoca tutto veniva contrassegnato colle dévises e il genio e lo studio sopratutto
-                     di de Bie, vi contribuì, o seppe meglio d’ogni altro adattarsi al gusto dell’età sua.
-                     132 tavole sono nel primo volume; ma nel volume delle Famiglie Francesi illustrate
-                     le figure sono inserite fra il testo.</div>
-                  <div class="pageBreak"><span>47</span></div>p. 47</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -54,7 +36,23 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2728">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">De BIE Jacques</span>, <span class="title">La France métallique, contenant les actions célebres des Rois, et des Reines, jusqu’à
+                        Lovis XIII</span> , 2 vol. leg. in uno, <span class="pubPlace">Paris</span>  <span class="date">1636</span> , avec un troisieme volume. Les familles de la France illustrées, Paris 1636, in fol.,
+                     fig.
+                     <div class="note">Può questo libro piuttosto ritenersi fra gli emblemi, che fra le opere di numismatica.
+                        In quell’epoca tutto veniva contrassegnato colle dévises e il genio e lo studio sopratutto
+                        di de Bie, vi contribuì, o seppe meglio d’ogni altro adattarsi al gusto dell’età sua.
+                        132 tavole sono nel primo volume; ma nel volume delle Famiglie Francesi illustrate
+                        le figure sono inserite fra il testo.</div>
+                     <div class="pageBreak"><span>47</span></div>p. 47</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

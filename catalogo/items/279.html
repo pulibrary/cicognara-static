@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.4">section 1.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.4">section 1.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e8344">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GAURICI POMPONII</span>napoletani,<span class="title">De sculptura liber. Demontiosii Lud. De veterum sculptura, Gorlaei Abr. Dactyliotheca,</span><span class="pubPlace">Antuerpiae</span><span class="date">1609</span>,<span class="extent">in 4</span>, con frontispizio figurato.
-                  <div class="note">Non bisogna cercare in questo autore le teorie dell’arte di cui promette il titolo,
-                     ma bisogna soffrire che si parli di fisionomia e di tutt’altro, contentandosi di poche
-                     e rare notizie sfigurate di qualche artefice in un tempo che di 50 anni precedeva
-                     il Vasari.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e8344">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GAURICI POMPONII</span>napoletani, <span class="title">De sculptura liber. Demontiosii Lud. De veterum sculptura, Gorlaei Abr. Dactyliotheca,</span>  <span class="pubPlace">Antuerpiae</span>  <span class="date">1609</span> , <span class="extent">in 4</span> , con frontispizio figurato.
+                     <div class="note">Non bisogna cercare in questo autore le teorie dell’arte di cui promette il titolo,
+                        ma bisogna soffrire che si parli di fisionomia e di tutt’altro, contentandosi di poche
+                        e rare notizie sfigurate di qualche artefice in un tempo che di 50 anni precedeva
+                        il Vasari.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

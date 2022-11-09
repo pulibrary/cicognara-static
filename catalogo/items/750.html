@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.7">section 1.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.7">section 1.7</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20167">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ARNALDI Co. Enea</span>,<span class="title">Lo stesso</span>, seconda edizione,<span class="pubPlace">Vicenza</span><span class="date">1783</span>, in 4, pic. fig. —<span class="author">BECEGA Tom.</span>,<span class="title">Saggi d’architettura teatrale</span>. Vedi<span class="title">Calderari Ottone</span>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -33,7 +23,15 @@
             <dt><a href="../dcl/bcz.html">bcz</a></dt>
             <dd>Getty Research Institute</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20167">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ARNALDI Co. Enea</span>, <span class="title">Lo stesso</span> , seconda edizione, <span class="pubPlace">Vicenza</span>  <span class="date">1783</span> , in 4, pic. fig. — <span class="author">BECEGA Tom.</span>, <span class="title">Saggi d’architettura teatrale</span> . Vedi <span class="title">Calderari Ottone</span> .</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e4404">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DE JORIO Andrea</span>,<span class="title">Sul metodo degli antichi nel di pingere i vasi e sulle rappresentanze de’ più interessanti
-                     del R. Museo,</span><span class="pubPlace">Napoli</span><span class="date">1813,</span><span class="extent">in 8, M. 66.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,16 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e4404">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DE JORIO Andrea</span>, <span class="title">Sul metodo degli antichi nel di pingere i vasi e sulle rappresentanze de’ più interessanti
+                        del R. Museo,</span>  <span class="pubPlace">Napoli</span>  <span class="date">1813,</span>  <span class="extent">in 8, M. 66.</span> </span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

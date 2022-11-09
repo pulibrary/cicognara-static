@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9302">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DOSIO Joan. Antonii</span>,<span class="title">Urbis Romae aedificiorum illustrium quae supersunt reliquiae stylo ferreo ut hodie
-                     cernuntur descriptae a Jo. Baptista de Cavalleriis. Aeneis tabulis incisis repraesentatae<span class="date">1569</span>Kalendis Maj</span>, in 4.
-                  <div class="note">Sono tavole 50 di monumenti, al qual esemplare vanno aggiunte tavole 51 delle statue
-                     pubblicate dal Cavalieri dal n. 49 al 100 della prima parte dell’opera sua; prove
-                     di prima freschezza.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +31,19 @@
             <dt><a href="../dcl/8pg.html">8pg</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9302">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DOSIO Joan. Antonii</span>, <span class="title">Urbis Romae aedificiorum illustrium quae supersunt reliquiae stylo ferreo ut hodie
+                        cernuntur descriptae a Jo. Baptista de Cavalleriis. Aeneis tabulis incisis repraesentatae<span class="date">1569</span> Kalendis Maj</span> , in 4.
+                     <div class="note">Sono tavole 50 di monumenti, al qual esemplare vanno aggiunte tavole 51 delle statue
+                        pubblicate dal Cavalieri dal n. 49 al 100 della prima parte dell’opera sua; prove
+                        di prima freschezza.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

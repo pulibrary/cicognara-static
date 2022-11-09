@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e12071">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">SELECT views in Italy with topographical and historical descriptions in english and
-                     french</span>,<span class="pubPlace">London</span><span class="date">1792 à 1796</span>, vol. 2, in fol. obl., fig.
-                  <div class="note">Questi due volumi pubblicati da John Smith, William Byrne, et John Emes contengono
-                     72 tavole con le rispettive illustrazioni nelle due lingue. Le vedute sono di un elegante
-                     disegno, che rende il carattere dei luoghi, e intagliate con tutto il gusto. Il testo
-                     è breve, e succoso, e può ritenersi come uno de’ migliori libri di questo genere.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/fk9.html">fk9</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e12071">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">SELECT views in Italy with topographical and historical descriptions in english and
+                        french</span> , <span class="pubPlace">London</span>  <span class="date">1792 à 1796</span> , vol. 2, in fol. obl., fig.
+                     <div class="note">Questi due volumi pubblicati da John Smith, William Byrne, et John Emes contengono
+                        72 tavole con le rispettive illustrazioni nelle due lingue. Le vedute sono di un elegante
+                        disegno, che rende il carattere dei luoghi, e intagliate con tutto il gusto. Il testo
+                        è breve, e succoso, e può ritenersi come uno de’ migliori libri di questo genere.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2269">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">SAINT NON</span>,<span class="title">Voyage pittoresque ou description des royaumes de Naples et de Sicile</span>, vol. 4,<span class="pubPlace">Paris</span><span class="date">1781</span>, rel. en 3 in fol., fig.
-                  <div class="note">Quest’opera tiensi giustamente in gran pregio per la sua bella esecuzione e per la
-                     copia delle tavole intagliate con gusto e con diligenza. Il nostro esemplare riesce
-                     un po’ troppo pesante essendo tutte le tavole legate in un solo volume e in altri
-                     due la materia. Il testo è collazionato sulle minute indicazioni di Brunet e non manca
-                     che la tavola del Fallo, la quale vedesi strappata da qualche possessore scrupoloso.
-                     In alcuni esemplari sono ripetute a parte per maggior comodo le 14 tavole di medaglie
-                     che veggonsi al fine dei 14 capitoli del tomo quarto.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -49,7 +32,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2269">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">SAINT NON</span>, <span class="title">Voyage pittoresque ou description des royaumes de Naples et de Sicile</span> , vol. 4, <span class="pubPlace">Paris</span>  <span class="date">1781</span> , rel. en 3 in fol., fig.
+                     <div class="note">Quest’opera tiensi giustamente in gran pregio per la sua bella esecuzione e per la
+                        copia delle tavole intagliate con gusto e con diligenza. Il nostro esemplare riesce
+                        un po’ troppo pesante essendo tutte le tavole legate in un solo volume e in altri
+                        due la materia. Il testo è collazionato sulle minute indicazioni di Brunet e non manca
+                        che la tavola del Fallo, la quale vedesi strappata da qualche possessore scrupoloso.
+                        In alcuni esemplari sono ripetute a parte per maggior comodo le 14 tavole di medaglie
+                        che veggonsi al fine dei 14 capitoli del tomo quarto.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

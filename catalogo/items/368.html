@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e10776">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VESALII Brucellensis</span>,<span class="title">Suorum de humani corporis fabrica librorum epitome, sive Vivae immagines partium corporis
-                     humanis aeneis formis expressae,</span><span class="pubPlace">Antuerpiae,</span>Plantin,<span class="date">1579,</span><span class="extent">in 4 fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,21 @@
             <dt><a href="../dcl/t7v.html">t7v</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e10776">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VESALII Brucellensis</span>, <span class="title">Suorum de humani corporis fabrica librorum epitome, sive Vivae immagines partium corporis
+                        humanis aeneis formis expressae,</span>  <span class="pubPlace">Antuerpiae,</span>  <span class="publisher">Plantin,</span>  <span class="date">1579,</span>  <span class="extent">in 4 fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Testo di questo libro è stampato con bellissimi tipi e le tavole anatomiche, che il
+                     valverde trasse dall’opera grande di Vesalio, furono incise in rame con diligenza
+                     infinita e dispendio, non pareggiando però la preziosità ed il gusto di quelle intagliate
+                     in legno.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

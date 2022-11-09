@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e9310">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">COUSIN Maître Jean</span>,<span class="title">Livre de portraicture,</span>à<span class="pubPlace">Paris</span>, chezGuillaume Le Bé,<span class="date">1671.</span><div class="note">La pagina manoscritta che precede il frontispizio intende a provare che la carta è
-                     sbagliata e che questa è la prima edizione del 1571, ovvero l’altra del 1589.</div>
-                  <div class="note">Le 40 tavole di questo libretto (che sono freschissime) intagliate in legno e il bellissimo
-                     frontispizio figurato assai bene, attestano le cognizioni e il gran fondamento che
-                     aveva nell’arte questo autore.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e9310">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">COUSIN Maître Jean</span>, <span class="title">Livre de portraicture,</span> à <span class="pubPlace">Paris</span> , chez <span class="publisher">Guillaume Le Bé,</span>  <span class="date">1671.</span> 
+                     <div class="note">La pagina manoscritta che precede il frontispizio intende a provare che la carta è
+                        sbagliata e che questa è la prima edizione del 1571, ovvero l’altra del 1589.</div>
+                     <div class="note">Le 40 tavole di questo libretto (che sono freschissime) intagliate in legno e il bellissimo
+                        frontispizio figurato assai bene, attestano le cognizioni e il gran fondamento che
+                        aveva nell’arte questo autore.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

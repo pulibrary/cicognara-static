@@ -5,37 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7296">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">Le NOIR Aléxandre</span>,<span class="title">Musée des monumens francois ou description historique et chronologique des statues
-                     en marbre, et en bronze, bas reliefs et tombeaux pour servir à l’histoire de France,
-                     et à celle de l’art, augmentéed’une dissertation sur les costumes de chaque siécle</span>,<span class="pubPlace">Paris</span><span class="date">1800 a 1803</span>, vol. 6, in 8, fig.
-                  <div class="note">Le numerose tavole di quest’opera molto estesa disegnate dall’autore e da M. Percier
-                     sono intagliate da Guyot. Al quinto tomo in fine trovasi un indice di materie amplissimo
-                     e il sesto volume riguarda la pittura sul vetro e specialmente le pitture della favola
-                     di Psiche e Cupido tolta dai disegni di Raffaello: ma è duopo notare non essere presa
-                     in realtà da quei disegni, che gli scolari di Marcantonio ci conservarono secondo
-                     la favola d’Apulejo, trovandosi appena in qualche luogo rimembranza, o plagio dei
-                     medesimi. La raccolta dei monumenti illustrati in quest’opera era grandissima, ora
-                     però nuovamente dispersa con poco successo.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -53,7 +33,25 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7296">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">Le NOIR Aléxandre</span>, <span class="title">Musée des monumens francois ou description historique et chronologique des statues
+                        en marbre, et en bronze, bas reliefs et tombeaux pour servir à l’histoire de France,
+                        et à celle de l’art, augmentéed’une dissertation sur les costumes de chaque siécle</span> , <span class="pubPlace">Paris</span>  <span class="date">1800 a 1803</span> , vol. 6, in 8, fig.
+                     <div class="note">Le numerose tavole di quest’opera molto estesa disegnate dall’autore e da M. Percier
+                        sono intagliate da Guyot. Al quinto tomo in fine trovasi un indice di materie amplissimo
+                        e il sesto volume riguarda la pittura sul vetro e specialmente le pitture della favola
+                        di Psiche e Cupido tolta dai disegni di Raffaello: ma è duopo notare non essere presa
+                        in realtà da quei disegni, che gli scolari di Marcantonio ci conservarono secondo
+                        la favola d’Apulejo, trovandosi appena in qualche luogo rimembranza, o plagio dei
+                        medesimi. La raccolta dei monumenti illustrati in quest’opera era grandissima, ora
+                        però nuovamente dispersa con poco successo.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

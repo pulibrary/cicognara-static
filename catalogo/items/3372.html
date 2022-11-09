@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e6917">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BONANNI Phil.</span>,<span class="title">Museum Kircherianum sive Museum a P. Athanasio Kircherio in Coll. Romano, jamdudum
-                     incaeptum, nuper restitutum, auctum etc</span>. a Phil. Bonanno, Romae 1709, in fol., fig. Edizione con numerose figure in 122 tavole
-                  e 44 che rappresentano una gran serie di conchiglie e col ritratto in fronte di Francesco
-                  Maria Ruspoli.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e6917">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BONANNI Phil.</span>, <span class="title">Museum Kircherianum sive Museum a P. Athanasio Kircherio in Coll. Romano, jamdudum
+                        incaeptum, nuper restitutum, auctum etc</span> . a Phil. Bonanno, Romae 1709, in fol., fig. Edizione con numerose figure in 122 tavole
+                     e 44 che rappresentano una gran serie di conchiglie e col ritratto in fronte di Francesco
+                     Maria Ruspoli.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

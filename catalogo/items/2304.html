@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e31305">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">LIONI Ottavio</span>,.<span class="title">Ritratti di alcuni celebri pittori del secolo XVII da lui disegnati ed intagliati
-                     in rame, con le vite dei medesimi tratte da vari autori</span>. —<span class="bibl">Aggiunta<span class="title">la vita di Carlo Maratti scritta dal Bellori fino dal 1689 e terminata da altri</span>, non più stampata,<span class="pubPlace">Roma</span><span class="date">1731</span>, in 4, fig.</span><div class="note">Undici di questi ritratti sono intagliati da Ottavio superiormente e sono bellissime
-                     prove; l’ultimo del Maratti è d’altra mano. Gli intagli di questo maestro sono pochissimi
-                     e rari.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e31305">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">LIONI Ottavio</span>,. <span class="title">Ritratti di alcuni celebri pittori del secolo XVII da lui disegnati ed intagliati
+                        in rame, con le vite dei medesimi tratte da vari autori</span> . —<span class="bibl">Aggiunta<span class="title">la vita di Carlo Maratti scritta dal Bellori fino dal 1689 e terminata da altri</span> , non più stampata, <span class="pubPlace">Roma</span>  <span class="date">1731</span> , in 4, fig.</span><div class="note">Undici di questi ritratti sono intagliati da Ottavio superiormente e sono bellissime
+                        prove; l’ultimo del Maratti è d’altra mano. Gli intagli di questo maestro sono pochissimi
+                        e rari.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

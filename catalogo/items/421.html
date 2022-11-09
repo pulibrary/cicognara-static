@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e12231">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BARTOLI Cosimo</span>,<span class="title">Del modo di misurare le distanze, le superficie, i corpi, le piante, le provincie,
-                     le prospettive ec.,</span><span class="pubPlace">Venezia,</span>pel Franceschi,<span class="date">1564,</span><span class="extent">in 4, fig.</span><div class="note">Prima edizione col ritratto dell’autore intagliato in legno, non meno che le figure
-                     inserite fra il testo.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e12231">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BARTOLI Cosimo</span>, <span class="title">Del modo di misurare le distanze, le superficie, i corpi, le piante, le provincie,
+                        le prospettive ec.,</span>  <span class="pubPlace">Venezia,</span>  <span class="publisher">pel Franceschi,</span>  <span class="date">1564,</span>  <span class="extent">in 4, fig.</span> 
+                     <div class="note">Prima edizione col ritratto dell’autore intagliato in legno, non meno che le figure
+                        inserite fra il testo.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

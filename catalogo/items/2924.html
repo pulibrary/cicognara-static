@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e3785">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">MEDAILLES sur les principaux événémens du regne de Lovis le grand, avec des explications
-                     historiques par l’Académie Royale des médailles et des inscriptions</span>,<span class="pubPlace">Paris</span><span class="date">1702</span>, en 4. Esemplare in mar. dor.
-                  <div class="note">Quest’edizione in quarto comparve contemporanea nello
-                     <div class="pageBreak"><span>71</span></div>stesso anno che quella in foglio ed è eseguita con grandissima accuratezza dagl’incisori.
-                     Le Clerc vi contribuì per gran parte e gli autori delle spiegazionifurono Charpentier, Tallemant, Racine, Boileau, Despreaux ec. Fu soppressa la prefazione
-                     che si trovava già stampata e in qualche esemplare difficilmente può riscontrarsi
-                     ancora, il che rende il libro più ricercato dai curiosi di rarità.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -50,7 +34,21 @@
             <dt><a href="../dcl/p86.html">p86</a></dt>
             <dd>Getty Research Institute</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e3785">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">MEDAILLES sur les principaux événémens du regne de Lovis le grand, avec des explications
+                        historiques par l’Académie Royale des médailles et des inscriptions</span> , <span class="pubPlace">Paris</span><span class="date">1702</span> , en 4. Esemplare in mar. dor.
+                     <div class="note">Quest’edizione in quarto comparve contemporanea nello
+                        <div class="pageBreak"><span>71</span></div>stesso anno che quella in foglio ed è eseguita con grandissima accuratezza dagl’incisori.
+                        Le Clerc vi contribuì per gran parte e gli autori delle spiegazionifurono Charpentier, Tallemant, Racine, Boileau, Despreaux ec. Fu soppressa la prefazione
+                        che si trovava già stampata e in qualche esemplare difficilmente può riscontrarsi
+                        ancora, il che rende il libro più ricercato dai curiosi di rarità.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e14390">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">DURERI</span><span class="title">Alberti nurembergen pictoris prestantissimi ec., Institutionum geometrioariun libri
-                     quatuor cum figuris, 1532 Parisis, ex officina Wechelii in fol. fig. Accedit eiusdem
-                     de Urbibuset arcis condendis,</span><span class="pubPlace">Parisiis</span><span class="date">1535.</span><div class="note">La dottrina di Alberto Durero estesa in questo libro di geometria, fa conoscere come
-                     egli sapeva applicarla ad ogni modo dell’arte. Le tavole sono in legno, e vi si trovano
-                     gli elementi della prospettiva, dell’obiettiva, le proporzioni delle lettere ec. ec.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -63,7 +49,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e14390">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">DURERI</span> <span class="title">Alberti nurembergen pictoris prestantissimi ec., Institutionum geometrioariun libri
+                        quatuor cum figuris, 1532 Parisis, ex officina Wechelii in fol. fig. Accedit eiusdem
+                        de Urbibuset arcis condendis,</span>  <span class="pubPlace">Parisiis</span>  <span class="date">1535.</span> 
+                     <div class="note">La dottrina di Alberto Durero estesa in questo libro di geometria, fa conoscere come
+                        egli sapeva applicarla ad ogni modo dell’arte. Le tavole sono in legno, e vi si trovano
+                        gli elementi della prospettiva, dell’obiettiva, le proporzioni delle lettere ec. ec.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

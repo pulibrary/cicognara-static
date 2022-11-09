@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e4696">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">LAMO Alessandro</span>,<span class="title">Discorso intorno alla scultura e pittura, dove ragiona della vita ed opere in molti
-                     luoghi ed a diversi principi e personaggi fatte dall’eccell. e nobile M. Bernardino
-                     Campo, pittor cremonese: all’illus. sig. Vespasiano Gonzaga Colonna di Duca Sabioneta,
-                     Cremona, presso Cristoforo Draconi,</span><span class="date">1584,</span><span class="extent">in 4.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,24 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e4696">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">LAMO Alessandro</span>, <span class="title">Discorso intorno alla scultura e pittura, dove ragiona della vita ed opere in molti
+                        luoghi ed a diversi principi e personaggi fatte dall’eccell. e nobile M. Bernardino
+                        Campo, pittor cremonese: all’illus. sig. Vespasiano Gonzaga Colonna di Duca Sabioneta,
+                        Cremona, presso Cristoforo Draconi,</span>  <span class="date">1584,</span>  <span class="extent">in 4.</span> </span></div>
+               <div class="notes">
+                  <div class="note">L’editore di questo aureo libretto fu Giovan Battista Trotto denominato il Malosso,
+                     poiché il Lamo era partito per la Spagna e lasciò al suo amico l’incarico dell’edizione.
+                     Dopo il frontespizio e la dedica che occupano 4 carte, l’ultima delle quali è bianca,
+                     segue il testo dell’opera di 118 pagine numerate e termina al basso dell’ultima pagina
+                     col registro dei fogli. Magnifico e raro esemplare.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

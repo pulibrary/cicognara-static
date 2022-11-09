@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e28596">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MENESTRIER Claude François</span>,<span class="title">Histoire du Roi Louis le Grand par les médaiìles, emblémes, dévises etc. recueillies
-                     et expliquées</span>,<span class="pubPlace">Paris</span><span class="date">1689</span>, in fol. figurato.
-                  <div class="note">Opera eseguita con eleganza e con lusso di tipi e di bulino. Le medaglie sopra tutto
-                     sono di una nitidezza grande od espresse a contorno da G.B. Nolin uno dei migliori
-                     allievi di Poilly. Sevin intagliò gli emblemi e le altre stampe. In totale i fogli
-                     del libro ascendono a sessanta due e sono tutti intagliati in rame, compreso il frontespizio,
-                     la dedica e un avvertimento al fine, giacché il testo sta espresso in caratteri d’
-                     intaglio in ciascuna lamina.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +23,22 @@
             <dt><a href="../dcl/5cj.html">5cj</a></dt>
             <dd></dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e28596">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MENESTRIER Claude François</span>, <span class="title">Histoire du Roi Louis le Grand par les médaiìles, emblémes, dévises etc. recueillies
+                        et expliquées</span> , <span class="pubPlace">Paris</span>  <span class="date">1689</span> , in fol. figurato.
+                     <div class="note">Opera eseguita con eleganza e con lusso di tipi e di bulino. Le medaglie sopra tutto
+                        sono di una nitidezza grande od espresse a contorno da G.B. Nolin uno dei migliori
+                        allievi di Poilly. Sevin intagliò gli emblemi e le altre stampe. In totale i fogli
+                        del libro ascendono a sessanta due e sono tutti intagliati in rame, compreso il frontespizio,
+                        la dedica e un avvertimento al fine, giacché il testo sta espresso in caratteri d’
+                        intaglio in ciascuna lamina.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

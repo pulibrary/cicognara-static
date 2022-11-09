@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e14562">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">FÉLIBIEN</span>,<span class="title">Des principes de l’architecture, de la sculpture, de la peinture et des autres arts,
-                     qui en dépendent, avec un dictionaire des termes propres à chacune de ces arts,</span><span class="pubPlace">Paris,</span>chez Coignard,<span class="date">1690</span>en 4, fig.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,21 @@
             <dt><a href="../dcl/4vx.html">4vx</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e14562">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">FÉLIBIEN</span>, <span class="title">Des principes de l’architecture, de la sculpture, de la peinture et des autres arts,
+                        qui en dépendent, avec un dictionaire des termes propres à chacune de ces arts,</span>  <span class="pubPlace">Paris,</span>  <span class="publisher">chez Coignard,</span>  <span class="date">1690</span> en 4, fig.</span></div>
+               <div class="notes">
+                  <div class="note">Esemplare magnifico in mar. dor. della biblioteca di Colbert cui venne l’opera intitolata;
+                     con 65 tavole di bellissimo intaglio e le vignette incise da le Clerc. In tutte le
+                     opere di questo autore avvi una giudiziosa scelta di cognizioni, e molto gusto anche
+                     nella maniera di esporle.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e7073">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">GALERIE eléctorale de Dusseldorff, ou catalogue raisonné, et figuré des ses tableaux,
-                     ouvrage composé d’un goût nouveau par Nicolas de Pigage avec une suite de 30 planch.
-                     contenant 365 estampes, gravées d’apres les tableaux</span>, a<span class="pubPlace">Bâle</span>, chezMechel,<span class="date">1778</span>, 2 vol., in fol. obl.
-                  <div class="note">Nell’uno di questi volumi sono contenute le tavole e nell’altro il testo: opera eseguita
-                     con diligenza, ma in piccola dimensione non può rendere altra idea che della distribuzione
-                     e dei motivi delle composizioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -44,7 +29,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e7073">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">GALERIE eléctorale de Dusseldorff, ou catalogue raisonné, et figuré des ses tableaux,
+                        ouvrage composé d’un goût nouveau par Nicolas de Pigage avec une suite de 30 planch.
+                        contenant 365 estampes, gravées d’apres les tableaux</span> , a <span class="pubPlace">Bâle</span> , chez <span class="publisher">Mechel</span> , <span class="date">1778</span> , 2 vol., in fol. obl.
+                     <div class="note">Nell’uno di questi volumi sono contenute le tavole e nell’altro il testo: opera eseguita
+                        con diligenza, ma in piccola dimensione non può rendere altra idea che della distribuzione
+                        e dei motivi delle composizioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e11645">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">AMICO dott. Giovanni</span>,<span class="title">L’architetto pratico in cui con facilità si danno le regole per apprendere l’architettura
-                     civile.</span><span class="extent">Tomi tre in f.,</span><span class="pubPlace">Palermo</span><span class="date">1726,</span>il secondo volume, 1750, il terzo 1750.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e11645">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">AMICO dott. Giovanni</span>, <span class="title">L’architetto pratico in cui con facilità si danno le regole per apprendere l’architettura
+                        civile.</span>  <span class="extent">Tomi tre in f.,</span>  <span class="pubPlace">Palermo</span>  <span class="date">1726,</span> il secondo volume, 1750, il terzo 1750.</span></div>
+               <div class="notes">
+                  <div class="note">Ordinariamente quest’opera pessima in ogni sua parte non è conosciuta che pel primo
+                     volume: e il Comolli ne cita un secondo soltanto. Il nostro rara esemplare diviso
+                     in tre volumi non conta che 143 tavole e il terzo volume comprende unicamente le tavole
+                     relative ai trattati del tomo secondo.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

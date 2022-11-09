@@ -5,27 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e16630">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">Le MUET</span>,<span class="title">Maniere de bâtir pour toute sortes de personnes,</span><span class="pubPlace">Paris,</span>chez Jombert et Barbou,<span class="date">senza data,</span><span class="extent">in fol. fig.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -33,7 +23,21 @@
             <dt><a href="../dcl/m83.html">m83</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e16630">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">Le MUET</span>, <span class="title">Maniere de bâtir pour toute sortes de personnes,</span>  <span class="pubPlace">Paris,</span>  <span class="publisher">chez Jombert et Barbou,</span>  <span class="date">senza data,</span>  <span class="extent">in fol. fig.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Falsamente questa si intitola egualmente seconda edizione, quantunque quattro almeno
+                     deggiono averla preceduta. Dopo il frontespizio è il ritratto dell’autore e seguono
+                     poi le tavole d’altro intaglio unite al testo, parimente inciso in rame. Le tavole
+                     sono 106 e forse gli editori intesero di dirla seconda edizione, in riguardo agiuntagli,
+                     mentre in tutte le precedenti avevano servito le tavole originali.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

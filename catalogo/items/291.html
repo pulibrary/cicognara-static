@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e8670">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">AUDRAN Girard</span>,<span class="title">Les proportions du corps humain mesurées sur les plus belles figures de l’antiquité,</span><span class="pubPlace">Paris</span>,chez Girard Audran graveur,<span class="date">1683</span>,<span class="extent">in fol. fig. Tav. 30 con 4 carte di testo.</span><div class="note">Quest’opera è molto raccomandabile e potrebbe meritare un’impressione nuova, poiché
-                     nulla fu fatto di meglio finora in questo genere.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -39,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e8670">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">AUDRAN Girard</span>, <span class="title">Les proportions du corps humain mesurées sur les plus belles figures de l’antiquité,</span>  <span class="pubPlace">Paris</span> , <span class="publisher">chez Girard Audran graveur</span> , <span class="date">1683</span> , <span class="extent">in fol. fig. Tav. 30 con 4 carte di testo.</span> 
+                     <div class="note">Quest’opera è molto raccomandabile e potrebbe meritare un’impressione nuova, poiché
+                        nulla fu fatto di meglio finora in questo genere.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,29 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.10">section 1.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.10">section 1.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e21357">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">FOURNEAU Nicolas</span>,<span class="title">L’art du trait de charpenterie</span>. Quatre parties en un volume,<span class="pubPlace">Paris</span>, chezDidot,<span class="date">1802</span>, in fol. fig.
-                  <div class="note">Opera nella quale la materia i trattata ampiamente secondo le moderne pratiche e le
-                     ultime esperienze con 88 tavole in rame.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -40,7 +28,17 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e21357">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">FOURNEAU Nicolas</span>, <span class="title">L’art du trait de charpenterie</span> . Quatre parties en un volume, <span class="pubPlace">Paris</span> , chez <span class="publisher">Didot</span> , <span class="date">1802</span> , in fol. fig.
+                     <div class="note">Opera nella quale la materia i trattata ampiamente secondo le moderne pratiche e le
+                        ultime esperienze con 88 tavole in rame.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

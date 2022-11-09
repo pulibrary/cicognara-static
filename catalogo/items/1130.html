@@ -5,32 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.14">section 1.14</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.14">section 1.14</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e22920">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VERDIZOTTI</span>, Le stesse cento favole,<span class="pubPlace">Venezia</span>, pressoFrancesco Ziletti,<span class="date">1586</span>, in 4, fig.
-                  <div class="note">Dopo il frontespizio figurato seguono tre foglietti cola stessa dedica del precedente,
-                     ma diretta al Sig. Lorenzo Bernardo con poche mutazioni: segue l’avviso dello stampatore.
-                     E incominciano le cento favole in tutto nello stesso modo che nella prima edizione.
-                     Ne apparvero altre edizioni posteriormente che per le tavole troppo logore non hanno
-                     alcun pregio.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -38,7 +23,20 @@
             <dt><a href="../dcl/qnp.html">qnp</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e22920">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VERDIZOTTI</span>, Le stesse cento favole, <span class="pubPlace">Venezia</span> , presso <span class="publisher">Francesco Ziletti</span> , <span class="date">1586</span> , in 4, fig.
+                     <div class="note">Dopo il frontespizio figurato seguono tre foglietti cola stessa dedica del precedente,
+                        ma diretta al Sig. Lorenzo Bernardo con poche mutazioni: segue l’avviso dello stampatore.
+                        E incominciano le cento favole in tutto nello stesso modo che nella prima edizione.
+                        Ne apparvero altre edizioni posteriormente che per le tavole troppo logore non hanno
+                        alcun pregio.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

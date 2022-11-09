@@ -5,33 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e4025">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PARUTA Filippo</span>,<span class="title">La Sicilia descritta con medaglie e ristampata con aggiunta da Leonardo Agostini,
-                     ora in miglior ordine disposta da Marco Majer</span>,<span class="pubPlace">Lione</span><span class="date">1697</span>, in fol., fig.
-                  <div class="note">Quest’edizione e più completa, ma meno rara della prima, che seguì nel 1612 e tiensi
-                     in maggior pregio. Letavole appariscono 183 ma sono distribuite in 123 fogli: ogni medaglia essendo intagliata
-                     in un rame a parte e riunite dodici laminette sopra la maggior parte delle pagine,
-                     acciò fosse in libertà dell’autore il cangiare a suo talento la distribuzione, nel
-                     corso dell’opera.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -52,7 +36,21 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e4025">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PARUTA Filippo</span>, <span class="title">La Sicilia descritta con medaglie e ristampata con aggiunta da Leonardo Agostini,
+                        ora in miglior ordine disposta da Marco Majer</span> , <span class="pubPlace">Lione</span>  <span class="date">1697</span> , in fol., fig.
+                     <div class="note">Quest’edizione e più completa, ma meno rara della prima, che seguì nel 1612 e tiensi
+                        in maggior pregio. Letavole appariscono 183 ma sono distribuite in 123 fogli: ogni medaglia essendo intagliata
+                        in un rame a parte e riunite dodici laminette sopra la maggior parte delle pagine,
+                        acciò fosse in libertà dell’autore il cangiare a suo talento la distribuzione, nel
+                        corso dell’opera.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

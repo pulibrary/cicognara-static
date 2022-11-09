@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e4591">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">LACOMBE</span>,<span class="title">Le spectacle des beaux arts, ou considerations touchantes leur nature etc.,</span><span class="pubPlace">Paris</span><span class="date">1758,</span><span class="extent">in 12.</span></span><span class="bibl">– Aggiuntovi:<span class="title">Les moyens de dévénir peintres en trois heures et d’exécuter au pinceau les ouvrages
-                     des plus grands maîtres, sans avoir appris le dessein,</span><span class="pubPlace">Paris</span><span class="date">1755</span>.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -47,7 +36,20 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e4591">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">LACOMBE</span>, <span class="title">Le spectacle des beaux arts, ou considerations touchantes leur nature etc.,</span>  <span class="pubPlace">Paris</span>  <span class="date">1758,</span>  <span class="extent">in 12.</span> </span><span class="bibl">– Aggiuntovi:<span class="title">Les moyens de dévénir peintres en trois heures et d’exécuter au pinceau les ouvrages
+                        des plus grands maîtres, sans avoir appris le dessein,</span>  <span class="pubPlace">Paris</span>  <span class="date">1755</span> .</span></div>
+               <div class="notes">
+                  <div class="note">Quest’opera si estene più sulla musica e la poesia che sulla pittura.</div>
+                  <div class="note">Questo libro col mezzo di dialoghi insegna ad attaccare al vetro le stampe dopo averle
+                     imbrattate di colore e porta lo specioso titolo indicato.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

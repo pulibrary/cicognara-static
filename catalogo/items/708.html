@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e19858">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VITRUVII (M.) Pollioni</span>,.<span class="title">In decem libros adnotationes Guglielmi Philandri</span>,<span class="pubPlace">Roma</span>, perAndream Dossena,<span class="date">1544</span>, in 8, fig.
-                  <div class="note">Questa è la prima edizione delle note del Filandro che l’editore voleva pubblicare
-                     col testo, ma diede separate. Si vale l’autore del Codice di Sulpizio, e di molte
-                     nozioni avute dal Serlio. Fra le pagine del testo sono alcune poche figure in legno.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +29,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e19858">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VITRUVII (M.) Pollioni</span>,. <span class="title">In decem libros adnotationes Guglielmi Philandri</span> , <span class="pubPlace">Roma</span> , per <span class="publisher">Andream Dossena</span> , <span class="date">1544</span> , in 8, fig.
+                     <div class="note">Questa è la prima edizione delle note del Filandro che l’editore voleva pubblicare
+                        col testo, ma diede separate. Si vale l’autore del Codice di Sulpizio, e di molte
+                        nozioni avute dal Serlio. Fra le pagine del testo sono alcune poche figure in legno.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

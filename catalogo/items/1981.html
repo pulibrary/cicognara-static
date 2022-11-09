@@ -5,37 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e29030">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">ARIAS Montanus</span>,<span class="title">De divinis nuptiis</span>,<span class="pubPlace">Antuerpias</span>, cura et aerePhil. Gallaei,<span class="date">1574</span>, in 4.
-                  <div class="note">Le nozze spirituali stampate da Benedetto Arias Montanus in versi latini, furono qui
-                     recate in una parafrasi francese da Pietro Heyns e venne riconosciuta e approvata
-                     dall’autore originario nel 1573 come si legge in principio. I disegni por
-                     <div class="pageBreak"><span>336</span></div>tano nella prima stampa la marca I. H. W. Geranius Grossiugus delineabat e son 18
-                     bellissime e freschissime stampe contro le quali sta la parafrasi in francese stampata
-                     in eleganti caratteri. Unito a questo trovasi il Viter admirabilium actionum a Phil.
-                     Galilaeo apparatum Ben. Ariae Montani singularibus distichis instructum, colla parafrasi
-                     come sopra, dissegnato dallo stesso Groningue e con 50 bellissime tavole e un bel
-                     frontespizio, ove è una testa del Redentore di mirabile intaglio. Queste due opere
-                     erano state prodotte nel 1571 in latino col titolo Humanae salutis monumenta.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +25,25 @@
             <dt><a href="../dcl/xjn.html">xjn</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e29030">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">ARIAS Montanus</span>, <span class="title">De divinis nuptiis</span> , <span class="pubPlace">Antuerpias</span> , cura et aere <span class="publisher">Phil. Gallaei</span> , <span class="date">1574</span> , in 4.
+                     <div class="note">Le nozze spirituali stampate da Benedetto Arias Montanus in versi latini, furono qui
+                        recate in una parafrasi francese da Pietro Heyns e venne riconosciuta e approvata
+                        dall’autore originario nel 1573 come si legge in principio. I disegni por
+                        <div class="pageBreak"><span>336</span></div>tano nella prima stampa la marca I. H. W. Geranius Grossiugus delineabat e son 18
+                        bellissime e freschissime stampe contro le quali sta la parafrasi in francese stampata
+                        in eleganti caratteri. Unito a questo trovasi il Viter admirabilium actionum a Phil.
+                        Galilaeo apparatum Ben. Ariae Montani singularibus distichis instructum, colla parafrasi
+                        come sopra, dissegnato dallo stesso Groningue e con 50 bellissime tavole e un bel
+                        frontespizio, ove è una testa del Redentore di mirabile intaglio. Queste due opere
+                        erano state prodotte nel 1571 in latino col titolo Humanae salutis monumenta.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

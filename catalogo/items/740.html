@@ -5,36 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20091">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">M. VITRUVIO Pollio</span>,<span class="title">Formae ad esplicandos Marci Vitruvii decem libros</span>,<span class="pubPlace">Berolini</span><span class="date">1801</span>, in fol.
-                  <div class="note">Nella versione e commenti tedeschi non sono figure e la ignoranza di quella lingua
-                     renderebbe imprudente e temerario il nostro giudizio sul merito di quell’autore. Nella
-                     riproduzione poi del testo fatta nel 1801 in latino con l’atlante di 21 tavole, riporteremo
-                     il giudizio datone del celebre Schneider. De postrema editione Rodiana sine Berolinensi
-                     utinam tacere mihi liceret....sed vidi omnia tam negligenter ab editore administrata
-                     tamque mala fide rem gestititi fuisse, ut indignationem moderati non possem; e segue
-                     di questo pasto, cosicché sembra che di tutti i lavori vitruviani questo sia il più
-                     dispregievole. Infatti non vi si incontrano emende agli errori altrui, e spesso veggonsi
-                     peggiorate le lezioni ove precedentemente erano più chiare.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +23,24 @@
             <dt><a href="../dcl/nk8.html">nk8</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20091">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">M. VITRUVIO Pollio</span>, <span class="title">Formae ad esplicandos Marci Vitruvii decem libros</span> , <span class="pubPlace">Berolini</span>  <span class="date">1801</span> , in fol.
+                     <div class="note">Nella versione e commenti tedeschi non sono figure e la ignoranza di quella lingua
+                        renderebbe imprudente e temerario il nostro giudizio sul merito di quell’autore. Nella
+                        riproduzione poi del testo fatta nel 1801 in latino con l’atlante di 21 tavole, riporteremo
+                        il giudizio datone del celebre Schneider. De postrema editione Rodiana sine Berolinensi
+                        utinam tacere mihi liceret....sed vidi omnia tam negligenter ab editore administrata
+                        tamque mala fide rem gestititi fuisse, ut indignationem moderati non possem; e segue
+                        di questo pasto, cosicché sembra che di tutti i lavori vitruviani questo sia il più
+                        dispregievole. Infatti non vi si incontrano emende agli errori altrui, e spesso veggonsi
+                        peggiorate le lezioni ove precedentemente erano più chiare.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

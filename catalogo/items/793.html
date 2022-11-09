@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.8">section 1.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.8">section 1.8</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20478">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MAFFEI Scipione</span>,<span class="title">Degli anfiteatri e singolarmente del Veronese: libri due</span>,<span class="pubPlace">Verona</span><span class="date">1728</span>, in 12. fig.
-                  <div class="note">Con 15 tavole intagliate in rame. Ricomparse quest’opera nella Verona Illustrata di
-                     cui forma l’ultimo libro, ma ad istanza dei dotti e curiosi l’autore la pubblicò primamente
-                     in questa piccola forma.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20478">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MAFFEI Scipione</span>, <span class="title">Degli anfiteatri e singolarmente del Veronese: libri due</span> , <span class="pubPlace">Verona</span>  <span class="date">1728</span> , in 12. fig.
+                     <div class="note">Con 15 tavole intagliate in rame. Ricomparse quest’opera nella Verona Illustrata di
+                        cui forma l’ultimo libro, ma ad istanza dei dotti e curiosi l’autore la pubblicò primamente
+                        in questa piccola forma.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

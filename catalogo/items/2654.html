@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e1890">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BONANNI Francesco</span>principe di Rocca Fiorita duca di Montalbano,<span class="title">Delle antiche Siracuse</span>. Volumi due,<span class="pubPlace">Palermo</span><span class="date">1717</span>, in fol., p. fig.
-                  <div class="note">Nel primo volume si contiene la Siracusa illustrata da Giacomo Bonanni e Colonna duca
-                     di Montalbano. Nel secondo gli scrittori anteriori al Bonanni come il Mirabella, il
-                     Cluverio e altri ec. con le tavole della pianta e delle medaglie.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -41,7 +28,18 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e1890">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BONANNI Francesco</span>principe di Rocca Fiorita duca di Montalbano, <span class="title">Delle antiche Siracuse</span> . Volumi due, <span class="pubPlace">Palermo</span>  <span class="date">1717</span> , in fol., p. fig.
+                     <div class="note">Nel primo volume si contiene la Siracusa illustrata da Giacomo Bonanni e Colonna duca
+                        di Montalbano. Nel secondo gli scrittori anteriori al Bonanni come il Mirabella, il
+                        Cluverio e altri ec. con le tavole della pianta e delle medaglie.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

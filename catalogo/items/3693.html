@@ -5,33 +5,31 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e9224">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">CUSTODI Domin.</span>,<span class="title">Deliciae urbis Romae divinae et humanae anno sacro jubilei 1600</span>, in 4 obl., Augustae Vind.
-                  <div class="note">Sonovi 29 tavole di romani edifici, e un frontespizio figurato colle relative illustrazioni.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e9224">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">CUSTODI Domin.</span>, <span class="title">Deliciae urbis Romae divinae et humanae anno sacro jubilei 1600</span> , in 4 obl., Augustae Vind.
+                     <div class="note">Sonovi 29 tavole di romani edifici, e un frontespizio figurato colle relative illustrazioni.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,37 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e8447">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="title">ANTIQUITATUM variarum auctores quorum catalogum sequens continet pagella</span>,<span class="pubPlace">Lugduni</span>, apudSeb. Gryphium,<span class="date">1552</span>, in 12.
-                  <div class="note">Questo volumetto di presso 900 pagine, contiene la collezione più ampia di tutte quelle
-                     operette apocrife d’antichità pubblicate da frate Antonio da Viterbo, dal Fiocchi,
-                     da Pietro Calabro e da altri, e sono Myrsilii Lesbii de origine Italiae. M. Porcii
-                     Catonis originum, Archilochi de temporibus, Berosi Babilonii antiquitatum, Manethonis
-                     de Reg. Aegipt. Metasthenis annalium Persicorum, Xenophontis de aequivocis, Q. Fabii
-                     Pictoris de aureo seculo, C. Sempronii de divisione Italiae, Philonis Judaei Antiq.
-                     Bibliorum, C. Julii Solini Polyhistor, Pomponii Meloe de situ orbis, Pomponii Laeti
-                     de antiq. urbis Romae, Marliani Topographia veteris Romae, Publii Victoris de urbis
-                     Romae regionibus, Pomponii Laeti de Magistratibus, L. Fenestelloe de Magistratibus
-                     sacerdotiisque romanorum. Vedi ancora De Roma prisca et nova.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -48,7 +28,25 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e8447">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="title">ANTIQUITATUM variarum auctores quorum catalogum sequens continet pagella</span> , <span class="pubPlace">Lugduni</span> , apud <span class="publisher">Seb. Gryphium</span> , <span class="date">1552</span> , in 12.
+                     <div class="note">Questo volumetto di presso 900 pagine, contiene la collezione più ampia di tutte quelle
+                        operette apocrife d’antichità pubblicate da frate Antonio da Viterbo, dal Fiocchi,
+                        da Pietro Calabro e da altri, e sono Myrsilii Lesbii de origine Italiae. M. Porcii
+                        Catonis originum, Archilochi de temporibus, Berosi Babilonii antiquitatum, Manethonis
+                        de Reg. Aegipt. Metasthenis annalium Persicorum, Xenophontis de aequivocis, Q. Fabii
+                        Pictoris de aureo seculo, C. Sempronii de divisione Italiae, Philonis Judaei Antiq.
+                        Bibliorum, C. Julii Solini Polyhistor, Pomponii Meloe de situ orbis, Pomponii Laeti
+                        de antiq. urbis Romae, Marliani Topographia veteris Romae, Publii Victoris de urbis
+                        Romae regionibus, Pomponii Laeti de Magistratibus, L. Fenestelloe de Magistratibus
+                        sacerdotiisque romanorum. Vedi ancora De Roma prisca et nova.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

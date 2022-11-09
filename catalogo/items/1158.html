@@ -5,34 +5,32 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.15">section 1.15</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.15">section 1.15</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e23115">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">GAROFALO (Biagio)</span>,<span class="title">Lettera intorno al busto d’Asclepiade</span>. Articolo del Giornale de’ Letterati di Pisa: unitivi altri articoli su alcuni trattati
-                  dei Bagni di<span class="pubPlace">Lucca</span>e di<span class="pubPlace">Pisa</span>, in 12. M. 73.
-                  <div class="note">Con una tavola intagliata in rame del busto d’Asclepiade.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e23115">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">GAROFALO (Biagio)</span>, <span class="title">Lettera intorno al busto d’Asclepiade</span> . Articolo del Giornale de’ Letterati di Pisa: unitivi altri articoli su alcuni trattati
+                     dei Bagni di <span class="pubPlace">Lucca</span> e di <span class="pubPlace">Pisa</span> , in 12. M. 73.
+                     <div class="note">Con una tavola intagliata in rame del busto d’Asclepiade.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

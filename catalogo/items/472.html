@@ -5,28 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e13683">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">Du CERCEAU Jacobi Andronetii</span>,<span class="title">Livre d’architecture contenant les plans et desseings de 50 bastimens tous differens
-                     ec.,</span><span class="pubPlace">Paris,</span>par Benoist Prevon,<span class="date">1559.</span></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -34,7 +23,21 @@
             <dt><a href="../dcl/4p4.html">4p4</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e13683">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">Du CERCEAU Jacobi Andronetii</span>, <span class="title">Livre d’architecture contenant les plans et desseings de 50 bastimens tous differens
+                        ec.,</span>  <span class="pubPlace">Paris,</span>  <span class="publisher">par Benoist Prevon,</span>  <span class="date">1559.</span> </span></div>
+               <div class="notes">
+                  <div class="note">Le 50 tavole di nitido intaglio sono tutte precedute dalle dichiarazioni impresse
+                     con tipi eleganti. Tutte le opere dì questo autore sono da tenersi in maggior pregio
+                     della più parte di quelle che vennero dopo di lui. Riguardessi questo volume, come
+                     la prima parte del suo Trattato architettonico, a cui si accompagni il seguente.</div>
+               </div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

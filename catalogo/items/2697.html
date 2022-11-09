@@ -5,30 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.4">section 2.4</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2191">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">PAUSANIA</span>,<span class="title">Descrizione della Grecia, tradotta dal greco in italiano dal gentiluomo Alfonso Bonaccioli
-                     Ferrarese</span>,<span class="pubPlace">Mantova</span>, perFrancesco Osanna,<span class="date">1593</span>, in 4.
-                  <div class="note">Fu dedicata questa prima ed ottima e rara versione italiana di Pausania al duca di
-                     Ferrara Alfonso d’Este.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -36,7 +23,18 @@
             <dt><a href="../dcl/hs7.html">hs7</a></dt>
             <dd>Princeton University Library</dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2191">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">PAUSANIA</span>, <span class="title">Descrizione della Grecia, tradotta dal greco in italiano dal gentiluomo Alfonso Bonaccioli
+                        Ferrarese</span> , <span class="pubPlace">Mantova</span> , per <span class="publisher">Francesco Osanna</span> , <span class="date">1593</span> , in 4.
+                     <div class="note">Fu dedicata questa prima ed ottima e rara versione italiana di Pausania al duca di
+                        Ferrara Alfonso d’Este.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e19884">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">VITRUVII Marci Pollionis</span>,<span class="title">Viri suae professionis peritissimi</span>, De architectura libri decem cum notis Philandri, et Sexti Julii Frontini de aquaeductibus,
-                  et Nicolai Cusani de staticis experiinentis. Argentorati, ex officina Knoblochiana,<span class="date">1550</span>, in 4, par. fig.
-                  <div class="note">Questa edizione è molto più pregievole di quella che lo stesso editore produsse nel
-                     1543 poiché vi fece una quantità di correzioni e di aggiunte prese dal Filandro non
-                     solo nel testo, come nelle figure.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -42,7 +28,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e19884">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">VITRUVII Marci Pollionis</span>, <span class="title">Viri suae professionis peritissimi</span> , De architectura libri decem cum notis Philandri, et Sexti Julii Frontini de aquaeductibus,
+                     et Nicolai Cusani de staticis experiinentis. Argentorati, ex officina Knoblochiana, <span class="date">1550</span> , in 4, par. fig.
+                     <div class="note">Questa edizione è molto più pregievole di quella che lo stesso editore produsse nel
+                        1543 poiché vi fece una quantità di correzioni e di aggiunte prese dal Filandro non
+                        solo nel testo, come nelle figure.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

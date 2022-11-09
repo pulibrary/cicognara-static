@@ -5,34 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e20955">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">SIRIGATTI Lorenzo Cavaliere</span>,<span class="title">La pratica di prospettiva al Serenissimo Ferdinando Medici Gran Duca di Toscana</span>,<span class="pubPlace">Venezia</span>, perGirolamo Franceschi Sanese,<span class="date">1596</span>, in fol. fig.
-                  <div class="note">Questa è la più elegante delle edizioni di libri prospettici pei tipi, pei caratteri,
-                     per la carta. Dopo il frontespizio figurato, segue la dedica e un indirizzo ai benigni
-                     ad amorevoli lettori, indi la tavola dei capitoli e l’errata. Dopo questi 4 fogli
-                     cominciano le tavole e dietro quelle stanno le spiegazioni stampate in bellissimi
-                     caratteri: 43 capitoli contiene il libro primo impresso in 44 fogli. E il libro secondo
-                     con altro frontespizio figurato procede colle figure prospettiche ombreggiate sino
-                     al numero 66.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -45,7 +28,22 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e20955">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">SIRIGATTI Lorenzo Cavaliere</span>, <span class="title">La pratica di prospettiva al Serenissimo Ferdinando Medici Gran Duca di Toscana</span> , <span class="pubPlace">Venezia</span> , per <span class="publisher">Girolamo Franceschi Sanese</span> , <span class="date">1596</span> , in fol. fig.
+                     <div class="note">Questa è la più elegante delle edizioni di libri prospettici pei tipi, pei caratteri,
+                        per la carta. Dopo il frontespizio figurato, segue la dedica e un indirizzo ai benigni
+                        ad amorevoli lettori, indi la tavola dei capitoli e l’errata. Dopo questi 4 fogli
+                        cominciano le tavole e dietro quelle stanno le spiegazioni stampate in bellissimi
+                        caratteri: 43 capitoli contiene il libro primo impresso in 44 fogli. E il libro secondo
+                        con altro frontespizio figurato procede colle figure prospettiche ombreggiate sino
+                        al numero 66.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

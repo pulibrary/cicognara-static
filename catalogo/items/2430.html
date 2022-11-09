@@ -5,35 +5,33 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.26">section 1.26</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.26">section 1.26</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e32172">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">CAMPER Pierre</span>,<span class="title">On y a joint une dissertation physique sur les differences réelles que presentent
-                     les traits du visage chez les hommes de differents àges; sur le beau qui caractérise
-                     les statues autiques, et les pierres gravées</span>. Suivie de la proposition d’une nouvelle méthode pour dessiner toutes sortes des
-                  têtes humaines avec la plus grand sûreté,<span class="pubPlace">Utrecht</span><span class="date">1791</span>, in 4, fig., con 10 tavole. Opere dottissime e interessantissime.</span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e32172">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">CAMPER Pierre</span>, <span class="title">On y a joint une dissertation physique sur les differences réelles que presentent
+                        les traits du visage chez les hommes de differents àges; sur le beau qui caractérise
+                        les statues autiques, et les pierres gravées</span> . Suivie de la proposition d’une nouvelle méthode pour dessiner toutes sortes des
+                     têtes humaines avec la plus grand sûreté, <span class="pubPlace">Utrecht</span>  <span class="date">1791</span> , in 4, fig., con 10 tavole. Opere dottissime e interessantissime.</span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

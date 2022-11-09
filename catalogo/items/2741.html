@@ -5,31 +5,17 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_secondo.html"></a></li>
+               <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_secondo.html"></a></li>
-            <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c2d1e2509">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">BAJERI Jo. Jacobi</span>,<span class="title">Gemmarum affabre sculptarum thesaurus, quem suis sumptibus collegit Jo. Mar. ab Ebermayer
-                     norimbergensis, digessit et recensuit I. I. Bajerus</span>,<span class="pubPlace">Norimb</span>.<span class="date">1720</span>, in fol. g.
-                  <div class="note">Il disegno del Gazofilacio intagliato in rame precede il frontespizio e seguono 30
-                     tavole diligentemente disegnate ed incise, con gran numero di gemme. Opera delle migliori
-                     escite dai tipi di Norimberga in quell’epoca.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
@@ -49,7 +35,19 @@
                </ul>
             </dd>
          </dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c2d1e2509">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">BAJERI Jo. Jacobi</span>, <span class="title">Gemmarum affabre sculptarum thesaurus, quem suis sumptibus collegit Jo. Mar. ab Ebermayer
+                        norimbergensis, digessit et recensuit I. I. Bajerus</span> , <span class="pubPlace">Norimb</span> . <span class="date">1720</span> , in fol. g.
+                     <div class="note">Il disegno del Gazofilacio intagliato in rame precede il frontespizio e seguono 30
+                        tavole diligentemente disegnate ed incise, con gran numero di gemme. Opera delle migliori
+                        escite dai tipi di Norimberga in quell’epoca.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

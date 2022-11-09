@@ -5,34 +5,32 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header class="masthead">
-         <p>The Cicognara Digital Library</p>
+      <header ide="pageHeader" class="masthead">
+         <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
-            <ul>
-               <li><a href="/">Home</a></li>
+            <ul class="breadcrumb">
+               <li><a href="../catalogo.html">Catalogo</a></li>
+               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
+               <li><a href="../tomo_primo.html#1.17">section 1.17</a></li>
             </ul>
          </nav>
       </header>
-      <nav>
-         <ul class="breadcrumb">
-            <li><a href="../catalogo.html">Catalogo</a></li>
-            <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-            <li><a href="../tomo_primo.html#1.17">section 1.17</a></li>
-         </ul>
-      </nav>
-      <section class="catalogo-item" id="c1d1e24287">
-         <header>
-            <div class="bibl"><span class="bibl"><span class="author">MALLIO Michele</span>,<span class="title">Annali di Roma dal<span class="date">1790 al 1796</span></span>, vol. 18, in 8.
-                  <div class="note">Contengono questi un giornale periodico letterario in cui
-                     <div class="pageBreak"><span>228</span></div>rendesi conto delle principali opere d’arte uscite in quell’epoca.</div></span></div>
-         </header>
-      </section>
-      <section>
+      <nav id="side">
          <header>
             <h2>Digitized Editions</h2>
          </header>
          <dl></dl>
-      </section>
+      </nav>
+      <main id="main">
+         <section class="catalogo-item" id="c1d1e24287">
+            <header>
+               <div class="bibl"><span class="bibl"><span class="author">MALLIO Michele</span>, <span class="title">Annali di Roma dal<span class="date">1790 al 1796</span></span> , vol. 18, in 8.
+                     <div class="note">Contengono questi un giornale periodico letterario in cui
+                        <div class="pageBreak"><span>228</span></div>rendesi conto delle principali opere d’arte uscite in quell’epoca.</div></span></div>
+               <div class="notes"></div>
+            </header>
+         </section>
+      </main>
    </body>
-   <footer><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
+   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>
