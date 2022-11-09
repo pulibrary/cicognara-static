@@ -79,6 +79,9 @@
                         </p>
                     </header>
                     <nav id="side">
+                        <xsl:apply-templates select="tei:TEI[@xml:id = 'tomo_primo']/tei:text/tei:body" mode="toc" />
+                        <xsl:apply-templates select="tei:TEI[@xml:id = 'tomo_secondo']/tei:text/tei:body" mode="toc"/>
+                        <!-- 
                         <ol id="toc">
                             <li>
                                 <a href="{$root_directory}/tomo_primo.html">Tomo Primo</a>
@@ -87,17 +90,21 @@
                                 <a href="{$root_directory}/tomo_secondo.html">Tomo Secondo</a>
                             </li>
                         </ol>
+                         -->
                     </nav>
                     <main id="main">
                         <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt"/>
+                        <xsl:apply-templates select="tei:TEI/tei:text/tei:body//tei:div[@type = 'section']" mode="section" />
+
                     </main>
                     <xsl:call-template name="createSiteFooter"/>
                 </body>
             </html>
         </xsl:result-document>
-
+<!-- 
         <xsl:apply-templates select="tei:TEI[@xml:id = 'tomo_primo']"/>
         <xsl:apply-templates select="tei:TEI[@xml:id = 'tomo_secondo']"/>
+         -->
         <xsl:apply-templates select="//tei:list[@type = 'catalog']/tei:item" mode="standalone"/>
     </xsl:template>
 
@@ -123,8 +130,7 @@
                         <xsl:apply-templates select="tei:text/tei:body" mode="toc"/>
                     </nav>
                     <main id="main">
-                        <xsl:apply-templates select="tei:text/tei:body//tei:div[@type = 'section']"
-                            mode="section"/>
+                        <xsl:apply-templates select="tei:text/tei:body//tei:div[@type = 'section']" mode="section"/>
                     </main>
 
                 </body>
@@ -141,8 +147,19 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'section']" mode="toc">
+        <xsl:param name="base"></xsl:param>
+        <xsl:variable name="link">
+        <xsl:choose>
+            <xsl:when test="$base">
+                <xsl:value-of select="concat($base, '#', @n)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="concat('#', @n)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+        </xsl:variable>
         <li>
-            <a href="#{@n}">
+            <a href="{$base}#{@n}">
                 <xsl:apply-templates select="tei:head" mode="listitem"/>
             </a>
         </li>
@@ -328,7 +345,7 @@
                         <nav>
                             <ul class="breadcrumb">
                                 <li>
-                                    <a href="../catalogo.html">Catalogo</a>
+                                    <a href="../index.html">Catalogo</a>
                                 </li>
                                 <li>
                                     <a href="../{ancestor::tei:TEI/@xml:id}.html">
