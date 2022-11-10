@@ -1,34 +1,41 @@
 @import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 
+html {
+    overflow: auto; 
+}
+
 body {
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "head head head"
-        "side main main"
-        "footer footer footer";
+        "header"
+        "main"
+        "footer";
 }
 
 #pageheader {
-    grid-area: head;
-}
-
-#side {
-    grid-area: side;
-    height: 100vh;
+    grid-area: header;
 }
 
 #main {
-    grid-area: main;
-    overflow: auto;
+         grid-area: main;
+         height: 100vh;
+         width: 100vw;
 }
 
 #pageFooter {
     grid-area: footer;
 }
+
+iframe {
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    overflow-y: auto;
+} 
 
 ul.breadcrumb {
   padding: 10px 16px;
