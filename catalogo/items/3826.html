@@ -5,41 +5,44 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/qzj.html">qzj</a></dt>
-            <dd></dd>
-            <dt><a href="../dcl/591.html">591</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e10167">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">PIRANESI Giovan Battista</span>, <span class="title">Opere varie di architettura</span> , <span class="pubPlace">Roma</span>  <span class="date">1750</span> , in fol.
-                     <div class="note">Tutti i volumi annunziati con questo titolo contengono un numero vario di stampe,
-                        essendo composti da varie opere, e
-                        <div class="pageBreak"><span>210</span></div>piuttosto possono riguardarsi come una miscellanea dell’autore. In questo esemplare
-                        sono primieramente 33 pezzi di sua invenzione, prime prove, alcune delle quali avanti
-                        la lettera, ed in seguito altre 30 tavole con vedute d’archi e altri monumenti di
-                        Roma.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">PIRANESI Giovan Battista</span>, <span class="title">Opere varie di architettura</span> , <span class="pubPlace">Roma</span>  <span class="date">1750</span> , in fol.
+                  <div class="note">Tutti i volumi annunziati con questo titolo contengono un numero vario di stampe,
+                     essendo composti da varie opere, e
+                     <div class="pageBreak"><span>210</span></div>piuttosto possono riguardarsi come una miscellanea dell’autore. In questo esemplare
+                     sono primieramente 33 pezzi di sua invenzione, prime prove, alcune delle quali avanti
+                     la lettera, ed in seguito altre 30 tavole con vedute d’archi e altri monumenti di
+                     Roma.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>qzj</dt>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/qzj.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>591</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/591.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

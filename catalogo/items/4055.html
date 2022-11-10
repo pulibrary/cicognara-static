@@ -5,38 +5,42 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/qnn.html">qnn</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/62x.html">62x</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e11787">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">NOLLI Carlo</span>, <span class="title">L’arco eretto dall’imperatore Nerva Trajano nel porto d’Ancona</span> , in tavole 8, con 2 fogli di testo in fol. grand.
-                     <div class="note">Otto sono le tavole che illustrano il monumento. Due fogli sono occupati dal testo
-                        intagliato in rame, e il frontespi
-                        <div class="pageBreak"><span>248</span></div>zio rappresenta la veduta del porto e della città. Opera assai bene eseguita.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">NOLLI Carlo</span>, <span class="title">L’arco eretto dall’imperatore Nerva Trajano nel porto d’Ancona</span> , in tavole 8, con 2 fogli di testo in fol. grand.
+                  <div class="note">Otto sono le tavole che illustrano il monumento. Due fogli sono occupati dal testo
+                     intagliato in rame, e il frontespi
+                     <div class="pageBreak"><span>248</span></div>zio rappresenta la veduta del porto e della città. Opera assai bene eseguita.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>qnn</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/qnn.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>62x</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/62x.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

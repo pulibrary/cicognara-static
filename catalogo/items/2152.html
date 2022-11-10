@@ -5,36 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.24">section 1.24</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/601.html">601</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e30265">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">COMOLLI Abate Angelo</span>, <span class="title">Bibliografia storico-critica dell’architettura civile ed arti subalterne</span> , vol. 4, in 4, <span class="pubPlace">Roma</span> dal <span class="date">1788</span> al <span class="date">1792</span> .
-                     <div class="note">Nessun libro sarebbe più utile di questo agli amatori e agli artisti, se l’autore
-                        rapito dalla morte avesse potuto condurlo al suo termine e se fosse stato in luogo
-                        ove poter vedere più libri che non vide.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">COMOLLI Abate Angelo</span>, <span class="title">Bibliografia storico-critica dell’architettura civile ed arti subalterne</span> , vol. 4, in 4, <span class="pubPlace">Roma</span> dal <span class="date">1788</span> al <span class="date">1792</span> .
+                  <div class="note">Nessun libro sarebbe più utile di questo agli amatori e agli artisti, se l’autore
+                     rapito dalla morte avesse potuto condurlo al suo termine e se fosse stato in luogo
+                     ove poter vedere più libri che non vide.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>601</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/601.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

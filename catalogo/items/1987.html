@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/bg7.html">bg7</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e29075">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BAUR Jo. Wilhelmi</span>, <span class="title">Pub. Ovidii Nasonis Metamorphoseon</span> , <span class="pubPlace">Augspurg</span>  <span class="date">1709</span> , in fol. obl.
-                     <div class="note">Queste sono le medesime 150 tavole da questo valentissimo intagliatore prodotte nella
-                        p. edizione e in questa ristampate e non riconoscibili per essere assai logore; a
-                        fronte di ciascuna sta il testo in lingua tedesca.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BAUR Jo. Wilhelmi</span>, <span class="title">Pub. Ovidii Nasonis Metamorphoseon</span> , <span class="pubPlace">Augspurg</span>  <span class="date">1709</span> , in fol. obl.
+                  <div class="note">Queste sono le medesime 150 tavole da questo valentissimo intagliatore prodotte nella
+                     p. edizione e in questa ristampate e non riconoscibili per essere assai logore; a
+                     fronte di ciascuna sta il testo in lingua tedesca.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>bg7</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/bg7.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

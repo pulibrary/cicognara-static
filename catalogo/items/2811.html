@@ -5,37 +5,46 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/n2f.html">n2f</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/t2h.html">t2h</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/qp5.html">qp5</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e3004">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">CORSINI Eduardi</span>, <span class="title">Dissertatio in qua dubia adversus Minnisari regis Nummum diluuntur</span> , <span class="pubPlace">Romae</span>  <span class="date">1757</span> , in 4, M. 13.</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">CORSINI Eduardi</span>, <span class="title">Dissertatio in qua dubia adversus Minnisari regis Nummum diluuntur</span> , <span class="pubPlace">Romae</span>  <span class="date">1757</span> , in 4, M. 13.</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>n2f</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/n2f.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>t2h</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/t2h.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>qp5</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/qp5.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

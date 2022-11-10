@@ -5,48 +5,44 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/mrk.html">mrk</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/kc0.html">kc0</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e5474">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">PILES (de)</span>, <span class="title">Dissertation sur les ouvrages des plus fameux peintres. Dediée à M. le Duc de Richelieu,</span>  <span class="pubPlace">Paris</span>  <span class="date">1681,</span>  <span class="extent">in 12.</span> </span></div>
-               <div class="notes">
-                  <div class="note">In questo volumetto è aggiunta la descrizione dei quadri del Gabinetto Richelieu,
-                     la vita di Rubens et in fine Dialogue sur le coloris, Paris, chez Langlais, 1699.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">PILES (de)</span>, <span class="title">Dissertation sur les ouvrages des plus fameux peintres. Dediée à M. le Duc de Richelieu,</span>  <span class="pubPlace">Paris</span>  <span class="date">1681,</span>  <span class="extent">in 12.</span> </span></div>
+            <div class="notes">
+               <div class="note">In questo volumetto è aggiunta la descrizione dei quadri del Gabinetto Richelieu,
+                  la vita di Rubens et in fine Dialogue sur le coloris, Paris, chez Langlais, 1699.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>mrk</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/mrk.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>kc0</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/kc0.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

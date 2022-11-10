@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/3w8.html">3w8</a></dt>
-            <dd>
-               <ul>
-                  <li>Heidelberg University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e7111">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">Romani Collegii Musaeum celeberrimum publicae luci expositum a Georgio de Sepibus</span> , <span class="pubPlace">Amstelodami</span>  <span class="date">1678</span> , in fol., fig.
-                     <div class="note">Con molte tavole in rame ed in legno, parte frapposte e parte inserte nel testo. Opera
-                        in cui si riprodussero molte figure d’obelischi e monumenti egiziani in altri libri
-                        dallo stesso autore pubblicati.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">Romani Collegii Musaeum celeberrimum publicae luci expositum a Georgio de Sepibus</span> , <span class="pubPlace">Amstelodami</span>  <span class="date">1678</span> , in fol., fig.
+                  <div class="note">Con molte tavole in rame ed in legno, parte frapposte e parte inserte nel testo. Opera
+                     in cui si riprodussero molte figure d’obelischi e monumenti egiziani in altri libri
+                     dallo stesso autore pubblicati.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>3w8</dt>
+                     <dd>Heidelberg University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/3w8.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

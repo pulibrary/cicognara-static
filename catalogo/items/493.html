@@ -5,37 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/2gd.html">2gd</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e14333">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">DUPUIS</span>, <span class="title">Nouveau traité d’architecture, comprenant les cinq ordres des anciens avec un sexieme
-                        ordre, qui on nomine ordre français,</span>  <span class="pubPlace">Paris</span>  <span class="date">1768,</span>  <span class="extent">en 4, fig.</span> 
-                     <div class="note">Se fosse altrettanto purgato lo stile dell’architetto, come è
-                        <div class="pageBreak"><span>88</span></div>ritido il bulino con cui sono intagliate le 62 tavole di quest’opera sarebbe da ritenersi
-                        in maggior pregio. In fine sono 13 tabelle di proporzioni.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">DUPUIS</span>, <span class="title">Nouveau traité d’architecture, comprenant les cinq ordres des anciens avec un sexieme
+                     ordre, qui on nomine ordre français,</span>  <span class="pubPlace">Paris</span>  <span class="date">1768,</span>  <span class="extent">en 4, fig.</span> 
+                  <div class="note">Se fosse altrettanto purgato lo stile dell’architetto, come è
+                     <div class="pageBreak"><span>88</span></div>ritido il bulino con cui sono intagliate le 62 tavole di quest’opera sarebbe da ritenersi
+                     in maggior pregio. In fine sono 13 tabelle di proporzioni.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>2gd</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/2gd.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,37 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.26">section 1.26</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/50k.html">50k</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e32408">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">ROSACCIO Giuseppe</span>, <span class="title">Della nobiltà e grandezza dell’uomo, ove si conosce per la fisonomia fisica qual sia
-                        la complessione di tutti gli uomini e da cui si cava l’ordine, misura et proporzione
-                        di quello</span> , in <span class="pubPlace">Ferrara</span> e ristampato in <span class="pubPlace">Bologna</span>  <span class="date">1598</span> , in 8.
-                     <div class="note">Curiosissimo e raro librettino di soli otto foglietti di stampa in minutissimi caratteri
-                        corsivi.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">ROSACCIO Giuseppe</span>, <span class="title">Della nobiltà e grandezza dell’uomo, ove si conosce per la fisonomia fisica qual sia
+                     la complessione di tutti gli uomini e da cui si cava l’ordine, misura et proporzione
+                     di quello</span> , in <span class="pubPlace">Ferrara</span> e ristampato in <span class="pubPlace">Bologna</span>  <span class="date">1598</span> , in 8.
+                  <div class="note">Curiosissimo e raro librettino di soli otto foglietti di stampa in minutissimi caratteri
+                     corsivi.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>50k</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/50k.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

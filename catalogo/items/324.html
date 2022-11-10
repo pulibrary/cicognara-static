@@ -5,38 +5,37 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.5">section 1.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/n28.html">n28</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e9568">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">FIDANZA Paolo</span>, <span class="title">Teste scelte di personaggi illustri in lettere e in armi, cavate già dall’antico o
-                        dall’originale e dipinte nel Vaticano da Rafaello,</span>  <span class="pubPlace">Roma</span>  <span class="date">dal 1756 al 1766,</span>  <span class="extent">6 vol. rilegati in 2.</span> </span></div>
-               <div class="notes">
-                  <div class="note">Contengono in tutto 144 tavole di un’incisione grossolana e cattiva, prive di gusto
-                     affatto ed eseguite per speculazione libraria, ma però non senza una qualche reminescenza
-                     del carattere dell’autore.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">FIDANZA Paolo</span>, <span class="title">Teste scelte di personaggi illustri in lettere e in armi, cavate già dall’antico o
+                     dall’originale e dipinte nel Vaticano da Rafaello,</span>  <span class="pubPlace">Roma</span>  <span class="date">dal 1756 al 1766,</span>  <span class="extent">6 vol. rilegati in 2.</span> </span></div>
+            <div class="notes">
+               <div class="note">Contengono in tutto 144 tavole di un’incisione grossolana e cattiva, prive di gusto
+                  affatto ed eseguite per speculazione libraria, ma però non senza una qualche reminescenza
+                  del carattere dell’autore.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>n28</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/n28.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

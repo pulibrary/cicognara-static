@@ -5,38 +5,41 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.15">section 1.15</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/brz.html">brz</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/fk2.html">fk2</a></dt>
-            <dd></dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e23429">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">ROSSI Giovan Galeazzo Cav. bolognese</span>, <span class="title">Lettera al Sig. Giovanni Carga sopra la Villa di Tusculano, di Mons. Giovan Battista
-                        Campeggio Vescovo di Maiorica</span> , <span class="pubPlace">Bologna</span>  <span class="date">1571</span> , in 4 pic. — Aggiuntovi: <span class="title">Campegii Joan. Baptistae Maioricensis Episcopi: De Tusculana Villa sua</span> , <span class="pubPlace">Bononiae</span>  <span class="date">1571</span> .
-                     <div class="note">Questo Tosculano è lontano tre miglia da Bologna, villa così nominata dal prelato
-                        per fare allusione all’antica villa di Cicerone.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">ROSSI Giovan Galeazzo Cav. bolognese</span>, <span class="title">Lettera al Sig. Giovanni Carga sopra la Villa di Tusculano, di Mons. Giovan Battista
+                     Campeggio Vescovo di Maiorica</span> , <span class="pubPlace">Bologna</span>  <span class="date">1571</span> , in 4 pic. — Aggiuntovi: <span class="title">Campegii Joan. Baptistae Maioricensis Episcopi: De Tusculana Villa sua</span> , <span class="pubPlace">Bononiae</span>  <span class="date">1571</span> .
+                  <div class="note">Questo Tosculano è lontano tre miglia da Bologna, villa così nominata dal prelato
+                     per fare allusione all’antica villa di Cicerone.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>brz</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/brz.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>fk2</dt>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/fk2.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

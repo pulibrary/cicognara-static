@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/58t.html">58t</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e27266">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">NERI Merret et Kunckel</span>, <span class="title">Art de la verrerie</span> au quel on a ajouté<span class="bibl">le<span class="title">Sol sine veste</span> d’ <span class="author">Orschall</span>.</span><span class="bibl"><span class="title">L’Helioscopium videndi, le chapitre XI de la Flora Saturnizans</span> de <span class="author">Henckel</span>etc.</span>Traduit de l’allemand par M. D.**, <span class="pubPlace">Paris</span>  <span class="date">1752</span> , in 4, fig.
-                     <div class="note">Opera la più completa in questa materia, con molte grandi tavole incise in rame a’
-                        luoghi richiamati dal testo.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">NERI Merret et Kunckel</span>, <span class="title">Art de la verrerie</span> au quel on a ajouté<span class="bibl">le<span class="title">Sol sine veste</span> d’ <span class="author">Orschall</span>.</span><span class="bibl"><span class="title">L’Helioscopium videndi, le chapitre XI de la Flora Saturnizans</span> de <span class="author">Henckel</span>etc.</span>Traduit de l’allemand par M. D.**, <span class="pubPlace">Paris</span>  <span class="date">1752</span> , in 4, fig.
+                  <div class="note">Opera la più completa in questa materia, con molte grandi tavole incise in rame a’
+                     luoghi richiamati dal testo.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>58t</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/58t.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

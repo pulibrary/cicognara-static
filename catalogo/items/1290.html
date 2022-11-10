@@ -5,38 +5,40 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.17">section 1.17</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/nzc.html">nzc</a></dt>
-            <dd></dd>
-            <dt><a href="../dcl/tjn.html">tjn</a></dt>
-            <dd></dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e24033">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="title">ALMANAC de Beaux arts pour l’an XII et l’an XIII. de la Repub. Français</span> , 2 vol. in 12, <span class="pubPlace">Paris</span> .
-                     <div class="note">In questi due anni 1803 e 1804 escì questo almanacco e forse alcuni anni dopo ebbe
-                        continuazione. Leggermente li passano in rivista infiniti oggetti d’arte e nomi d’artisti
-                        e opere esche ec. Simili opere sono buone come repertorio.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="title">ALMANAC de Beaux arts pour l’an XII et l’an XIII. de la Repub. Français</span> , 2 vol. in 12, <span class="pubPlace">Paris</span> .
+                  <div class="note">In questi due anni 1803 e 1804 escì questo almanacco e forse alcuni anni dopo ebbe
+                     continuazione. Leggermente li passano in rivista infiniti oggetti d’arte e nomi d’artisti
+                     e opere esche ec. Simili opere sono buone come repertorio.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>nzc</dt>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/nzc.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>tjn</dt>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/tjn.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

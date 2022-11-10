@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/hs9.html">hs9</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e4674">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">VERNAZZA Giuseppe</span>, <span class="title">Osservazioni sopra un sigillo de’ bassi tempi da lui posseduto</span> , <span class="pubPlace">Torino</span>  <span class="date">1778</span> , in 4, fig., M. 26.
-                     <div class="note">Il sigillo che è nel frontespizio non è l’illustrato. Vien questo immediatamente dopo
-                        la dedica ed è una stella con una leggenda.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">VERNAZZA Giuseppe</span>, <span class="title">Osservazioni sopra un sigillo de’ bassi tempi da lui posseduto</span> , <span class="pubPlace">Torino</span>  <span class="date">1778</span> , in 4, fig., M. 26.
+                  <div class="note">Il sigillo che è nel frontespizio non è l’illustrato. Vien questo immediatamente dopo
+                     la dedica ed è una stella con una leggenda.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>hs9</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/hs9.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,35 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.15">section 1.15</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/nvm.html">nvm</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e23472">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">STOSCH Filippo Barone (de)</span>, <span class="title">Lettera sopra una medaglia nuovamente scoperta di Carino Imperatore e Magnia Urbica
-                        Augusta sua consorte, all’Accademia Etrusca di Cortona</span> , <span class="pubPlace">Fir.</span>  <span class="date">1755</span> , in 4, M. 13.
-                     <div class="note">Le due medaglie sono egregiamente intagliate nel frontespizio.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">STOSCH Filippo Barone (de)</span>, <span class="title">Lettera sopra una medaglia nuovamente scoperta di Carino Imperatore e Magnia Urbica
+                     Augusta sua consorte, all’Accademia Etrusca di Cortona</span> , <span class="pubPlace">Fir.</span>  <span class="date">1755</span> , in 4, M. 13.
+                  <div class="note">Le due medaglie sono egregiamente intagliate nel frontespizio.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>nvm</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/nvm.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

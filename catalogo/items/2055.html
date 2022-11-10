@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/05w.html">05w</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Heidelberg University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e29573">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">Turris Babel sive Archontologia</span> , <span class="pubPlace">Amstelodami</span> , <span class="publisher">Jansón</span>  <span class="date">1679</span> , in fol.
-                     <div class="note">Singolare opera ove s’intende di dimostrare come fossero edificate la Torre di Babele,
-                        le Mura di Babilonia, i Giardini pensili di Semiramide, il Laberinto d’Egitto ed altre
-                        simili opere.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">Turris Babel sive Archontologia</span> , <span class="pubPlace">Amstelodami</span> , <span class="publisher">Jansón</span>  <span class="date">1679</span> , in fol.
+                  <div class="note">Singolare opera ove s’intende di dimostrare come fossero edificate la Torre di Babele,
+                     le Mura di Babilonia, i Giardini pensili di Semiramide, il Laberinto d’Egitto ed altre
+                     simili opere.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>05w</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Heidelberg University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/05w.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

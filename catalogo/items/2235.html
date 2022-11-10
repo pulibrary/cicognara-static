@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.25">section 1.25</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/wrc.html">wrc</a></dt>
-            <dd>
-               <ul>
-                  <li>National Gallery of Art Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e30838">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">CICOGNARA Leopoldo</span>, <span class="title">Vita di S. Lazzaro monaco e pittore preceduta da alcune osservazioni sulla bibliomania</span> , <span class="pubPlace">Brescia</span>  <span class="date">1807</span> , in 8.
-                     <div class="note">Con una lettera (che leggesi al principio) questo libretto fu intitolato al pittore
-                        Giuseppe Bossi e la vita di S. Lazzaro non è che la ristampa del raro e ridicolo opuscolo
-                        che porta questo nome. Esemplare in carta velina.<span class="bibl">Vedi<span class="author">Baldi</span>.</span></div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">CICOGNARA Leopoldo</span>, <span class="title">Vita di S. Lazzaro monaco e pittore preceduta da alcune osservazioni sulla bibliomania</span> , <span class="pubPlace">Brescia</span>  <span class="date">1807</span> , in 8.
+                  <div class="note">Con una lettera (che leggesi al principio) questo libretto fu intitolato al pittore
+                     Giuseppe Bossi e la vita di S. Lazzaro non è che la ristampa del raro e ridicolo opuscolo
+                     che porta questo nome. Esemplare in carta velina.<span class="bibl">Vedi<span class="author">Baldi</span>.</span></div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>wrc</dt>
+                     <dd>National Gallery of Art Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/wrc.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

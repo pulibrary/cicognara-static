@@ -5,44 +5,39 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/kvj.html">kvj</a></dt>
-            <dd>
-               <ul>
-                  <li>Heidelberg University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e8576">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BARTOLI Santi Pietro</span>, <span class="title">Uno dei due piccoli fregi disegnati ed eseguiti da Rafaello nel Vaticano colla dedica
-                        dell’editore Giacomo de Rossi a D. Nicolao Simoncello picturae omnium que bonarum
-                        artium cultori eximio.</span> Quindici tavole compreso il frontespizio.
-                     <div class="note">Esemplare di prima bellezza ed una delle più belle opere di questo intagliatore ec.
-                        Vedansi tutte le opere di Giovan Pietro Bellori, e all’articolo Raccolta di varie
-                        antichità.</div>
-                     <div class="pageBreak"><span>172</span></div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BARTOLI Santi Pietro</span>, <span class="title">Uno dei due piccoli fregi disegnati ed eseguiti da Rafaello nel Vaticano colla dedica
+                     dell’editore Giacomo de Rossi a D. Nicolao Simoncello picturae omnium que bonarum
+                     artium cultori eximio.</span> Quindici tavole compreso il frontespizio.
+                  <div class="note">Esemplare di prima bellezza ed una delle più belle opere di questo intagliatore ec.
+                     Vedansi tutte le opere di Giovan Pietro Bellori, e all’articolo Raccolta di varie
+                     antichità.</div>
+                  <div class="pageBreak"><span>172</span></div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>kvj</dt>
+                     <dd>Heidelberg University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/kvj.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

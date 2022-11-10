@@ -5,42 +5,37 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/rvg.html">rvg</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e24704">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">GUALTEROTTI Raf.</span>, <span class="title">Feste nelle nozze del Serenissimo Francesco Medici G. Duca di Toscana e della Sereniss.
-                        sua consorte la Sig. Bianca Cappello</span> , composte da M. Raffaello Gualterotti nuovamente ristampate, <span class="pubPlace">Firenze</span> , <span class="publisher">Giunti</span> , <span class="date">1579</span> , in 4.
-                     <div class="note">Vi sono sedici tavole intagliate all’acqua forte e tirate in color vario, nella prima
-                        delle quali sta scritto: l’invenzione e disegni di queste ec. sono del sig. Raffaello
-                        Gualterotti,. ... Accursio Baldi e Bastiano Marsili.</div>MDLXXXII</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">GUALTEROTTI Raf.</span>, <span class="title">Feste nelle nozze del Serenissimo Francesco Medici G. Duca di Toscana e della Sereniss.
+                     sua consorte la Sig. Bianca Cappello</span> , composte da M. Raffaello Gualterotti nuovamente ristampate, <span class="pubPlace">Firenze</span> , <span class="publisher">Giunti</span> , <span class="date">1579</span> , in 4.
+                  <div class="note">Vi sono sedici tavole intagliate all’acqua forte e tirate in color vario, nella prima
+                     delle quali sta scritto: l’invenzione e disegni di queste ec. sono del sig. Raffaello
+                     Gualterotti,. ... Accursio Baldi e Bastiano Marsili.</div>MDLXXXII</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>rvg</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/rvg.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

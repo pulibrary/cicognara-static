@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/szq.html">szq</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e20122">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">VEDREMAN Joannes</span>, <span class="title">Architectura</span> , <span class="pubPlace">Antuerpia</span>  <span class="date">1577</span> in fol. fig. M. 91, in lingua olandese.
-                     <div class="note">Apparisce però ristampata nel 1581; poiché amendue i numeri sono intagliati sul frontespizio
-                        figurato in luoghi diversi. È singolare l’applicazione degli ordini fatta da questo
-                        autore agli edifici moderni e barbaro lo stile e le proporzioni con cui sono figurati.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">VEDREMAN Joannes</span>, <span class="title">Architectura</span> , <span class="pubPlace">Antuerpia</span>  <span class="date">1577</span> in fol. fig. M. 91, in lingua olandese.
+                  <div class="note">Apparisce però ristampata nel 1581; poiché amendue i numeri sono intagliati sul frontespizio
+                     figurato in luoghi diversi. È singolare l’applicazione degli ordini fatta da questo
+                     autore agli edifici moderni e barbaro lo stile e le proporzioni con cui sono figurati.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>szq</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/szq.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

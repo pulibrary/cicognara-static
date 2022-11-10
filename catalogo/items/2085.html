@@ -5,36 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/58w.html">58w</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e29788">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="title">PORTRAITS (les) des Hommes illustres françois qui sont joints dans la Galérie du Cardinal
-                        de Richelieu</span> , avec les abregés historiques de leurs vies, par M. de Wulson Sieur de la Colombière, <span class="pubPlace">Paris</span>  <span class="date">1655</span> , in fol. fig.
-                     <div class="note">Sono 20 ritratti in piedi, non compreso il frontespizio figurato, i quali sono contornati
-                        da tutte le divise e emblemi relativi, intagliati da Bignon.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="title">PORTRAITS (les) des Hommes illustres françois qui sont joints dans la Galérie du Cardinal
+                     de Richelieu</span> , avec les abregés historiques de leurs vies, par M. de Wulson Sieur de la Colombière, <span class="pubPlace">Paris</span>  <span class="date">1655</span> , in fol. fig.
+                  <div class="note">Sono 20 ritratti in piedi, non compreso il frontespizio figurato, i quali sono contornati
+                     da tutte le divise e emblemi relativi, intagliati da Bignon.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>58w</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/58w.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

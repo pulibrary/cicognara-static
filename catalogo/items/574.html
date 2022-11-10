@@ -5,42 +5,46 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/mc7.html">mc7</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/d5f.html">d5f</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e16599">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">Le MUET</span>, <span class="title">Maniere de bien bâtir pour toute sorte de personnes,</span>  <span class="pubPlace">Paris,</span>  <span class="publisher">chez l’Anglois,</span>  <span class="date">1647.</span> On y a reuni les augmentàtions des nouveaux bâtimens faits en France par le même,
-                     Paris 1647, <span class="extent">in fol. fig.</span> </span></div>
-               <div class="notes">
-                  <div class="note">Questa è la seconda edizione contenente maggior numero di tavole della prima, che
-                     è del 1623; ne comparvero posteriormente altre tre, delle quali una senza data. Libro
-                     meritevole di stima, poiché esteso da un valente architetto che può ritenersi fra
-                     primi che si dessero cura della interna comodità nella distribuzione. Compreso il
-                     frontispizio figurato, le tavole sono 85, intagliate in rame con diligenza.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">Le MUET</span>, <span class="title">Maniere de bien bâtir pour toute sorte de personnes,</span>  <span class="pubPlace">Paris,</span>  <span class="publisher">chez l’Anglois,</span>  <span class="date">1647.</span> On y a reuni les augmentàtions des nouveaux bâtimens faits en France par le même,
+                  Paris 1647, <span class="extent">in fol. fig.</span> </span></div>
+            <div class="notes">
+               <div class="note">Questa è la seconda edizione contenente maggior numero di tavole della prima, che
+                  è del 1623; ne comparvero posteriormente altre tre, delle quali una senza data. Libro
+                  meritevole di stima, poiché esteso da un valente architetto che può ritenersi fra
+                  primi che si dessero cura della interna comodità nella distribuzione. Compreso il
+                  frontispizio figurato, le tavole sono 85, intagliate in rame con diligenza.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>mc7</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/mc7.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>d5f</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/d5f.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,38 +5,42 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/8p9.html">8p9</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/7kk.html">7kk</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e3232">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">FROELICH Erasmi</span>, <span class="title">De familia Vaballathi nummis illustrata, opusculum postumum. Accedunt appendiculae
-                        duae ad numismata antiqua a Cl. Vaillantio olim edita etc.</span> , <span class="pubPlace">Vindobonae</span><span class="date">1762</span> , in 4, fig., M. 17.
-                     <div class="note">Con quattro tavole in rame. Il Khellio fu l’editore di quest’opera postuma e la fa
-                        precedere dall’elogio al suo collega Froelich</div>.</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">FROELICH Erasmi</span>, <span class="title">De familia Vaballathi nummis illustrata, opusculum postumum. Accedunt appendiculae
+                     duae ad numismata antiqua a Cl. Vaillantio olim edita etc.</span> , <span class="pubPlace">Vindobonae</span><span class="date">1762</span> , in 4, fig., M. 17.
+                  <div class="note">Con quattro tavole in rame. Il Khellio fu l’editore di quest’opera postuma e la fa
+                     precedere dall’elogio al suo collega Froelich</div>.</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>8p9</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/8p9.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>7kk</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/7kk.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

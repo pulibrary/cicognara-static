@@ -5,34 +5,33 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.6">section 1.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/1cm.html">1cm</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e19696">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">VEGETII Flavii</span>et <span class="author">Julii Frontini</span>, <span class="title">Nec non alia veterum scripta de re militari</span> , Lugd. Bat. <span class="date">1644</span> , in 12. <span class="author">VIGNOLA</span>, Vedi <span class="title">Barozio</span> .
-                     <div class="pageBreak"><span>126</span></div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">VEGETII Flavii</span>et <span class="author">Julii Frontini</span>, <span class="title">Nec non alia veterum scripta de re militari</span> , Lugd. Bat. <span class="date">1644</span> , in 12. <span class="author">VIGNOLA</span>, Vedi <span class="title">Barozio</span> .
+                  <div class="pageBreak"><span>126</span></div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>1cm</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/1cm.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

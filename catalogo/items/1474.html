@@ -5,51 +5,52 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/ck2.html">ck2</a></dt>
-            <dd>Getty Research Institute</dd>
-            <dt><a href="../dcl/792.html">792</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/zz8.html">zz8</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e25310">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">VICECOMES Jo. M.</span>, <span class="title">Exequiae in tempio Santi Nazarii Manfredo Septalio Patritio mediolanesi eiusdem basilica
-                        canonico celebrata quas summatim exposuit Mar. Jo. M. Vicecomes Accad. Mediolani</span> , <span class="date">1680</span> , in 8.
-                     <div class="note">Le stampe del catafalco, e de’ sei emblemi, siccome del ritratto sono eseguite sui
-                        disegni di Cesare del Fiore. L’orazione funerale del P. Gio. Batt. Pastorini: a cui
-                        segue un’accademia funebre.</div>MDCLXXXI</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">VICECOMES Jo. M.</span>, <span class="title">Exequiae in tempio Santi Nazarii Manfredo Septalio Patritio mediolanesi eiusdem basilica
+                     canonico celebrata quas summatim exposuit Mar. Jo. M. Vicecomes Accad. Mediolani</span> , <span class="date">1680</span> , in 8.
+                  <div class="note">Le stampe del catafalco, e de’ sei emblemi, siccome del ritratto sono eseguite sui
+                     disegni di Cesare del Fiore. L’orazione funerale del P. Gio. Batt. Pastorini: a cui
+                     segue un’accademia funebre.</div>MDCLXXXI</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>ck2</dt>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/ck2.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>792</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/792.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>zz8</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/zz8.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

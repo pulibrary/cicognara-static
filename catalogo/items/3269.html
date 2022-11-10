@@ -5,39 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.7">section 2.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/bk9.html">bk9</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e6194">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">MATTHAEI Xaverii</span>, <span class="title">Per saturam exercitationes</span> , <span class="pubPlace">Neapoli</span>  <span class="date">1759</span> , in 4. Sive de voce Tityrus, de ficu ruminali, de duplici alba, de Ara maxima, M.
-                     44.</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">MATTHAEI Xaverii</span>, <span class="title">Per saturam exercitationes</span> , <span class="pubPlace">Neapoli</span>  <span class="date">1759</span> , in 4. Sive de voce Tityrus, de ficu ruminali, de duplici alba, de Ara maxima, M.
+                  44.</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>bk9</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/bk9.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

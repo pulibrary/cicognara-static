@@ -5,35 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/s2c.html">s2c</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e29579">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">Mundus subterraneus in X.H. lib. digestus: fidi tio tertia</span> . <span class="pubPlace">Amst.</span>  <span class="date">1678</span> 2 voi. in fol. fig.
-                     <div class="note">Questa è l’edizione più completa e stimata di quest’opera, die riguarda più la fisica
-                        che le arti.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">KIRCHERII Athanasii</span>, <span class="title">Mundus subterraneus in X.H. lib. digestus: fidi tio tertia</span> . <span class="pubPlace">Amst.</span>  <span class="date">1678</span> 2 voi. in fol. fig.
+                  <div class="note">Questa è l’edizione più completa e stimata di quest’opera, die riguarda più la fisica
+                     che le arti.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>s2c</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/s2c.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

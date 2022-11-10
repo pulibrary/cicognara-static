@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.5">section 2.5</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/1ph.html">1ph</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Heidelberg University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e2791">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BONARROTTI Filippo</span>, <span class="title">Osservazioni sopra alcuni frammenti di vasi antichi di vetro, ornati di figure, trovati
-                        nei cimiterj di Roma</span> , <span class="pubPlace">Firenze</span>  <span class="date">1716</span> , in 4, fig.
-                     <div class="note">Aggiuntevi alcune osservazioni sopra tre dittici d’avorio, colle rispettive tavole
-                        e con 31 tavole in rame al fine, relative agli antichi vetri.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BONARROTTI Filippo</span>, <span class="title">Osservazioni sopra alcuni frammenti di vasi antichi di vetro, ornati di figure, trovati
+                     nei cimiterj di Roma</span> , <span class="pubPlace">Firenze</span>  <span class="date">1716</span> , in 4, fig.
+                  <div class="note">Aggiuntevi alcune osservazioni sopra tre dittici d’avorio, colle rispettive tavole
+                     e con 31 tavole in rame al fine, relative agli antichi vetri.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>1ph</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Heidelberg University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/1ph.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

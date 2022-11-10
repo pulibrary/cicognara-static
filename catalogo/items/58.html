@@ -5,39 +5,38 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/fc6.html">fc6</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e2019">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">VOSSÙ Gerardi Joannis</span>, <span class="title">De quatuor artibus popularibus; de philologia et scientiis mathematicis,</span>  <span class="pubPlace">Amsterdam</span>  <span class="date">1660,</span>  <span class="extent">in 4.</span> </span></div>
-               <div class="notes">
-                  <div class="note">Nel primo di questi tre libri sono quattro trattati di grammatica, di ginnastica,
-                     di musica e di pittura. La filologia è trattata in seguito con altro frontespizio
-                     e ricominciando il numero delle pagine e lo stesso è fatto per l’ultima opera intitolata
-                     de univeræ Matheseos natura et constitutione liber, cui subiungitur chronologia mathematicorum.
-                     Stesso luogo ed anno.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">VOSSÙ Gerardi Joannis</span>, <span class="title">De quatuor artibus popularibus; de philologia et scientiis mathematicis,</span>  <span class="pubPlace">Amsterdam</span>  <span class="date">1660,</span>  <span class="extent">in 4.</span> </span></div>
+            <div class="notes">
+               <div class="note">Nel primo di questi tre libri sono quattro trattati di grammatica, di ginnastica,
+                  di musica e di pittura. La filologia è trattata in seguito con altro frontespizio
+                  e ricominciando il numero delle pagine e lo stesso è fatto per l’ultima opera intitolata
+                  de univeræ Matheseos natura et constitutione liber, cui subiungitur chronologia mathematicorum.
+                  Stesso luogo ed anno.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>fc6</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/fc6.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

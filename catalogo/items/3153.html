@@ -5,48 +5,44 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.6">section 2.6</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/bgq.html">bgq</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-                  <li>Heidelberg University Library</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/s8h.html">s8h</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e5394">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">VITALE Antonii</span>, <span class="title">In binas veteres inscriptiones L. Aurelii Commodi imp. aetate positas, Romae recens
-                        detectas. Dissertatio, qua gladiatorum materia fere tota enucleatur</span> , <span class="pubPlace">Romae</span>  <span class="date">1763</span> , in 4, fig., M. 18.
-                     <div class="note">Con una tavola intagliata in rame.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">VITALE Antonii</span>, <span class="title">In binas veteres inscriptiones L. Aurelii Commodi imp. aetate positas, Romae recens
+                     detectas. Dissertatio, qua gladiatorum materia fere tota enucleatur</span> , <span class="pubPlace">Romae</span>  <span class="date">1763</span> , in 4, fig., M. 18.
+                  <div class="note">Con una tavola intagliata in rame.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>bgq</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Heidelberg University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/bgq.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>s8h</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/s8h.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

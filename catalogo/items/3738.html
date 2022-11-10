@@ -5,37 +5,41 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/v2k.html">v2k</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/2ct.html">2ct</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e9541">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">FRANZINI Federico</span>, <span class="title">Roma antica, e moderna ec.</span> , <span class="pubPlace">Roma</span> , <span class="date">1668</span> , per i successori al Mascardi, in 8, figurato.
-                     <div class="note">Questo Franzini editore raccolse da tutte le guide precedenti, ed epilogò le nozioni
-                        d’ogni genere sacre, e profane per comodo de’ viaggiatori.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">FRANZINI Federico</span>, <span class="title">Roma antica, e moderna ec.</span> , <span class="pubPlace">Roma</span> , <span class="date">1668</span> , per i successori al Mascardi, in 8, figurato.
+                  <div class="note">Questo Franzini editore raccolse da tutte le guide precedenti, ed epilogò le nozioni
+                     d’ogni genere sacre, e profane per comodo de’ viaggiatori.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>v2k</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/v2k.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>2ct</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/2ct.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

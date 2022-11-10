@@ -5,38 +5,37 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.11">section 2.11</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/rnx.html">rnx</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e12258">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">WALKER</span> <span class="title">Scottish Scenery. Twenty views, engraved by W. Byrne from pictures by J. Walker with
-                        brief description</span> , <span class="pubPlace">London</span>  <span class="date">1807</span> , in fol. per traverso.
-                     <div class="note">È d’uopo accordare assolutamente agli inglesi un primato assoluto in questi intagli
-                        di vedute pittoresche, che dopo il bulino di Woolet hanno migliorato sempre più, giugnendo
-                        all’estremo del gusto, come può vedersi in tutte queste opere.</div>
-                     <div class="pageBreak"><span>259</span></div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">WALKER</span> <span class="title">Scottish Scenery. Twenty views, engraved by W. Byrne from pictures by J. Walker with
+                     brief description</span> , <span class="pubPlace">London</span>  <span class="date">1807</span> , in fol. per traverso.
+                  <div class="note">È d’uopo accordare assolutamente agli inglesi un primato assoluto in questi intagli
+                     di vedute pittoresche, che dopo il bulino di Woolet hanno migliorato sempre più, giugnendo
+                     all’estremo del gusto, come può vedersi in tutte queste opere.</div>
+                  <div class="pageBreak"><span>259</span></div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>rnx</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/rnx.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

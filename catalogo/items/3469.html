@@ -5,36 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.8">section 2.8</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/r5m.html">r5m</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e7638">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">ZAMPIERI Dominici</span>, <span class="title">Vulgo Domenichino</span> . Picturae quae extant in sacello sacrae aedis Cryptoferratensi, nunc primum incisae, <span class="pubPlace">Romae</span>  <span class="date">1762</span> , in foglio mass.
-                     <div class="note">Sono ventotto tavole diligentemente disegnate ed intagliate da Francesco Bartolozzi
-                        e da altri fra i migliori artisti di quel tempo. Queste preziose pitture minacciavano
-                        deperimento e vennero ora restituite al loro splendore e rassicurate.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">ZAMPIERI Dominici</span>, <span class="title">Vulgo Domenichino</span> . Picturae quae extant in sacello sacrae aedis Cryptoferratensi, nunc primum incisae, <span class="pubPlace">Romae</span>  <span class="date">1762</span> , in foglio mass.
+                  <div class="note">Sono ventotto tavole diligentemente disegnate ed intagliate da Francesco Bartolozzi
+                     e da altri fra i migliori artisti di quel tempo. Queste preziose pitture minacciavano
+                     deperimento e vennero ora restituite al loro splendore e rassicurate.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>r5m</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/r5m.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

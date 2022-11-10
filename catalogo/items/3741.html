@@ -5,37 +5,41 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/m8g.html">m8g</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/4w8.html">4w8</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e9560">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">FULVIO Andrea</span>, <span class="title">L’antichità di Roma colle aggiunzioni di Girolamo Ferucci, e in fine un’orazione dello
-                        stesso Fulvio delle lodi di Roma</span> , <span class="pubPlace">Venezia</span> , <span class="date">1588</span> , per <span class="publisher">Girolamo Francini</span> , in 8. — Aggiuntevi: <span class="title">Le antichità della città di Roma raccolte per Bernardo Gamucci da S. Geminiano.</span> Edizione seconda, riveduta e corretta da Tommaso Pocacchi, <span class="pubPlace">Venezia</span>  <span class="date">1588</span> , fig., ambedue con tavole in legno.
-                     <div class="pageBreak"><span>195</span></div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">FULVIO Andrea</span>, <span class="title">L’antichità di Roma colle aggiunzioni di Girolamo Ferucci, e in fine un’orazione dello
+                     stesso Fulvio delle lodi di Roma</span> , <span class="pubPlace">Venezia</span> , <span class="date">1588</span> , per <span class="publisher">Girolamo Francini</span> , in 8. — Aggiuntevi: <span class="title">Le antichità della città di Roma raccolte per Bernardo Gamucci da S. Geminiano.</span> Edizione seconda, riveduta e corretta da Tommaso Pocacchi, <span class="pubPlace">Venezia</span>  <span class="date">1588</span> , fig., ambedue con tavole in legno.
+                  <div class="pageBreak"><span>195</span></div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>m8g</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/m8g.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>4w8</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/4w8.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

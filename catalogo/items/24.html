@@ -5,34 +5,33 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/9cc.html">9cc</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e1064">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="title">DIALOGHI sopra le tre arti del disegno,</span>  <span class="pubPlace">Lucca</span>  <span class="date">1754,</span>  <span class="extent">in 8.</span> Con una tavola in rame nel frontispizio rappresentante Tiziano in atto di dipingere
-                     una Venere.</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="title">DIALOGHI sopra le tre arti del disegno,</span>  <span class="pubPlace">Lucca</span>  <span class="date">1754,</span>  <span class="extent">in 8.</span> Con una tavola in rame nel frontispizio rappresentante Tiziano in atto di dipingere
+                  una Venere.</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>9cc</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/9cc.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

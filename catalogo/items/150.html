@@ -5,51 +5,47 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/02w.html">02w</a></dt>
-            <dd>
-               <ul>
-                  <li>Metropolitan Museum of Art</li>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/35t.html">35t</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e4591">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">LACOMBE</span>, <span class="title">Le spectacle des beaux arts, ou considerations touchantes leur nature etc.,</span>  <span class="pubPlace">Paris</span>  <span class="date">1758,</span>  <span class="extent">in 12.</span> </span><span class="bibl">– Aggiuntovi:<span class="title">Les moyens de dévénir peintres en trois heures et d’exécuter au pinceau les ouvrages
-                        des plus grands maîtres, sans avoir appris le dessein,</span>  <span class="pubPlace">Paris</span>  <span class="date">1755</span> .</span></div>
-               <div class="notes">
-                  <div class="note">Quest’opera si estene più sulla musica e la poesia che sulla pittura.</div>
-                  <div class="note">Questo libro col mezzo di dialoghi insegna ad attaccare al vetro le stampe dopo averle
-                     imbrattate di colore e porta lo specioso titolo indicato.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">LACOMBE</span>, <span class="title">Le spectacle des beaux arts, ou considerations touchantes leur nature etc.,</span>  <span class="pubPlace">Paris</span>  <span class="date">1758,</span>  <span class="extent">in 12.</span> </span><span class="bibl">– Aggiuntovi:<span class="title">Les moyens de dévénir peintres en trois heures et d’exécuter au pinceau les ouvrages
+                     des plus grands maîtres, sans avoir appris le dessein,</span>  <span class="pubPlace">Paris</span>  <span class="date">1755</span> .</span></div>
+            <div class="notes">
+               <div class="note">Quest’opera si estene più sulla musica e la poesia che sulla pittura.</div>
+               <div class="note">Questo libro col mezzo di dialoghi insegna ad attaccare al vetro le stampe dopo averle
+                  imbrattate di colore e porta lo specioso titolo indicato.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>02w</dt>
+                     <dd>Metropolitan Museum of Art</dd>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/02w.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>35t</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/35t.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,40 +5,49 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/pjv.html">pjv</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/s2b.html">s2b</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/wbx.html">wbx</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e29331">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">DURERI Alberti</span>, <span class="title">Epitome in Divae Parthenices Mariae historiam per figuras digestam cum versibus annexis
-                        Ghelidonii</span> , Impressum <span class="pubPlace">Norimbergae</span> , per <span class="publisher">Albertum Durerum pictorem</span> , <span class="date">1511</span> , in fol. Constat chartarum 21. —<span class="bibl">Accedit:<span class="title">Passio Domini nostri Jesu Christi ex Hyeronimo Paduano, Domenico Mancino, Sedulio
-                           et Baptista Mantuano, per Fratrem Chelidonium collecta, cum figuris Alberti Dureri
-                           pictoris</span> , <span class="pubPlace">Norimbergae</span>  <span class="date">1511</span> , chart. 12.</span>—<span class="bibl">Accedit:<span class="title">Apocalypsis cum figuris</span> , <span class="pubPlace">Norimbergae</span>  <span class="date">1511</span> , chart. 16.</span></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">DURERI Alberti</span>, <span class="title">Epitome in Divae Parthenices Mariae historiam per figuras digestam cum versibus annexis
+                     Ghelidonii</span> , Impressum <span class="pubPlace">Norimbergae</span> , per <span class="publisher">Albertum Durerum pictorem</span> , <span class="date">1511</span> , in fol. Constat chartarum 21. —<span class="bibl">Accedit:<span class="title">Passio Domini nostri Jesu Christi ex Hyeronimo Paduano, Domenico Mancino, Sedulio
+                        et Baptista Mantuano, per Fratrem Chelidonium collecta, cum figuris Alberti Dureri
+                        pictoris</span> , <span class="pubPlace">Norimbergae</span>  <span class="date">1511</span> , chart. 12.</span>—<span class="bibl">Accedit:<span class="title">Apocalypsis cum figuris</span> , <span class="pubPlace">Norimbergae</span>  <span class="date">1511</span> , chart. 16.</span></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>pjv</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/pjv.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>s2b</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/s2b.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>wbx</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/wbx.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

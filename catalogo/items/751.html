@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.7">section 1.7</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/1wn.html">1wn</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e20173">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BIBIENA Galli Antonio cavaliere</span>, <span class="title">Pianta e spaccato del nuovo teatro di Bologna</span> aperto nel <span class="date">1763</span> , <span class="pubPlace">Bol</span> . In 4, fig. M. 7.
-                     <div class="note">Si avverte che Antonio è il figlio del famoso architetto e prospettico Ferdinando.
-                        Con due grandissime tavole in rame.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BIBIENA Galli Antonio cavaliere</span>, <span class="title">Pianta e spaccato del nuovo teatro di Bologna</span> aperto nel <span class="date">1763</span> , <span class="pubPlace">Bol</span> . In 4, fig. M. 7.
+                  <div class="note">Si avverte che Antonio è il figlio del famoso architetto e prospettico Ferdinando.
+                     Con due grandissime tavole in rame.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>1wn</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/1wn.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

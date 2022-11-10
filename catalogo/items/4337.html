@@ -5,34 +5,33 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.13">section 2.13</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/rcb.html">rcb</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e14195">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">PIANIGIANI Giacomo</span>, <span class="title">Il duomo di Siena descritto per commodo dei forestieri</span> , <span class="pubPlace">Siena</span>  <span class="date">1760</span> , in 8.
-                     <div class="note">Libro da rifarsi giacché il soggetto dà luogo ad un’opera di qualche importanza.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">PIANIGIANI Giacomo</span>, <span class="title">Il duomo di Siena descritto per commodo dei forestieri</span> , <span class="pubPlace">Siena</span>  <span class="date">1760</span> , in 8.
+                  <div class="note">Libro da rifarsi giacché il soggetto dà luogo ad un’opera di qualche importanza.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>rcb</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/rcb.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

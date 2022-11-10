@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.14">section 2.14</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/vnr.html">vnr</a></dt>
-            <dd>
-               <ul>
-                  <li>Heidelberg University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e15075">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">De la LIVE</span>, <span class="title">Catalogue historique du Cabinet de peinture, et sculture française</span> , <span class="pubPlace">Paris</span>  <span class="date">1764</span> .
-                     <div class="note">È da osservarsi il ritratto dell’autore disegnato da Cochin il figlio, ed inciso da
-                        lui stesso.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">De la LIVE</span>, <span class="title">Catalogue historique du Cabinet de peinture, et sculture française</span> , <span class="pubPlace">Paris</span>  <span class="date">1764</span> .
+                  <div class="note">È da osservarsi il ritratto dell’autore disegnato da Cochin il figlio, ed inciso da
+                     lui stesso.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>vnr</dt>
+                     <dd>Heidelberg University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/vnr.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

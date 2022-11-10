@@ -5,46 +5,55 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/68t.html">68t</a></dt>
-            <dd></dd>
-            <dt><a href="../dcl/z2d.html">z2d</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/gck.html">gck</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Heidelberg University Library</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/hc8.html">hc8</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e8744">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BLONDI Flavii</span>, <span class="title">De Roma triumphante libri decem Brixiae 1503 per Angelum Brittannicum. Accedit: ejusdem
-                        de Roma instaurata lib. III. De gestis venetorum ad Franciscum Foscari ducem etc.
-                        et de Italia illustrata lib. VIII</span> , <span class="pubPlace">Venetiis</span> , <span class="date">1510</span> , per G. regnante <span class="publisher">Leonardo Lauretano</span> duce.</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BLONDI Flavii</span>, <span class="title">De Roma triumphante libri decem Brixiae 1503 per Angelum Brittannicum. Accedit: ejusdem
+                     de Roma instaurata lib. III. De gestis venetorum ad Franciscum Foscari ducem etc.
+                     et de Italia illustrata lib. VIII</span> , <span class="pubPlace">Venetiis</span> , <span class="date">1510</span> , per G. regnante <span class="publisher">Leonardo Lauretano</span> duce.</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>68t</dt>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/68t.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>z2d</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/z2d.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>gck</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Heidelberg University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/gck.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>hc8</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/hc8.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,47 +5,43 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/s84.html">s84</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/qjw.html">qjw</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e27983">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">ACCADEMICI Gelati</span>, <span class="title">Ricreazioni amorose</span> , <span class="pubPlace">Bol.</span>  <span class="date">1500</span> ,
-                     <div class="note">con otto emblemi. — Aggiuntovi Psaffone trattato d’Amore, Bol. 1590. Questi tre libretti
-                        sono ornati di un bellissimo intaglio nel frontespizio di Agostino Caracci.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">ACCADEMICI Gelati</span>, <span class="title">Ricreazioni amorose</span> , <span class="pubPlace">Bol.</span>  <span class="date">1500</span> ,
+                  <div class="note">con otto emblemi. — Aggiuntovi Psaffone trattato d’Amore, Bol. 1590. Questi tre libretti
+                     sono ornati di un bellissimo intaglio nel frontespizio di Agostino Caracci.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>s84</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/s84.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>qjw</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/qjw.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

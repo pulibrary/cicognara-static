@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/xjv.html">xjv</a></dt>
-            <dd>
-               <ul>
-                  <li>Heidelberg University Library</li>
-                  <li>Heidelberg University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e9746">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">MAGGIO Joannes</span>, <span class="title">Aedificiorum et ruinarum Romae ex antiquis atque hodiernis monimentis</span> , libri duo, <span class="pubPlace">Romae</span> ,apud <span class="publisher">Josephum de Rubeis</span> , <span class="date">1618</span> , in quarto.
-                     <div class="note">Collezione di 174 stampe delineate e incise da Giovanni Maggio romano.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">MAGGIO Joannes</span>, <span class="title">Aedificiorum et ruinarum Romae ex antiquis atque hodiernis monimentis</span> , libri duo, <span class="pubPlace">Romae</span> ,apud <span class="publisher">Josephum de Rubeis</span> , <span class="date">1618</span> , in quarto.
+                  <div class="note">Collezione di 174 stampe delineate e incise da Giovanni Maggio romano.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>xjv</dt>
+                     <dd>Heidelberg University Library</dd>
+                     <dd>Heidelberg University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/xjv.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

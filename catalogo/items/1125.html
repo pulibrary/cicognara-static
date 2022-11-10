@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.14">section 1.14</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/8zt.html">8zt</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e22883">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">De la FONTAINE</span>, <span class="title">Fables choisies en vers par de la Fontaine</span> , 4 vol. in fol. fig., <span class="pubPlace">Paris</span>  <span class="date">1755 al 1759</span> .
-                     <div class="note">Le tavole sono disegnate da Oudry e incise da parecchi de’ migliori incisori di quel
-                        tempo col ritratto di Oudry in principio.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">De la FONTAINE</span>, <span class="title">Fables choisies en vers par de la Fontaine</span> , 4 vol. in fol. fig., <span class="pubPlace">Paris</span>  <span class="date">1755 al 1759</span> .
+                  <div class="note">Le tavole sono disegnate da Oudry e incise da parecchi de’ migliori incisori di quel
+                     tempo col ritratto di Oudry in principio.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>8zt</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/8zt.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,39 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.18">section 2.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/qp3.html">qp3</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e17279">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">COMITIS Natalis</span>, <span class="title">Mythologiae sive explicationum fabularum lib. X cum locupletissimis indicibus</span> , <span class="pubPlace">Venetiis</span>  <span class="date">1568</span> , in 4.
-                     <div class="note">Senza nome di stampatore, edizione in caratteri eleganti e nitidissimi.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">COMITIS Natalis</span>, <span class="title">Mythologiae sive explicationum fabularum lib. X cum locupletissimis indicibus</span> , <span class="pubPlace">Venetiis</span>  <span class="date">1568</span> , in 4.
+                  <div class="note">Senza nome di stampatore, edizione in caratteri eleganti e nitidissimi.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>qp3</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/qp3.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

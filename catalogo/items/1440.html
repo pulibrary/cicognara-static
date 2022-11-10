@@ -5,42 +5,37 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/kjt.html">kjt</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-                  <li>Heidelberg University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e25073">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">MOSCARDI Vitale</span>, <span class="title">Festa fatta in Roma al 25 Febbraio<span class="date">1634</span> in occasione della venuta in Roma del Principe Alessandro Carlo di Polonia</span> , spettacolo datogli dal Cardinale Antonio Barberini, in 4, fig.
-                     <div class="note">Tredici tavole intagliate in rame, compreso il frontespizio e l’ultima in gran foglio
-                        del teatro, ornano questo libro e vennero disegnate e inventate da Andrea Sacchi e
-                        intagliate da F. Colignon.</div>MDCXXXV</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">MOSCARDI Vitale</span>, <span class="title">Festa fatta in Roma al 25 Febbraio<span class="date">1634</span> in occasione della venuta in Roma del Principe Alessandro Carlo di Polonia</span> , spettacolo datogli dal Cardinale Antonio Barberini, in 4, fig.
+                  <div class="note">Tredici tavole intagliate in rame, compreso il frontespizio e l’ultima in gran foglio
+                     del teatro, ornano questo libro e vennero disegnate e inventate da Andrea Sacchi e
+                     intagliate da F. Colignon.</div>MDCXXXV</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>kjt</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Heidelberg University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/kjt.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

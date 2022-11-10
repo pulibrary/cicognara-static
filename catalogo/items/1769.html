@@ -5,41 +5,55 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.20">section 1.20</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/102.html">102</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/02x.html">02x</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/4cq.html">4cq</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/6pj.html">6pj</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e27542">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">PRONTI Domenico</span>, <span class="title">Nuova raccolta rappresentante i costumi religiosi, civili e militari degli antichi
-                        Egiziani, Etruschi, Greci e Romani, tratti dai monumenti</span> , <span class="pubPlace">Roma</span> , tav. 46.
-                     <div class="note">Questa non è che un’opera ricopiata dalle cento tavole del Roccheggiani.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">PRONTI Domenico</span>, <span class="title">Nuova raccolta rappresentante i costumi religiosi, civili e militari degli antichi
+                     Egiziani, Etruschi, Greci e Romani, tratti dai monumenti</span> , <span class="pubPlace">Roma</span> , tav. 46.
+                  <div class="note">Questa non è che un’opera ricopiata dalle cento tavole del Roccheggiani.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>102</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/102.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>02x</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/02x.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>4cq</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/4cq.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>6pj</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/6pj.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

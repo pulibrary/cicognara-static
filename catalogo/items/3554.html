@@ -5,36 +5,40 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.9">section 2.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/fs5.html">fs5</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/jcc.html">jcc</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e8240">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">De ROSSI</span>, <span class="title">Lettere sopra due bassi rilievi recentemente modellati dall’illustre scultore Antonio
-                        Canova</span> , <span class="pubPlace">Bassano</span>  <span class="date">1795</span> , in 8, M. 101.</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">De ROSSI</span>, <span class="title">Lettere sopra due bassi rilievi recentemente modellati dall’illustre scultore Antonio
+                     Canova</span> , <span class="pubPlace">Bassano</span>  <span class="date">1795</span> , in 8, M. 101.</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>fs5</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/fs5.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>jcc</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/jcc.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

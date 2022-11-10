@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+html {
+    overflow: auto; 
+}
+
+body {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+#pageheader {
+    grid-area: header;
+}
+
+#side {
+    grid-area: side;
+    height: 100vh;
+}
+
+#main {
+         background: aliceblue;
+         grid-area: main;
+         height: 100vh;
+         width: 100vw;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+iframe {
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    overflow-y: auto;
+} 
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+
+body {
+    font-family: 'Gentium Basic', serif;
+}
+#toc {
+    font-size: small;
+}
+div.note {
+    font-size: smaller;
+}
+span.title {
+    font-style: italic;
+}
+ol.catalog {
+    list-style-type:none;
+}
+
+ol.catalog li { margin: 0 0 6px 0; }
+span.ciconum {
+    font-weight: bold;
+    padding-right: 5px;
+}
+h1,h2 {
+    font-family: 'Gentium Basic', serif;
+}
+.pageBreak{
+    margin: 10px 0 0 0;
+    padding: 10px 0;
+    border-top: 1px dotted #c5c5c5;
+    text-align: right;
+}

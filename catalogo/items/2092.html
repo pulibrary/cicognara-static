@@ -5,38 +5,37 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.23">section 1.23</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/0d1.html">0d1</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e29831">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">RENÉ François predicateur du roi</span>, <span class="title">Essai des merveilles de nature et des plus nobles artifices: piece très nécessaire
-                        à tous ceux qui font profession d’eloquence</span> , à <span class="pubPlace">Rouen</span>  <span class="date">1624</span> , in 4, fig.</span></div>
-               <div class="notes">
-                  <div class="note">II frontespizio è figurato in rame e sonovi alcune tavole in legno fra il testo dell’opera
-                     che divaga sovra tutto lo scibile un po’ stranamente e per conseguenza tratta di pittura,
-                     scultura, prospettiva, architettura ec.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">RENÉ François predicateur du roi</span>, <span class="title">Essai des merveilles de nature et des plus nobles artifices: piece très nécessaire
+                     à tous ceux qui font profession d’eloquence</span> , à <span class="pubPlace">Rouen</span>  <span class="date">1624</span> , in 4, fig.</span></div>
+            <div class="notes">
+               <div class="note">II frontespizio è figurato in rame e sonovi alcune tavole in legno fra il testo dell’opera
+                  che divaga sovra tutto lo scibile un po’ stranamente e per conseguenza tratta di pittura,
+                  scultura, prospettiva, architettura ec.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>0d1</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/0d1.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.9">section 2.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/pcf.html">pcf</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Harvard Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e7783">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">CANCELLIERI Francesco</span>, <span class="title">Notizie delle due famose statue di un fiume e di Patroclo, dette volgarmente di Marforio
-                        e Pasquino</span> , <span class="pubPlace">Roma</span>  <span class="date">1789</span> , in 8, fig., M. 48.
-                     <div class="note">Colle statue intagliate in rame.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">CANCELLIERI Francesco</span>, <span class="title">Notizie delle due famose statue di un fiume e di Patroclo, dette volgarmente di Marforio
+                     e Pasquino</span> , <span class="pubPlace">Roma</span>  <span class="date">1789</span> , in 8, fig., M. 48.
+                  <div class="note">Colle statue intagliate in rame.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>pcf</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Harvard Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/pcf.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

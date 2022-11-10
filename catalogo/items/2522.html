@@ -5,38 +5,42 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.2">section 2.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/j5h.html">j5h</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/qzc.html">qzc</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e894">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">GAFFAREL Jacques</span>, <span class="title">Curiosités inouies sur la sculpture talismanique des persans, horoscope des patriarches,
-                        et lecture des étoiles</span> , <span class="pubPlace">Paris</span>  <span class="date">1629</span> , in 8. Prima edizione.
-                     <div class="note">Fu molte volte ristampato e anche da Giorgio Michele con note nel 1676 al 78 in due
-                        volumetti in 8.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">GAFFAREL Jacques</span>, <span class="title">Curiosités inouies sur la sculpture talismanique des persans, horoscope des patriarches,
+                     et lecture des étoiles</span> , <span class="pubPlace">Paris</span>  <span class="date">1629</span> , in 8. Prima edizione.
+                  <div class="note">Fu molte volte ristampato e anche da Giorgio Michele con note nel 1676 al 78 in due
+                     volumetti in 8.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>j5h</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/j5h.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>qzc</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/qzc.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

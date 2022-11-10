@@ -5,44 +5,49 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.10">section 2.10</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/1pt.html">1pt</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/632.html">632</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/jvz.html">jvz</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e9443">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">FICORONI Francesco</span>, <span class="title">La medesima, aggiuntevi le memorie singolari di Roma, e sue vicinanze notate in una
-                        lettera al cavalier Bernard Inglese, colla spiegazione d’una medaglia d’Omero</span> , <span class="pubPlace">Roma</span>  <span class="date">1730</span> . — Aggiuntavi: <span class="title">Lettera sopra un cammeo di Marcello a lord Johnston</span> , <span class="pubPlace">Napoli</span>  <span class="date">1718</span> , in 8.
-                     <div class="pageBreak"><span>192</span></div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">FICORONI Francesco</span>, <span class="title">La medesima, aggiuntevi le memorie singolari di Roma, e sue vicinanze notate in una
+                     lettera al cavalier Bernard Inglese, colla spiegazione d’una medaglia d’Omero</span> , <span class="pubPlace">Roma</span>  <span class="date">1730</span> . — Aggiuntavi: <span class="title">Lettera sopra un cammeo di Marcello a lord Johnston</span> , <span class="pubPlace">Napoli</span>  <span class="date">1718</span> , in 8.
+                  <div class="pageBreak"><span>192</span></div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>1pt</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/1pt.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>632</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/632.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>jvz</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/jvz.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,36 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/gc8.html">gc8</a></dt>
-            <dd></dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e28297">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">CUSTODIS Raphaelis</span>, <span class="title">Emblemata Amoris</span> , <span class="pubPlace">Augu.</span>  <span class="date">1626</span> , in 4, fig.
-                     <div class="note">La prima parte fa impressa nel 1696, la seconda nel 1631: quella contiene 50 tavole,
-                        questa 24: sono di bella esecuzione sullo stile di Otone Verno. Esempl. della Bib.
-                        del D. di Malborough.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">CUSTODIS Raphaelis</span>, <span class="title">Emblemata Amoris</span> , <span class="pubPlace">Augu.</span>  <span class="date">1626</span> , in 4, fig.
+                  <div class="note">La prima parte fa impressa nel 1696, la seconda nel 1631: quella contiene 50 tavole,
+                     questa 24: sono di bella esecuzione sullo stile di Otone Verno. Esempl. della Bib.
+                     del D. di Malborough.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>gc8</dt>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/gc8.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

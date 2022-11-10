@@ -5,37 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.9">section 1.9</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/7d5.html">7d5</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e20804">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">HAMELLII Pascasii</span>, <span class="title">Perspectiva tribus libris succinctis dentro correda et figuris illustrata</span> , <span class="pubPlace">Lutetiae</span> , apud <span class="publisher">Aegidium Gourbinum</span> , <span class="date">1556</span> , in 4.
-                     <div class="note">L’obiettiva della luce e delle rifrazioni è matematicamente trattata in 43 foglietti
-                        di stampa con bei caratteri corsivi e la figure in legno fra il testo. Questa non
-                        è però se non una ristampa esattissima (mutata una dedicatoria) della Perspectiva
-                        Communis di Giovanni Pisano vescovo ec. Vedi Cantuariensis.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">HAMELLII Pascasii</span>, <span class="title">Perspectiva tribus libris succinctis dentro correda et figuris illustrata</span> , <span class="pubPlace">Lutetiae</span> , apud <span class="publisher">Aegidium Gourbinum</span> , <span class="date">1556</span> , in 4.
+                  <div class="note">L’obiettiva della luce e delle rifrazioni è matematicamente trattata in 43 foglietti
+                     di stampa con bei caratteri corsivi e la figure in legno fra il testo. Questa non
+                     è però se non una ristampa esattissima (mutata una dedicatoria) della Perspectiva
+                     Communis di Giovanni Pisano vescovo ec. Vedi Cantuariensis.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>7d5</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/7d5.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

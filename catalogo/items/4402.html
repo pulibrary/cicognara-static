@@ -5,35 +5,34 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.14">section 2.14</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/scc.html">scc</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e14789">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="title">DESCRIZIONE per alfabeto di 100 quadri de’ più famosi, e dipinti da più insigni pittori
-                        del mondo, che si osservano nella Galleria Farnese di Parma</span> in quest’anno <span class="date">1725</span> , in 8.
-                     <div class="note">Molto raro a trovarsi.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="title">DESCRIZIONE per alfabeto di 100 quadri de’ più famosi, e dipinti da più insigni pittori
+                     del mondo, che si osservano nella Galleria Farnese di Parma</span> in quest’anno <span class="date">1725</span> , in 8.
+                  <div class="note">Molto raro a trovarsi.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>scc</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/scc.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

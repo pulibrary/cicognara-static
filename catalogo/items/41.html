@@ -5,41 +5,36 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.1">section 1.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/dc7.html">dc7</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Heidelberg University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e1552">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">MEHEGAN</span>, <span class="title">Considerations sue les revolutions des arts,</span>  <span class="pubPlace">Paris</span>  <span class="date">1755,</span>  <span class="extent">in 8,</span> aggiuntavi <span class="title">«Lettere sur l’éducation des femmes» e al fine Alcippe et Oronte. Dialogues par le
-                        même.</span> </span></div>
-               <div class="notes">
-                  <div class="note">Le opere di questo autore sono piene di buona critica.</div>
-               </div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">MEHEGAN</span>, <span class="title">Considerations sue les revolutions des arts,</span>  <span class="pubPlace">Paris</span>  <span class="date">1755,</span>  <span class="extent">in 8,</span> aggiuntavi <span class="title">«Lettere sur l’éducation des femmes» e al fine Alcippe et Oronte. Dialogues par le
+                     même.</span> </span></div>
+            <div class="notes">
+               <div class="note">Le opere di questo autore sono piene di buona critica.</div>
+            </div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>dc7</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Heidelberg University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/dc7.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

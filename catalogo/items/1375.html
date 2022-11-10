@@ -5,42 +5,37 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/4cp.html">4cp</a></dt>
-            <dd>
-               <ul>
-                  <li>Getty Research Institute</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e24618">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BALDINI Baccio</span>, <span class="title">Discorso sopra la mascherata della genealogia degl’iddei de’ gentili mandata fuori
-                        dall’Eccell. e Illustrissimo Duca di Firenze, e di Siena il giorno 22 Febbraio 1565</span> , <span class="pubPlace">Firenze</span>  <span class="date">1565</span> , presso <span class="publisher">i Giunti</span> , in 8.
-                     <div class="note">Questa è una delle meglio estese, e ordinate descrizioni d! spettacoli ricchi e grandiosi:
-                        libro raro e prezioso dal Poggiali attribuito a Buccio Baldini sull’asserzione di
-                        Paolo Mini scrittore contemporaneo e degno di fede.</div>MDXVI</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BALDINI Baccio</span>, <span class="title">Discorso sopra la mascherata della genealogia degl’iddei de’ gentili mandata fuori
+                     dall’Eccell. e Illustrissimo Duca di Firenze, e di Siena il giorno 22 Febbraio 1565</span> , <span class="pubPlace">Firenze</span>  <span class="date">1565</span> , presso <span class="publisher">i Giunti</span> , in 8.
+                  <div class="note">Questa è una delle meglio estese, e ordinate descrizioni d! spettacoli ricchi e grandiosi:
+                     libro raro e prezioso dal Poggiali attribuito a Buccio Baldini sull’asserzione di
+                     Paolo Mini scrittore contemporaneo e degno di fede.</div>MDXVI</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>4cp</dt>
+                     <dd>Getty Research Institute</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/4cp.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

@@ -5,36 +5,40 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.2">section 1.2</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/m29.html">m29</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/jns.html">jns</a></dt>
-            <dd>Princeton University Library</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e7371">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">ZUCCARI</span>, <span class="title">L’idea degli scultori, pittori e architetti divisa in due libri a Carlo Emanuele di
-                        Savoia,</span>  <span class="pubPlace">Torino</span> , Per <span class="publisher">Agostino di Serolio,</span>  <span class="date">1607</span> , <span class="extent">in 4.</span> </span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">ZUCCARI</span>, <span class="title">L’idea degli scultori, pittori e architetti divisa in due libri a Carlo Emanuele di
+                     Savoia,</span>  <span class="pubPlace">Torino</span> , Per <span class="publisher">Agostino di Serolio,</span>  <span class="date">1607</span> , <span class="extent">in 4.</span> </span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>m29</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/m29.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>jns</dt>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/jns.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

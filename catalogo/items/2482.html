@@ -5,40 +5,35 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_secondo.html"></a></li>
                <li><a href="../tomo_secondo.html#2.1">section 2.1</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/mnq.html">mnq</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Princeton University Library</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c2d1e595">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">BLAIR John</span>, <span class="title">Tables cronologiques, qui embrassent toutes les parties de l’histoire universelle,
-                        année par année dépuis la création du monde, jusqu’en 1768</span> , traduites en françois par Chantreau, et augmentées jusque en 1795, <span class="pubPlace">Paris</span>  <span class="date">1795</span> , in 4 grand.
-                     <div class="note">Opera della più grande utilità e benissimo eseguita.</div></span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">BLAIR John</span>, <span class="title">Tables cronologiques, qui embrassent toutes les parties de l’histoire universelle,
+                     année par année dépuis la création du monde, jusqu’en 1768</span> , traduites en françois par Chantreau, et augmentées jusque en 1795, <span class="pubPlace">Paris</span>  <span class="date">1795</span> , in 4 grand.
+                  <div class="note">Opera della più grande utilità e benissimo eseguita.</div></span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>mnq</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Princeton University Library</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/mnq.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

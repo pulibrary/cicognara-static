@@ -5,43 +5,43 @@
       <link rel="stylesheet" href="../../assets/catalogo.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
                <li><a href="../index.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
                <li><a href="../tomo_primo.html#1.18">section 1.18</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/mjw.html">mjw</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-            <dt><a href="../dcl/630.html">630</a></dt>
-            <dd>Getty Research Institute</dd>
-         </dl>
-      </nav>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e24747">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">De’ Rossi Bastiano</span>, <span class="title">Descrizione del magnificentissimo apparato e de’ maravigliosi intermedii fatti per
-                        la commedia rappresentata in Firenze nelle nozze del Sig. D. Cesare d’ Este e la Sig.
-                        Donna Virginia Medici</span> , <span class="pubPlace">Firenze</span> , <span class="date">1585</span> , in 4.
-                     <div class="note">L’esposizione e di Bastiano de’ Rossi diretta ad Alfonso di Este.</div>MDLXXXTI</span></div>
-               <div class="notes"></div>
-            </header>
+         <header id="mainHeader">
+            <div class="bibl"><span class="bibl"><span class="author">De’ Rossi Bastiano</span>, <span class="title">Descrizione del magnificentissimo apparato e de’ maravigliosi intermedii fatti per
+                     la commedia rappresentata in Firenze nelle nozze del Sig. D. Cesare d’ Este e la Sig.
+                     Donna Virginia Medici</span> , <span class="pubPlace">Firenze</span> , <span class="date">1585</span> , in 4.
+                  <div class="note">L’esposizione e di Bastiano de’ Rossi diretta ad Alfonso di Este.</div>MDLXXXTI</span></div>
+            <div class="notes"></div>
+         </header>
+         <section id="viewerPane">
+            <dl>
+               <dt>
+                  <dl>
+                     <dt>mjw</dt>
+                     <dd>Princeton University Library</dd>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/mjw.html"></iframe></dd>
+               <dt>
+                  <dl>
+                     <dt>630</dt>
+                     <dd>Getty Research Institute</dd>
+                  </dl>
+               </dt>
+               <dd><iframe allowfullscreen="true" src="../dcl/630.html"></iframe></dd>
+            </dl>
          </section>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>
