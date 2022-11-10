@@ -29,11 +29,6 @@ body {
     grid-area: footer;
 }
 
-iframe {
-    display: block;
-
-} 
-
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
