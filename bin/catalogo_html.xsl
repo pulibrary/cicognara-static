@@ -132,9 +132,9 @@
 
 
     <xsl:template match="tei:body" mode="toc">
-        <ol id="toc">
+        <ul class="toc">
             <xsl:apply-templates select="tei:div[@type = 'section']" mode="toc"/>
-        </ol>
+        </ul>
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'section']" mode="toc">
@@ -339,28 +339,25 @@
                                     <a href="../index.html">Catalogo</a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="../{ancestor::tei:TEI/@xml:id}.html#{ancestor::tei:div[@type='section']/@n}">
-                                        <xsl:value-of
-                                            select="concat('section ', ancestor::tei:div[@type = 'section']/@n)"
-                                        />
-                                    </a>
+                                    <a href="../index.html#{ancestor::tei:div[@type='section']/@n}"><xsl:value-of select="ancestor::tei:div[@type='section']/tei:head"></xsl:value-of></a>
                                 </li>
+                                
                             </ul>
                         </nav>
                     </header>
 
+                    <header id="side">
+                        <div class="bibl">
+                            <xsl:apply-templates select="tei:bibl" mode="structured"/>
+                        </div>
+                        
+                        <div class="notes">
+                            <xsl:apply-templates select="tei:note"/>
+                        </div>
+                    </header>
                     <main id="main">
-                            <header id="mainHeader">
-                                <div class="bibl">
-                                    <xsl:apply-templates select="tei:bibl"/>
-                                </div>
-
-                                <div class="notes">
-                                    <xsl:apply-templates select="tei:note"/>
-                                </div>
-                            </header>
-                        <section id="viewerPane">
+                            
+                        
                             <dl>
                                 <xsl:for-each select="$dclnums">
                                     <xsl:variable name="dcl" select="substring-after(current(), 'dcl:')"/>
@@ -380,9 +377,6 @@
                                     </dd>
                                 </xsl:for-each>
                             </dl>
-                        
-                        </section>
-
                     </main>
                     <xsl:call-template name="createSiteFooter"/>
                 </body>
