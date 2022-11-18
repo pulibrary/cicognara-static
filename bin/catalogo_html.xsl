@@ -59,7 +59,11 @@
         </header>
     </xsl:template>
 
-
+    <xd:doc>
+        <xd:desc>
+            <xd:p>A named template to generate the site footer</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:template name="createSiteFooter">
         <footer id="pageFooter">
             <span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span>
@@ -67,7 +71,18 @@
     </xsl:template>
 
 
+<!-- 
+    HTML-page-generating templates
+    -->
 
+    <xd:doc>
+        <xd:desc>
+            <xd:p>The site is generated from the catalogo.tei.xml source file. That file
+            comprises a teiCorpus containing the two volumes of the Catalogo, plus the Getty
+            records, which are Xincluded.
+            </xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:template match="tei:teiCorpus">
         <xsl:result-document indent="yes" method="html" href="{$root_directory}/index.html">
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
@@ -89,7 +104,6 @@
                         <xsl:apply-templates
                             select="tei:TEI/tei:text/tei:body//tei:div[@type = 'section']"
                             mode="section"/>
-
                     </main>
                     <xsl:call-template name="createSiteFooter"/>
                 </body>
@@ -97,7 +111,72 @@
         </xsl:result-document>
         <xsl:apply-templates select="//tei:list[@type = 'catalog']/tei:item" mode="standalone"/>
     </xsl:template>
+    
+    <xsl:template match="tei:item" mode="standalone">
+        <xsl:variable name="dclnums" select="tokenize(@corresp)"/>
+        <xsl:variable name="biblStructs" select="id('gettyBibls')/tei:biblStruct"/>
+        <xsl:result-document indent="yes" method="html" href="{$root_directory}/items/{@n}.html">
+            <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+                <head>
+                    <title>Catalogo Cicognara</title>
+                    <link rel="stylesheet" href="../../assets/item-pages.css"/>
+                </head>
+                <body>
+                    <header id="pageHeader" class="masthead">
+                        <p>
+                            <a href="/">The Cicognara Digital Library</a>
+                        </p>
+                        <nav>
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="../index.html">Catalogo</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html#{ancestor::tei:div[@type='section']/@n}"><xsl:value-of select="ancestor::tei:div[@type='section']/tei:head"></xsl:value-of></a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </header>
+                    
+                    <header id="metadata">
+                        <div class="bibl">
+                            <xsl:apply-templates select="tei:bibl" mode="structured"/>
+                        </div>
+                        
+                        <div class="notes">
+                            <xsl:apply-templates select="tei:note"/>
+                        </div>
+                    </header>
+                    
+                    <main id="main"> 
+                        <dl>
+                            <xsl:for-each select="$dclnums">
+                                <xsl:variable name="dcl" select="substring-after(current(), 'dcl:')"/>
+                                <xsl:variable name="distributors"
+                                    select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
+                                
+                                <dt>
+                                    <dl>
+                                        <dt><xsl:value-of select="$dcl"/></dt>
+                                        <xsl:for-each select="$distributors">
+                                            <dd><xsl:apply-templates /></dd>
+                                        </xsl:for-each>
+                                    </dl>
+                                </dt>
+                                <dd>
+                                    <iframe allowfullscreen="true" src="../dcl/{$dcl}.html"/>
+                                </dd>
+                            </xsl:for-each>
+                        </dl>
+                    </main>
+                    <xsl:call-template name="createSiteFooter"/>
+                </body>
+            </html>
+        </xsl:result-document>
+    </xsl:template>
 
+  <!--
     <xsl:template match="tei:TEI">
         <xsl:result-document indent="yes" method="html" href="{$root_directory}/{@xml:id}.html">
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
@@ -129,7 +208,13 @@
             </html>
         </xsl:result-document>
     </xsl:template>
+  -->
 
+
+    <xsl:template match="text()">
+        <xsl:value-of select="normalize-space()"/>
+    </xsl:template>
+    
 
     <xsl:template match="tei:body" mode="toc">
         <ul class="toc">
@@ -156,7 +241,6 @@
         </li>
     </xsl:template>
 
-    <!-- stand-alone sections -->
 
     <xsl:template match="tei:div[@type = 'section']" mode="section">
         <section id="{@n}">
@@ -242,7 +326,15 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-
+    
+    
+    <xd:doc scope="stylesheet">
+        <xd:desc>
+            <xd:p>These templates handle the mixed-content situation in which successive
+                elements need to have whitespace between them.
+            </xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:template match="tei:title">
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
@@ -320,76 +412,7 @@
     </xsl:template>
 
     <!-- Item templates -->
-    <xsl:template match="tei:item" mode="standalone">
-        <xsl:variable name="dclnums" select="tokenize(@corresp)"/>
-        <xsl:variable name="biblStructs" select="id('gettyBibls')/tei:biblStruct"/>
-        <xsl:result-document indent="yes" method="html" href="{$root_directory}/items/{@n}.html">
-            <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
-                <xsl:call-template name="createHead">
-                    <xsl:with-param name="level" select="2" as="xs:integer"/>
-                </xsl:call-template>
-                <body>
-                    <header id="pageHeader" class="masthead">
-                        <p>
-                            <a href="/">The Cicognara Digital Library</a>
-                        </p>
-                        <nav>
-                            <ul class="breadcrumb">
-                                <li>
-                                    <a href="../index.html">Catalogo</a>
-                                </li>
-                                <li>
-                                    <a href="../index.html#{ancestor::tei:div[@type='section']/@n}"><xsl:value-of select="ancestor::tei:div[@type='section']/tei:head"></xsl:value-of></a>
-                                </li>
-                                
-                            </ul>
-                        </nav>
-                    </header>
-
-                    <header id="side">
-                        <div class="bibl">
-                            <xsl:apply-templates select="tei:bibl" mode="structured"/>
-                        </div>
-                        
-                        <div class="notes">
-                            <xsl:apply-templates select="tei:note"/>
-                        </div>
-                    </header>
-                    <main id="main">
-                            
-                        
-                            <dl>
-                                <xsl:for-each select="$dclnums">
-                                    <xsl:variable name="dcl" select="substring-after(current(), 'dcl:')"/>
-                                    <xsl:variable name="distributors"
-                                        select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
-                                    
-                                    <dt>
-                                        <dl>
-                                            <dt><xsl:value-of select="$dcl"/></dt>
-                                            <xsl:for-each select="$distributors">
-                                                <dd><xsl:apply-templates /></dd>
-                                            </xsl:for-each>
-                                        </dl>
-                                    </dt>
-                                    <dd>
-                                        <iframe allowfullscreen="true" src="../dcl/{$dcl}.html"/>
-                                    </dd>
-                                </xsl:for-each>
-                            </dl>
-                    </main>
-                    <xsl:call-template name="createSiteFooter"/>
-                </body>
-            </html>
-        </xsl:result-document>
-
-
-    </xsl:template>
-
-    <xsl:template match="text()">
-        <xsl:value-of select="normalize-space()"/>
-    </xsl:template>
-
+ 
     <xsl:template match="tei:biblStruct">
         <li>
             <dl>
