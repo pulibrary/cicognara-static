@@ -2,43 +2,54 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Catalogo Cicognara</title>
-      <link rel="stylesheet" href="../../assets/catalogo.css">
+      <link rel="stylesheet" href="../../assets/item-pages.css">
    </head>
    <body>
-      <header ide="pageHeader" class="masthead">
+      <header id="pageHeader" class="masthead">
          <p><a href="/">The Cicognara Digital Library</a></p>
          <nav>
             <ul class="breadcrumb">
-               <li><a href="../catalogo.html">Catalogo</a></li>
-               <li><a href="../tomo_primo.html">Tomo Primo</a></li>
-               <li><a href="../tomo_primo.html#1.21">section 1.21</a></li>
+               <li><a href="../index.html">Catalogo</a></li>
+               <li><a href="../index.html#1.21">Emblemi</a></li>
             </ul>
          </nav>
       </header>
-      <nav id="side">
-         <header>
-            <h2>Digitized Editions</h2>
-         </header>
-         <dl>
-            <dt><a href="../dcl/sc1.html">sc1</a></dt>
-            <dd>Princeton University Library</dd>
-            <dt><a href="../dcl/fnz.html">fnz</a></dt>
-            <dd>
-               <ul>
-                  <li>Princeton University Library</li>
-                  <li>Getty Research Institute</li>
-               </ul>
-            </dd>
-         </dl>
-      </nav>
+      <header id="metadata">
+         <div class="bibl">
+            <dl>
+               <dt>author</dt>
+               <dd><span class="author">ACCADEMICI Gelati di Bologna</span></dd>
+               <dt>title</dt>
+               <dd> <span class="title">Rime</span> </dd>
+               <dt>place of publication</dt>
+               <dd> <span class="pubPlace">Bol.</span></dd>
+               <dt>date</dt>
+               <dd><span class="date">1615</span> </dd>
+               <dt>extent</dt>
+               <dd></dd>
+            </dl>
+         </div>
+         <div class="notes"></div>
+      </header>
       <main id="main">
-         <section class="catalogo-item" id="c1d1e27995">
-            <header>
-               <div class="bibl"><span class="bibl"><span class="author">ACCADEMICI Gelati di Bologna</span>, <span class="title">Rime</span> , presso <span class="publisher">Bartolomeo Cochi</span> , <span class="pubPlace">Bol.</span><span class="date">1615</span> , in 16.<span class="bibl">— Aggiuntovi<span class="author">il Tancredi</span>, <span class="title">Tragedia di Ridolfo Campeggi</span> , <span class="pubPlace">Vicenza</span>  <span class="date">1614</span></span>.</span></div>
-               <div class="notes"></div>
-            </header>
-         </section>
+         <dl>
+            <dt>
+               <dl>
+                  <dt>sc1</dt>
+                  <dd>Princeton University Library</dd>
+               </dl>
+            </dt>
+            <dd><iframe allowfullscreen="true" src="../dcl/sc1.html"></iframe></dd>
+            <dt>
+               <dl>
+                  <dt>fnz</dt>
+                  <dd>Princeton University Library</dd>
+                  <dd>Getty Research Institute</dd>
+               </dl>
+            </dt>
+            <dd><iframe allowfullscreen="true" src="../dcl/fnz.html"></iframe></dd>
+         </dl>
       </main>
+      <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
    </body>
-   <footer id="pageFooter"><span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span></footer>
 </html>

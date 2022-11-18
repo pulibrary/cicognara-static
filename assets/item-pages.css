@@ -1,0 +1,26 @@
+@import "./catalogo.css";
+
+
+
+body {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        ". metadata metadata"
+        "main main main"
+        "footer footer footer";
+}
+
+#metadata {
+    grid-area: metadata;
+}
+
+iframe {
+    display: block;
+    width: 75vw;
+    height: 50vh;
+    overflow-y: auto;
+}

@@ -28193,7 +28193,7 @@
          </front>
 
          <body>
-            <div>
+            
                <pb type="memofonte"/>
                <fw type="head"/>
                <pb type="cico" n="1"/>
@@ -52209,7 +52209,6 @@
                   </list>
                   <fw type="foot"/>
                </div>
-            </div>
          </body>
 
          <back>

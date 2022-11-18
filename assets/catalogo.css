@@ -1,29 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 
+html {
+    overflow: auto; 
+}
+
+iframe {
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    overflow-y: auto;
+}
+
 body {
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "head head head"
+        "header header header"
         "side main main"
         "footer footer footer";
 }
 
 #pageheader {
-    grid-area: head;
+    grid-area: header;
+    background-color: silver;
+}
+
+#main {
+         grid-area: main;
 }
 
 #side {
     grid-area: side;
-    height: 100vh;
-}
-
-#main {
-    grid-area: main;
-    overflow: auto;
 }
 
 #pageFooter {
@@ -71,9 +81,10 @@ dd {
 body {
     font-family: 'Gentium Basic', serif;
 }
-#toc {
+.toc {
     font-size: small;
 }
+
 div.note {
     font-size: smaller;
 }
