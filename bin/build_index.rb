@@ -6,7 +6,7 @@ require "json"
 
 objects = []
 
-Dir["../tmp/getty_data/*.json"].each do |f|
+Dir["../tmp/getty_data/*.json"].slice(0,100).each do |f|
   json = JSON.parse(File.open(f).read)
   obj = {}
   obj['id'] = json['@id']
