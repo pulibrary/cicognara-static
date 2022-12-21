@@ -1,0 +1,160 @@
+---
+---
+
+@import "minima";
+
+@media screen {
+  .site-nav {
+    text-transform: uppercase;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 15px;
+    color: #221E1D;
+  }
+  .site-header {
+    background: #E6E8DB;
+    border-color: #efefef;
+  }
+
+  .site-nav {
+    float: right !important;
+    margin-right: -15px;
+  }
+
+  .wrapper {
+    max-width: calc(1200px - (30px * 2))
+  }
+
+  a {
+    color: #971c06;
+    text-decoration: none;
+    font-family: "Playfair Display", Georgia, serif;
+
+    &:hover {
+      box-shadow: none;
+      color: #221E1D;
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: #971c06;
+    }
+  }
+
+  .page-content {
+
+    color: #221E1D;
+    font-family: "Cardo", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 1.5em auto;
+
+    .wrapper h1 {
+        display: none;
+    }
+    h2 {
+      font-family: Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0.5em auto 1.5em;
+    }
+    img {
+      display: inline-block;
+      margin: 0.5em 1.5em;
+    }
+    figcaption {
+      font-family: "Cardo", Georgia, serif;
+      font-size: 0.95em;
+      padding: 0.5em 1.9em 0.55em;
+      margin: 0 auto;
+    }
+  }
+
+  .home { 
+    h2 {
+      font-family: Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0 0 0.75em;
+      text-align: left;
+    }
+    
+    .post-meta {
+      color: #221E1D;
+      font-family: "Cardo", Georgia, serif;
+      font-size: 20px;
+      line-height: 1.5em;
+      margin: 1.5em auto
+    }
+  }
+
+  .contact {
+    width: 1024px;
+    form {
+      margin-bottom: 50px;
+      background: #efefef;
+      border: 1px solid #efefef;
+      padding: 2em;
+    }
+  
+    input,
+    textarea {
+      -webkit-appearance: none;
+      border-radius: 0;
+      font-size: 16px;
+    }
+  
+    input,
+    select,
+    textarea {
+      display: block;
+      color: #221E1D;
+      background-color: #ffffff;
+      border: 3px solid #E6E8DB;
+      padding: 1em;
+      margin-bottom: 1em;
+      width: 100%;
+  
+      &:focus {
+        background: #ffffff;
+        box-shadow: 0;
+        border: 3px solid #ADAB9D;
+        color: #221E1D;
+        outline: none;
+        padding: 1em;
+        transition: border 0.5s ease-in;
+      }
+  
+      &[type=submit] {
+        background: #ADAB9D;
+        font-weight: 900;
+        text-transform: uppercase;
+        border-color: #ADAB9D;
+  
+        &:hover {
+          background: #ffffff;
+          transition: background 1s ease-in;
+        }
+      }
+    }
+  
+    textarea {
+      resize: vertical;
+      min-height: 200px;
+    }
+  }
+
+  .site-post {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #000000;
+    
+    h2 {
+      font-family: Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0.75em 0 0.75em;
+      text-align: left;
+    }
+  }
+
+}
