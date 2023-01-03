@@ -80,6 +80,7 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
  - Java 1.8.0 or higher
  - wget
  - xq (on MacOS: `brew install python-yq`)
+** Building Static Pages
 
 #+begin_src shell
   git clone https://github.com/pulibrary/cicognara-static.git
@@ -88,8 +89,20 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
   ruby item_pages.rb
   wget https://github.com/pulibrary/cicognara-catalogo/blob/861fe95255e8ffa14c874848e5078ffcd099b317/catalogo.tei.xml
   java -cp saxon-he-10.5.jar net.sf.saxon.Transform -s:catalogo.tei.xml -xsl:catalogo_html.xsl
-  cd ..
-  jekyll serve
+#+end_src
+
+** Building Lunr Index
+#+begin_src shell
+  cd cicognara-static/bin
+  ruby build_index.rb
+  cd lunr_index
+  node build_idx.js > lunr_idx.json
+#+end_src
+** Running
+
+#+begin_src shell
+    cd cicognara-static
+    jekyll serve
 #+end_src
 
 Preview locally at 127.0.0.7:4000.
