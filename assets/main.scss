@@ -8,11 +8,18 @@
     text-transform: uppercase;
     font-family: "Playfair Display", Georgia, serif;
     font-size: 15px;
-    color: #221E1D;
+    color: #221e1d;
   }
   .site-header {
-    background: #E6E8DB;
+    background: #e6e8db;
     border-color: #efefef;
+  }
+
+  .site-title {
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
   }
 
   .site-nav {
@@ -21,7 +28,14 @@
   }
 
   .wrapper {
-    max-width: calc(1200px - (30px * 2))
+    max-width: calc(1200px - (30px * 2));
+    h1 {
+      font-family: Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0.5em auto 1.5em;
+    }
   }
 
   a {
@@ -31,7 +45,7 @@
 
     &:hover {
       box-shadow: none;
-      color: #221E1D;
+      color: #221e1d;
       text-decoration: underline;
     }
 
@@ -41,16 +55,12 @@
   }
 
   .page-content {
-
-    color: #221E1D;
+    color: #221e1d;
     font-family: "Cardo", Georgia, serif;
     font-size: 18px;
     line-height: 1.5em;
     margin: 1.5em auto;
 
-    .wrapper h1 {
-        display: none;
-    }
     h2 {
       font-family: Helvetica, sans-serif;
       font-size: 30px;
@@ -70,7 +80,10 @@
     }
   }
 
-  .home { 
+  .home {
+    h1 {
+      display: none;
+    }
     h2 {
       font-family: Helvetica, sans-serif;
       font-size: 30px;
@@ -78,13 +91,13 @@
       margin: 0 0 0.75em;
       text-align: left;
     }
-    
+
     .post-meta {
-      color: #221E1D;
+      color: #221e1d;
       font-family: "Cardo", Georgia, serif;
       font-size: 20px;
       line-height: 1.5em;
-      margin: 1.5em auto
+      margin: 1.5em auto;
     }
   }
 
@@ -104,49 +117,49 @@
       border: 1px solid #efefef;
       padding: 2em;
     }
-  
+
     input,
     textarea {
       -webkit-appearance: none;
       border-radius: 0;
       font-size: 16px;
     }
-  
+
     input,
     select,
     textarea {
       display: block;
-      color: #221E1D;
+      color: #221e1d;
       background-color: #ffffff;
-      border: 3px solid #E6E8DB;
+      border: 3px solid #e6e8db;
       font-family: "Cardo", Georgia, serif;
       padding: 1em;
       margin-bottom: 1em;
       width: 95%;
-  
+
       &:focus {
         background: #ffffff;
         box-shadow: 0;
-        border: 3px solid #ADAB9D;
-        color: #221E1D;
+        border: 3px solid #adab9d;
+        color: #221e1d;
         outline: none;
         padding: 1em;
         transition: border 0.5s ease-in;
       }
-  
-      &[type=submit] {
-        background: #ADAB9D;
+
+      &[type="submit"] {
+        background: #adab9d;
         font-weight: 900;
         text-transform: uppercase;
-        border-color: #ADAB9D;
-  
+        border-color: #adab9d;
+
         &:hover {
           background: #ffffff;
           transition: background 1s ease-in;
         }
       }
     }
-  
+
     textarea {
       resize: vertical;
       min-height: 200px;
@@ -156,7 +169,7 @@
   .site-post {
     margin-bottom: 2em;
     border-bottom: 1px solid #000000;
-    
+
     h2 {
       font-family: Helvetica, sans-serif;
       font-size: 25px;
@@ -165,5 +178,4 @@
       text-align: left;
     }
   }
-
 }
