@@ -89,6 +89,14 @@
   }
 
   .contact {
+    h1 {
+      display: block !important;
+      font-family: Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0.5em auto 1.5em;
+    }
     width: 1024px;
     form {
       margin-bottom: 50px;
@@ -111,9 +119,10 @@
       color: #221E1D;
       background-color: #ffffff;
       border: 3px solid #E6E8DB;
+      font-family: "Cardo", Georgia, serif;
       padding: 1em;
       margin-bottom: 1em;
-      width: 100%;
+      width: 95%;
   
       &:focus {
         background: #ffffff;

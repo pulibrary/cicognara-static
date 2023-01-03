@@ -21,6 +21,34 @@ body {
         "header header header"
         "side main main"
         "footer footer footer";
+    color: #333;
+    font-family: "Cardo", Georgia, serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+a {
+  color: #971c06;
+  text-decoration: none;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+a:hover {
+  box-shadow: none;
+  color: #221E1D;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #971c06;
+}
+
+.note {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0 15px;
+  margin: 10px 0 5px;
 }
 
 #pageheader {
@@ -60,7 +88,7 @@ ul.breadcrumb li+li:before {
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: #971c06;
   text-decoration: none;
 }
 
@@ -71,6 +99,9 @@ dl {
 
 dt {
   grid-column-start: 1;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
 dd {
@@ -86,7 +117,7 @@ body {
 }
 
 div.note {
-    font-size: smaller;
+    font-size: inherit;
 }
 span.title {
     font-style: italic;
@@ -109,3 +140,13 @@ h1,h2 {
     border-top: 1px dotted #c5c5c5;
     text-align: right;
 }
+
+header h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0.75em;
+}
+
+
+
