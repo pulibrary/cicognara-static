@@ -96,7 +96,7 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
   cd cicognara-static/bin
   ruby build_index.rb
   cd lunr_index
-  node build_idx.js > lunr_idx.json
+  node build_idx.js > ../../catalogo/lunr_idx.json
 #+end_src
 ** Running
 
