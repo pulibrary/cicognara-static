@@ -17,23 +17,17 @@ let idx = lunr(function(builder) {
 
     //    data.forEach(record => builder.add(record));
     data.forEach(function (rec) {
-        builder.add(
-            {
-                'id': rec['id'],
-                'creator': Array.isArray(rec['creator'])? rec['creator'].join(' ') : rec['creator'],
-                'subject': Array.isArray(rec['subject'])? rec['subject'].join(' ') : rec['subject'],
-                'description': Array.isArray(rec['description'])? rec['description'].join(' ') : rec['description'],
-                'issued': Array.isArray(rec['issued'])? rec['issued'].join(' ') : rec['issued'],
-                'identifier': Array.isArray(rec['identifier'])? rec['identifier'].join(' ') : rec['identifier'],
-                'language': Array.isArray(rec['language'])? rec['language'].join(' ') : rec['language'],
-                'title': Array.isArray(rec['title'])? rec['title'].join(' ') : rec['title'],
-                'publisher': Array.isArray(rec['publisher'])? rec['publisher'].join(' ') : rec['publisher'],
-                'source': Array.isArray(rec['source'])? rec['source'].join(' ') : rec['source'],
+        let obj = {}
+        for (const prop in rec) {
+            if (prop == 'id') {
+                obj['id'] = rec['id']
             }
-        )
-    })
+            else {
+                obj[prop] = Array.isArray(rec[prop])? rec[prop].join(' ') : rec[prop]
+            }
+        }
+        builder.add(obj)
+    });
 });
 
-//console.log(idx)
-//idx.search("Pozzuoli"));
 console.log(idx.search("Plantin"));
