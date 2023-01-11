@@ -1,26 +1,31 @@
 @import "./catalogo.css";
 
-
-
 body {
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header header"
-        ". metadata metadata"
-        "main main main"
-        "footer footer footer";
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    ". metadata metadata"
+    "main main main"
+    "footer footer footer";
 }
 
 #metadata {
-    grid-area: metadata;
+  font-family: Helvetica, sans-serif;
+  border: 1px solid #efefef;
+  background: #fafafa;
+  margin: 1em;
+  padding: 1.5em;
+  clear: both;
 }
 
 iframe {
-    display: block;
-    width: 75vw;
-    height: 50vh;
-    overflow-y: auto;
+  display: block;
+  width: 75vw;
+  height: 50vh;
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -2,6 +2,7 @@
 layout: default
 title: Contact
 ---
+<div class="contact">
 <h1>Contact Us</h1>
 <p>For further information or queries, please contact us through this form.</p>
 <form id="contact-form" action="https://formspree.io/cicognara@googlegroups.com" method="POST">
@@ -13,3 +14,4 @@ title: Contact
   <input type="text" name="_gotcha" style="display:none" />
   <input type="hidden" name="_next" value="/contact" />
 </form>
+<div>
