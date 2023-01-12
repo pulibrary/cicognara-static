@@ -6,28 +6,32 @@ require "json"
 
 objects = []
 
-Dir["../tmp/getty_data/*.json"].each do |f|
+Dir["../tmp/resources/*.json"].each do |f|
   json = JSON.parse(File.open(f).read)
-  obj = {}
-  obj['id'] = json['@id']
+  isPartOf = json['isPartOf']
+  if isPartOf and isPartOf.find {|i| i['@type'] == "virtualCollection" and i['label'] == "Cicognara Collection"}
+    puts "indexing " + json['@id']
+    obj = {}
+    obj['id'] = json['@id']
 
-  # collect only the cicognaraNumber and the dclNumber
-  ['cicognaraNumber', 'dclNumber'].each do |idtype|
-    id = json['identifier'].find {|i| i['@type'] == idtype}
-    obj[idtype] = id['value'] if id
-  end
-
-
-  ["creator", "subject"].each do |field|
-    obj[field] = json[field].collect { |x| x['label'] } if json[field]
-
-    ["description", "issued", "language", "title", "publisher"].each do |field|
-      obj[field] = json[field].collect { |x| x['value'] } if json[field]
+    # collect only the cicognaraNumber and the dclNumber
+    ['cicognaraNumber', 'dclNumber'].each do |idtype|
+      id = json['identifier'].find {|i| i['@type'] == idtype}
+      obj[idtype] = id['value'] if id
     end
 
-    objects.append(obj)
+
+    ["creator", "subject"].each do |field|
+      obj[field] = json[field].collect { |x| x['label'] } if json[field]
+
+      ["description", "issued", "language", "title", "publisher"].each do |field|
+        obj[field] = json[field].collect { |x| x['value'] } if json[field]
+      end
+
+      objects.append(obj)
+    end
   end
 end
 
 FileUtils.mkdir_p "../catalogo"
-File.open("../catalogo/index.json", "w") { |f| f.write(objects.to_json) }
+File.open("../catalogo/index.json", "w") { |f| f.write(objects.uniq().to_json) }
