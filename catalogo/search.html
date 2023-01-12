@@ -21,42 +21,71 @@
 <script>
 
   const options = {
-  // isCaseSensitive: false,
-  // includeScore: false,
-  // shouldSort: true,
-  // includeMatches: false,
-  // findAllMatches: false,
-  // minMatchCharLength: 1,
-  // location: 0,
-  // threshold: 0.6,
-  // distance: 100,
-  // useExtendedSearch: false,
-  // ignoreLocation: false,
-  // ignoreFieldNorm: false,
-  // fieldNormWeight: 1,
-  keys: [
-  "title",
-  "creator",
-  "description",
-  "subject"
-  ]
-};
+      // isCaseSensitive: false,
+      // includeScore: false,
+      // shouldSort: true,
+      // includeMatches: false,
+      // findAllMatches: false,
+      // minMatchCharLength: 1,
+      // location: 0,
+      // threshold: 0.6,
+      // distance: 100,
+      // useExtendedSearch: false,
+      // ignoreLocation: false,
+      // ignoreFieldNorm: false,
+      // fieldNormWeight: 1,
+      threshold: 0.3,
+      keys: [
+          "title",
+          "creator",
+          "description",
+          "subject"
+      ]
+  };
 
   const fuse = new Fuse(data, options);
 
   function doSearch(event){
-  const term = document.getElementById('search_input').value;
-  document.getElementById('search_results').innerHTML = "";
-  let results = fuse.search(term);
-  let ul = document.createElement('ul');
-  results.forEach(result => {
-                  console.log(result.item);
-                  let li = document.createElement('li');
-                  li.innerText = result.item.cicognaraNumber;
-                  ul.appendChild(li);
-              });
-              document.getElementById('search_results').appendChild(ul);
-          };
+      const term = document.getElementById('search_input').value;
+      document.getElementById('search_results').innerHTML = "";
+      let results = fuse.search(term);
+      //let results = fuse.search(term);
+      let header = document.createElement('h1');
+      header.innerText = "number found: " + results.length;
+      document.getElementById('search_results').appendChild(header);
+      let ul = document.createElement('ul');
+      results.forEach(result => {
+          console.log(result.item);
+          let dl = document.createElement('dl');
+          let dt = document.createElement('dt');
+          let dd = document.createElement('dd');
+          dt.innerText = "title";
+          dd.innerText = result.item.title;
+          dl.appendChild(dt);
+          dl.appendChild(dd);
+
+          dt = document.createElement('dt');
+          dd = document.createElement('dd');
+          dt.innerText = "cicognaraNumber";
+          dd.innerText = result.item.cicognaraNumber;
+          dl.appendChild(dt);
+          dl.appendChild(dd);
+
+          dt = document.createElement('dt');
+          dd = document.createElement('dd');
+          dt.innerText = "dclNumber";
+          dd.innerText = result.item.dclNumber;
+          dl.appendChild(dt);
+          dl.appendChild(dd);
+
+
+          let li = document.createElement('li');
+          //li.innerText = result.item.title;
+          li.appendChild(dl);
+          ul.appendChild(li);
+      });
+      document.getElementById('search_results').appendChild(ul);
+  };
 
 
 </script>
