@@ -2,20 +2,24 @@
 <html>
   <head>
     <title>Catalogo Search Page</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="../assets/catalogo.css">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
 </head>
-<body>
-<h1>Catalogo Search</h1>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+  <body class="container">
+    <header id="pageHeader" class="masthead">
+      <p><a href="/">The Cicognara Digital Library</a></p>
+    </header>
 
-        <input id="search_input" name="search" placeholder="Search"></input>
-          <button id="search_btn" onclick="doSearch();">Search</button>
-
-
-          <h1>Results</h1>
-          <div id="search_results">
-
-          </div>
+    <div id="side">
+      <h1>Catalogo Search</h1>
+      <input id="search_input" name="search" placeholder="Search"></input><br />
+      <button id="search_btn" onclick="doSearch();">Search</button>
+    </div>
+    <main id="main">
+      <h1>Results</h1>
+      <div id="search_results"></div>
+    </main>
 
 <script src="./data_full.js"></script>
 <script>
