@@ -60,16 +60,10 @@
       let ul = document.createElement('ul');
       results.forEach(result => {
           console.log(result.item);
+
           let dl = document.createElement('dl');
           let dt = document.createElement('dt');
           let dd = document.createElement('dd');
-          dt.innerText = "title";
-          dd.innerText = result.item.title;
-          dl.appendChild(dt);
-          dl.appendChild(dd);
-
-          dt = document.createElement('dt');
-          dd = document.createElement('dd');
           dt.innerText = "cicognaraNumber";
           dd.innerText = result.item.cicognaraNumber;
           dl.appendChild(dt);
@@ -82,6 +76,19 @@
           dl.appendChild(dt);
           dl.appendChild(dd);
 
+          dt = document.createElement('dt');
+          dd = document.createElement('dd');
+          dt.innerText = "creator";
+          dd.innerText = result.item.creator;
+          dl.appendChild(dt);
+          dl.appendChild(dd);
+
+          dt = document.createElement('dt');
+          dd = document.createElement('dd');
+          dt.innerText = "title";
+          dd.innerText = result.item.title;
+          dl.appendChild(dt);
+          dl.appendChild(dd);
 
           let li = document.createElement('li');
           //li.innerText = result.item.title;
