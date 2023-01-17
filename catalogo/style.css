@@ -1,3 +1,16 @@
 body {
     background-color: gray;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+dt {
+  grid-column: 1;
+}
+
+dd {
+  grid-column: 2;
+}
