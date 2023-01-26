@@ -4,13 +4,15 @@ require "fileutils"
 require "json"
 require "set"
 require "csv"
+require "logger"
 
 basedir = "#{File.dirname(__FILE__)}/.."
 
+logger = Logger.new(STDOUT)
+
 idtypes = Set.new()
 
-records = {}
-data = {}
+records = []
 
 Dir["#{basedir}/tmp/resources/*.json"].each do |file|
   json = JSON.parse(File.open(file).read)
@@ -21,18 +23,38 @@ Dir["#{basedir}/tmp/resources/*.json"].each do |file|
 
   next unless (cico or dcl)
 
-  data = {file: File.basename(file)}
-  data[:cico] = cico['value'] if cico
-  data[:dcl] = dcl['value'] if dcl
+  data = {file: File.basename(file), cico: ''}
+
+  if cico
+       data[:cico] = cico['value']
+  else
+      logger.warn("No cico number for #{file}")
+  end
+
+  # puts "cico num: #{cico['value']}"
+  # puts "in data: #{data[:cico]}"
+
+  if dcl
+       data[:dcl] = dcl['value']
+    else
+      logger.warn("No dcl number for #{file}")
+      data[:dcl] = ''
+  end
 
   data[:virtual_collection] = nil
-  if json["isPartOf"]
+
+
+    if json["isPartOf"]
     virtual_collection = json["isPartOf"].find { |x|
       x['@type'] == 'virtualCollection'
     }
     if virtual_collection
       data[:virtual_collection] = virtual_collection['label']
+    else
+      logger.warn("not part of a virtual collection: #{file}")
     end
+    else
+      logger.warn("not part of anything: #{file}")
   end
 
   data[:manifest] = nil
@@ -42,14 +64,13 @@ Dir["#{basedir}/tmp/resources/*.json"].each do |file|
     data[:manifest] = manifest['value']
   end
 
-  records[json['@id']] = data
+  records.append(data)
 end
 
 CSV.open("/tmp/report.csv", "wb") do |csv|
-  csv << ["key", "filename", "cico", "dcl", "virtual_collection", "manifest"]
-  records.each do |key, data|
-    csv << [key,
-            data[:file],
+  csv << ["filename", "cico", "dcl", "virtual_collection", "manifest"]
+  records.each do |data|
+    csv << [data[:file],
             data[:cico],
             data[:dcl],
             data[:virtual_collection],
@@ -57,3 +78,6 @@ CSV.open("/tmp/report.csv", "wb") do |csv|
            ]
   end
 end
+
+
+  File.write("#{basedir}/tmp/getty_report.json", JSON.dump(records))
