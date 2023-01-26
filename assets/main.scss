@@ -68,6 +68,35 @@
       text-align: center;
       margin: 0.5em auto 1.5em;
     }
+
+    table.partners { border: none; }
+    .partners {
+      h1 {
+        text-align: left;
+      }
+      h2 {
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+      }
+      h3 {
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        text-align: left;
+      }
+      img.logo {
+        max-width: 100px;
+        max-height: 60px;
+      }
+      td.logo {
+        text-align: center;
+      }
+      td {
+        border: none;
+        background: #fdfdfd;
+      }
+    }
     img {
       display: inline-block;
       margin: 0.5em 1.5em;

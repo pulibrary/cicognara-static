@@ -92,7 +92,7 @@ Collezione (I).&quot; <i>La Bibliofil&iacute;a</i> 114, no. 2 (2012): 231-272.</
 <p>Granuzzo, Elena. &quot;Leopoldo Cicognara e La Sua Biblioteca: Formazione e Significato Di Una
 Collezione (II).&quot; <i>La Bibliofil&iacute;a</i> 114, no. 3 (2012): 371-412.</p>
 <p>Haskell, Francis, <i>History and Its Images: Art and the Interpretation of the Past</i>. New
-Haven: Yale University Press, 1993. (193-200)/p>
+Haven: Yale University Press, 1993. (193-200)</p>
 <p>Holly, Michael Ann. Panofsky and the Foundations of Art History. Ithaca, N.Y.: Cornell University
 Press, 1984.</p>
 <p>Irvine, Betty Jo and William B. Walker. &quot;Wolfgang M. Freitag, 1924&ndash;2012: A
