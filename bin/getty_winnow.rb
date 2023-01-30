@@ -25,5 +25,5 @@ Dir["#{basedir}/tmp/resources/*.xml"].each do |file|
 
   has_manifest = record.xpath('//dcterms:hasFormat').text.split('/').last == 'manifest'
 
-  FileUtils.cp file, outdir if has_ids or has_manifest
+  FileUtils.cp file, outdir if has_ids and has_manifest
 end
