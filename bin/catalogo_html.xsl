@@ -17,7 +17,7 @@
     <xd:doc>
         <xd:desc>
             <xd:p>A named template to generate the HTML head element.</xd:p>
-            <xd:p>Creates a uniform head element fo all the HTML pages. The <xd:i>level</xd:i>
+            <xd:p>Creates a uniform head element for all the HTML pages. The <xd:i>level</xd:i>
                 parameter is used to specify the depth of the generated HTML document in the
                 application tree, so that relative paths to assets can be established.</xd:p>
         </xd:desc>
@@ -66,7 +66,7 @@
     </xd:doc>
     <xsl:template name="createSiteFooter">
         <footer id="pageFooter">
-            <span>Copyright 2022 The Trustees of Princeton University. All rights reserved.</span>
+            <span>Copyright 2023 The Trustees of Princeton University. All rights reserved.</span>
         </footer>
     </xsl:template>
 
@@ -132,7 +132,9 @@
                                     <a href="../index.html">Catalogo</a>
                                 </li>
                                 <li>
-                                    <a href="../index.html#{ancestor::tei:div[@type='section']/@n}"><xsl:value-of select="ancestor::tei:div[@type='section']/tei:head"></xsl:value-of></a>
+                                    <a href="../index.html#{ancestor::tei:div[@type='section']/@n}">
+                                        <xsl:value-of select="ancestor::tei:div[@type='section']/tei:head" />
+                                    </a>
                                 </li>
                                 
                             </ul>
@@ -175,41 +177,6 @@
             </html>
         </xsl:result-document>
     </xsl:template>
-
-  <!--
-    <xsl:template match="tei:TEI">
-        <xsl:result-document indent="yes" method="html" href="{$root_directory}/{@xml:id}.html">
-            <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
-                <xsl:call-template name="createHead"/>
-                <body class="container">
-                    <header id="pageHeader" class="masthead">
-                        <p>
-                            <a href="/">The Cicognara Digital Library</a>
-                        </p>
-                        <nav class="breadcrumb">
-                            <ul class="breadcrumb">
-                                <li>
-                                    <a href="index.html">Catalogo</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </header>
-
-                    <nav id="side">
-                        <xsl:apply-templates select="tei:text/tei:body" mode="toc"/>
-                    </nav>
-                    <main id="main">
-                        <xsl:apply-templates select="tei:text/tei:body//tei:div[@type = 'section']"
-                            mode="section"/>
-                    </main>
-                    <xsl:call-template name="createSiteFooter"/>
-                </body>
-                
-            </html>
-        </xsl:result-document>
-    </xsl:template>
-  -->
-
 
     <xsl:template match="text()">
         <xsl:value-of select="normalize-space()"/>
@@ -336,13 +303,21 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="tei:title">
+        
+        <xsl:variable name="ciconum">
+            <xsl:value-of select="ancestor::tei:item/@n"/>
+        </xsl:variable>
+                
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
         </xsl:if>
-        <span class="title">
-            <xsl:apply-templates/>
-        </span>
+        <a href="items/{$ciconum}.html">
+            <span class="title">
+                <xsl:apply-templates/>
+            </span>
+        </a>
+        
         <xsl:variable name="textafter" select="following-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textafter/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
