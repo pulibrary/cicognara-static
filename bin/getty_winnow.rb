@@ -20,5 +20,9 @@ Dir["#{basedir}/tmp/resources/*.xml"].each do |file|
   collections = record.xpath('//dcterms:isPartOf')
   in_collection = collections.any?{ |c| c.text == "Cicognara Collection"}
 
-  FileUtils.cp file, outdir if has_ids and in_collection
+  hasFormat = record.xpath('//dcterms:hasFormat')
+
+  has_manifest = hasFormat.length > 0
+
+  FileUtils.cp file, outdir if has_ids and in_collection and has_manifest
 end
