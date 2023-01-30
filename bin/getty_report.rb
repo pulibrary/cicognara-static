@@ -10,29 +10,23 @@ basedir = "#{File.dirname(__FILE__)}/.."
 
 logger = Logger.new(STDOUT)
 
-idtypes = Set.new()
-
 records = []
 
 Dir["#{basedir}/tmp/resources/*.json"].each do |file|
   json = JSON.parse(File.open(file).read)
 
-  json['identifier'].collect { |id| id['@type']}.each {|i| idtypes.add(i)}
   cico = json['identifier'].find {|id| id['@type'] == 'cicognaraNumber'}
   dcl = json['identifier'].find {|id| id['@type'] == 'dclNumber'}
 
   next unless (cico or dcl)
 
-  data = {file: File.basename(file), cico: ''}
+  data = {id: json['@id'], file: File.basename(file), cico: ''}
 
   if cico
        data[:cico] = cico['value']
   else
       logger.warn("No cico number for #{file}")
   end
-
-  # puts "cico num: #{cico['value']}"
-  # puts "in data: #{data[:cico]}"
 
   if dcl
        data[:dcl] = dcl['value']
@@ -42,8 +36,6 @@ Dir["#{basedir}/tmp/resources/*.json"].each do |file|
   end
 
   data[:virtual_collection] = nil
-
-
     if json["isPartOf"]
     virtual_collection = json["isPartOf"].find { |x|
       x['@type'] == 'virtualCollection'
@@ -67,10 +59,11 @@ Dir["#{basedir}/tmp/resources/*.json"].each do |file|
   records.append(data)
 end
 
-CSV.open("/tmp/report.csv", "wb") do |csv|
-  csv << ["filename", "cico", "dcl", "virtual_collection", "manifest"]
+CSV.open("#{basedir}/tmp/getty_report.csv", "wb") do |csv|
+  csv << ["id", "filename", "cico", "dcl", "virtual_collection", "manifest"]
   records.each do |data|
-    csv << [data[:file],
+    csv << [data[:id],
+            data[:file],
             data[:cico],
             data[:dcl],
             data[:virtual_collection],
