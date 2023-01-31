@@ -14,6 +14,17 @@ github_username:  pulibrary/cicognara-static
 theme: minima
 plugins:
   - jekyll-feed
+header_pages:
+  - about.md
+  - partners.md
+  - research.md
+  - contributor.md
+  - faq.md
+  - checklist.md
+  - contact.md
+  - news.md
+minima:
+  date_format: "%d %B %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
