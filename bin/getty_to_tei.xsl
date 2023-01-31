@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:local="http://library.princeton.edu"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" 
@@ -17,9 +18,19 @@
         </xd:desc>
     </xd:doc>
     
+    <xsl:function name="local:clean-cico-num">
+        <xsl:param name="cicostring" as="xs:string" />
+        <xsl:analyze-string select="$cicostring"
+            regex="^(\d+).*">
+            <xsl:matching-substring>
+                <xsl:value-of select="regex-group(1)"/>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+        
+    </xsl:function>
+    
     <xsl:template match="/">
         <xsl:apply-templates select="dc:record" mode="standalone" />
-
     </xsl:template>
     
     <xsl:template match="dc:record" mode="standalone">
@@ -60,7 +71,10 @@
     
     <xsl:template name="publicationStmt">
         <publicationStmt xmlns="http://www.tei-c.org/ns/1.0">
-
+            <publisher>
+                <orgName>Digital Cicognara Library</orgName>
+                <ref>https://cicognara.org/</ref>
+            </publisher>
             <xsl:apply-templates select="dc:contributor" />
             <xsl:apply-templates select="dc:identifier" />
         </publicationStmt>
@@ -156,7 +170,14 @@
             <xsl:matching-substring>
                 <xsl:variable name="type" select="regex-group(1)"/>
                 <idno  xmlns="http://www.tei-c.org/ns/1.0" type="{$type}">
-                    <xsl:value-of select="regex-group(2)"/>
+                    <xsl:choose>
+                        <xsl:when test="$type = 'cico'">
+                            <xsl:value-of select="local:clean-cico-num(regex-group(2))"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="regex-group(2)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </idno>               
             </xsl:matching-substring>
             <xsl:non-matching-substring>
@@ -169,8 +190,6 @@
 
     </xsl:template>
     
-    
-
     <xsl:template match="dcterms:issued">
         <date xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:apply-templates/>
