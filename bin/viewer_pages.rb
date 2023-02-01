@@ -67,19 +67,3 @@ Dir["/tmp/corpora/*.xml"].each do |file|
   html = ERB.new(template).result(binding)
   File.open("#{outdir}/#{ciconum}.html", "w") { |f| f.write(html) }
 end
-
-
-  # authorities = doc.xpath('//tei:authority',
-  #                         {'tei' => "http://www.tei-c.org/ns/1.0"})
-
-  # originals = authorities.select { |a|
-  # a.text == "Fondo Cicognara (Biblioteca apostolica vaticana)"
-  # }
-
-  # if originals
-  #   originals.each { |a|
-  #     facs = a.xpath('ancestor::tei:TEI/tei:facsimile/tei:media/@url',
-  #                    {'tei' => "http://www.tei-c.org/ns/1.0"})
-  #     puts facs
-  #   }
-#  end
