@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/8021fe47-dfd2-4e97-a728-c708760acf54/manifest"}],
+               "catalog": [{"manifestId":"https://iiif.lib.harvard.edu/manifests/drs:450307010","provider":"Biblioteca Berenson - I Tatti, The Harvard University Center for Italian Renaissance Studies"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/8021fe47-dfd2-4e97-a728-c708760acf54/manifest","provider":"Princeton University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/5301defc-deaa-4573-9956-a499184aedd7","provider":"Getty Research Institute"}]
+                });
+      </script>
+    </body>
+</html>

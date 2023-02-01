@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [],
+               "catalog": [{"manifestId":"https://iiif.lib.harvard.edu/manifests/drs:451054606https://iiif.lib.harvard.edu/manifests/drs:451053692","provider":"Biblioteca Berenson - I Tatti, The Harvard University Center for Italian Renaissance Studies"},{"manifestId":"https://media.getty.edu/iiif/manifest/43c50ee3-a40e-43cf-b9fa-b64d203a9419https://media.getty.edu/iiif/manifest/0b617102-6c39-4e62-9fd6-f43d084e9beb","provider":"Getty Research Institute"}]
+                });
+      </script>
+    </body>
+</html>
