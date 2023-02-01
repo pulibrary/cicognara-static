@@ -84,7 +84,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="tei:teiCorpus">
-        <xsl:result-document indent="yes" method="html" href="{$root_directory}/index.html">
+
             <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
                 <xsl:call-template name="createHead"/>
                 <body class="container">
@@ -108,8 +108,10 @@
                     <xsl:call-template name="createSiteFooter"/>
                 </body>
             </html>
-        </xsl:result-document>
+
+        <!-- 
         <xsl:apply-templates select="//tei:list[@type = 'catalog']/tei:item" mode="standalone"/>
+         -->
     </xsl:template>
     
     <xsl:template match="tei:item" mode="standalone">
