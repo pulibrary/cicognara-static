@@ -312,7 +312,7 @@
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
         </xsl:if>
-        <a href="items/{$ciconum}.html">
+        <a href="viewpages/{$ciconum}.html">
             <span class="title">
                 <xsl:apply-templates/>
             </span>
