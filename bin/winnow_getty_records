@@ -1,5 +1,13 @@
 #!/usr/bin/env ruby
 
+##
+# The raw dump of Getty records contains many that
+# are not part of the Cicognara Collection.  This
+# script winnows out the unnecessary records non-
+# destructively, by copying only the relevant files
+# to the "tmp/cicorecords" directory.
+##
+
 require "fileutils"
 require "logger"
 require "nokogiri"
@@ -8,6 +16,8 @@ def is_cico(node)
   tokens = node.text.gsub(' ', '').split(';')
   return false unless tokens.any? { |tok| tok =~/^cico:/}
   ids = tokens.collect { |tok| tok.split(':').last }
+  # There are records with invalid cicognara numbers.
+  # Reject records with these identifiers.
   return ids.all? { |i| i =~ /^\d/ }
 end
 
@@ -17,6 +27,9 @@ records = []
 outdir =basedir + '/tmp/cicorecords'
 
 FileUtils.mkdir_p outdir
+
+log = Logger.new(STDOUT)
+number_kept_files = 0
 
 Dir["#{basedir}/tmp/resources/*.xml"].each do |file|
   record = Nokogiri::XML(File.read(file))
@@ -31,5 +44,11 @@ Dir["#{basedir}/tmp/resources/*.xml"].each do |file|
 
   has_manifest = hasFormat.length > 0
 
-  FileUtils.cp file, outdir if has_cico and in_collection and has_manifest
+  if has_cico and in_collection and has_manifest
+    number_kept_files += 1
+    log.info("keeping #{file}")
+    FileUtils.cp file, outdir
+  end
 end
+
+log.info("kept #{number_kept_files} files")

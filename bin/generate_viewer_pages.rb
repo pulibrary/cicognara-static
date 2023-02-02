@@ -28,14 +28,15 @@ template = %(
 </html>
 )
 
-basedir = "#{File.dirname(__FILE__)}/.."
-outdir = "#{basedir}/catalogo/viewpages"
+basedir = "#{File.dirname(__FILE__)}/../catalogo"
+outdir = "#{basedir}/html/viewpages"
+sourcedir = "#{basedir}/items"
 
 ns = {'tei' => "http://www.tei-c.org/ns/1.0"}
 
 FileUtils.mkdir_p outdir
 
-Dir["/tmp/corpora/*.xml"].each do |file|
+Dir["#{sourcedir}/*.xml"].each do |file|
   windows_arr = []
   catalog_arr = []
 

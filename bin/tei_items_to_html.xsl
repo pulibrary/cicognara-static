@@ -17,7 +17,7 @@
     <xsl:output method="html" doctype-system="about:legacy-compat" indent="yes"/>
     
     
-    <xsl:param name="viewpages">../catalogo/html/viewpages</xsl:param>
+    <xsl:param name="viewpages">../viewpages</xsl:param>
     
     <xsl:template match="tei:teiCorpus">
         <xsl:variable name="ciconum">

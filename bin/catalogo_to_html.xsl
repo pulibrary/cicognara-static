@@ -71,7 +71,7 @@
     </xsl:template>
 
 
-<!-- 
+<!--
     HTML-page-generating templates
     -->
 
@@ -109,11 +109,11 @@
                 </body>
             </html>
 
-        <!-- 
+        <!--
         <xsl:apply-templates select="//tei:list[@type = 'catalog']/tei:item" mode="standalone"/>
          -->
     </xsl:template>
-    
+
     <xsl:template match="tei:item" mode="standalone">
         <xsl:variable name="dclnums" select="tokenize(@corresp)"/>
         <xsl:variable name="biblStructs" select="id('gettyBibls')/tei:biblStruct"/>
@@ -138,28 +138,28 @@
                                         <xsl:value-of select="ancestor::tei:div[@type='section']/tei:head" />
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </nav>
                     </header>
-                    
+
                     <header id="metadata">
                         <div class="bibl">
                             <xsl:apply-templates select="tei:bibl" mode="structured"/>
                         </div>
-                        
+
                         <div class="notes">
                             <xsl:apply-templates select="tei:note"/>
                         </div>
                     </header>
-                    
-                    <main id="main"> 
+
+                    <main id="main">
                         <dl>
                             <xsl:for-each select="$dclnums">
                                 <xsl:variable name="dcl" select="substring-after(current(), 'dcl:')"/>
                                 <xsl:variable name="distributors"
                                     select="$biblStructs[.//tei:idno = $dcl]/tei:monogr/tei:imprint/tei:distributor"/>
-                                
+
                                 <dt>
                                     <dl>
                                         <dt><xsl:value-of select="$dcl"/></dt>
@@ -183,7 +183,7 @@
     <xsl:template match="text()">
         <xsl:value-of select="normalize-space()"/>
     </xsl:template>
-    
+
 
     <xsl:template match="tei:body" mode="toc">
         <ul class="toc">
@@ -254,7 +254,7 @@
             <xsl:value-of select="parent::tei:item/@n"/>
         </xsl:variable>
         <xsl:variable name="itemid" select="parent::tei:item/@xml:id"/>
-        <a href="items/{$ciconum}.html">
+        <a href="itempages/{$ciconum}.html">
             <span class="ciconum">
                 <xsl:apply-templates/>
             </span>
@@ -266,7 +266,7 @@
             <xsl:value-of select="parent::tei:item/@n"/>
         </xsl:variable>
         <xsl:variable name="itemid" select="parent::tei:item/@xml:id"/>
-        <a href="../items/{$itemid}.html">
+        <a href="../itempages/{$itemid}.html">
             <span class="ciconum">
                 <xsl:apply-templates/>
             </span>
@@ -295,8 +295,8 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    
-    
+
+
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p>These templates handle the mixed-content situation in which successive
@@ -305,21 +305,21 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="tei:title">
-        
+
         <xsl:variable name="ciconum">
             <xsl:value-of select="ancestor::tei:item/@n"/>
         </xsl:variable>
-                
+
         <xsl:variable name="textbefore" select="preceding-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textbefore/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
         </xsl:if>
-        <a href="viewpages/{$ciconum}.html">
+        <a href="itempages/{$ciconum}.html">
             <span class="title">
                 <xsl:apply-templates/>
             </span>
         </a>
-        
+
         <xsl:variable name="textafter" select="following-sibling::node()[1][self::text()]"/>
         <xsl:if test="$textafter/preceding-sibling::node()[self::*]">
             <xsl:text> </xsl:text>
@@ -389,7 +389,7 @@
     </xsl:template>
 
     <!-- Item templates -->
- 
+
     <xsl:template match="tei:biblStruct">
         <li>
             <dl>
