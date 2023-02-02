@@ -28,13 +28,17 @@ template = %(
 </html>
 )
 
-basedir = "#{File.dirname(__FILE__)}/../catalogo"
-outdir = "#{basedir}/html/viewpages"
-sourcedir = "#{basedir}/items"
+sourcedir = "#{File.dirname(__FILE__)}/../tmp/items"
+targetdir = "#{File.dirname(__FILE__)}/../catalogo/viewpages"
+
+#basedir = "#{File.dirname(__FILE__)}/../catalogo"
+#outdir = "#{basedir}/html/viewpages"
+#outdir = "#{basedir}/viewpages"
+#sourcedir = "#{basedir}/items"
 
 ns = {'tei' => "http://www.tei-c.org/ns/1.0"}
 
-FileUtils.mkdir_p outdir
+FileUtils.mkdir_p targetdir
 
 Dir["#{sourcedir}/*.xml"].each do |file|
   windows_arr = []
@@ -66,5 +70,5 @@ Dir["#{sourcedir}/*.xml"].each do |file|
   windows = windows_arr.to_json
 
   html = ERB.new(template).result(binding)
-  File.open("#{outdir}/#{ciconum}.html", "w") { |f| f.write(html) }
+  File.open("#{targetdir}/#{ciconum}.html", "w") { |f| f.write(html) }
 end

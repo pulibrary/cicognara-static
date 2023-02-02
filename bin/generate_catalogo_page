@@ -1,11 +1,8 @@
 #!/bin/bash
 
-
-# catalogo.sh - download the most recent Catalogo TEI XML and generate HTML version
-
 CUR=`dirname $0`
-DATADIR=$CUR/../tmp
-OUTDIR=$CUR/../catalogo/html
+INPUTDIR=$CUR/../tmp
+TARGETDIR=$CUR/../catalogo
 SAXON=$CUR/saxon-he-10.5.jar
 XSL=$CUR/catalogo_to_html.xsl
 
@@ -14,4 +11,4 @@ XSL=$CUR/catalogo_to_html.xsl
 #wget https://raw.githubusercontent.com/pulibrary/cicognara-catalogo/main/catalogo.tei.xml -P $DATADIR
 
 # generate HTML
-java -cp  $SAXON net.sf.saxon.Transform -s:$DATADIR/catalogo.tei.xml -xsl:$XSL -o:$OUTDIR/index.html
+java -cp  $SAXON net.sf.saxon.Transform -s:$INPUTDIR/catalogo.tei.xml -xsl:$XSL -o:$TARGETDIR/index.html

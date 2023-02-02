@@ -18,6 +18,7 @@
     
     
     <xsl:param name="viewpages">../viewpages</xsl:param>
+    <xsl:param name="css">../../assets/item-pages.css</xsl:param>
     
     <xsl:template match="tei:teiCorpus">
         <xsl:variable name="ciconum">
@@ -30,7 +31,7 @@
                 <title>
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title" />
                 </title>
-                <link rel="stylesheet" href="../../../assets/item-pages.css"/>
+                <link rel="stylesheet" href="{$css}"/>
             </head>
             <body>
                 <header id="pageHeader" class="masthead">
