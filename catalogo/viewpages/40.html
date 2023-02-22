@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4b371684-543c-4e0a-982c-605c5d693194/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/5ee5ce2d-950e-49a7-bbea-618e2c4babe9/manifest"}],
+               "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4b371684-543c-4e0a-982c-605c5d693194/manifest","provider":"Princeton University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/747e29b9-4dde-4016-bd8f-521c01f241f1https://media.getty.edu/iiif/manifest/f7c93453-b0b2-43b4-8f99-8f3ce03196f9https://media.getty.edu/iiif/manifest/afc106a4-53ad-4335-aed2-8040b24c20a7https://media.getty.edu/iiif/manifest/4aa42e58-33b3-4a22-9961-5621a55d7718https://media.getty.edu/iiif/manifest/a1510f84-85e8-45c7-90e4-ccfd34995bb8https://media.getty.edu/iiif/manifest/620bb2d8-083e-4e2c-8236-3d3bddf77dcc","provider":"Getty Research Institute"},{"manifestId":"https://imagesdigitalcollections.frick.org/compare/barcode/31072001805649","provider":"Frick Art Reference Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/5ee5ce2d-950e-49a7-bbea-618e2c4babe9/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

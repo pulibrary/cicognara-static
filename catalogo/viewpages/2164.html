@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/bbf734a5-10a8-4652-ab23-cfc0ac3aadde/manifest"}],
+               "catalog": [{"manifestId":"https://media.getty.edu/iiif/manifest/fc637705-7a8d-4a56-a1fb-8ba5dbc7d6a0https://media.getty.edu/iiif/manifest/79c489bd-fa7f-4d9f-b86f-8a97b1730fd3https://media.getty.edu/iiif/manifest/6f171a21-2d96-401c-b2e8-59aa7fda8d79https://media.getty.edu/iiif/manifest/f1ad0722-0378-4976-a30b-ecb3e5e1a3db","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/bbf734a5-10a8-4652-ab23-cfc0ac3aadde/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4c2f3871-9230-49c1-afd7-7787b30e3914/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/874a0ec9-b261-4668-b2bb-e8822670849b/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/a0ac2f0c-028c-4104-be50-ed06ef908317/manifest"}],
+               "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4c2f3871-9230-49c1-afd7-7787b30e3914/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/874a0ec9-b261-4668-b2bb-e8822670849b/manifest","provider":"Princeton University Library"},{"manifestId":"https://libraryimage.nga.gov/manifest/mms/99229593504896.json","provider":"National Gallery of Art Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/a0ac2f0c-028c-4104-be50-ed06ef908317/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/7fef31c2-22ca-4a6e-8de5-69c6fc9dc065/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4ffbce3e-c917-411c-93d4-77eeb6885688/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/eeb2eb61-ac38-4bb7-86ae-3c9bde0385ec/manifest"}],
+               "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/7fef31c2-22ca-4a6e-8de5-69c6fc9dc065/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/4ffbce3e-c917-411c-93d4-77eeb6885688/manifest","provider":"Princeton University Library"},{"manifestId":"https://cdm16028.contentdm.oclc.org/iiif/info/p16028coll4/38696/manifest.json","provider":"Metropolitan Museum of Art"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/eeb2eb61-ac38-4bb7-86ae-3c9bde0385ec/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

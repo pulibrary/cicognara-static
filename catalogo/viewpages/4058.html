@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/53598d3b-7b08-4b3b-bf45-840cc443b70b/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/978ed961-1052-4c52-8c09-9474a9562985/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/3a02f5f9-bdd1-4e2d-add6-5e0549b31e10/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/f0cd6887-32c8-4da1-9048-5b4f5034cbfd/manifest"},{"manifestId":"https://iiif.lib.harvard.edu/manifests/drs:482447393"}],
+               "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/panciroli1602/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/53598d3b-7b08-4b3b-bf45-840cc443b70b/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/gelenius1552/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/978ed961-1052-4c52-8c09-9474a9562985/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/panciroli1608/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/3a02f5f9-bdd1-4e2d-add6-5e0549b31e10/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/f0cd6887-32c8-4da1-9048-5b4f5034cbfd/manifest","provider":"Princeton University Library"},{"manifestId":"https://iiif.lib.harvard.edu/manifests/drs:482447393","provider":"Dumbarton Oaks"}]
+                });
+      </script>
+    </body>
+</html>

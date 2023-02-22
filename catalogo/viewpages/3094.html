@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/de26ca80-5eeb-4b40-97ee-a395cf281ac6/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/de8ff988-31a2-4e6e-930a-446dfc830253/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/62864a37-1d6d-4a33-be17-b3489a99f126/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/633f5f2f-0b12-4794-8e73-6a4c5ce8e951/manifest"}],
+               "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/de26ca80-5eeb-4b40-97ee-a395cf281ac6/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/apian1534/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/de8ff988-31a2-4e6e-930a-446dfc830253/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/62864a37-1d6d-4a33-be17-b3489a99f126/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/maittaire1732/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/633f5f2f-0b12-4794-8e73-6a4c5ce8e951/manifest","provider":"Princeton University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/5c24d255-3752-4084-b5fd-27be1ec2a820","provider":"Getty Research Institute"}]
+                });
+      </script>
+    </body>
+</html>
