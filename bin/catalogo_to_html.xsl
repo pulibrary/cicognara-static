@@ -78,48 +78,92 @@
     <xd:doc>
         <xd:desc>
             <xd:p>The site is generated from the catalogo.tei.xml source file. That file
-            comprises a teiCorpus containing the two volumes of the Catalogo, plus the Getty
-            records, which are Xincluded.
+            comprises a teiCorpus containing the two volumes of the Catalogo.
             </xd:p>
         </xd:desc>
     </xd:doc>
+    
+    <xsl:template match="/">
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+            <xsl:call-template name="createHead"/>
+            <body class="container">
+                <xsl:call-template name="createSiteMastHead" />
+                    <xsl:apply-templates select="tei:teiCorpus" />
+                <xsl:call-template name="createSiteFooter"/>
+            </body>
+        </html>
+    </xsl:template>
+    
     <xsl:template match="tei:teiCorpus">
-
-            <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
-                <xsl:call-template name="createHead"/>
-                <body class="container">
-                    <header id="pageHeader" class="masthead">
-                        <p>
-                            <a href="/">The Cicognara Digital Library</a>
-                        </p>
-                    </header>
+        <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt"/>
                     <nav id="side">
-                        <xsl:apply-templates
-                            select="tei:TEI[@xml:id = 'tomo_primo']/tei:text/tei:body" mode="toc"/>
-                        <xsl:apply-templates
-                            select="tei:TEI[@xml:id = 'tomo_secondo']/tei:text/tei:body" mode="toc"/>
+                        <xsl:apply-templates select="tei:TEI" mode="toc" />
                     </nav>
                     <main id="main">
-                        <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt"/>
-                        <xsl:apply-templates
-                            select="tei:TEI/tei:text/tei:body//tei:div[@type = 'section']"
-                            mode="section"/>
-                    </main>
-                    <xsl:call-template name="createSiteFooter"/>
-                </body>
-            </html>
+                        <xsl:apply-templates select="tei:TEI" />
+                    </main>     
     </xsl:template>
 
+    <xsl:template match="tei:TEI" mode="toc">
+        <section>
+            <h1>
+                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt"/>
+            </h1>
+            <ul>
+                <xsl:apply-templates
+                    select="tei:text" mode="toc"/>
+            </ul>
+        </section>
+    </xsl:template>
+    
+    <xsl:template match="tei:TEI">
+        <xsl:apply-templates select="tei:text" />    
+    </xsl:template>
 
     <xsl:template match="text()">
         <xsl:value-of select="normalize-space()"/>
     </xsl:template>
+    
+    <xsl:template match="tei:text">
+        <xsl:apply-templates select="tei:front" />
+        <xsl:apply-templates select="tei:body" />
+    </xsl:template>
+    
+    <xsl:template match="tei:front">
+            <xsl:apply-templates select=".//tei:div[@type='preface']" />
+    </xsl:template>
+    
+    <xsl:template match="tei:body">
+        <xsl:apply-templates
+            select=".//tei:div[@type = 'section']"
+            mode="section"/> 
+    </xsl:template>
 
+    <xsl:template match="tei:text" mode="toc">
+        <xsl:apply-templates select="tei:front" mode="toc" />
+        <xsl:apply-templates select="tei:body" mode="toc" />
+    </xsl:template>
+    
+    <xsl:template match="tei:front" mode="toc">
+        <xsl:apply-templates select="tei:div[@type = 'preface']" mode="toc" />
+    </xsl:template>
 
     <xsl:template match="tei:body" mode="toc">
-        <ul class="toc">
             <xsl:apply-templates select="tei:div[@type = 'section']" mode="toc"/>
-        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'preface']">
+        <section id="{@n}">
+            <xsl:apply-templates />
+        </section>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'preface']" mode="toc">
+        <li>
+            <a href="#{@n}">
+                <xsl:value-of select="tei:head[1]"/>
+            </a>
+        </li>
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'section']" mode="toc">
