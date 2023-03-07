@@ -53,7 +53,10 @@ a:visited {
 
 #pageheader {
   grid-area: header;
-  background-color: silver;
+  background-color: #e6e8db;
+  border-color: #efefef;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 #main {
