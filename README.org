@@ -1,32 +1,30 @@
 #+title: Digital Cicognara Library 2.0
 
 * Background
-Since 2015 or so, the Princeton University Library has collaborated with a consortium of libraries and research institutions, with funding from the Kress Foundation, on a project called the [[https://cicognara.org/][Digital Cicognara Library]].  Labeled "an open-acess collection of the early literature of the arts," this project combines two distinct efforts: (1) to create a union catalog of copies and similiar editions of some 5,000 imprints collected by Count Leopoldo Cicognara (1767–1834) and itemized in his /Catalogo ragionato dei libri d’arte e d’antichità/; (2) to build a web resource that enables users to read and compare digital facsimiles of these titles.  Cicognara's original library now resides in the Vatican; in the 1980s, the Kress Foundation sponsored a project to create a microfiche edition of the entire library (more than one million pages).
+Since 2015 or so, the Princeton University Library has collaborated with a consortium of libraries and research institutions, with funding from the Kress Foundation, on a project called the [[https://cicognara.org/][Digital Cicognara Library]].  Labeled "an open-access collection of the early literature of the arts," this project combines two distinct efforts: (1) to create a union catalog of copies and similar editions of some 5,000 imprints collected by Count Leopoldo Cicognara (1767–1834) and itemized in his /Catalogo ragionato dei libri d’arte e d’antichità/; (2) to build a web resource that enables users to read and compare digital facsimiles of these titles.
 
-Many of the original imprints have since been deemed too fragile to be handled, so a similar edition of digital images cannot be made.  In lieu of such a digital edition, several research institutions are examining their holdings for copies, or similar editions, of Cicognara's volumes; the discovery, comparison, and description of these copies constitutes a significant bibliographic research project in its own right.  The collaborating institutions are digitizing what they find and making their digital editions available, via the Web, in a digital recreation of Cicognara's library.   All the partner institutions send their metadata (MARC records; IIIF manifests) to the Getty, which disseminates them via a portal (whose existence makes much of the Digital Cicognara Library site functionally redundant).
+Cicognara's original library now resides in the Vatican; in the 1980s, the Kress Foundation sponsored a project to create a microfiche edition of the entire library (more than one million pages).  Many of the original imprints have since been deemed too fragile to be handled, so a similar edition of digital images cannot be made; instead, in 2016 or so, the Kress Foundation digitized its microfiche edition while acknowledging that digitized microfiche does not provide the reading experience many users expect today.  In lieu of digitizing Cicognara's holdings anew, several research institutions began to examine their holdings for copies, or similar editions, of Cicognara's volumes that could be presented to the reading public as substitutes: the collaborating institutions digitize what they find and make their digital editions available, via the Web, in a digital re-creation of Cicognara's library.
 
-In 2016 or so, the Kress Foundation digitized its microfiche edition; in addition to its other digitized holdings, PUL maintains these in its digital repository.
+All the partner institutions send their metadata (MARC records and IIIF manifests) to the Getty Research Center, which disseminates them as part of the [[https://portal.getty.edu/][Getty Research Portal]].  The presentation of these digital editions as a virtual Cicognara library has been the responsibility of PUL, which has built and maintains a system of bespoke software to harvest bibliographic records and IIIF manifests from the Getty, process and index them, and display them in a web browser.  The software provides some search capabilities, along with a way to browse the collection through a TEI-encoded edition of Cicognara's /Catalogo/.
 
-Dissemination of these materials has been the responsibility of PUL, which has built and maintains a system of bespoke software to harvest bibliographic records and IIIF manifests from the Getty, process and index them, and display them in a web browser.  The software provides some search capabilities, along with a way to browse the collection through a TEI-encoded edition of Cicognara's /Catalogo/.
+That software is showing its age, and PUL can no longer support bespoke digital library applications like it.  Furthermore, the aims and rationales for the system have changed over the years, as have the relationships among and commitments of the institutional partners.  In 2021, the Kress Foundation provided PUL with an eighteen-month grant to sunset the current Cicognara application and migrate as much of its functionality as possible to other, sustainable platforms.
 
-The software behind the Digital Cicognara Library is showing its age, and PUL no longer supports bespoke digital library applications.  Furthermore, the aims and rationales for the system have changed over the years, as have the relationships among and commitments of the institutional partners.  The Kress Foundation has provided PUL with an eighteen-month grant to sunset the current Cicognara application and migrate as much of its functionality as possible to other, sustainable platforms.
+* The Digital Cicognara Library, version 1
+The name, /Digital Cicognara Library/, is misleading; it implies that the subject so named is a virtual collection, or a virtual space, that replicates or simulates Count Cicognara's original library.  While this is partially true, the Digital Cicognara Library is actually an organization: a consortium of research institutions engaged in several distinct, though related, activities:
 
-* The Digital Cicognara Library Today
-The present project attempts to fulfill these goals, first by analyzing the Digital Cicognara Library as it is today.  The name, /the Digital Cicognara Library/, is misleading; it implies that the subject so named is a virtual collection, or a virtual space, that replicates or simulates Count Cicognara's original library.  While this is partially true, we have seen that DCL is actually an organization: consortium of research institutions engaged in several distinct, though related, activities:
+1. *Compiling a Union Catalog.* The discovery, comparison, and description of these copies constitutes a significant bibliographic research project in its own right.  This was the earliest activity of the consortium, and it is the work of trained bibliographers, not technologists.  It is painstaking, scholarly work, largely unfunded.  These endeavors have yielded a few surprises, including the complex bibliographic nature of some of Cicognara's holdings.  Before the project began, it was assumed that most, if not all, of Cicognara's volumes were, while old, not particularly rare, and that duplicates or similar editions could be found in the partners' holdings.  Close examination of the /Catalogo/ revealed that some of Cicognara's volumes were idiosyncratic /Sammelbände/ for which no duplicates existed.  The complexities of early modern publishing also made it difficult to impossible to determine how closely an edition held by a partner institution corresponded with Cicognara's copy.
 
-1. *Compiling a Union Catalog.* This was the earliest activity of the consortium.  It is the work of trained bibliographers, not technologists, and it is painstaking, scholarly work, largely unfunded.  These endeavors have yielded a few surprises, including the complex bibliographic nature of some of Cicognara's holdings.  Before the project began, it was assumed that most, if not all, of Cicognara's volumes were, while old, not particularly rare, and that duplicates or similar editions could be found in the partners' holdings.  Close examination of the /Catalogo/ revealed that some of Cicognara's volumes were idiosyncratic /Sammelbände/ for which no duplicates existed.  The complexities of early modern publishing also made it difficult to impossible to determine how closely an edition held by a partner institution corresponded with Cicognaro's copy.
+2. *Creating Digital Editions.* At the outset, the partner institutions were made responsible for digitizing their own holdings: for creating and curating high-quality digital images; for writing IIIF manifests that could be used to display the digital editions with any capable IIIF viewer; and for maintaining a IIIF image server for delivering the images.  In practice, a number of the partners have been unable to fulfill one or more of these responsibilities.
 
-2. *Creating Digital Editions.* At the outset, the partner institutions were made responsible for digitizing their holdings: for creating and curating high-quality digital images; for writing IIIF manifests that could be used to display the digital editions with any capable IIIF viewer; and for maintaining a IIIF image server for delivering the images.  In practice, a number of the partners have been unable to fulfill one or more of these responsibilities.
+3. *Providing a Digital Reading Interface.* PUL has been responsible for designing, building, and maintaining the software that drives the DCL web site.  That software, [[https://github.com/pulibrary/cicognara-rails][cicognara-rails]], is a web application, written using the Ruby on Rails framework, that bundles a number of distinct functionalities:
 
-3. *Providing a Digital Reading Interface.* PUL has been responsible for designing, building, and maintaining the software that drives the DCL website.  That software, [[https://github.com/pulibrary/cicognara-rails][cicognara-rails]], is a web application, written using the Ruby on Rails framework, that bundles a number of distinct functionalities:
-
-   - /it harvests the CDL's metadata from the Getty Portal./ This metadata includes MARC records and IIIF manifests from all the partners, which must be filtered, modified, and matched with the App's internal data structures.  The process is complex; it has not worked for several years.
+   - /it harvests the CDL's metadata from the Getty Portal./ This metadata includes MARC records and IIIF manifests from all the partners, which must be filtered, modified, and matched with the app's internal data structures.
 
    - /it indexes the metadata for search, discovery, and cross-linking./  The cicognara-rails app has no database; all of its data-related functionality relies on separate Solr application, whose deployment must be carefully maintained and whose complex configurations must be updated whenever new functionality is added.
 
    - /it serves web pages./ The user-visible aspect of the CDL is the Rails application itself.  It has a RESTful API with two endpoints: [[https://cicognara.org/catalog][https://cicognara.org/catalog]], a standard digital-library catalog interface with searching and faceting; and [[https://cicognara.org/catalogo][https://cicognara.org/catalogo]], an HTML rendition of the TEI-encoded /Catalogo/ with links to catalog entries.  The URLs for entries (e.g., [[https://cicognara.org/catalog/1122][https://cicognara.org/catalog/1122]]) resolve to pages that include a list of items matching the catalog item (the digitized microfiche; one or more digitized editions of copies from partner institutions) and a Javascript viewer widget (the [[https://universalviewer.io/][UniversalViewer]]) that renders the IIIF manifest.
 
-* Desiderata
+* The Digital Cicognara Library, version 2
 At the highest level, the /desideratum/ is to retire the current cicognaro-rails app so that PUL's development team is no longer responsible for maintaining a rickety, out-of-date Rails application.  Beyond this organizational imperative, however, PUL's obligations are unclear.  At the very least, the Kress Foundation has asked that the digitization of its microfiche collection be made available, and it is to address this requirement that this small project is proposed.
 
 As outlined above, the Digital Cicognara Library is actually three projects:
@@ -35,42 +33,20 @@ As outlined above, the Digital Cicognara Library is actually three projects:
 2. Creating a union catalog of duplicates or near editions of the items in Cicognara's library;
 3. Digitizing those duplicates and disseminating them as substitutes for the digitized microfiche edition of Cicognara's originals.
 
-Of these three projects, only the first one directly concerns PUL:
+Accordingly, version 2 splits the Digital Cicognara Library project into three distinct aspects:
 
-- PUL owns and serves the digitized microfiche;
-- PUL owns and maintains the encoded /Catalogo/.
+1. A bibliographic project to create a union catalog of editions that correspond with Cicognara's collection;
+2. A web resource that exposes that union catalog, along with high-resolution digital editions whenever possible.
+3. A web resource that presents Cicognara's library as an historical artifact on its own, via Cicognara's own /Catalogo/ and digital images of his original volumes (albeit secondary images of earlier microfiche capture);
 
-The other two projects are aspects of a single project: to disseminate high-resolution color editions of substitutes for Cicognara's volumes (because those original volumes cannot be digitized).  There are several things to note about this project.  First, its motive is largely aesthetic; some of the partners find the microfiche unsightly and want to provide a "better reading experience" for users.  But the partners fail to distinguish among the very different types of users: those who want to look at pretty books, and those who want to study them.  Curators are proud of their collections and want their books to be used (in part to justify the enormous cost of acquiring them); antiquarians take delight in examining fine specimens of early modern printing.  Scholars are less interested in the artifacts and more interested in the text they bear: they are readers, not viewers. (And clearly the distinctions among these user types are not clear-cut.)  For both user groups, depending on the circumstances, looking at or reading a substitute edition may be sufficient (or even preferable; the microfiche truly is ugly to look at); but in other circumstances only the original will do.  This is particularly true of some sorts of scholarship, for which textual variation is crucial.  For those sorts of users -- those sorts of readers -- only the microfiche, unsightly as it is (or a trip to the Vatican) will do.
-
-This document is not meant to stir the rivalry between scholars and antiquarians, but to establish that there are two very different sorts of use to which a digitized Cicognara Library might be put, and that this distinction provides PUL with an opportunity to achieve its primary goal: sunsetting the cicognara-rails app.
-
-* Proposal
-It is entirely reasonable, and entirely feasible, to split the Digital Cicoganara Library project into three distinct pieces:
-
-1. A web resource that presents Cicognara's library as an historical artifact on its own, via Cicognara's own /Catalogo/ and digital images of his original volumes (albeit secondary images of earlier microfiche capture);
-2. A bibliographic project to create a union catalog of editions that correspond with Cicognara's collection;
-3. A web resource that exposes that union catalog, along with high-resolution digital editions whenever possible.
-
-PUL has been little involved in creating the union catalog; that project belongs to the other partner institutions, who are well able to create and maintain a shared bibliographic database to support their work.  Likewise, the partner institutions are already responsible for digitizing their holdings and serving the digital objects via the IIIF protocols; a web resource that makes the union catalog searchable and browsable, with links to the digital objects when possible, can be built, served, and maintained entirely separately.
-
-PUL can concentrate on the first piece: creating a web resource for the /Catalogo/ and the digitized microfiche.  In doing so, it accomplishes several goals:
-
-1. It reduces its obligation;
-2. It simplifies support (no more moving targets);
-3. It satisfies Kress's primary goal of exposing the digitized version of the microfiche (which constitutes a significant investment twice over: once for the microfiche and then again for the digitization).
+The first aspect is an ongoing research project among the consortium members; the second is served by the Getty Research Portal.  The third is the concern of this repository.
 
 ** Architecture: a Static Site
-The TEI-encoded edition of Cicognara's /Catalogo/ is an under-appreciated resource.  Like other deep encodings of primary-source materials, it is both a document and a database.  PUL itself has no interest in providing tools for exploiting encoded texts, but simply making it available as an XML file for others to use in research would be entirely in keeping with the Library's mission. (See, e.g., https://github.com/eeditiones).
+The new Digital Cicognara Library web site is a /static site/: there is no database, and little in the way of dynamic Javascript.  Such static sites are part of a growing trend in web development to reduce complexity, reduce the cost of software maintenance, and limit the site's exposure to cyber attacks.
 
-Apart from its inherent utility, however, the TEI-encoded edition can also be used to generate an interface to Cicognara's library.  Indeed, it already does: the https://cicognara.org/catalogo endpoint in the cicognara-rails app is served from precompiled HTML "partials" generated from the TEI file with less than 300 lines of code.  Those "partials" are indexed and stored in cicognara-rails' SOLR instance, but with little modification they could be saved as stand-alone HTML files.  The links in those HTML pages can easily be modified to point to the microfiche objects in Figgy.
-  
-- Section pages :: the current UI presents a linked table of contents pointing to discrete HTML renditions of each section. Each of these could be a stand-alone HTML document.
-    
-- Index pages :: The /Catalogo/ (and its TEI transcription) contains back matter that does not appear in the current UI, including an alphabetical index by author.  A static site should certainly feature one or more HTML documents representing this index.
+The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generator written in Ruby.  The /Catalogo/ portion of the site is compiled from two sources: the TEI-encoded edition of Cicognara's /Catalogo/ (maintained in a [[https://github.com/pulibrary/cicognara-catalogo][separate GitHub repository]]) and bibliographic records harvested from the Getty Research Portal. Shell scripts, Ruby scripts, and XSLT transforms generate a single HTML document containing the text of the /Catalogo/ (making it easily searchable in a browser) and viewer pages that use Mirador to display the various versions of each /Catalogo/ entry.
 
-- Item pages :: in the current UI, selecting an entry from the /Catalogo/ presents a page containing a bibliographic entry for the item, its surrogates, and an iframe linked to https://figgy.princeton.edu/viewer.  This is by far the most fragile part of the proposed site: it depends on external data (MARC records, IIIF manifests) and external services (https://figgy.princeton.edu/viewer).  It also depends on Javascript and the deprecated iframe element.
 
-  In fact, the DCL research team has performed a great deal of scholarly work, which is nowhere reflected in the current site.  The Item pages will contain that data, as well as links to viewers.  An automatic process can harvest the MARC records for each item in the microfiche collection and convert them into structured TEI documents that contain bibliographic data, notes, and links to digital editions (the microfiche).  Making Cicognara's entries first-class items resolves many of the bibliographic puzzles and tangles that have plagued the project until now.
 
 * How to Build and Run
 
@@ -78,7 +54,7 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
 
  - Ruby 3.0.0 
  - Java 1.8.0 or higher
-
+** Building
 #+begin_src shell
   git clone https://github.com/pulibrary/cicognara-static.git
   git clone https://github.com/pulibrary/cicognara-catalogo.git
@@ -88,6 +64,10 @@ Apart from its inherent utility, however, the TEI-encoded edition can also be us
   ./generate_catalogo_page
   ./generate_viewer_pages
   ./generate_item_pages
+#+end_src
+
+** Running
+#+begin_src shell
   cd ..
   jekyll serve
 #+end_src
