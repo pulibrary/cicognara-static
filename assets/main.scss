@@ -101,12 +101,24 @@
       display: inline-block;
       margin: 0.5em 1.5em;
     }
-    figcaption {
-      font-family: "Cardo", Georgia, serif;
-      font-size: 0.95em;
-      padding: 0.5em 1.9em 0.55em;
-      margin: 0 auto;
+
+    .right {
+      float: right;
+      width: 425px;
     }
+
+    .left {
+      float: left;
+      width: 425px;
+    }
+
+    figure figcaption {
+      font-family: "Cardo", Georgia, serif;
+      font-size: 0.75em;
+      padding: 0.5em 1.9em 0.55em;
+      width: 350px;
+      margin: 0 auto;
+    } 
   }
 
   .home {
