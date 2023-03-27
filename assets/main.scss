@@ -256,3 +256,44 @@
     }
   }
 }
+
+.site-footer {
+
+    background: $lighter-gray;
+    background: linear-gradient(to bottom, $lighter-gray, $white);
+    border-top: 1px solid $light-gray;
+    padding: 1.5em 0;
+    margin-top: 2em;
+  
+    ul {
+      margin: 0;
+    }
+  
+    .partners {
+      text-align: center;
+    
+      .wrap {
+        text-align: left;
+      }
+    
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align:center;
+    
+        li {
+          display: inline-block;
+          max-height: 90px;
+          padding: 1rem;
+          position: relative;
+          text-align: center;
+    
+          img {
+            width: auto;
+            max-height: 60px;
+          }
+        }
+      }
+    }
+  
+}
