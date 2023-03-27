@@ -1,9 +1,8 @@
 ---
 layout: default
-title: About
+title: Introducing the Digital Cicognara Library
 ---
-<h1>About</h1>
-<h2>Introducing the Digital Cicognara Library</h2>
+<h1>Introducing the Digital Cicognara Library</h1>
 <figure class="right">
   <img src="/assets/images/cicognara-portrait.jpg" alt="Portrait of Cicognara"/>
   <figcaption>Lodovico Lipparini, <em>Portrait of Cicognara</em>, 1825 (Galleria d'art
