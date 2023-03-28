@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: index
 ---
-<h1>THE DIGITAL CICOGNARA LIBRARY</h1>
-<h2><em>An</em> OPEN-ACCESS COLLECTION <em>of the</em> EARLY LITERATURE OF THE ARTS</h2>
+<div class="intro">
+  <h1>The Digital Cicognara Library</h1>
+  <h2 class="small"><span class="italic">An</span> Open-Access Collection <span class="italic">of the</span> Early Literature of the Arts</h2>
+</div>
 <div class="home-catalogo-buttons">
   <ul class="browse-catalogo-list">
     <li><a class="browse-catalogo-button" href="/catalogo">Browse full Catalogo</a></li>
