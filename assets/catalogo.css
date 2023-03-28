@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(/assets/main.css);
 
 html {
   overflow: auto;
