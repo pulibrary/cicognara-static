@@ -259,41 +259,38 @@
 
 .site-footer {
 
-    background: $lighter-gray;
-    background: linear-gradient(to bottom, $lighter-gray, $white);
-    border-top: 1px solid $light-gray;
-    padding: 1.5em 0;
-    margin-top: 2em;
-  
-    ul {
-      margin: 0;
-    }
-  
-    .partners {
+  section {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+  } 
+  .partners {
       text-align: center;
-    
-      .wrap {
-        text-align: left;
-      }
-    
-      ul {
-        list-style: none;
-        padding: 0;
-        text-align:center;
-    
-        li {
-          display: inline-block;
-          max-height: 90px;
-          padding: 1rem;
-          position: relative;
-          text-align: center;
-    
-          img {
-            width: auto;
-            max-height: 60px;
-          }
-        }
-      }
-    }
+      margin-left: 0px;
+  }
+  .partners ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  .partners ul li {
+    display: inline-block;
+    max-height: 90px;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+  }
+  .partners ul li img {
+    width: auto;
+    max-height: 60px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    font-family: "Cardo", Georgia, serif;
+    font-size: 13px;
+  }
   
 }
