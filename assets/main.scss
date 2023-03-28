@@ -124,6 +124,42 @@
       float: left;
       max-width: 200px;
     }
+
+    .home-catalogo-buttons {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .browse-catalogo-button {
+      color: #fff;
+      background-color: #221E1D;
+      border-color: #141211;
+      font-weight: normal;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.428571429;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+    .browse-catalogo-list li {
+      list-style: none;
+      float: left;
+      margin: 5px 10px;
+    }
+
   }
 
   .home {
