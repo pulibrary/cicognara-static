@@ -20,7 +20,7 @@ title: Contribute
     specifications.</li>
 </ul>
 <p><a href="http://portal.getty.edu/">
-  <img src="/assets/images/getty_research_portal.png"/>
+  <img class="community-logo" src="/assets/images/getty_research_portal.png"/>
 </a></p>
 <p>An initiative of the Getty Research Institute, the Getty Research Portal is a free online
   search platform providing access to an extensive collection of digitized art history texts
