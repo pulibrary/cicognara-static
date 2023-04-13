@@ -9,7 +9,9 @@ body {
     "header header header"
     ". metadata metadata"
     "main main main"
-    "footer footer footer";
+    "footer footer footer"
+    ". site-footer site-footer"
+    ;
 }
 
 #metadata {
@@ -19,6 +21,7 @@ body {
   margin: 1em;
   padding: 1.5em;
   clear: both;
+  max-width: calc(1200px - (30px * 2));
 }
 
 iframe {
@@ -29,3 +32,4 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+  
