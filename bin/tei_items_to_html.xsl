@@ -43,16 +43,10 @@
                         <a class="page-link" href="/partners.html">Partners</a>
                         <a class="page-link" href="/research.html">Research</a>
                         <a class="page-link" href="/contributor.html">Contribute</a>
-                        <a class="page-link" href="/faq.html">FAQ</a>
-                        <a class="page-link" href="/checklist.html">Metadata</a>
                         <a class="page-link" href="/contact.html">Contact</a>
                         <a class="page-link" href="/news.html">News</a>
                     </div>
                 </nav>
-                <p>
-                    <xsl:value-of
-                        select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
-                </p>
             </div>
         </header>
     </xsl:template>

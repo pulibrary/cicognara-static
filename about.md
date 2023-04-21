@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introducing the Digital Cicognara Library
+title: About
 ---
 <h1>Introducing the Digital Cicognara Library</h1>
 <figure class="right">
