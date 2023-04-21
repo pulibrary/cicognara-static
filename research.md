@@ -2,7 +2,7 @@
 layout: default
 title: Research
 ---
-<h1>Research</h1>
+<h1>Research Page</h1>
 
 <p>With the goal of providing broad exposure of scholarship supporting the Cicognara Library and to
 enhance engagement with the collection, please explore the following bibliography related to Count
