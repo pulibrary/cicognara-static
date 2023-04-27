@@ -67,6 +67,21 @@
             
             <body>
                 <xsl:call-template name="createSiteMastHead"/>
+
+                <nav>
+                  <ul class="breadcrumb">
+                    <li>
+                      <a href="../index.html">Catalogo</a>
+                    </li>          
+                  </ul>
+                </nav>
+                
+                <header id="metadata">
+                  <div class="bibl">
+                    <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl" />
+                  </div>
+                </header>
+                
                 <main id="main">
                     <iframe allowfullscreen="true" src="{$viewpages}/{$ciconum}.html" />
                 </main>
