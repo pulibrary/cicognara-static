@@ -43,16 +43,10 @@
                         <a class="page-link" href="/partners.html">Partners</a>
                         <a class="page-link" href="/research.html">Research</a>
                         <a class="page-link" href="/contributor.html">Contribute</a>
-                        <a class="page-link" href="/faq.html">FAQ</a>
-                        <a class="page-link" href="/checklist.html">Metadata</a>
                         <a class="page-link" href="/contact.html">Contact</a>
                         <a class="page-link" href="/news.html">News</a>
                     </div>
                 </nav>
-                <p>
-                    <xsl:value-of
-                        select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
-                </p>
             </div>
         </header>
     </xsl:template>
@@ -73,6 +67,21 @@
             
             <body>
                 <xsl:call-template name="createSiteMastHead"/>
+
+                <nav>
+                  <ul class="breadcrumb">
+                    <li>
+                      <a href="../index.html">Catalogo</a>
+                    </li>          
+                  </ul>
+                </nav>
+                
+                <header id="metadata">
+                  <div class="bibl">
+                    <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl" />
+                  </div>
+                </header>
+                
                 <main id="main">
                     <iframe allowfullscreen="true" src="{$viewpages}/{$ciconum}.html" />
                 </main>
