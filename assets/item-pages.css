@@ -18,10 +18,11 @@ body {
   font-family: Helvetica, sans-serif;
   border: 1px solid #efefef;
   background: #fafafa;
-  margin: 1em;
+  margin: 1em 5em 1em 1em;
   padding: 1.5em;
   clear: both;
   max-width: calc(1200px - (30px * 2));
+  grid-column: 2 / 4;
 }
 
 iframe {
@@ -32,4 +33,4 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
-  
+
