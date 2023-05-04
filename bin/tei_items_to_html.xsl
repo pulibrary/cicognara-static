@@ -71,7 +71,7 @@
                 <nav>
                   <ul class="breadcrumb">
                     <li>
-                      <a href="../index.html">Catalogo</a>
+                      <a href="../index.html" class="browse-catalogo-button">Catalogo</a>
                     </li>          
                   </ul>
                 </nav>
