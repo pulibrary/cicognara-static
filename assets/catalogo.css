@@ -68,6 +68,16 @@ summary::-webkit-details-marker {
   border-color: #efefef;
   height: 55.95px;
 }
+.wrapper {
+  max-width: calc(1200px - (30px * 2));
+  h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.5em auto 1.5em;
+  }
+}
 
 #main {
   grid-area: main;
@@ -164,11 +174,13 @@ header h2 {
 }
 
 header .site-title {
-  line-height: 25px;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 header .site-nav {
-  line-height: 0px;
 }
 
 
@@ -216,4 +228,28 @@ header .site-nav {
 #site-footer .footer-bottom {
   font-family: "Cardo", Georgia, serif;
   font-size: 13px;
+}
+
+.browse-catalogo-button {
+  color: #fff !important;
+  background-color: #221E1D;
+  border-color: #141211;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: 0;
 }

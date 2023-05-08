@@ -52,7 +52,7 @@ The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generat
 
 ** Requirements 
 
- - Ruby 3.0.0 
+ - Ruby 3.1.2
  - Java 1.8.0 or higher
 ** Building
 #+begin_src shell
@@ -60,10 +60,11 @@ The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generat
   git clone https://github.com/pulibrary/cicognara-catalogo.git
   cp cicognara-catalogo/catalogo.tei.xml cicognara-static/tmp
   cp -R cicognara-catalogo/getty/items cicognara-static/tmp
-  cd cicognara-static/bin
-  ./generate_catalogo_page
-  ./generate_viewer_pages
-  ./generate_item_pages
+  cd cicognara-static
+  bundle install
+  bin/generate_catalogo_page
+  bin/generate_viewer_pages
+  bin/generate_item_pages
 #+end_src
 
 ** Running
