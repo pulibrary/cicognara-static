@@ -20,8 +20,8 @@ fundamental information and analysis for those who wish to make use of Cicognara
 
 <p><a href="https://arthistoriography.files.wordpress.com/2022/05/musto-intro-to-cicognara.pdf"
 >Studies on the Cicognara Library, Part 1 of a series</a>: Guest edited by Jeanne-Marie Musto (New
-York Public Library) Jeanne-Marie Musto, Introduction
-<a href="https://arthistoriography.files.wordpress.com/2022/05/musto-intro-to-cicognara.pdf">26/JMM1</a></p>
+York Public Library)</p>
+<p>Jeanne-Marie Musto, Introduction <a href="https://arthistoriography.files.wordpress.com/2022/05/musto-intro-to-cicognara.pdf">26/JMM1</a></p>
 <p>Translation: Barbara Steindl (Kunsthistorisches Institut in Florenz, Max-Planck-Institut),
 <a href="https://arthistoriography.files.wordpress.com/2022/05/steindl_1.pdf">&lsquo;The early years
 of Leopoldo Cicognara&rsquo;s book collection&rsquo; 26/BS1</a></p>
@@ -31,10 +31,10 @@ art books: the library of Leopoldo Cicognara and his bibliographic system&rsquo;
 
 <h3>Number 27 December 2022:</h3>
 
-<p>Studies on the Cicognara Library, Part 2 of a series <a href="https://arthistoriography.wordpress.com/27-dec22/" >Studies on the Cicognara Library, Part 2 of a series</a> &ndash; Guest edited by Jeanne-Marie Musto (New York Public Library)</p>
+<p><a href="https://arthistoriography.wordpress.com/27-dec22/">Studies on the Cicognara Library, Part 2 of a series</a>: Guest edited by Jeanne-Marie Musto (New York Public Library)</p>
 <p>Jeanne-Marie Musto, <a href="https://arthistoriography.files.wordpress.com/2022/11/musto-intro-cicognara-series-pt-2.pdf">&lsquo;Introduction&rsquo; 27/JM1</a></p>
-<p>Elena Granuzzo (Ca&rsquo; Foscari University of Venice), <a href=https://arthistoriography.files.wordpress.com/2022/11/granuzzo.pdf >&lsquo;Leopoldo Cicognara and his library: Formation and significance of a collection (I)&rsquo; 27/EG1</a></p>
-<p>Barbara Steindl (Kunsthistorisches Institut in Florenz, Max-Planck-Institut), <a href=https://arthistoriography.files.wordpress.com/2022/12/steindl.pdf >&lsquo;Cicognara’s views on fifteenth-century sculpture in light of his art library&rsquo; 27/BS1</a></p>
+<p>Elena Granuzzo (Ca&rsquo; Foscari University of Venice), <a href="https://arthistoriography.files.wordpress.com/2022/11/granuzzo.pdf">&lsquo;Leopoldo Cicognara and his library: Formation and significance of a collection (I)&rsquo; 27/EG1</a></p>
+<p>Barbara Steindl (Kunsthistorisches Institut in Florenz, Max-Planck-Institut), <a href="https://arthistoriography.files.wordpress.com/2022/12/steindl.pdf">&lsquo;Cicognara’s views on fifteenth-century sculpture in light of his art library&rsquo; 27/BS1</a></p>
 
 <h3>Translations to be published on 1 June 2023:</h3>
 <p>PART 2: Title translated as: &ldquo;Leopoldo Cicognara and his Library: Formation and

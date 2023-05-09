@@ -68,10 +68,17 @@
     margin: 1.5em auto;
     h2 {
       font-family: Helvetica, sans-serif;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 700;
-      text-align: center;
-      margin: 0.5em auto 1.5em;
+      text-align: left;
+      margin: 1.5em auto 0.5em;
+    }
+    h3 {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: left;
+      padding-top: 1em;
     }
 
     table.partners { border: none; }
