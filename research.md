@@ -29,12 +29,12 @@ of Leopoldo Cicognara&rsquo;s book collection&rsquo; 26/BS1</a></p>
 <a href="https://arthistoriography.files.wordpress.com/2022/05/steindl-trans.pdf">&lsquo;Collecting
 art books: the library of Leopoldo Cicognara and his bibliographic system&rsquo; 26/BS2</a></p>
 
-<h3>Translations to be published on 1 December 2022:</h3>
+<h3>Number 27 December 2022:</h3>
 
-<p>PART 1: Title translated as: &ldquo;Leopoldo Cicognara and his Library: Formation and
-Significance of a Collection.&rdquo; Elena Granuzzo. &quot;Leopoldo Cicognara e la sua Biblioteca:
-formazione e significato di una collezione,&quot; parts I and II. <i>La Bibliofil&iacute;a</i>,
-vol. 114 (2012), pp. 231-272 and pp. 371-412.</p>
+<p>Studies on the Cicognara Library, Part 2 of a series <a href="https://arthistoriography.wordpress.com/27-dec22/" >Studies on the Cicognara Library, Part 2 of a series</a> &ndash; Guest edited by Jeanne-Marie Musto (New York Public Library)</p>
+<p>Jeanne-Marie Musto, <a href="https://arthistoriography.files.wordpress.com/2022/11/musto-intro-cicognara-series-pt-2.pdf">&lsquo;Introduction&rsquo; 27/JM1</a></p>
+<p>Elena Granuzzo (Ca&rsquo; Foscari University of Venice), <a href=https://arthistoriography.files.wordpress.com/2022/11/granuzzo.pdf >&lsquo;Leopoldo Cicognara and his library: Formation and significance of a collection (I)&rsquo; 27/EG1</a></p>
+<p>Barbara Steindl (Kunsthistorisches Institut in Florenz, Max-Planck-Institut), <a href=https://arthistoriography.files.wordpress.com/2022/12/steindl.pdf >&lsquo;Cicognara’s views on fifteenth-century sculpture in light of his art library&rsquo; 27/BS1</a></p>
 
 <h3>Translations to be published on 1 June 2023:</h3>
 <p>PART 2: Title translated as: &ldquo;Leopoldo Cicognara and his Library: Formation and
@@ -93,6 +93,7 @@ Collezione (I).&quot; <i>La Bibliofil&iacute;a</i> 114, no. 2 (2012): 231-272.</
 Collezione (II).&quot; <i>La Bibliofil&iacute;a</i> 114, no. 3 (2012): 371-412.</p>
 <p>Haskell, Francis, <i>History and Its Images: Art and the Interpretation of the Past</i>. New
 Haven: Yale University Press, 1993. (193-200)</p>
+<p>Hatheway, Holly, Roger Lawson, and Charlotte Oertel. &quot;The Digital chicognara Library: transforming a 19th&ndash;century resource for the digital age.&quot; <i>Art libraries journal,</i> no. 4, volume 5, issue 2 (2020): 47-54.</p> 
 <p>Holly, Michael Ann. Panofsky and the Foundations of Art History. Ithaca, N.Y.: Cornell University
 Press, 1984.</p>
 <p>Irvine, Betty Jo and William B. Walker. &quot;Wolfgang M. Freitag, 1924&ndash;2012: A
