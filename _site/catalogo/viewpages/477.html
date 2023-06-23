@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ac960f4b-7318-4daa-84df-50131dd942d8/manifest"}],
+               "catalog": [{"manifestId":"https://media.getty.edu/iiif/manifest/3b0490d9-4712-4b2b-aa60-78ee16057dc7https://media.getty.edu/iiif/manifest/60ff0ef1-f15c-4ebc-9d47-2424b46006ab","provider":"Getty Research Institute"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/leclerc1714bd2/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ac960f4b-7318-4daa-84df-50131dd942d8/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/leclerc1714bd1/manifest.json","provider":"Heidelberg University Library"}]
+                });
+      </script>
+    </body>
+</html>

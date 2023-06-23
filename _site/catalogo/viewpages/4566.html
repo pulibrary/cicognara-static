@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ad093483-5fad-490c-9519-e979f3c41a2a/manifest"}],
+               "catalog": [{"manifestId":"https://imagesdigitalcollections.frick.org/compare/barcode/31072002713255","provider":"Frick Art Reference Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ad093483-5fad-490c-9519-e979f3c41a2a/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [],
+               "catalog": [{"manifestId":"https://iiif.lib.harvard.edu/manifests/drs:481795126","provider":"Harvard Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/9a709b2e-2b1d-44ad-af3b-5e582363c004","provider":"Getty Research Institute"}]
+                });
+      </script>
+    </body>
+</html>

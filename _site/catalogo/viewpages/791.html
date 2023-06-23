@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/95437ca2-d2ad-4ed2-b3d0-58b5a2b06a75/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/17fe84fd-53c6-402a-b23b-4244351c0cba/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/5f26813f-0c35-4fe1-a0f0-cdf1f451fad3/manifest"}],
+               "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lipsius1584a/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/9adc1ae0-d0d4-4f7f-bfa1-9fa1e930fbf5/manifest","provider":"Princeton University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/d429086d-22dd-4a3b-a4b0-8713c7b54585","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/95437ca2-d2ad-4ed2-b3d0-58b5a2b06a75/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/17fe84fd-53c6-402a-b23b-4244351c0cba/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lipsius1584/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/a81688b8-b8b5-45d0-89ab-d6e5811cfae1","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/5f26813f-0c35-4fe1-a0f0-cdf1f451fad3/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

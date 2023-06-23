@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/16c2319d-c7a0-4ac6-9f69-dd9277a8d0c5/manifest"}],
+               "catalog": [{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lenoir1802bd3/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lenoir1805bd4/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lenoir1806bd5/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/16c2319d-c7a0-4ac6-9f69-dd9277a8d0c5/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lenoir1800bd1/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lenoir1803bd6/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/lenoir1801bd2/manifest.json","provider":"Heidelberg University Library"}]
+                });
+      </script>
+    </body>
+</html>

@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(/assets/main.css);
+
+html {
+  overflow: auto;
+}
+
+iframe {
+  display: block;
+  width: 50vw;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+body {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "side main main"
+    "footer footer footer";
+  color: #333;
+  font-family: "Cardo", Georgia, serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+a {
+  color: #971c06;
+  text-decoration: none;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+a:hover {
+  box-shadow: none;
+  color: #221e1d;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #971c06;
+}
+
+summary {
+  padding-top: 1em;
+  cursor: pointer;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display:none;
+}
+
+.note {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0 15px;
+  margin: 10px 0 5px;
+}
+
+#pageheader {
+  grid-area: header;
+  background-color: #e6e8db;
+  border-color: #efefef;
+  height: 55.95px;
+}
+.wrapper {
+  max-width: calc(1200px - (30px * 2));
+  h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.5em auto 1.5em;
+  }
+}
+
+#main {
+  grid-area: main;
+}
+
+#side {
+  grid-area: side;
+}
+
+#pageFooter {
+  grid-area: footer;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #971c06;
+  text-decoration: none;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  grid-column-start: 1;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+body {
+  font-family: "Gentium Basic", serif;
+}
+.toc {
+  font-size: small;
+}
+
+div.note {
+  font-size: inherit;
+}
+span.title {
+  font-style: italic;
+}
+ol.catalog {
+  list-style-type: none;
+}
+
+ol.catalog li {
+  margin: 0 0 6px 0;
+}
+span.ciconum {
+  font-weight: bold;
+  padding-right: 5px;
+}
+h1,
+h2 {
+  font-family: "Gentium Basic", serif;
+}
+.pageBreak {
+  margin: 10px 0 0 0;
+  padding: 10px 0;
+  border-top: 1px dotted #c5c5c5;
+  text-align: right;
+}
+
+header h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0.75em;
+}
+
+header .site-title {
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header .site-nav {
+}
+
+
+#site-footer {
+  grid-area: footer;
+  width: 100vw;
+  border-top: 1px solid #e8e8e8;
+}
+
+#site-footer section {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+#site-footer .partners {
+  text-align: center;
+  margin-left: 0px;
+}
+
+#site-footer .partners ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+  
+#site-footer .partners ul li {
+  display: inline-block;
+  max-height: 90px;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+#site-footer .partners ul li img {
+  width: auto;
+  max-height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+#site-footer .footer-bottom {
+  font-family: "Cardo", Georgia, serif;
+  font-size: 13px;
+}
+
+.browse-catalogo-button {
+  color: #fff !important;
+  background-color: #221E1D;
+  border-color: #141211;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: 0;
+}

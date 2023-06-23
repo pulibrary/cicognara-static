@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/c1ffec16-f8a7-41de-96d4-26dc2f0832b7/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/9b228523-4709-4138-84a0-1615d9b88bc0/manifest"}],
+               "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/28fc115a-604e-4659-bd7c-20c6fd0f8d06/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/c1ffec16-f8a7-41de-96d4-26dc2f0832b7/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/desgodets1682/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/9b228523-4709-4138-84a0-1615d9b88bc0/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

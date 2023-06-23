@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/b0a9fca3-a4ee-4a26-9b23-4723d91a17df/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ec48e648-e048-4b5f-a7f4-0d13c29d497c/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/7ad2dda6-4a4b-474e-a863-6f36f97e8141/manifest"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/fed3228f-7c12-4322-9724-961f1bf01dae/manifest"}],
+               "catalog": [{"manifestId":"https://media.getty.edu/iiif/manifest/679d8dc2-f6c7-4599-bf08-93b3261c392b","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/b0a9fca3-a4ee-4a26-9b23-4723d91a17df/manifest","provider":"Princeton University Library"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/ec48e648-e048-4b5f-a7f4-0d13c29d497c/manifest","provider":"Princeton University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/1b290a99-9f29-42a8-ac5d-164cc36fff4b","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/7ad2dda6-4a4b-474e-a863-6f36f97e8141/manifest","provider":"Princeton University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/7dd5227b-84bd-43ed-83f1-a9a5816ddfbd","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/fed3228f-7c12-4322-9724-961f1bf01dae/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>

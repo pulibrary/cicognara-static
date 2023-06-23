@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/63598bec-b115-435a-b875-9672cd49d879/manifest"}],
+               "catalog": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/63598bec-b115-435a-b875-9672cd49d879/manifest","provider":"Princeton University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/orleons1784bd2/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://digi.ub.uni-heidelberg.de/diglit/iiif/orleons1780bd1/manifest.json","provider":"Heidelberg University Library"},{"manifestId":"https://media.getty.edu/iiif/manifest/ba9da8db-5a73-45f7-9f46-09c3b9f5cb4ahttps://media.getty.edu/iiif/manifest/25fc2844-7431-40d1-8dff-3bc75fb81606","provider":"Getty Research Institute"}]
+                });
+      </script>
+    </body>
+</html>
