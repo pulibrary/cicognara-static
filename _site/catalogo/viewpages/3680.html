@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Cico digital editions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
+        <meta charset="UTF-8"></meta>
+         <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    </head>
+    <body>
+      <div id="the-viewer"/>
+      <script type="text/javascript">
+        const mirador = Mirador.viewer({
+               "id": "the-viewer",
+               "windows": [{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/49f008c0-57d8-406c-bf6f-3000d365be4b/manifest"}],
+               "catalog": [{"manifestId":"https://media.getty.edu/iiif/manifest/db1fc61d-83e7-4400-a8ad-fc85494dc593","provider":"Getty Research Institute"},{"manifestId":"https://figgy.princeton.edu/concern/scanned_resources/49f008c0-57d8-406c-bf6f-3000d365be4b/manifest","provider":"Princeton University Library"}]
+                });
+      </script>
+    </body>
+</html>
