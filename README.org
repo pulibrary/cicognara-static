@@ -1,4 +1,6 @@
 #+title: Digital Cicognara Library 2.0
+A Jekyll-based static site to replace [[https://github.com/pulibrary/cicognara-rails][Cicognara Rails]]. *Note:* Jekyll's ~/_site/~ directory is checked in, so changes are pre-rendered and Jekyll is
+not needed unless you need to update or reformat.
 
 * Background
 Since 2015 or so, the Princeton University Library has collaborated with a consortium of libraries and research institutions, with funding from the Kress Foundation, on a project called the [[https://cicognara.org/][Digital Cicognara Library]].  Labeled "an open-access collection of the early literature of the arts," this project combines two distinct efforts: (1) to create a union catalog of copies and similar editions of some 5,000 imprints collected by Count Leopoldo Cicognara (1767–1834) and itemized in his /Catalogo ragionato dei libri d’arte e d’antichità/; (2) to build a web resource that enables users to read and compare digital facsimiles of these titles.
