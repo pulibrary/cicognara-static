@@ -227,6 +227,7 @@
 
     <xsl:template match="tei:div[@type = 'section']" mode="section">
         <section id="{@n}">
+            <xsl:apply-templates select="tei:head[1]"/>
             <xsl:apply-templates select="tei:head[1]/following-sibling::*"/>
         </section>
     </xsl:template>

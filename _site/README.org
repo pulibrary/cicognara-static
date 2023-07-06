@@ -1,4 +1,6 @@
 #+title: Digital Cicognara Library 2.0
+A Jekyll-based static site to replace [[https://github.com/pulibrary/cicognara-rails][Cicognara Rails]]. *Note:* Jekyll's ~/_site/~ directory is checked in, so changes are pre-rendered and Jekyll is
+not needed unless you need to update or reformat.
 
 * Background
 Since 2015 or so, the Princeton University Library has collaborated with a consortium of libraries and research institutions, with funding from the Kress Foundation, on a project called the [[https://cicognara.org/][Digital Cicognara Library]].  Labeled "an open-access collection of the early literature of the arts," this project combines two distinct efforts: (1) to create a union catalog of copies and similar editions of some 5,000 imprints collected by Count Leopoldo Cicognara (1767–1834) and itemized in his /Catalogo ragionato dei libri d’arte e d’antichità/; (2) to build a web resource that enables users to read and compare digital facsimiles of these titles.
@@ -51,26 +53,28 @@ The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generat
 * How to Build and Run
 
 ** Requirements 
-
  - Ruby 3.1.2
- - Java 1.8.0 or higher
-** Building
+ - Java 1.8.0 or higher (for updating HTML pages only)
+
+** Basic Setup and Running Jekyll
 #+begin_src shell
   git clone https://github.com/pulibrary/cicognara-static.git
-  git clone https://github.com/pulibrary/cicognara-catalogo.git
-  cp cicognara-catalogo/catalogo.tei.xml cicognara-static/tmp
-  cp -R cicognara-catalogo/getty/items cicognara-static/tmp
   cd cicognara-static
   bundle install
+  bundle exec jekyll serve # to run Jekyll web server
+  bundle exec jekyll build # to update static site (in _site directory)
+#+end_src
+
+Preview locally at http://127.0.0.1:4000/.
+
+** Updating HTML Pages
+#+begin_src shell
+  cd cicognara-static/tmp
+  git clone https://github.com/pulibrary/cicognara-catalogo.git
+  cp cicognara-catalogo/catalogo.tei.xml .
+  cp -R cicognara-catalogo/getty/items .
+  cd ..
   bin/generate_catalogo_page
   bin/generate_viewer_pages
   bin/generate_item_pages
 #+end_src
-
-** Running
-#+begin_src shell
-  cd ..
-  jekyll serve
-#+end_src
-
-Preview locally at 127.0.0.7:4000.
