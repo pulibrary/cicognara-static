@@ -265,27 +265,15 @@
     </xsl:template>
 
     <xsl:template match="tei:label">
-        <xsl:variable name="ciconum">
-            <xsl:value-of select="parent::tei:item/@n"/>
-        </xsl:variable>
-        <xsl:variable name="itemid" select="parent::tei:item/@xml:id"/>
-        <a href="itempages/{$ciconum}.html">
-            <span class="ciconum">
-                <xsl:apply-templates/>
-            </span>
-        </a>
+        <span class="ciconum">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="tei:label" mode="standalone">
-        <xsl:variable name="ciconum">
-            <xsl:value-of select="parent::tei:item/@n"/>
-        </xsl:variable>
-        <xsl:variable name="itemid" select="parent::tei:item/@xml:id"/>
-        <a href="../itempages/{$itemid}.html">
-            <span class="ciconum">
-                <xsl:apply-templates/>
-            </span>
-        </a>
+        <span class="ciconum">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="tei:bibl">
