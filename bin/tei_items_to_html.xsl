@@ -2,21 +2,19 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
-    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    xmlns:tei="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="xs math xd"
-    version="3.0">
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="xs math xd" version="3.0">
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Feb 1, 2023</xd:p>
             <xd:p><xd:b>Author:</xd:b> cwulfman</xd:p>
-            <xd:p></xd:p>
+            <xd:p/>
         </xd:desc>
     </xd:doc>
-    
+
     <xsl:output method="html" doctype-system="about:legacy-compat" indent="yes"/>
-    
-    
+
+
     <xsl:param name="viewpages">../viewpages</xsl:param>
     <xsl:param name="css">../../assets/item-pages.css</xsl:param>
 
@@ -39,80 +37,209 @@
                     </label>
 
                     <div class="trigger">
-                        <a class="page-link" href="/about.html">About</a>
-                        <a class="page-link" href="/partners.html">Partners</a>
-                        <a class="page-link" href="/research.html">Research</a>
-                        <a class="page-link" href="/contributor.html">Contribute</a>
-                        <a class="page-link" href="/contact.html">Contact</a>
-                        <a class="page-link" href="/news.html">News</a>
+                        <a class="page-link" href="/catalogo">Catalogo</a>
                     </div>
                 </nav>
             </div>
         </header>
     </xsl:template>
-    
+
     <xsl:template match="tei:teiCorpus">
         <xsl:variable name="ciconum">
-            <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type='cico']"/>
+            <xsl:value-of
+                select="tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type = 'cico']"/>
         </xsl:variable>
         <xsl:result-document href="{$ciconum}.html" indent="yes">
-        <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-                <title>
-                    <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title" />
-                </title>
-                <link rel="stylesheet" href="{$css}"/>
-            </head>
-            
-            <body>
-                <xsl:call-template name="createSiteMastHead"/>
+            <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <title>
+                        <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                    </title>
+                    <link rel="stylesheet" href="{$css}"/>
+                </head>
 
-                <nav>
-                  <ul class="breadcrumb">
-                    <li>
-                      <a href="../index.html" class="browse-catalogo-button">Catalogo</a>
-                    </li>          
-                  </ul>
-                </nav>
-                
-                <header id="metadata">
-                  <div class="bibl">
-                    <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl" />
-                  </div>
-                </header>
-                
-                <main id="main">
-                    <iframe allowfullscreen="true" src="{$viewpages}/{$ciconum}.html" />
-                </main>
-                <xsl:call-template name="createSiteFooter"/>
-            </body>
-        </html>
+                <body>
+                    <xsl:call-template name="createSiteMastHead"/>
+
+                    <main id="main">
+                        <h1>
+                            <xsl:value-of select="concat('Catalogo Cicognara item ', $ciconum)"/>
+                        </h1>
+                        <iframe allowfullscreen="true" src="{$viewpages}/{$ciconum}.html"/>
+                    </main>
+                    <section id="side">
+                        <xsl:apply-templates select="tei:TEI/tei:teiHeader"/>
+                    </section>
+                    
+                    <xsl:call-template name="createSiteFooter"/>
+                </body>
+            </html>
+        </xsl:result-document>
+    </xsl:template>
+
+    <xsl:template match="tei:teiHeader">
+        <dl xmlns="http://www.w3.org/1999/xhtml">
+            <dt>DCL number</dt>
+            <dd><xsl:value-of select="tei:fileDesc/tei:publicationStmt/tei:idno[@type='dcl']"/></dd>
+            <dt>title</dt>
+            <dd>
+                <xsl:apply-templates select="tei:fileDesc/tei:titleStmt/tei:title"/>
+            </dd>
+            <dt>contributor</dt>
+            <dd>
+                <xsl:apply-templates select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:orgName"/>
+            </dd>
+            <xsl:choose>
+                <xsl:when test="count(tei:fileDesc/tei:publicationStmt/tei:authority) = 1">
+                    <dt>authority</dt>
+                    <dd><xsl:apply-templates select="tei:fileDesc/tei:publicationStmt/tei:authority"></xsl:apply-templates>
+                    </dd> 
+                </xsl:when>
+                <xsl:when test="count(tei:fileDesc/tei:publicationStmt/tei:authority) > 1">
+                    <dt>authorities</dt>
+                    <dd>
+                        <ul>
+                            <xsl:for-each select="tei:fileDesc/tei:publicationStmt/tei:authority">
+                                <li><xsl:value-of select="current()"/></li>
+                            </xsl:for-each>
+                        </ul>
+                    </dd>
+                </xsl:when>
+            </xsl:choose>
+            <dt>links</dt>
+            <dd>
+                <ul>
+                    <xsl:for-each select="tei:fileDesc/tei:publicationStmt/tei:idno[@type='URI']">
+                        <li>
+                            <a href="{current()}"><xsl:value-of select="current()"/></a>
+                        </li>
+                    </xsl:for-each>
+                </ul>
+            </dd>
+
+
+        </dl>
+
+    </xsl:template>
+
+
+    <xsl:template match="tei:teiCorpusOld">
+        <xsl:variable name="ciconum">
+            <xsl:value-of
+                select="tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type = 'cico']"/>
+        </xsl:variable>
+        <xsl:result-document href="{$ciconum}.html" indent="yes">
+            <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <title>
+                        <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                    </title>
+                    <link rel="stylesheet" href="{$css}"/>
+                </head>
+
+                <body>
+                    <xsl:call-template name="createSiteMastHead"/>
+
+                    <nav>
+                        <ul class="breadcrumb">
+                            <li>
+                                <a href="../index.html" class="browse-catalogo-button">Catalogo</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <header id="metadata">
+                        <div class="bibl">
+                            <xsl:apply-templates
+                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl"/>
+                        </div>
+                    </header>
+
+                    <main id="main">
+                        <iframe allowfullscreen="true" src="{$viewpages}/{$ciconum}.html"/>
+                    </main>
+                    <xsl:call-template name="createSiteFooter"/>
+                </body>
+            </html>
         </xsl:result-document>
     </xsl:template>
 
     <xd:doc>
-      <xd:desc>
-        <xd:p>A named template to generate the site footer</xd:p>
-      </xd:desc>
+        <xd:desc>
+            <xd:p>A named template to generate the site footer</xd:p>
+        </xd:desc>
     </xd:doc>
     <xsl:template name="createSiteFooter">
-      <footer id="site-footer">
-        <section class="partners" id="partners">
-          <ul>
-            <li><a href="https://www.vaticanlibrary.va/home.php" target="_blank"><img src="/assets/images/vatican.png" alt="Biblioteca Apostolica Vaticana" title="Biblioteca Apostolica Vaticana" /></a></li>
-            <li><a href="http://library.columbia.edu/" target="_blank"><img src="/assets/images/columbia.png" alt="Columbia University Library" title="Columbia University Library" /></a></li>
-            <li><a href="http://www.frick.org/research/library" target="_blank"><img src="/assets/images/frick.png" alt="Frick Art Reference Library" title="Frick Art Reference Library" /></a></li>
-            <li><a href="https://www.getty.edu/research/" target="_blank"><img src="/assets/images/getty.png" alt="Getty Research Institute" title="Getty Research Institute" /></a></li>
-            <li><a href="http://library.harvard.edu/" target="_blank"><img src="/assets/images/harvard.png" alt="Harvard University Library" title="Harvard University Library" /></a></li>
-            <li><a href="http://www.ub.uni-heidelberg.de/" target="_blank"><img src="/assets/images/heidelberg.png" alt="Heidelberg University Library" title="Heidelberg University Library" /></a></li>
-            <li><a href="https://library.nga.gov/" target="_blank"><img src="/assets/images/national_gallery_of_art.png" alt="National Gallery of Art Library" title="National Gallery of Art Library" /></a></li>
-            <li><a href="http://library.princeton.edu/" target="_blank"><img src="/assets/images/princeton.png" alt="Princeton University Library" title="Princeton University Library" /></a></li>
-            <li><a href="http://www.library.illinois.edu/" target="_blank"><img src="/assets/images/illinois.png" alt="University of Illinois at Urbana-Champaign Library" title="University of Illinois at Urbana-Champaign Library" /></a></li>
-          </ul>
-          <span class="footer-bottom">Copyright <xsl:value-of  select="year-from-date(current-date())"/> The Trustees of Princeton University. All rights reserved.</span>
-        </section>
-      </footer>
+        <footer id="site-footer">
+            <section class="partners" id="partners">
+                <ul>
+                    <li>
+                        <a href="https://www.vaticanlibrary.va/home.php" target="_blank">
+                            <img src="/assets/images/vatican.png"
+                                alt="Biblioteca Apostolica Vaticana"
+                                title="Biblioteca Apostolica Vaticana"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://library.columbia.edu/" target="_blank">
+                            <img src="/assets/images/columbia.png" alt="Columbia University Library"
+                                title="Columbia University Library"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.frick.org/research/library" target="_blank">
+                            <img src="/assets/images/frick.png" alt="Frick Art Reference Library"
+                                title="Frick Art Reference Library"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.getty.edu/research/" target="_blank">
+                            <img src="/assets/images/getty.png" alt="Getty Research Institute"
+                                title="Getty Research Institute"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://library.harvard.edu/" target="_blank">
+                            <img src="/assets/images/harvard.png" alt="Harvard University Library"
+                                title="Harvard University Library"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.ub.uni-heidelberg.de/" target="_blank">
+                            <img src="/assets/images/heidelberg.png"
+                                alt="Heidelberg University Library"
+                                title="Heidelberg University Library"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://library.nga.gov/" target="_blank">
+                            <img src="/assets/images/national_gallery_of_art.png"
+                                alt="National Gallery of Art Library"
+                                title="National Gallery of Art Library"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://library.princeton.edu/" target="_blank">
+                            <img src="/assets/images/princeton.png"
+                                alt="Princeton University Library"
+                                title="Princeton University Library"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.library.illinois.edu/" target="_blank">
+                            <img src="/assets/images/illinois.png"
+                                alt="University of Illinois at Urbana-Champaign Library"
+                                title="University of Illinois at Urbana-Champaign Library"/>
+                        </a>
+                    </li>
+                </ul>
+                <span class="footer-bottom">Copyright <xsl:value-of
+                        select="year-from-date(current-date())"/> The Trustees of Princeton
+                    University. All rights reserved.</span>
+            </section>
+        </footer>
     </xsl:template>
-   
+
 </xsl:stylesheet>
