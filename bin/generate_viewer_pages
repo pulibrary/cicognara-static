@@ -16,7 +16,9 @@ template = %(
          <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
     </head>
     <body>
-      <div id="the-viewer"/>
+          <div id="the-viewer"/>
+    <% if windows && catalog %>
+
       <script type="text/javascript">
         const mirador = Mirador.viewer({
                "id": "the-viewer",
@@ -24,7 +26,10 @@ template = %(
                "catalog": <%= catalog %>
                 });
       </script>
-    </body>
+    <% else %>
+    <p>No digital editions are available.</p>
+    <% end %>
+        </body>
 </html>
 )
 
@@ -66,8 +71,8 @@ Dir["#{sourcedir}/*.xml"].each do |file|
     }
   end
 
-  catalog = catalog_arr.to_json
-  windows = windows_arr.to_json
+  catalog = catalog_arr.empty? ? nil : catalog_arr.to_json
+  windows = windows_arr.empty? ? nil : windows_arr.to_json
 
   html = ERB.new(template).result(binding)
   File.open("#{targetdir}/#{ciconum}.html", "w") { |f| f.write(html) }
