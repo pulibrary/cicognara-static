@@ -8,7 +8,7 @@ html {
 
 iframe {
   display: block;
-  width: 50vw;
+  width: 65vw;
   height: 50vh;
   overflow-y: auto;
 }
@@ -18,7 +18,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
+    grid-template-areas:
     "header header header"
     "side main main"
     "footer footer footer";
@@ -168,7 +168,7 @@ h2 {
 
 header h2 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0 0 0.75em;
 }
@@ -197,7 +197,7 @@ header .site-nav {
   padding: 10px 20px;
   margin-left: auto;
   margin-right: auto;
-} 
+}
 
 #site-footer .partners {
   text-align: center;
@@ -209,7 +209,7 @@ header .site-nav {
   padding: 0;
   text-align: center;
 }
-  
+
 #site-footer .partners ul li {
   display: inline-block;
   max-height: 90px;
