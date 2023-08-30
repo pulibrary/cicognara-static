@@ -1,36 +1,20 @@
 @import "./catalogo.css";
 
-body {
-  background-color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header"
-    ". metadata metadata"
-    "main main main"
-    "footer footer footer"
-    ". site-footer site-footer"
-    ;
-}
 
-#metadata {
-  font-family: Helvetica, sans-serif;
-  border: 1px solid #efefef;
-  background: #fafafa;
-  margin: 1em 5em 1em 1em;
-  padding: 1.5em;
-  clear: both;
-  max-width: calc(1200px - (30px * 2));
-  grid-column: 2 / 4;
-}
+dl {
+  display: flex;
+  flex-flow: row wrap;
 
-iframe {
-  display: block;
-  width: 75vw;
-  height: 50vh;
-  overflow-y: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
+dt {
+  text-align: right;
+  flex-basis: 20%;
+  padding: 4px 8px 4px 0px;
 
+}
+dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 4px 4px 4px 8px;
+  }
