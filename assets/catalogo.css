@@ -10,7 +10,7 @@ iframe {
   display: block;
   width: 65vw;
   height: 90vh;
-  overflow-y:scroll;
+  overflow-y: auto;
   margin-right:10px;
 }
 
