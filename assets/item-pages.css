@@ -18,11 +18,12 @@ body {
   font-family: "Playfair Display", Georgia, serif;
   border: 1px solid #efefef;
   background: #fafafa;
-  margin: 1em 5em 1em 1em;
   padding: 1.5em;
   clear: both;
-  max-width: calc(1200px - (30px * 2));
-  grid-column: 2 / 4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  min-width: 200px;
 }
 
 iframe {
@@ -32,5 +33,43 @@ iframe {
   overflow-y: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.home-catalogo-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.browse-catalogo-button {
+  color: #fff;
+  background-color: #221E1D;
+  border-color: #141211;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.browse-catalogo-list {
+  display: flex;
+  list-style: none;
+}
+
+.browse-catalogo-list li {
+  margin: 0 10px;
 }
 
