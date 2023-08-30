@@ -9,19 +9,20 @@ html {
 iframe {
   display: block;
   width: 65vw;
-  height: 50vh;
-  overflow-y: auto;
+  height: 90vh;
+  overflow-y:scroll;
+  margin-right:10px;
 }
 
 body {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "side main main"
-    "footer footer footer";
+    "header header"
+    "side main"
+    "footer footer";
   color: #333;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 16px;
@@ -82,6 +83,7 @@ summary::-webkit-details-marker {
 
 #main {
   grid-area: main;
+  padding-right:10px;
 }
 
 #side {
