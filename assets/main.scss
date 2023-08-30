@@ -310,11 +310,13 @@
 
 .site-footer {
 
+  padding: 0px;
+
   section {
     width: 100%;
     display: block;
     position: relative;
-    padding: 10px 20px;
+    padding: 5px 10px;
   } 
   .partners {
       text-align: center;
@@ -327,8 +329,8 @@
   }
   .partners ul li {
     display: inline-block;
-    max-height: 90px;
-    padding: 1rem;
+    max-height: 45px;
+    padding: 0.5rem;
     position: relative;
     text-align: center;
   }

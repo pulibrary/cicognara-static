@@ -68,6 +68,7 @@ summary::-webkit-details-marker {
   border-color: #efefef;
   height: 55.95px;
 }
+
 .wrapper {
   max-width: calc(1200px - (30px * 2));
   h1 {
@@ -183,18 +184,25 @@ header .site-title {
 header .site-nav {
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 #site-footer {
+  margin-top: auto;
   grid-area: footer;
   width: 100vw;
   border-top: 1px solid #e8e8e8;
+  padding: 0px;
 }
 
 #site-footer section {
   width: 100%;
   display: block;
   position: relative;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -212,8 +220,8 @@ header .site-nav {
 
 #site-footer .partners ul li {
   display: inline-block;
-  max-height: 90px;
-  padding: 1rem;
+  max-height: 45px;
+  padding: 0.5rem;
   position: relative;
   text-align: center;
 }
