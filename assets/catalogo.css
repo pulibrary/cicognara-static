@@ -23,8 +23,8 @@ body {
     "side main main"
     "footer footer footer";
   color: #333;
-  font-family: "Cardo", Georgia, serif;
-  font-size: 13px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -55,7 +55,7 @@ summary::-webkit-details-marker {
 }
 
 .note {
-  font-family: Helvetica, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 14px;
   line-height: 1.5em;
   padding: 0 15px;
@@ -71,7 +71,7 @@ summary::-webkit-details-marker {
 .wrapper {
   max-width: calc(1200px - (30px * 2));
   h1 {
-    font-family: Helvetica, sans-serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -132,7 +132,7 @@ dd {
 }
 
 body {
-  font-family: "Gentium Basic", serif;
+  font-family: "Playfair Display", Georgia, serif;
 }
 .toc {
   font-size: small;
@@ -157,7 +157,7 @@ span.ciconum {
 }
 h1,
 h2 {
-  font-family: "Gentium Basic", serif;
+  font-family: "Playfair Display", Georgia, serif;
 }
 .pageBreak {
   margin: 10px 0 0 0;
@@ -167,7 +167,7 @@ h2 {
 }
 
 header h2 {
-  font-family: Helvetica, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 30px;
   font-weight: bold;
   margin: 0 0 0.75em;
@@ -226,7 +226,7 @@ header .site-nav {
 }
 
 #site-footer .footer-bottom {
-  font-family: "Cardo", Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 13px;
 }
 
