@@ -64,7 +64,7 @@
 
                     <main id="main">
                         <h1>
-                            <xsl:value-of select="concat('Catalogo Cicognara item ', $ciconum)"/>
+                            <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl" />
                         </h1>
                         <iframe allowfullscreen="true" src="{$viewpages}/{$ciconum}.html"/>
                     </main>
