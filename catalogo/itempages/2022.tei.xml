@@ -1,0 +1,21 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tei="http://www.tei-c.org/ns/1.0" lang="it">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Catalogo Cicognara Number 2022</title>
+      <link rel="stylesheet" href="../../assets/item-pages.css">
+   </head>
+   <body>
+      <header id="metadata">
+         <ul>
+            <li xmlns="">Epitome in Divae Parthenices Mariae historiam [microform] / ab Alberto Durero Norico
+               per figuras digestam cum versibus annexis Chelidonii.</li>
+            <li xmlns="">Passio domini nostri Jesu. ex Hieronymo Paduano. Dominico Mancino. Sedulio. et Baptista
+               Mantuano [microform] / per fratrem Chelidonium collecta. ; cum figuris Alberti Dureri
+               Norici Pictoris. ...</li>
+            <li xmlns="">Apocalipsis cu[m] figuris [microform].</li>
+         </ul>
+      </header>
+   </body>
+</html>

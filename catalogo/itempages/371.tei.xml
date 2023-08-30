@@ -1,0 +1,27 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tei="http://www.tei-c.org/ns/1.0" lang="it">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Catalogo Cicognara Number 371</title>
+      <link rel="stylesheet" href="../../assets/item-pages.css">
+   </head>
+   <body>
+      <header id="metadata">
+         <ul>
+            <li xmlns="">Libri De re ædificatoria dece[m] : opus integru[m] et absolutu[m], diligenterq[ue]
+               recognitum : distinctum est aute[m] nuper opus ipsum totum, quod antea peruia legebatur
+               oratione, per capita, no[n]nullis e textu reb[us] insignibus depromtis et in margine
+               annotatis : facta est etia[m] capitu[m] ipsoru[um] no[n] inelegans tabula cu[m] dictionu[m]
+               et ipsaru[m] rerum scitu dignarum que in margine sunt, indice admodum luculento /
+               Leonis Baptistae Alberti Flore[n]tini viri clarissimi.</li>
+            <li xmlns="">Libri De re ædificatoria decẽ : opus integrũ et absolutũ, diligenterq[ue] recognitum
+               : distinctum est autẽ nuper opus ipsum totum, quod antea peruia legebatur oratione,
+               per capita, nõnullis e textu reb[us] insignibus depromtis et in margine annotatis
+               : facta est etiã capitũ ipsorũ nõ inelegans tabula cũ dictionũ et ipsarũ rerum scitu
+               dignarum que in margine sunt, indice admodum luculento / Leonis Baptistae Alberti
+               Florẽtini viri clarissimi.</li>
+         </ul>
+      </header>
+   </body>
+</html>
