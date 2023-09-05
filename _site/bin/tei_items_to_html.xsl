@@ -235,7 +235,7 @@
                         </a>
                     </li>
                 </ul>
-                <span class="footer-bottom">Copyright <xsl:value-of
+                <span class="footer-bottom">&#169; <xsl:value-of
                         select="year-from-date(current-date())"/> The Trustees of Princeton
                     University. All rights reserved.</span>
             </section>
