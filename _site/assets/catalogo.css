@@ -9,22 +9,23 @@ html {
 iframe {
   display: block;
   width: 65vw;
-  height: 50vh;
+  height: 90vh;
   overflow-y: auto;
+  margin-right:10px;
 }
 
 body {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "side main main"
-    "footer footer footer";
+    "header header"
+    "side main"
+    "footer footer";
   color: #333;
-  font-family: "Cardo", Georgia, serif;
-  font-size: 13px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -55,7 +56,7 @@ summary::-webkit-details-marker {
 }
 
 .note {
-  font-family: Helvetica, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 14px;
   line-height: 1.5em;
   padding: 0 15px;
@@ -68,10 +69,11 @@ summary::-webkit-details-marker {
   border-color: #efefef;
   height: 55.95px;
 }
+
 .wrapper {
   max-width: calc(1200px - (30px * 2));
   h1 {
-    font-family: Helvetica, sans-serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -81,6 +83,7 @@ summary::-webkit-details-marker {
 
 #main {
   grid-area: main;
+  padding-right:10px;
 }
 
 #side {
@@ -132,7 +135,7 @@ dd {
 }
 
 body {
-  font-family: "Gentium Basic", serif;
+  font-family: "Playfair Display", Georgia, serif;
 }
 .toc {
   font-size: small;
@@ -157,7 +160,7 @@ span.ciconum {
 }
 h1,
 h2 {
-  font-family: "Gentium Basic", serif;
+  font-family: "Playfair Display", Georgia, serif;
 }
 .pageBreak {
   margin: 10px 0 0 0;
@@ -167,7 +170,7 @@ h2 {
 }
 
 header h2 {
-  font-family: Helvetica, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 0.75em;
@@ -183,18 +186,25 @@ header .site-title {
 header .site-nav {
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 #site-footer {
+  margin-top: auto;
   grid-area: footer;
   width: 100vw;
   border-top: 1px solid #e8e8e8;
+  padding: 0px;
 }
 
 #site-footer section {
   width: 100%;
   display: block;
   position: relative;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -212,8 +222,8 @@ header .site-nav {
 
 #site-footer .partners ul li {
   display: inline-block;
-  max-height: 90px;
-  padding: 1rem;
+  max-height: 45px;
+  padding: 0.5rem;
   position: relative;
   text-align: center;
 }
@@ -226,7 +236,7 @@ header .site-nav {
 }
 
 #site-footer .footer-bottom {
-  font-family: "Cardo", Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 13px;
 }
 

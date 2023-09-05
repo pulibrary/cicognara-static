@@ -30,7 +30,7 @@
   .wrapper {
     max-width: calc(1200px - (30px * 2));
     h1 {
-      font-family: Helvetica, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 30px;
       font-weight: 700;
       text-align: center;
@@ -62,19 +62,19 @@
   
   .page-content {
     color: #221e1d;
-    font-family: "Cardo", Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 18px;
     line-height: 1.5em;
     margin: 1.5em auto;
     h2 {
-      font-family: Helvetica, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 24px;
       font-weight: 700;
       text-align: left;
       margin: 1.5em auto 0.5em;
     }
     h3 {
-      font-family: Helvetica, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 14px;
       font-weight: 700;
       text-align: left;
@@ -87,13 +87,13 @@
         text-align: left;
       }
       h2 {
-        font-family: Helvetica, sans-serif;
+        font-family: "Playfair Display", Georgia, serif;
         font-size: 18px;
         font-weight: bold;
         text-align: left;
       }
       h3 {
-        font-family: Helvetica, sans-serif;
+        font-family: "Playfair Display", Georgia, serif;
         font-size: 16px;
         text-align: left;
       }
@@ -125,7 +125,7 @@
     }
 
     figure figcaption {
-      font-family: "Cardo", Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 0.75em;
       padding: 0.5em 1.9em 0.55em;
       width: 350px;
@@ -138,8 +138,8 @@
     }
 
     .home-catalogo-buttons {
-      margin: 0 auto;
-      max-width: 80%;
+      display: flex;
+      justify-content: center;
     }
 
     .browse-catalogo-button {
@@ -166,10 +166,13 @@
       margin-bottom: 0;
     }
 
-    .browse-catalogo-list li {
+    .browse-catalogo-list {
+      display: flex;
       list-style: none;
-      float: left;
-      margin: 5px 10px;
+    }
+
+    .browse-catalogo-list li {
+      margin: 0 10px;
     }
 
   }
@@ -179,7 +182,7 @@
       display: none;
     }
     h2 {
-      font-family: Helvetica, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 30px;
       font-weight: bold;
       margin: 0 0 0.75em;
@@ -188,7 +191,7 @@
 
     .post-meta {
       color: #221e1d;
-      font-family: "Cardo", Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 20px;
       line-height: 1.5em;
       margin: 1.5em auto;
@@ -198,7 +201,7 @@
   .contact {
     h1 {
       display: block !important;
-      font-family: Helvetica, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 30px;
       font-weight: 700;
       text-align: center;
@@ -226,7 +229,7 @@
       color: #221e1d;
       background-color: #ffffff;
       border: 3px solid #e6e8db;
-      font-family: "Cardo", Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
       padding: 1em;
       margin-bottom: 1em;
       width: 95%;
@@ -265,7 +268,7 @@
     border-bottom: 1px solid #000000;
 
     h2 {
-      font-family: Helvetica, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 25px;
       font-weight: bold;
       margin: 0.75em 0 0.75em;
@@ -307,11 +310,13 @@
 
 .site-footer {
 
+  padding: 0px;
+
   section {
     width: 100%;
     display: block;
     position: relative;
-    padding: 10px 20px;
+    padding: 5px 10px;
   } 
   .partners {
       text-align: center;
@@ -324,8 +329,8 @@
   }
   .partners ul li {
     display: inline-block;
-    max-height: 90px;
-    padding: 1rem;
+    max-height: 45px;
+    padding: 0.5rem;
     position: relative;
     text-align: center;
   }
@@ -337,7 +342,7 @@
   }
 
   .footer-bottom {
-    font-family: "Cardo", Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 13px;
   }
   
