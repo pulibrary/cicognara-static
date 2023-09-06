@@ -52,7 +52,7 @@ The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generat
 
 * How to Build and Run
 
-** Requirements 
+** Requirements
  - Ruby 3.1.2
  - Java 1.8.0 or higher (for updating HTML pages only)
 
@@ -66,6 +66,12 @@ The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generat
 #+end_src
 
 Preview locally at http://127.0.0.1:4000/.
+
+** Updating Getty records
+#+begin_src shell
+  cd cicognara-static
+  bin/fetch_json_getty_records
+#+end_src
 
 ** Updating HTML Pages
 #+begin_src shell
