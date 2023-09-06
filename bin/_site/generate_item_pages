@@ -1,9 +1,0 @@
-#!/bin/sh
-
-CUR=`dirname $0`
-SOURCEDIR=$CUR/../tmp/items
-TARGETDIR=$CUR/../catalogo/itempages
-SAXON=$CUR/saxon-he-10.5.jar
-XSL=$CUR/tei_items_to_html.xsl
-
-java -cp $SAXON net.sf.saxon.Transform -s:$SOURCEDIR -xsl:$XSL -o:$TARGETDIR
