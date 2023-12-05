@@ -24,15 +24,29 @@ Dir["#{sourcedir}/*.xml"].each do |file|
     language = monogr.xpath('tei:textLang', ns).text
     publisher = monogr.xpath('tei:imprint/tei:publisher', ns).text
     issued = monogr.xpath('tei:imprint/tei:date', ns).text
-    
+    terms = doc.xpath("//tei:profileDesc/tei:textClass/tei:keywords/tei:term", ns)
+    dclnums = fileDesc.xpath("tei:publicationStmt/tei:idno[@type='dcl']", ns)
 
+    subjectlist = []
+    terms.each do |term|
+      subjectlist << term.text
+    end
+
+    dclnumlist = []
+    dclnums.each do |d|
+      dclnumlist << d.text
+    end
+    
     record = {ciconum: ciconum,
+              dclnums: dclnumlist,
               title: title,
               creator: creator,
               language: language,
               publisher: publisher,
               issued: issued,
-              provider: provider}
+              provider: provider,
+              subjects: subjectlist,
+             }
     records << record
   end
 end
