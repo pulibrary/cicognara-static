@@ -1,11 +1,12 @@
 #+title: Digital Cicognara Library 2.0
-A Jekyll-based static site to replace [[https://github.com/pulibrary/cicognara-rails][Cicognara Rails]]. *Note:* Jekyll's ~/_site/~ directory is checked in, so changes are pre-rendered and Jekyll is
-not needed unless you need to update or reformat.
+A Jekyll-based static site to replace [[https://github.com/pulibrary/cicognara-rails][Cicognara Rails]]. *Note:* Jekyll's ~/_site/~ directory is checked in, so changes are pre-rendered and Jekyll is not needed, unless you need to update or reformat (however, see Update below.)
 
 * Background
 Since 2015 or so, the Princeton University Library has collaborated with a consortium of libraries and research institutions, with funding from the Kress Foundation, on a project called the [[https://cicognara.org/][Digital Cicognara Library]].  Labeled "an open-access collection of the early literature of the arts," this project combines two distinct efforts: (1) to create a union catalog of copies and similar editions of some 5,000 imprints collected by Count Leopoldo Cicognara (1767–1834) and itemized in his /Catalogo ragionato dei libri d’arte e d’antichità/; (2) to build a web resource that enables users to read and compare digital facsimiles of these titles.
 
-Cicognara's original library now resides in the Vatican; in the 1980s, the Kress Foundation sponsored a project to create a microfiche edition of the entire library (more than one million pages).  Many of the original imprints have since been deemed too fragile to be handled, so a similar edition of digital images cannot be made; instead, in 2016 or so, the Kress Foundation digitized its microfiche edition while acknowledging that digitized microfiche does not provide the reading experience many users expect today.  In lieu of digitizing Cicognara's holdings anew, several research institutions began to examine their holdings for copies, or similar editions, of Cicognara's volumes that could be presented to the reading public as substitutes: the collaborating institutions digitize what they find and make their digital editions available, via the Web, in a digital re-creation of Cicognara's library.
+Cicognara's original library now resides in the Vatican; in the 1980s, the Kress Foundation sponsored a project to create a microfiche edition of the entire library (more than one million pages).  Many of the original imprints have since been deemed too fragile to be handled, so a similar edition of digital images cannot be made; instead, in 2016 or so, the Kress Foundation digitized its microfiche edition while acknowledging that digitized microfiche does not provide the reading experience many users expect today.
+
+In lieu of digitizing Cicognara's holdings anew, several research institutions began to examine their holdings for copies, or similar editions, of Cicognara's volumes that could be presented to the reading public as substitutes: the collaborating institutions digitize what they find and make their digital editions available, via the Web, in a digital re-creation of Cicognara's library.
 
 All the partner institutions send their metadata (MARC records and IIIF manifests) to the Getty Research Center, which disseminates them as part of the [[https://portal.getty.edu/][Getty Research Portal]].  The presentation of these digital editions as a virtual Cicognara library has been the responsibility of PUL, which has built and maintains a system of bespoke software to harvest bibliographic records and IIIF manifests from the Getty, process and index them, and display them in a web browser.  The software provides some search capabilities, along with a way to browse the collection through a TEI-encoded edition of Cicognara's /Catalogo/.
 
@@ -46,13 +47,18 @@ The first aspect is an ongoing research project among the consortium members; th
 ** Architecture: a Static Site
 The new Digital Cicognara Library web site is a /static site/: there is no database, and little in the way of dynamic Javascript.  Such static sites are part of a growing trend in web development to reduce complexity, reduce the cost of software maintenance, and limit the site's exposure to cyber attacks.
 
-The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generator written in Ruby.  The /Catalogo/ portion of the site is compiled from two sources: the TEI-encoded edition of Cicognara's /Catalogo/ (maintained in a [[https://github.com/pulibrary/cicognara-catalogo][separate GitHub repository]]) and bibliographic records harvested from the Getty Research Portal. Shell scripts, Ruby scripts, and XSLT transforms generate a single HTML document containing the text of the /Catalogo/ (making it easily searchable in a browser) and viewer pages that use Mirador to display the various versions of each /Catalogo/ entry.
+The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generator written in Ruby.  The /Catalogo/ portion of the site is compiled from two sources: the TEI-encoded edition of Cicognara's /Catalogo/ (maintained in a [[https://github.com/pulibrary/cicognara-catalogo][separate GitHub repository]]) and bibliographic records harvested from the Getty Research Portal and processed into TEI files. Shell scripts, Ruby scripts, and XSLT transforms generate a single HTML document containing the text of the /Catalogo/ (making it easily searchable in a browser) and viewer pages that use Mirador to display the various versions of each /Catalogo/ entry.
 
+** Update, 2023
+The Jekyll-generated static site (Version 2, or "Cicognara-static") was developed in 2022-2023.  During review, several new requirements emerged:
 
+1. The site must have a search facility like that in Version 1.  Meeting this requirement has required the development of a tool that indexes the Getty records and the deployment of a Javascript-based search tool (Fuse.js); it also requires the entire UI to be re-designed to provide a Blacklight-like interface to the data in the Getty records.
+   
+2. PUL must compensate for the sporadic nature of updates to the Getty Portal and the uneven nature of the partner records by developing tools and workflows to update the "static site" on demand.
 
 * How to Build and Run
 
-** Requirements 
+** Requirements
  - Ruby 3.1.2
  - Java 1.8.0 or higher (for updating HTML pages only)
 
@@ -66,6 +72,9 @@ The site is built using [[https://jekyllrb.com/][Jekyll]], a static-site generat
 #+end_src
 
 Preview locally at http://127.0.0.1:4000/.
+
+** Updating Getty records
+*UPDATE* the Getty records are retrieved and processed from the Cicognara-Catalogo repository, where they are used to generate the TEI documents that are used in this site to build HTML pages. Do not update Getty records from this application/repository; go to the Cicognara-Catalogo repository and follow the instructions there.
 
 ** Updating HTML Pages
 #+begin_src shell
