@@ -1,3 +1,6 @@
+*Note:* This project has been superseded by https://github.com/pulibrary/digital-cicognara-library
+(see the /apps/cicognara-static/ subdirectory).
+
 #+title: Digital Cicognara Library 2.0
 A Jekyll-based static site to replace [[https://github.com/pulibrary/cicognara-rails][Cicognara Rails]]. *Note:* Jekyll's ~/_site/~ directory is checked in, so changes are pre-rendered and Jekyll is
 not needed unless you need to update or reformat.
